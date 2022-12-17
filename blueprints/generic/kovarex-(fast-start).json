@@ -1,0 +1,167 @@
+{
+  "index": 19,
+  "blueprint": {
+    "item": "blueprint",
+    "label": "Kovarex (fast start)",
+    "shift_x": -248,
+    "shift_y": -42,
+    "version": 281479276527617,
+    "entities": [
+      {
+        "name": "arithmetic-combinator",
+        "connections": {
+          "1": {"green": [{"entity_rel": "-2,1.5"}]},
+          "2": {"green": [{"circuit_id": 1, "entity_rel": "0,-2"}]}
+        },
+        "control_behavior": {
+          "arithmetic_conditions": {
+            "operation": "*",
+            "second_constant": -20,
+            "first_signal": {"name": "uranium-238", "type": "item"},
+            "output_signal": {"name": "uranium-235", "type": "item"}
+          }
+        },
+        "position": {"x": 4.5, "y": 7}
+      },
+      {"name": "centrifuge", "recipe": "kovarex-enrichment-process", "position": {"x": 1.5, "y": 6.5}},
+      {
+        "name": "decider-combinator",
+        "direction": 6,
+        "connections": {
+          "1": {
+            "red": [{"circuit_id": 2, "entity_rel": "0,0"}, {"entity_rel": "-0.5,-1"}, {"entity_rel": "1.5,-1"}]
+          },
+          "2": {"red": [{"circuit_id": 1, "entity_rel": "0,0"}]}
+        },
+        "control_behavior": {
+          "decider_conditions": {
+            "comparator": ">",
+            "constant": 0,
+            "copy_count_from_input": true,
+            "first_signal": {"name": "uranium-235", "type": "item"},
+            "output_signal": {"name": "uranium-235", "type": "item"}
+          }
+        },
+        "position": {"x": 2, "y": 1.5}
+      },
+      {
+        "name": "decider-combinator",
+        "connections": {
+          "1": {
+            "green": [{"circuit_id": 2, "entity_rel": "0,2"}],
+            "red": [{"circuit_id": 2, "entity_rel": "0,0"}, {"entity_rel": "-1,-1.5"}, {"entity_rel": "-3,-1.5"}]
+          },
+          "2": {"red": [{"circuit_id": 1, "entity_rel": "0,0"}]}
+        },
+        "control_behavior": {
+          "decider_conditions": {
+            "comparator": ">",
+            "constant": 0,
+            "copy_count_from_input": true,
+            "first_signal": {"name": "uranium-235", "type": "item"},
+            "output_signal": {"name": "uranium-235", "type": "item"}
+          }
+        },
+        "position": {"x": 4.5, "y": 5}
+      },
+      {
+        "name": "filter-inserter",
+        "direction": 4,
+        "filters": [{"name": "uranium-235", "index": 1}],
+        "position": {"x": 2.5, "y": 4.5}
+      },
+      {
+        "name": "filter-inserter",
+        "connections": {"1": {"green": [{"circuit_id": 1, "entity_rel": "2,-1.5"}]}},
+        "control_behavior": {"circuit_mode_of_operation": 3, "circuit_read_hand_contents": true},
+        "filters": [{"name": "uranium-238", "index": 1}],
+        "position": {"x": 2.5, "y": 8.5}
+      },
+      {
+        "name": "inserter",
+        "direction": 2,
+        "connections": {"1": {"red": [{"circuit_id": 1, "entity_rel": "0.5,1"}]}},
+        "control_behavior": {
+          "circuit_read_hand_contents": true,
+          "circuit_condition": {"comparator": "<", "constant": 40, "first_signal": {"name": "uranium-235", "type": "item"}}
+        },
+        "position": {"x": 1.5, "y": 0.5}
+      },
+      {
+        "name": "inserter",
+        "direction": 6,
+        "connections": {"1": {"red": [{"circuit_id": 1, "entity_rel": "-1.5,1"}]}},
+        "control_behavior": {
+          "circuit_condition": {"comparator": "≥", "constant": 40, "first_signal": {"name": "uranium-235", "type": "item"}}
+        },
+        "position": {"x": 3.5, "y": 0.5}
+      },
+      {
+        "name": "inserter",
+        "direction": 2,
+        "connections": {"1": {"red": [{"circuit_id": 1, "entity_rel": "3,1.5"}]}},
+        "control_behavior": {
+          "circuit_read_hand_contents": true,
+          "circuit_condition": {"comparator": "<", "constant": 40, "first_signal": {"name": "uranium-235", "type": "item"}}
+        },
+        "position": {"x": 1.5, "y": 3.5}
+      },
+      {
+        "name": "inserter",
+        "direction": 6,
+        "connections": {"1": {"red": [{"circuit_id": 1, "entity_rel": "1,1.5"}]}},
+        "control_behavior": {
+          "circuit_condition": {"comparator": "≥", "constant": 40, "first_signal": {"name": "uranium-235", "type": "item"}}
+        },
+        "position": {"x": 3.5, "y": 3.5}
+      },
+      {"name": "inserter", "position": {"x": 4.5, "y": 2.5}},
+      {"name": "inserter", "direction": 6, "position": {"x": 5.5, "y": 3.5}},
+      {"name": "inserter", "position": {"x": 0.5, "y": 4.5}},
+      {
+        "name": "inserter",
+        "direction": 4,
+        "control_behavior": {"circuit_mode_of_operation": 3, "circuit_read_hand_contents": true},
+        "position": {"x": 0.5, "y": 8.5}
+      },
+      {"name": "medium-electric-pole", "neighbours": ["0,4"], "position": {"x": 3.5, "y": 1.5}},
+      {"name": "medium-electric-pole", "neighbours": ["0,-4"], "position": {"x": 3.5, "y": 5.5}},
+      {"name": "steel-chest", "position": {"x": 4.5, "y": 3.5}},
+      {"name": "transport-belt", "direction": 2, "position": {"x": -0.5, "y": -0.5}},
+      {"name": "transport-belt", "direction": 2, "position": {"x": 0.5, "y": -0.5}},
+      {"name": "transport-belt", "direction": 2, "position": {"x": 1.5, "y": -0.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 2.5, "y": -0.5}},
+      {"name": "transport-belt", "position": {"x": -0.5, "y": 0.5}},
+      {"name": "transport-belt", "position": {"x": -0.5, "y": 1.5}},
+      {"name": "transport-belt", "position": {"x": -0.5, "y": 2.5}},
+      {"name": "transport-belt", "direction": 2, "position": {"x": -1.5, "y": 3.5}},
+      {"name": "transport-belt", "position": {"x": -0.5, "y": 3.5}},
+      {"name": "transport-belt", "direction": 2, "position": {"x": -1.5, "y": 4.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": -0.5, "y": 4.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": -0.5, "y": 5.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": -0.5, "y": 6.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": -0.5, "y": 7.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": -0.5, "y": 8.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": -0.5, "y": 9.5}},
+      {"name": "transport-belt", "direction": 2, "position": {"x": -0.5, "y": 10.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 0.5, "y": 0.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 0.5, "y": 1.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 2.5, "y": 0.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 0.5, "y": 2.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 0.5, "y": 3.5}},
+      {"name": "transport-belt", "position": {"x": 2.5, "y": 3.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 4.5, "y": 0.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 4.5, "y": 1.5}},
+      {"name": "transport-belt", "direction": 2, "position": {"x": 6.5, "y": 3.5}},
+      {"name": "transport-belt", "position": {"x": 0.5, "y": 9.5}},
+      {"name": "transport-belt", "direction": 6, "position": {"x": 1.5, "y": 9.5}},
+      {"name": "transport-belt", "direction": 6, "position": {"x": 2.5, "y": 9.5}},
+      {"name": "transport-belt", "direction": 2, "position": {"x": 0.5, "y": 10.5}},
+      {"name": "transport-belt", "position": {"x": 1.5, "y": 10.5}}
+    ],
+    "icons": [
+      {"index": 1, "signal": {"name": "centrifuge", "type": "item"}},
+      {"index": 2, "signal": {"name": "transport-belt", "type": "item"}}
+    ]
+  }
+}

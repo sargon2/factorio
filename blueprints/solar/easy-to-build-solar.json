@@ -1,0 +1,213 @@
+{
+  "index": 5,
+  "blueprint": {
+    "item": "blueprint",
+    "label": "Easy to build solar",
+    "shift_x": 2,
+    "shift_y": 1,
+    "version": 281479276527617,
+    "entities": [
+      {"name": "accumulator", "position": {"x": 0, "y": 75}},
+      {"name": "accumulator", "position": {"x": 2, "y": 75}},
+      {"name": "accumulator", "position": {"x": 4, "y": 75}},
+      {"name": "accumulator", "position": {"x": 0, "y": 77}},
+      {"name": "accumulator", "position": {"x": 2, "y": 77}},
+      {"name": "accumulator", "position": {"x": 0, "y": 79}},
+      {"name": "accumulator", "position": {"x": 2, "y": 79}},
+      {"name": "accumulator", "position": {"x": 4, "y": 77}},
+      {"name": "accumulator", "position": {"x": 4, "y": 79}},
+      {"name": "accumulator", "position": {"x": 0, "y": 81}},
+      {"name": "accumulator", "position": {"x": 2, "y": 81}},
+      {"name": "accumulator", "position": {"x": 0, "y": 83}},
+      {"name": "accumulator", "position": {"x": 2, "y": 83}},
+      {"name": "accumulator", "position": {"x": 4, "y": 81}},
+      {"name": "accumulator", "position": {"x": 4, "y": 83}},
+      {"name": "accumulator", "position": {"x": 0, "y": 85}},
+      {"name": "accumulator", "position": {"x": 2, "y": 85}},
+      {"name": "accumulator", "position": {"x": 0, "y": 87}},
+      {"name": "accumulator", "position": {"x": 2, "y": 87}},
+      {"name": "accumulator", "position": {"x": 4, "y": 85}},
+      {"name": "accumulator", "position": {"x": 4, "y": 87}},
+      {"name": "accumulator", "position": {"x": 0, "y": 89}},
+      {"name": "accumulator", "position": {"x": 2, "y": 89}},
+      {"name": "accumulator", "position": {"x": 0, "y": 91}},
+      {"name": "accumulator", "position": {"x": 2, "y": 91}},
+      {"name": "accumulator", "position": {"x": 4, "y": 89}},
+      {"name": "accumulator", "position": {"x": 4, "y": 91}},
+      {"name": "accumulator", "position": {"x": 0, "y": 93}},
+      {"name": "accumulator", "position": {"x": 2, "y": 93}},
+      {"name": "accumulator", "position": {"x": 0, "y": 95}},
+      {"name": "accumulator", "position": {"x": 2, "y": 95}},
+      {"name": "accumulator", "position": {"x": 4, "y": 93}},
+      {"name": "accumulator", "position": {"x": 4, "y": 95}},
+      {"name": "accumulator", "position": {"x": 0, "y": 97}},
+      {"name": "accumulator", "position": {"x": 2, "y": 97}},
+      {"name": "accumulator", "position": {"x": 0, "y": 99}},
+      {"name": "accumulator", "position": {"x": 2, "y": 99}},
+      {"name": "accumulator", "position": {"x": 4, "y": 97}},
+      {"name": "accumulator", "position": {"x": 4, "y": 99}},
+      {"name": "accumulator", "position": {"x": 0, "y": 101}},
+      {"name": "accumulator", "position": {"x": 2, "y": 101}},
+      {"name": "accumulator", "position": {"x": 4, "y": 101}},
+      {"name": "medium-electric-pole", "neighbours": ["0,9", "7,0"], "position": {"x": -1.5, "y": 1.5}},
+      {
+        "name": "medium-electric-pole",
+        "neighbours": ["0,-9", "0,9", "7,0"],
+        "position": {"x": -1.5, "y": 10.5}
+      },
+      {
+        "name": "medium-electric-pole",
+        "neighbours": ["0,-9", "0,9", "7,0"],
+        "position": {"x": -1.5, "y": 19.5}
+      },
+      {
+        "name": "medium-electric-pole",
+        "neighbours": ["0,-9", "0,9", "7,0"],
+        "position": {"x": -1.5, "y": 28.5}
+      },
+      {
+        "name": "medium-electric-pole",
+        "neighbours": ["0,-9", "0,9", "7,0"],
+        "position": {"x": -1.5, "y": 37.5}
+      },
+      {
+        "name": "medium-electric-pole",
+        "neighbours": ["0,-9", "0,9", "7,0"],
+        "position": {"x": -1.5, "y": 46.5}
+      },
+      {
+        "name": "medium-electric-pole",
+        "neighbours": ["0,-9", "0,9", "7,0"],
+        "position": {"x": -1.5, "y": 55.5}
+      },
+      {
+        "name": "medium-electric-pole",
+        "neighbours": ["0,-9", "0,9", "7,0"],
+        "position": {"x": -1.5, "y": 64.5}
+      },
+      {
+        "name": "medium-electric-pole",
+        "neighbours": ["0,-9", "0,8", "7,0"],
+        "position": {"x": -1.5, "y": 73.5}
+      },
+      {
+        "name": "medium-electric-pole",
+        "neighbours": ["0,-8", "0,8", "7,0"],
+        "position": {"x": -1.5, "y": 81.5}
+      },
+      {
+        "name": "medium-electric-pole",
+        "neighbours": ["0,-8", "0,9", "7,0"],
+        "position": {"x": -1.5, "y": 89.5}
+      },
+      {"name": "medium-electric-pole", "neighbours": ["0,-9", "7,0"], "position": {"x": -1.5, "y": 98.5}},
+      {"name": "medium-electric-pole", "neighbours": ["-7,0", "0,9"], "position": {"x": 5.5, "y": 1.5}},
+      {
+        "name": "medium-electric-pole",
+        "neighbours": ["-7,0", "0,-9", "0,9"],
+        "position": {"x": 5.5, "y": 10.5}
+      },
+      {
+        "name": "medium-electric-pole",
+        "neighbours": ["-7,0", "0,-9", "0,9"],
+        "position": {"x": 5.5, "y": 19.5}
+      },
+      {
+        "name": "medium-electric-pole",
+        "neighbours": ["-7,0", "0,-9", "0,9"],
+        "position": {"x": 5.5, "y": 28.5}
+      },
+      {
+        "name": "medium-electric-pole",
+        "neighbours": ["-7,0", "0,-9", "0,9"],
+        "position": {"x": 5.5, "y": 37.5}
+      },
+      {
+        "name": "medium-electric-pole",
+        "neighbours": ["-7,0", "0,-9", "0,9"],
+        "position": {"x": 5.5, "y": 46.5}
+      },
+      {
+        "name": "medium-electric-pole",
+        "neighbours": ["-7,0", "0,-9", "0,9"],
+        "position": {"x": 5.5, "y": 55.5}
+      },
+      {
+        "name": "medium-electric-pole",
+        "neighbours": ["-7,0", "0,-9", "0,9"],
+        "position": {"x": 5.5, "y": 64.5}
+      },
+      {
+        "name": "medium-electric-pole",
+        "neighbours": ["-7,0", "0,-9", "0,8"],
+        "position": {"x": 5.5, "y": 73.5}
+      },
+      {
+        "name": "medium-electric-pole",
+        "neighbours": ["-7,0", "0,-8", "0,8"],
+        "position": {"x": 5.5, "y": 81.5}
+      },
+      {
+        "name": "medium-electric-pole",
+        "neighbours": ["-7,0", "0,-8", "0,9"],
+        "position": {"x": 5.5, "y": 89.5}
+      },
+      {"name": "medium-electric-pole", "neighbours": ["-7,0", "0,-9"], "position": {"x": 5.5, "y": 98.5}},
+      {"name": "solar-panel", "position": {"x": 0.5, "y": 0.5}},
+      {"name": "solar-panel", "position": {"x": 3.5, "y": 0.5}},
+      {"name": "solar-panel", "position": {"x": 0.5, "y": 3.5}},
+      {"name": "solar-panel", "position": {"x": 3.5, "y": 3.5}},
+      {"name": "solar-panel", "position": {"x": 0.5, "y": 6.5}},
+      {"name": "solar-panel", "position": {"x": 3.5, "y": 6.5}},
+      {"name": "solar-panel", "position": {"x": 0.5, "y": 9.5}},
+      {"name": "solar-panel", "position": {"x": 3.5, "y": 9.5}},
+      {"name": "solar-panel", "position": {"x": 0.5, "y": 12.5}},
+      {"name": "solar-panel", "position": {"x": 3.5, "y": 12.5}},
+      {"name": "solar-panel", "position": {"x": 0.5, "y": 15.5}},
+      {"name": "solar-panel", "position": {"x": 3.5, "y": 15.5}},
+      {"name": "solar-panel", "position": {"x": 0.5, "y": 18.5}},
+      {"name": "solar-panel", "position": {"x": 3.5, "y": 18.5}},
+      {"name": "solar-panel", "position": {"x": 0.5, "y": 21.5}},
+      {"name": "solar-panel", "position": {"x": 3.5, "y": 21.5}},
+      {"name": "solar-panel", "position": {"x": 0.5, "y": 24.5}},
+      {"name": "solar-panel", "position": {"x": 3.5, "y": 24.5}},
+      {"name": "solar-panel", "position": {"x": 0.5, "y": 27.5}},
+      {"name": "solar-panel", "position": {"x": 3.5, "y": 27.5}},
+      {"name": "solar-panel", "position": {"x": 0.5, "y": 30.5}},
+      {"name": "solar-panel", "position": {"x": 3.5, "y": 30.5}},
+      {"name": "solar-panel", "position": {"x": 0.5, "y": 33.5}},
+      {"name": "solar-panel", "position": {"x": 3.5, "y": 33.5}},
+      {"name": "solar-panel", "position": {"x": 0.5, "y": 36.5}},
+      {"name": "solar-panel", "position": {"x": 3.5, "y": 36.5}},
+      {"name": "solar-panel", "position": {"x": 0.5, "y": 39.5}},
+      {"name": "solar-panel", "position": {"x": 3.5, "y": 39.5}},
+      {"name": "solar-panel", "position": {"x": 0.5, "y": 42.5}},
+      {"name": "solar-panel", "position": {"x": 3.5, "y": 42.5}},
+      {"name": "solar-panel", "position": {"x": 0.5, "y": 45.5}},
+      {"name": "solar-panel", "position": {"x": 3.5, "y": 45.5}},
+      {"name": "solar-panel", "position": {"x": 0.5, "y": 48.5}},
+      {"name": "solar-panel", "position": {"x": 3.5, "y": 48.5}},
+      {"name": "solar-panel", "position": {"x": 0.5, "y": 51.5}},
+      {"name": "solar-panel", "position": {"x": 3.5, "y": 51.5}},
+      {"name": "solar-panel", "position": {"x": 0.5, "y": 54.5}},
+      {"name": "solar-panel", "position": {"x": 3.5, "y": 54.5}},
+      {"name": "solar-panel", "position": {"x": 0.5, "y": 57.5}},
+      {"name": "solar-panel", "position": {"x": 3.5, "y": 57.5}},
+      {"name": "solar-panel", "position": {"x": 0.5, "y": 60.5}},
+      {"name": "solar-panel", "position": {"x": 3.5, "y": 60.5}},
+      {"name": "solar-panel", "position": {"x": 0.5, "y": 63.5}},
+      {"name": "solar-panel", "position": {"x": 3.5, "y": 63.5}},
+      {"name": "solar-panel", "position": {"x": 0.5, "y": 66.5}},
+      {"name": "solar-panel", "position": {"x": 3.5, "y": 66.5}},
+      {"name": "solar-panel", "position": {"x": 0.5, "y": 69.5}},
+      {"name": "solar-panel", "position": {"x": 3.5, "y": 69.5}},
+      {"name": "solar-panel", "position": {"x": 0.5, "y": 72.5}},
+      {"name": "solar-panel", "position": {"x": 3.5, "y": 72.5}}
+    ],
+    "icons": [
+      {"index": 1, "signal": {"name": "solar-panel", "type": "item"}},
+      {"index": 2, "signal": {"name": "accumulator", "type": "item"}}
+    ],
+    "snap-to-grid": {"x": 7, "y": 103}
+  }
+}

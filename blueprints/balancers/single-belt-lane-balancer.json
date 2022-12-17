@@ -1,0 +1,24 @@
+{
+  "index": 1,
+  "blueprint": {
+    "item": "blueprint",
+    "label": "Single-belt lane balancer",
+    "shift_x": 0,
+    "shift_y": -1,
+    "version": 281479276527617,
+    "entities": [
+      {"name": "splitter", "position": {"x": 1, "y": 1.5}},
+      {"name": "transport-belt", "direction": 2, "position": {"x": -0.5, "y": -0.5}},
+      {"name": "transport-belt", "position": {"x": 0.5, "y": -0.5}},
+      {"name": "transport-belt", "direction": 6, "position": {"x": 1.5, "y": -0.5}},
+      {"name": "transport-belt", "position": {"x": -0.5, "y": 0.5}},
+      {"name": "transport-belt", "direction": 6, "position": {"x": 0.5, "y": 0.5}},
+      {"name": "transport-belt", "position": {"x": 1.5, "y": 0.5}},
+      {"name": "transport-belt", "position": {"x": 0.5, "y": 2.5}}
+    ],
+    "icons": [
+      {"index": 1, "signal": {"name": "transport-belt", "type": "item"}},
+      {"index": 2, "signal": {"name": "splitter", "type": "item"}}
+    ]
+  }
+}

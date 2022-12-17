@@ -1,0 +1,34 @@
+{
+  "index": 9,
+  "blueprint": {
+    "item": "blueprint",
+    "label": "3-4 balancer",
+    "shift_x": 366,
+    "shift_y": -199,
+    "version": 281479276527617,
+    "entities": [
+      {"name": "splitter", "direction": 2, "position": {"x": 1.5, "y": 1}},
+      {"name": "splitter", "direction": 2, "position": {"x": 0.5, "y": 2}},
+      {"name": "splitter", "direction": 2, "position": {"x": 3.5, "y": 2}},
+      {"name": "splitter", "direction": 2, "position": {"x": 6.5, "y": 0}},
+      {"name": "splitter", "direction": 2, "position": {"x": 6.5, "y": 2}},
+      {"name": "transport-belt", "direction": 2, "position": {"x": 4.5, "y": -0.5}},
+      {"name": "transport-belt", "direction": 2, "position": {"x": 5.5, "y": -0.5}},
+      {"name": "transport-belt", "direction": 2, "position": {"x": 0.5, "y": 0.5}},
+      {"name": "transport-belt", "direction": 2, "position": {"x": 1.5, "y": 2.5}},
+      {"name": "transport-belt", "direction": 2, "position": {"x": 2.5, "y": 2.5}},
+      {"name": "transport-belt", "position": {"x": 4.5, "y": 0.5}},
+      {"name": "transport-belt", "position": {"x": 4.5, "y": 1.5}},
+      {"name": "transport-belt", "direction": 2, "position": {"x": 4.5, "y": 2.5}},
+      {"name": "transport-belt", "direction": 2, "position": {"x": 5.5, "y": 2.5}},
+      {"name": "underground-belt", "direction": 2, "type": "input", "position": {"x": 2.5, "y": 0.5}},
+      {"name": "underground-belt", "direction": 2, "type": "input", "position": {"x": 2.5, "y": 1.5}},
+      {"name": "underground-belt", "direction": 2, "type": "output", "position": {"x": 5.5, "y": 0.5}},
+      {"name": "underground-belt", "direction": 2, "type": "output", "position": {"x": 5.5, "y": 1.5}}
+    ],
+    "icons": [
+      {"index": 1, "signal": {"name": "splitter", "type": "item"}},
+      {"index": 2, "signal": {"name": "transport-belt", "type": "item"}}
+    ]
+  }
+}

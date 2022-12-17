@@ -1,0 +1,20 @@
+{
+  "index": 9,
+  "blueprint": {
+    "item": "blueprint",
+    "label": "Science labs",
+    "shift_x": -1,
+    "shift_y": -1,
+    "version": 281479276527617,
+    "entities": [
+      {"name": "inserter", "direction": 4, "position": {"x": 0.5, "y": -0.5}},
+      {"name": "inserter", "position": {"x": 1.5, "y": -0.5}},
+      {"name": "inserter", "direction": 4, "position": {"x": 3.5, "y": -0.5}},
+      {"name": "inserter", "position": {"x": 4.5, "y": -0.5}},
+      {"name": "lab", "position": {"x": -0.5, "y": 1.5}},
+      {"name": "lab", "position": {"x": 2.5, "y": 1.5}},
+      {"name": "small-electric-pole", "position": {"x": 2.5, "y": -0.5}}
+    ],
+    "icons": [{"index": 1, "signal": {"name": "lab", "type": "item"}}]
+  }
+}

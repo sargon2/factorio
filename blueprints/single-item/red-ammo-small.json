@@ -1,0 +1,112 @@
+{
+  "index": 9,
+  "blueprint": {
+    "item": "blueprint",
+    "label": "Red ammo small",
+    "shift_x": -98,
+    "shift_y": -261,
+    "version": 281479276527617,
+    "entities": [
+      {"name": "assembling-machine-1", "recipe": "firearm-magazine", "position": {"x": -6.5, "y": 3.5}},
+      {
+        "name": "assembling-machine-1",
+        "recipe": "piercing-rounds-magazine",
+        "position": {"x": -2.5, "y": 2.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "piercing-rounds-magazine",
+        "position": {"x": -5.5, "y": 7.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "piercing-rounds-magazine",
+        "position": {"x": -2.5, "y": 5.5}
+      },
+      {"name": "inserter", "direction": 6, "position": {"x": -4.5, "y": 3.5}},
+      {"name": "inserter", "direction": 2, "position": {"x": -0.5, "y": 3.5}},
+      {"name": "inserter", "direction": 4, "position": {"x": -7.5, "y": 5.5}},
+      {"name": "inserter", "direction": 6, "position": {"x": -4.5, "y": 4.5}},
+      {"name": "inserter", "position": {"x": -5.5, "y": 5.5}},
+      {"name": "inserter", "direction": 2, "position": {"x": -0.5, "y": 4.5}},
+      {"name": "inserter", "direction": 2, "position": {"x": -3.5, "y": 7.5}},
+      {"name": "inserter", "direction": 6, "position": {"x": -3.5, "y": 8.5}},
+      {"name": "inserter", "direction": 2, "position": {"x": -1.5, "y": 8.5}},
+      {"name": "iron-chest", "bar": 10, "position": {"x": -2.5, "y": 8.5}},
+      {"name": "long-handed-inserter", "direction": 6, "position": {"x": -0.5, "y": 2.5}},
+      {"name": "long-handed-inserter", "direction": 6, "position": {"x": -0.5, "y": 6.5}},
+      {"name": "small-electric-pole", "neighbours": ["-6,4", "0,4"], "position": {"x": -0.5, "y": 1.5}},
+      {
+        "name": "small-electric-pole",
+        "neighbours": ["2,0", "3,4", "6,-4"],
+        "position": {"x": -6.5, "y": 5.5}
+      },
+      {"name": "small-electric-pole", "neighbours": ["-2,0", "4,0"], "position": {"x": -4.5, "y": 5.5}},
+      {
+        "name": "small-electric-pole",
+        "neighbours": ["-3,4", "-4,0", "0,-4"],
+        "position": {"x": -0.5, "y": 5.5}
+      },
+      {"name": "small-electric-pole", "neighbours": ["-3,-4", "3,-4"], "position": {"x": -3.5, "y": 9.5}},
+      {
+        "name": "splitter",
+        "direction": 2,
+        "filter": "steel-plate",
+        "output_priority": "left",
+        "position": {"x": -9.5, "y": 0}
+      },
+      {
+        "name": "splitter",
+        "direction": 2,
+        "filter": "copper-plate",
+        "output_priority": "left",
+        "position": {"x": -9.5, "y": 2}
+      },
+      {
+        "name": "splitter",
+        "direction": 2,
+        "filter": "iron-plate",
+        "output_priority": "right",
+        "position": {"x": -9.5, "y": 6}
+      },
+      {"name": "transport-belt", "direction": 2, "position": {"x": -8.5, "y": -0.5}},
+      {"name": "transport-belt", "direction": 2, "position": {"x": -7.5, "y": -0.5}},
+      {"name": "transport-belt", "direction": 2, "position": {"x": -6.5, "y": -0.5}},
+      {"name": "transport-belt", "direction": 2, "position": {"x": -5.5, "y": -0.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": -4.5, "y": -0.5}},
+      {"name": "transport-belt", "direction": 2, "position": {"x": -8.5, "y": 1.5}},
+      {"name": "transport-belt", "direction": 2, "position": {"x": -8.5, "y": 6.5}},
+      {"name": "transport-belt", "direction": 2, "position": {"x": -7.5, "y": 1.5}},
+      {"name": "transport-belt", "direction": 2, "position": {"x": -6.5, "y": 1.5}},
+      {"name": "transport-belt", "direction": 2, "position": {"x": -4.5, "y": 0.5}},
+      {"name": "transport-belt", "direction": 2, "position": {"x": -5.5, "y": 1.5}},
+      {"name": "transport-belt", "position": {"x": -4.5, "y": 1.5}},
+      {"name": "transport-belt", "direction": 2, "position": {"x": -3.5, "y": 0.5}},
+      {"name": "transport-belt", "direction": 2, "position": {"x": -2.5, "y": 0.5}},
+      {"name": "transport-belt", "direction": 2, "position": {"x": -1.5, "y": 0.5}},
+      {"name": "transport-belt", "direction": 2, "position": {"x": -0.5, "y": 0.5}},
+      {"name": "transport-belt", "position": {"x": -7.5, "y": 6.5}},
+      {"name": "transport-belt", "direction": 6, "position": {"x": -2.5, "y": 7.5}},
+      {"name": "transport-belt", "direction": 6, "position": {"x": -1.5, "y": 7.5}},
+      {"name": "transport-belt", "direction": 6, "position": {"x": -0.5, "y": 7.5}},
+      {"name": "transport-belt", "direction": 6, "position": {"x": -0.5, "y": 8.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 0.5, "y": 0.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 0.5, "y": 1.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 0.5, "y": 2.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 1.5, "y": 2.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 0.5, "y": 3.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 1.5, "y": 3.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 0.5, "y": 4.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 1.5, "y": 4.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 0.5, "y": 5.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 1.5, "y": 5.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 0.5, "y": 6.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 1.5, "y": 6.5}},
+      {"name": "transport-belt", "direction": 6, "position": {"x": 0.5, "y": 7.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 1.5, "y": 7.5}},
+      {"name": "transport-belt", "direction": 6, "position": {"x": 0.5, "y": 8.5}},
+      {"name": "transport-belt", "direction": 6, "position": {"x": 1.5, "y": 8.5}}
+    ],
+    "icons": [{"index": 1, "signal": {"name": "piercing-rounds-magazine", "type": "item"}}]
+  }
+}

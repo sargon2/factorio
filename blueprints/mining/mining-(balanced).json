@@ -1,0 +1,23 @@
+{
+  "index": 0,
+  "blueprint": {
+    "item": "blueprint",
+    "label": "Mining (balanced)",
+    "shift_x": 1,
+    "shift_y": 3,
+    "version": 281479276527617,
+    "entities": [
+      {"name": "electric-mining-drill", "direction": 4, "position": {"x": 0.5, "y": -1.5}},
+      {"name": "electric-mining-drill", "direction": 4, "position": {"x": 3.5, "y": -1.5}},
+      {"name": "electric-mining-drill", "position": {"x": 0.5, "y": 2.5}},
+      {"name": "electric-mining-drill", "position": {"x": 3.5, "y": 2.5}},
+      {"name": "small-electric-pole", "position": {"x": 2.5, "y": 0.5}},
+      {"name": "transport-belt", "direction": 2, "position": {"x": -0.5, "y": 0.5}},
+      {"name": "transport-belt", "direction": 2, "position": {"x": 4.5, "y": 0.5}},
+      {"name": "underground-belt", "direction": 2, "type": "input", "position": {"x": 0.5, "y": 0.5}},
+      {"name": "underground-belt", "direction": 2, "type": "output", "position": {"x": 3.5, "y": 0.5}}
+    ],
+    "icons": [{"index": 1, "signal": {"name": "electric-mining-drill", "type": "item"}}],
+    "snap-to-grid": {"x": 6, "y": 7}
+  }
+}

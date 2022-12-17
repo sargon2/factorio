@@ -1,0 +1,31 @@
+{
+  "index": 13,
+  "blueprint": {
+    "item": "blueprint",
+    "label": "4 lane belt pusher",
+    "shift_x": 33,
+    "shift_y": -112,
+    "version": 281479276527617,
+    "entities": [
+      {"name": "splitter", "direction": 2, "output_priority": "left", "position": {"x": 0.5, "y": 0}},
+      {"name": "splitter", "direction": 2, "output_priority": "left", "position": {"x": 1.5, "y": 1}},
+      {"name": "splitter", "direction": 2, "output_priority": "left", "position": {"x": 2.5, "y": 2}},
+      {"name": "splitter", "direction": 2, "output_priority": "left", "position": {"x": 3.5, "y": 3}},
+      {"name": "transport-belt", "direction": 2, "position": {"x": 1.5, "y": -0.5}},
+      {"name": "transport-belt", "direction": 2, "position": {"x": 2.5, "y": -0.5}},
+      {"name": "transport-belt", "direction": 2, "position": {"x": 3.5, "y": -0.5}},
+      {"name": "transport-belt", "direction": 2, "position": {"x": 0.5, "y": 1.5}},
+      {"name": "transport-belt", "direction": 2, "position": {"x": 2.5, "y": 0.5}},
+      {"name": "transport-belt", "direction": 2, "position": {"x": 3.5, "y": 0.5}},
+      {"name": "transport-belt", "direction": 2, "position": {"x": 3.5, "y": 1.5}},
+      {"name": "transport-belt", "direction": 2, "position": {"x": 0.5, "y": 2.5}},
+      {"name": "transport-belt", "direction": 2, "position": {"x": 1.5, "y": 2.5}},
+      {"name": "transport-belt", "direction": 2, "position": {"x": 2.5, "y": 3.5}},
+      {"name": "transport-belt", "position": {"x": 2.5, "y": 4.5}}
+    ],
+    "icons": [
+      {"index": 1, "signal": {"name": "transport-belt", "type": "item"}},
+      {"index": 2, "signal": {"name": "splitter", "type": "item"}}
+    ]
+  }
+}

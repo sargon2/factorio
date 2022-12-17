@@ -1,0 +1,41 @@
+{
+  "index": 13,
+  "blueprint": {
+    "item": "blueprint",
+    "label": "Yellow belts",
+    "shift_x": 0,
+    "shift_y": -2,
+    "version": 281479276527617,
+    "entities": [
+      {"name": "assembling-machine-1", "recipe": "transport-belt", "position": {"x": -3.5, "y": 0.5}},
+      {"name": "assembling-machine-1", "recipe": "iron-gear-wheel", "position": {"x": -3.5, "y": 4.5}},
+      {"name": "assembling-machine-1", "recipe": "transport-belt", "position": {"x": 3.5, "y": 0.5}},
+      {"name": "assembling-machine-1", "recipe": "iron-gear-wheel", "position": {"x": 3.5, "y": 4.5}},
+      {"name": "inserter", "direction": 2, "position": {"x": -1.5, "y": 1.5}},
+      {"name": "inserter", "direction": 4, "position": {"x": -3.5, "y": 2.5}},
+      {"name": "inserter", "direction": 2, "position": {"x": -1.5, "y": 4.5}},
+      {"name": "inserter", "direction": 2, "position": {"x": 1.5, "y": 0.5}},
+      {"name": "inserter", "direction": 4, "position": {"x": 3.5, "y": 2.5}},
+      {"name": "long-handed-inserter", "direction": 6, "position": {"x": -1.5, "y": 0.5}},
+      {"name": "long-handed-inserter", "direction": 6, "position": {"x": 1.5, "y": 1.5}},
+      {"name": "long-handed-inserter", "direction": 6, "position": {"x": 1.5, "y": 4.5}},
+      {"name": "small-electric-pole", "neighbours": ["3,0"], "position": {"x": -1.5, "y": 2.5}},
+      {"name": "small-electric-pole", "neighbours": ["-3,0"], "position": {"x": 1.5, "y": 2.5}},
+      {"name": "transport-belt", "position": {"x": -0.5, "y": -0.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 0.5, "y": -0.5}},
+      {"name": "transport-belt", "position": {"x": -0.5, "y": 0.5}},
+      {"name": "transport-belt", "position": {"x": -0.5, "y": 1.5}},
+      {"name": "transport-belt", "position": {"x": -0.5, "y": 2.5}},
+      {"name": "transport-belt", "position": {"x": -0.5, "y": 3.5}},
+      {"name": "transport-belt", "position": {"x": -0.5, "y": 4.5}},
+      {"name": "transport-belt", "position": {"x": -0.5, "y": 5.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 0.5, "y": 0.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 0.5, "y": 1.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 0.5, "y": 2.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 0.5, "y": 3.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 0.5, "y": 4.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 0.5, "y": 5.5}}
+    ],
+    "icons": [{"index": 1, "signal": {"name": "transport-belt", "type": "item"}}]
+  }
+}

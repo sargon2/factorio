@@ -1,0 +1,44 @@
+{
+  "index": 0,
+  "blueprint": {
+    "item": "blueprint",
+    "label": "Train loader (red)",
+    "shift_x": 0,
+    "shift_y": -1,
+    "version": 281479276527617,
+    "entities": [
+      {"name": "fast-transport-belt", "position": {"x": -2.5, "y": 2.5}},
+      {"name": "fast-transport-belt", "direction": 6, "position": {"x": -1.5, "y": 2.5}},
+      {"name": "fast-transport-belt", "direction": 6, "position": {"x": -0.5, "y": 2.5}},
+      {"name": "fast-transport-belt", "position": {"x": -0.5, "y": 3.5}},
+      {"name": "fast-transport-belt", "direction": 2, "position": {"x": 0.5, "y": 2.5}},
+      {"name": "fast-transport-belt", "direction": 2, "position": {"x": 1.5, "y": 2.5}},
+      {"name": "fast-transport-belt", "position": {"x": 0.5, "y": 3.5}},
+      {"name": "fast-transport-belt", "position": {"x": 2.5, "y": 2.5}},
+      {"name": "medium-electric-pole", "neighbours": ["7,0"], "position": {"x": -3.5, "y": 0.5}},
+      {"name": "medium-electric-pole", "neighbours": ["-7,0"], "position": {"x": 3.5, "y": 0.5}},
+      {"name": "stack-inserter", "direction": 4, "position": {"x": -2.5, "y": -0.5}},
+      {"name": "stack-inserter", "direction": 4, "position": {"x": -1.5, "y": -0.5}},
+      {"name": "stack-inserter", "direction": 4, "position": {"x": -0.5, "y": -0.5}},
+      {"name": "stack-inserter", "direction": 4, "position": {"x": 0.5, "y": -0.5}},
+      {"name": "stack-inserter", "direction": 4, "position": {"x": 1.5, "y": -0.5}},
+      {"name": "stack-inserter", "direction": 4, "position": {"x": 2.5, "y": -0.5}},
+      {"name": "stack-inserter", "direction": 4, "position": {"x": -2.5, "y": 1.5}},
+      {"name": "stack-inserter", "direction": 4, "position": {"x": -1.5, "y": 1.5}},
+      {"name": "stack-inserter", "direction": 4, "position": {"x": -0.5, "y": 1.5}},
+      {"name": "stack-inserter", "direction": 4, "position": {"x": 0.5, "y": 1.5}},
+      {"name": "stack-inserter", "direction": 4, "position": {"x": 1.5, "y": 1.5}},
+      {"name": "stack-inserter", "direction": 4, "position": {"x": 2.5, "y": 1.5}},
+      {"name": "steel-chest", "position": {"x": -2.5, "y": 0.5}},
+      {"name": "steel-chest", "position": {"x": -1.5, "y": 0.5}},
+      {"name": "steel-chest", "position": {"x": -0.5, "y": 0.5}},
+      {"name": "steel-chest", "position": {"x": 0.5, "y": 0.5}},
+      {"name": "steel-chest", "position": {"x": 1.5, "y": 0.5}},
+      {"name": "steel-chest", "position": {"x": 2.5, "y": 0.5}}
+    ],
+    "icons": [
+      {"index": 1, "signal": {"name": "cargo-wagon", "type": "item"}},
+      {"index": 2, "signal": {"name": "fast-transport-belt", "type": "item"}}
+    ]
+  }
+}

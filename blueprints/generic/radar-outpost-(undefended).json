@@ -1,0 +1,27 @@
+{
+  "index": 3,
+  "blueprint": {
+    "item": "blueprint",
+    "label": "Radar outpost (undefended)",
+    "shift_x": -34,
+    "shift_y": -46,
+    "version": 281479276527617,
+    "entities": [
+      {"name": "accumulator", "position": {"x": 2, "y": 2}},
+      {"name": "accumulator", "position": {"x": 5, "y": 2}},
+      {"name": "accumulator", "position": {"x": 2, "y": 4}},
+      {"name": "accumulator", "position": {"x": 2, "y": 6}},
+      {"name": "accumulator", "position": {"x": 5, "y": 4}},
+      {"name": "accumulator", "position": {"x": 5, "y": 6}},
+      {"name": "medium-electric-pole", "position": {"x": 3.5, "y": 3.5}},
+      {"name": "radar", "position": {"x": 3.5, "y": -0.5}},
+      {"name": "solar-panel", "position": {"x": 0.5, "y": -0.5}},
+      {"name": "solar-panel", "position": {"x": 6.5, "y": -0.5}},
+      {"name": "solar-panel", "position": {"x": -0.5, "y": 2.5}},
+      {"name": "solar-panel", "position": {"x": -0.5, "y": 5.5}},
+      {"name": "solar-panel", "position": {"x": 7.5, "y": 2.5}},
+      {"name": "solar-panel", "position": {"x": 7.5, "y": 5.5}}
+    ],
+    "icons": [{"index": 1, "signal": {"name": "radar", "type": "item"}}]
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "index": 6,
+  "blueprint": {
+    "item": "blueprint",
+    "label": "Manual load pre-bootstrap",
+    "shift_x": 132,
+    "shift_y": 25,
+    "version": 281479276527617,
+    "entities": [
+      {"name": "assembling-machine-1", "recipe": "iron-gear-wheel", "position": {"x": -4.5, "y": 0.5}},
+      {"name": "assembling-machine-1", "recipe": "copper-cable", "position": {"x": -5.5, "y": 3.5}},
+      {"name": "assembling-machine-1", "recipe": "electronic-circuit", "position": {"x": -1.5, "y": 3.5}},
+      {"name": "assembling-machine-1", "recipe": "small-electric-pole", "position": {"x": -4.5, "y": 7.5}},
+      {"name": "assembling-machine-1", "recipe": "transport-belt", "position": {"x": 1.5, "y": 3.5}},
+      {"name": "assembling-machine-1", "recipe": "splitter", "position": {"x": 5.5, "y": 3.5}},
+      {"name": "assembling-machine-1", "recipe": "underground-belt", "position": {"x": 3.5, "y": 7.5}},
+      {"name": "assembling-machine-1", "recipe": "inserter", "position": {"x": 8.5, "y": 3.5}},
+      {
+        "name": "assembling-machine-1",
+        "recipe": "electric-mining-drill",
+        "position": {"x": 11.5, "y": 3.5}
+      },
+      {"name": "inserter", "direction": 6, "position": {"x": -2.5, "y": 1.5}},
+      {"name": "inserter", "direction": 4, "position": {"x": -0.5, "y": 1.5}},
+      {"name": "inserter", "direction": 6, "position": {"x": -3.5, "y": 3.5}},
+      {"name": "inserter", "position": {"x": -4.5, "y": 5.5}},
+      {"name": "inserter", "direction": 6, "position": {"x": -2.5, "y": 6.5}},
+      {"name": "inserter", "direction": 2, "position": {"x": -2.5, "y": 7.5}},
+      {"name": "inserter", "position": {"x": 1.5, "y": 1.5}},
+      {"name": "inserter", "direction": 6, "position": {"x": 3.5, "y": 3.5}},
+      {"name": "inserter", "position": {"x": 5.5, "y": 1.5}},
+      {"name": "inserter", "position": {"x": 0.5, "y": 5.5}},
+      {"name": "inserter", "position": {"x": 2.5, "y": 5.5}},
+      {"name": "inserter", "direction": 2, "position": {"x": 1.5, "y": 7.5}},
+      {"name": "inserter", "position": {"x": 5.5, "y": 5.5}},
+      {"name": "inserter", "position": {"x": 8.5, "y": 1.5}},
+      {"name": "inserter", "position": {"x": 10.5, "y": 1.5}},
+      {"name": "inserter", "position": {"x": 8.5, "y": 5.5}},
+      {"name": "inserter", "position": {"x": 10.5, "y": 5.5}},
+      {"name": "iron-chest", "position": {"x": -1.5, "y": 6.5}},
+      {"name": "iron-chest", "position": {"x": 0.5, "y": 6.5}},
+      {"name": "iron-chest", "position": {"x": 0.5, "y": 7.5}},
+      {"name": "iron-chest", "position": {"x": 5.5, "y": 6.5}},
+      {"name": "iron-chest", "position": {"x": 8.5, "y": 6.5}},
+      {"name": "iron-chest", "position": {"x": 10.5, "y": 6.5}},
+      {"name": "small-electric-pole", "neighbours": ["0,3", "4,-1"], "position": {"x": -3.5, "y": 2.5}},
+      {"name": "small-electric-pole", "neighbours": ["0,-3", "5,0"], "position": {"x": -3.5, "y": 5.5}},
+      {
+        "name": "small-electric-pole",
+        "neighbours": ["-4,1", "1,4", "4,0"],
+        "position": {"x": 0.5, "y": 1.5}
+      },
+      {
+        "name": "small-electric-pole",
+        "neighbours": ["-4,0", "2,4", "5,0"],
+        "position": {"x": 4.5, "y": 1.5}
+      },
+      {
+        "name": "small-electric-pole",
+        "neighbours": ["-1,-4", "-5,0", "5,0"],
+        "position": {"x": 1.5, "y": 5.5}
+      },
+      {
+        "name": "small-electric-pole",
+        "neighbours": ["-2,-4", "-5,0", "3,0"],
+        "position": {"x": 6.5, "y": 5.5}
+      },
+      {"name": "small-electric-pole", "neighbours": ["-5,0", "0,4"], "position": {"x": 9.5, "y": 1.5}},
+      {"name": "small-electric-pole", "neighbours": ["-3,0", "0,-4"], "position": {"x": 9.5, "y": 5.5}},
+      {"name": "transport-belt", "direction": 2, "position": {"x": -1.5, "y": 0.5}},
+      {"name": "transport-belt", "direction": 2, "position": {"x": -0.5, "y": 0.5}},
+      {"name": "transport-belt", "position": {"x": -1.5, "y": 1.5}},
+      {"name": "transport-belt", "direction": 2, "position": {"x": 0.5, "y": 0.5}},
+      {"name": "transport-belt", "direction": 2, "position": {"x": 1.5, "y": 0.5}},
+      {"name": "transport-belt", "direction": 2, "position": {"x": 2.5, "y": 0.5}},
+      {"name": "transport-belt", "direction": 2, "position": {"x": 3.5, "y": 0.5}},
+      {"name": "transport-belt", "direction": 2, "position": {"x": 4.5, "y": 0.5}},
+      {"name": "transport-belt", "direction": 2, "position": {"x": 5.5, "y": 0.5}},
+      {"name": "transport-belt", "direction": 2, "position": {"x": 6.5, "y": 0.5}},
+      {"name": "transport-belt", "direction": 2, "position": {"x": 7.5, "y": 0.5}},
+      {"name": "transport-belt", "direction": 2, "position": {"x": 8.5, "y": 0.5}},
+      {"name": "transport-belt", "direction": 2, "position": {"x": 9.5, "y": 0.5}},
+      {"name": "transport-belt", "direction": 2, "position": {"x": 10.5, "y": 0.5}},
+      {"name": "wooden-chest", "position": {"x": -1.5, "y": 7.5}}
+    ],
+    "icons": [{"index": 1, "signal": {"name": "assembling-machine-1", "type": "item"}}]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "index": 2,
+  "blueprint": {
+    "item": "blueprint",
+    "label": "Walkable uranium mining",
+    "version": 281479276527617,
+    "entities": [
+      {"name": "electric-mining-drill", "direction": 2, "position": {"x": 2.5, "y": 2.5}},
+      {"name": "electric-mining-drill", "direction": 6, "position": {"x": 6.5, "y": 2.5}},
+      {"name": "pipe", "position": {"x": 2.5, "y": 0.5}},
+      {"name": "pipe", "position": {"x": 0.5, "y": 2.5}},
+      {"name": "pipe", "position": {"x": 6.5, "y": 0.5}},
+      {"name": "pipe-to-ground", "direction": 2, "position": {"x": 1.5, "y": 0.5}},
+      {"name": "pipe-to-ground", "direction": 4, "position": {"x": 0.5, "y": 1.5}},
+      {"name": "pipe-to-ground", "direction": 6, "position": {"x": 3.5, "y": 0.5}},
+      {"name": "pipe-to-ground", "position": {"x": 0.5, "y": 3.5}},
+      {"name": "pipe-to-ground", "direction": 2, "position": {"x": 5.5, "y": 0.5}},
+      {"name": "pipe-to-ground", "direction": 6, "position": {"x": 7.5, "y": 0.5}},
+      {"name": "small-electric-pole", "neighbours": ["5,-2"], "position": {"x": 3.5, "y": 4.5}},
+      {"name": "small-electric-pole", "neighbours": ["-5,2"], "position": {"x": 8.5, "y": 2.5}},
+      {"name": "transport-belt", "position": {"x": 4.5, "y": 0.5}},
+      {"name": "transport-belt", "position": {"x": 4.5, "y": 1.5}},
+      {"name": "transport-belt", "position": {"x": 4.5, "y": 2.5}},
+      {"name": "transport-belt", "position": {"x": 4.5, "y": 3.5}},
+      {"name": "transport-belt", "position": {"x": 4.5, "y": 4.5}}
+    ],
+    "icons": [
+      {"index": 1, "signal": {"name": "uranium-238", "type": "item"}},
+      {"index": 2, "signal": {"name": "electric-mining-drill", "type": "item"}}
+    ],
+    "snap-to-grid": {"x": 9, "y": 5}
+  }
+}

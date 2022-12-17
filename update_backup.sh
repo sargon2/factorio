@@ -1,5 +1,5 @@
 #!/bin/bash -ex
 
-cp /mnt/c/Users/dbese/AppData/Roaming/Factorio/blueprint-storage.dat .
+BP_STORAGE="/mnt/c/Users/dbese/AppData/Roaming/Factorio/blueprint-storage.dat"
 
-./factorio-blueprint-decoder/decode blueprint-storage.dat | ./factorio-blueprint-decoder/encode-export-string | ./fatul/decode blueprints -
+./factorio-blueprint-decoder/decode $BP_STORAGE | ./factorio-blueprint-decoder/encode-export-string | ./fatul/decode blueprints -

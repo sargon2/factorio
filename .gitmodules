@@ -1,0 +1,6 @@
+[submodule "fatul"]
+	path = fatul
+	url = https://github.com/nyurik/fatul
+[submodule "factorio-blueprint-decoder"]
+	path = factorio-blueprint-decoder
+	url = https://github.com/asheiduk/factorio-blueprint-decoder

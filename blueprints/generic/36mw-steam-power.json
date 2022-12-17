@@ -3,8 +3,8 @@
   "blueprint": {
     "item": "blueprint",
     "label": "36MW Steam power",
-    "shift_x": -51,
-    "shift_y": 17,
+    "shift_x": -96,
+    "shift_y": 96,
     "version": 281479276527617,
     "entities": [
       {"name": "boiler", "position": {"x": 1.5, "y": 0}},
@@ -27,7 +27,7 @@
       {"name": "boiler", "position": {"x": 28.5, "y": 0}},
       {"name": "boiler", "direction": 4, "position": {"x": 25.5, "y": 5}},
       {"name": "boiler", "direction": 4, "position": {"x": 28.5, "y": 5}},
-      {"name": "inserter", "direction": 4, "position": {"x": 2.5, "y": 1.5}},
+      {"name": "burner-inserter", "direction": 4, "position": {"x": 2.5, "y": 1.5}},
       {"name": "inserter", "direction": 4, "position": {"x": 3.5, "y": 1.5}},
       {"name": "inserter", "position": {"x": 2.5, "y": 3.5}},
       {"name": "inserter", "position": {"x": 3.5, "y": 3.5}},

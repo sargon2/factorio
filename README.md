@@ -2,9 +2,10 @@
 Backup of all my factorio blueprints.
 
 To set up:
+
 1. `git submodule init && git submodule update`
-1. `sudo apt-get install qpdf`
-1. `pip3 install pyperclip`
+2. `sudo apt-get install qpdf`
+3. `pip3 install pyperclip`
 
 To make a backup, run `./update_backup.sh`.
 

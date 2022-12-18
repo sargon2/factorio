@@ -1,0 +1,43 @@
+{
+  "index": 7,
+  "blueprint": {
+    "item": "blueprint",
+    "label": "Manual load red science 3",
+    "shift_x": 53,
+    "shift_y": -24,
+    "version": 281479276527617,
+    "entities": [
+      {
+        "name": "assembling-machine-1",
+        "recipe": "automation-science-pack",
+        "position": {"x": 0.5, "y": -2.5}
+      },
+      {"name": "assembling-machine-1", "recipe": "iron-gear-wheel", "position": {"x": -1.5, "y": 1.5}},
+      {
+        "name": "assembling-machine-1",
+        "recipe": "automation-science-pack",
+        "position": {"x": 2.5, "y": 3.5}
+      },
+      {"name": "inserter", "direction": 4, "position": {"x": -0.5, "y": -0.5}},
+      {"name": "inserter", "direction": 6, "position": {"x": 2.5, "y": -2.5}},
+      {"name": "inserter", "direction": 4, "position": {"x": 1.5, "y": -0.5}},
+      {"name": "inserter", "direction": 6, "position": {"x": 2.5, "y": -1.5}},
+      {"name": "inserter", "direction": 2, "position": {"x": 0.5, "y": 0.5}},
+      {"name": "inserter", "position": {"x": 1.5, "y": 1.5}},
+      {"name": "inserter", "direction": 4, "position": {"x": 3.5, "y": 1.5}},
+      {"name": "inserter", "direction": 6, "position": {"x": 0.5, "y": 2.5}},
+      {"name": "inserter", "direction": 6, "position": {"x": 4.5, "y": 2.5}},
+      {"name": "iron-chest", "position": {"x": 1.5, "y": 0.5}},
+      {"name": "lab", "position": {"x": 4.5, "y": -3.5}},
+      {"name": "lab", "position": {"x": 4.5, "y": -0.5}},
+      {"name": "lab", "position": {"x": 6.5, "y": 2.5}},
+      {"name": "small-electric-pole", "neighbours": ["-2,2"], "position": {"x": 2.5, "y": -0.5}},
+      {"name": "small-electric-pole", "neighbours": ["2,-2", "4,0"], "position": {"x": 0.5, "y": 1.5}},
+      {"name": "small-electric-pole", "neighbours": ["-4,0"], "position": {"x": 4.5, "y": 1.5}}
+    ],
+    "icons": [
+      {"index": 1, "signal": {"name": "lab", "type": "item"}},
+      {"index": 2, "signal": {"name": "automation-science-pack", "type": "item"}}
+    ]
+  }
+}

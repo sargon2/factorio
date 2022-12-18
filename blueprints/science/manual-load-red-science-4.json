@@ -1,0 +1,39 @@
+{
+  "index": 8,
+  "blueprint": {
+    "item": "blueprint",
+    "label": "Manual load red science 4",
+    "shift_x": 61,
+    "shift_y": 67,
+    "version": 281479276527617,
+    "entities": [
+      {"name": "assembling-machine-1", "recipe": "iron-gear-wheel", "position": {"x": 2.5, "y": 0.5}},
+      {
+        "name": "assembling-machine-1",
+        "recipe": "automation-science-pack",
+        "position": {"x": 0.5, "y": 4.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "automation-science-pack",
+        "position": {"x": 4.5, "y": 4.5}
+      },
+      {"name": "inserter", "direction": 4, "position": {"x": 0.5, "y": 2.5}},
+      {"name": "inserter", "position": {"x": 1.5, "y": 2.5}},
+      {"name": "inserter", "position": {"x": 3.5, "y": 2.5}},
+      {"name": "inserter", "direction": 4, "position": {"x": 4.5, "y": 2.5}},
+      {"name": "inserter", "position": {"x": 0.5, "y": 6.5}},
+      {"name": "inserter", "position": {"x": 4.5, "y": 6.5}},
+      {"name": "lab", "position": {"x": -0.5, "y": 0.5}},
+      {"name": "lab", "position": {"x": 5.5, "y": 0.5}},
+      {"name": "lab", "position": {"x": 0.5, "y": 8.5}},
+      {"name": "lab", "position": {"x": 4.5, "y": 8.5}},
+      {"name": "small-electric-pole", "neighbours": ["0,2"], "position": {"x": 2.5, "y": 3.5}},
+      {"name": "small-electric-pole", "neighbours": ["0,-2"], "position": {"x": 2.5, "y": 5.5}}
+    ],
+    "icons": [
+      {"index": 1, "signal": {"name": "iron-gear-wheel", "type": "item"}},
+      {"index": 2, "signal": {"name": "automation-science-pack", "type": "item"}}
+    ]
+  }
+}

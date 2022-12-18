@@ -1,0 +1,23 @@
+{
+  "index": 1,
+  "blueprint": {
+    "item": "blueprint",
+    "label": "First iron",
+    "shift_x": -30,
+    "shift_y": 41,
+    "version": 281479276527617,
+    "entities": [
+      {"name": "burner-mining-drill", "direction": 2, "position": {"x": 0, "y": 0}},
+      {"name": "burner-mining-drill", "direction": 2, "position": {"x": 0, "y": 2}},
+      {"name": "burner-mining-drill", "direction": 2, "position": {"x": 0, "y": 4}},
+      {"name": "burner-mining-drill", "direction": 2, "position": {"x": 0, "y": 6}},
+      {"name": "burner-mining-drill", "direction": 2, "position": {"x": 0, "y": 8}},
+      {"name": "stone-furnace", "position": {"x": 2, "y": 0}},
+      {"name": "stone-furnace", "position": {"x": 2, "y": 2}},
+      {"name": "stone-furnace", "position": {"x": 2, "y": 4}},
+      {"name": "stone-furnace", "position": {"x": 2, "y": 6}},
+      {"name": "stone-furnace", "position": {"x": 2, "y": 8}}
+    ],
+    "icons": [{"index": 1, "signal": {"name": "iron-ore", "type": "item"}}]
+  }
+}

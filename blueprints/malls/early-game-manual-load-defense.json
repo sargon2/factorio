@@ -1,0 +1,29 @@
+{
+  "index": 8,
+  "blueprint": {
+    "item": "blueprint",
+    "label": "Early game manual load defense",
+    "shift_x": -104,
+    "shift_y": 214,
+    "version": 281479276527617,
+    "entities": [
+      {"name": "assembling-machine-1", "recipe": "firearm-magazine", "position": {"x": -0.5, "y": 0.5}},
+      {"name": "assembling-machine-1", "recipe": "pipe", "position": {"x": -3.5, "y": 2.5}},
+      {"name": "assembling-machine-1", "recipe": "firearm-magazine", "position": {"x": -0.5, "y": 4.5}},
+      {"name": "assembling-machine-1", "recipe": "firearm-magazine", "position": {"x": 2.5, "y": 0.5}},
+      {"name": "assembling-machine-1", "recipe": "gun-turret", "position": {"x": 5.5, "y": 0.5}},
+      {"name": "assembling-machine-1", "recipe": "firearm-magazine", "position": {"x": 2.5, "y": 4.5}},
+      {"name": "assembling-machine-1", "recipe": "gun-turret", "position": {"x": 5.5, "y": 4.5}},
+      {"name": "assembling-machine-1", "recipe": "iron-gear-wheel", "position": {"x": 9.5, "y": 2.5}},
+      {"name": "inserter", "direction": 2, "position": {"x": 7.5, "y": 1.5}},
+      {"name": "inserter", "direction": 2, "position": {"x": 7.5, "y": 3.5}},
+      {"name": "small-electric-pole", "neighbours": ["7,0"], "position": {"x": -0.5, "y": 2.5}},
+      {"name": "small-electric-pole", "neighbours": ["-7,0"], "position": {"x": 6.5, "y": 2.5}}
+    ],
+    "icons": [
+      {"index": 1, "signal": {"name": "gun-turret", "type": "item"}},
+      {"index": 2, "signal": {"name": "firearm-magazine", "type": "item"}},
+      {"index": 3, "signal": {"name": "pipe", "type": "item"}}
+    ]
+  }
+}

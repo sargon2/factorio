@@ -1,0 +1,20 @@
+{
+  "index": 19,
+  "blueprint": {
+    "item": "blueprint",
+    "label": "Turret spread hex grid",
+    "shift_x": -43,
+    "shift_y": 224,
+    "version": 281479276527617,
+    "entities": [
+      {"name": "gun-turret", "direction": 2, "position": {"x": 0, "y": 0}},
+      {"name": "gun-turret", "direction": 2, "position": {"x": 8, "y": 13}},
+      {"name": "gun-turret", "direction": 2, "position": {"x": 16, "y": 0}}
+    ],
+    "icons": [
+      {"index": 1, "signal": {"name": "gun-turret", "type": "item"}},
+      {"index": 2, "signal": {"name": "gun-turret", "type": "item"}},
+      {"index": 3, "signal": {"name": "gun-turret", "type": "item"}}
+    ]
+  }
+}

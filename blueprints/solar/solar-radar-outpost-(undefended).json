@@ -1,0 +1,34 @@
+{
+  "index": 30,
+  "blueprint": {
+    "item": "blueprint",
+    "label": "Solar radar outpost (undefended)",
+    "shift_x": -8,
+    "shift_y": 122,
+    "version": 281479276527617,
+    "entities": [
+      {"name": "accumulator", "position": {"x": -4, "y": 0}},
+      {"name": "accumulator", "position": {"x": -2, "y": 0}},
+      {"name": "accumulator", "position": {"x": 0, "y": 0}},
+      {"name": "accumulator", "position": {"x": 2, "y": 0}},
+      {"name": "accumulator", "position": {"x": 3, "y": 3}},
+      {"name": "accumulator", "position": {"x": 4, "y": 0}},
+      {"name": "accumulator", "position": {"x": 6, "y": 0}},
+      {"name": "medium-electric-pole", "neighbours": ["4,0"], "position": {"x": -1.5, "y": 1.5}},
+      {"name": "medium-electric-pole", "neighbours": ["-4,0"], "position": {"x": 2.5, "y": 1.5}},
+      {"name": "radar", "position": {"x": 0.5, "y": 2.5}},
+      {"name": "solar-panel", "position": {"x": -0.5, "y": -2.5}},
+      {"name": "solar-panel", "position": {"x": 2.5, "y": -2.5}},
+      {"name": "solar-panel", "position": {"x": -3.5, "y": 2.5}},
+      {"name": "solar-panel", "position": {"x": -3.5, "y": 5.5}},
+      {"name": "solar-panel", "position": {"x": -0.5, "y": 5.5}},
+      {"name": "solar-panel", "position": {"x": 5.5, "y": 2.5}},
+      {"name": "solar-panel", "position": {"x": 2.5, "y": 5.5}},
+      {"name": "solar-panel", "position": {"x": 5.5, "y": 5.5}}
+    ],
+    "icons": [
+      {"index": 1, "signal": {"name": "radar", "type": "item"}},
+      {"index": 2, "signal": {"name": "solar-panel", "type": "item"}}
+    ]
+  }
+}

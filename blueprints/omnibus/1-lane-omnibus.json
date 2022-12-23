@@ -1,0 +1,17 @@
+{
+  "index": 0,
+  "blueprint": {
+    "item": "blueprint",
+    "label": "1-lane omnibus",
+    "shift_x": 83,
+    "shift_y": 156,
+    "version": 281479276527617,
+    "entities": [
+      {"name": "transport-belt", "direction": 6, "position": {"x": 0.5, "y": 0.5}},
+      {"name": "transport-belt", "direction": 2, "position": {"x": 0.5, "y": 1.5}},
+      {"name": "transport-belt", "direction": 6, "position": {"x": 0.5, "y": 2.5}},
+      {"name": "transport-belt", "direction": 2, "position": {"x": 0.5, "y": 3.5}}
+    ],
+    "icons": [{"index": 1, "signal": {"name": "transport-belt", "type": "item"}}]
+  }
+}

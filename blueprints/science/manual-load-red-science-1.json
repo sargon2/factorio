@@ -1,0 +1,26 @@
+{
+  "index": 6,
+  "blueprint": {
+    "item": "blueprint",
+    "label": "Manual load red science 1",
+    "shift_x": 149,
+    "shift_y": 84,
+    "version": 281479276527617,
+    "entities": [
+      {
+        "name": "assembling-machine-1",
+        "recipe": "automation-science-pack",
+        "position": {"x": -1.5, "y": 1.5}
+      },
+      {"name": "assembling-machine-1", "recipe": "iron-gear-wheel", "position": {"x": 2.5, "y": 3.5}},
+      {"name": "inserter", "direction": 6, "position": {"x": 0.5, "y": 0.5}},
+      {"name": "inserter", "direction": 2, "position": {"x": 0.5, "y": 2.5}},
+      {"name": "lab", "position": {"x": 2.5, "y": 0.5}},
+      {"name": "small-electric-pole", "position": {"x": 0.5, "y": 1.5}}
+    ],
+    "icons": [
+      {"index": 1, "signal": {"name": "iron-gear-wheel", "type": "item"}},
+      {"index": 2, "signal": {"name": "automation-science-pack", "type": "item"}}
+    ]
+  }
+}

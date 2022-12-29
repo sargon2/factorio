@@ -1,0 +1,27 @@
+{
+  "index": 13,
+  "blueprint": {
+    "item": "blueprint",
+    "label": "Self-loading turret",
+    "description": "Must be placed on iron.",
+    "shift_x": 0,
+    "shift_y": 1,
+    "version": 281479276527617,
+    "entities": [
+      {"name": "assembling-machine-1", "recipe": "firearm-magazine", "position": {"x": 9.5, "y": 0.5}},
+      {"name": "electric-furnace", "position": {"x": 5.5, "y": 0.5}},
+      {"name": "electric-mining-drill", "direction": 2, "position": {"x": 2.5, "y": 0.5}},
+      {"name": "gun-turret", "direction": 6, "position": {"x": 13, "y": 1}},
+      {"name": "inserter", "direction": 6, "position": {"x": 7.5, "y": 0.5}},
+      {"name": "inserter", "direction": 6, "position": {"x": 11.5, "y": 0.5}},
+      {"name": "small-electric-pole", "neighbours": ["7,1"], "position": {"x": 0.5, "y": 0.5}},
+      {"name": "small-electric-pole", "neighbours": ["-7,-1", "4,0"], "position": {"x": 7.5, "y": 1.5}},
+      {"name": "small-electric-pole", "neighbours": ["-4,0"], "position": {"x": 11.5, "y": 1.5}}
+    ],
+    "icons": [
+      {"index": 1, "signal": {"name": "electric-mining-drill", "type": "item"}},
+      {"index": 2, "signal": {"name": "gun-turret", "type": "item"}}
+    ],
+    "snap-to-grid": {"x": 13, "y": 3}
+  }
+}

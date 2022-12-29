@@ -1,8 +1,8 @@
 {
-  "index": 0,
+  "index": 19,
   "blueprint_book": {
     "item": "blueprint-book",
-    "label": "Early game bootstrapping build order",
+    "label": "Belt block distributors",
     "active_index": 0,
     "version": 281479276527617
   }

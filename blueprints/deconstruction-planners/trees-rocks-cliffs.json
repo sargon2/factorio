@@ -1,0 +1,37 @@
+{
+  "index": 1,
+  "deconstruction_planner": {
+    "item": "deconstruction-planner",
+    "label": "Trees & rocks & cliffs",
+    "version": 281479276527617,
+    "settings": {
+      "tile_selection_mode": 2,
+      "entity_filters": [
+        {"name": "cliff", "index": 0},
+        {"name": "tree-01", "index": 1},
+        {"name": "tree-02", "index": 2},
+        {"name": "tree-03", "index": 3},
+        {"name": "tree-04", "index": 4},
+        {"name": "tree-05", "index": 5},
+        {"name": "tree-09", "index": 6},
+        {"name": "tree-02-red", "index": 7},
+        {"name": "tree-07", "index": 8},
+        {"name": "tree-06", "index": 9},
+        {"name": "tree-06-brown", "index": 10},
+        {"name": "tree-09-brown", "index": 11},
+        {"name": "tree-09-red", "index": 12},
+        {"name": "tree-08", "index": 13},
+        {"name": "tree-08-brown", "index": 14},
+        {"name": "tree-08-red", "index": 15},
+        {"name": "dead-dry-hairy-tree", "index": 16},
+        {"name": "dead-grey-trunk", "index": 17},
+        {"name": "dead-tree-desert", "index": 18},
+        {"name": "dry-hairy-tree", "index": 19},
+        {"name": "dry-tree", "index": 20},
+        {"name": "sand-rock-big", "index": 21},
+        {"name": "rock-huge", "index": 22},
+        {"name": "rock-big", "index": 23}
+      ]
+    }
+  }
+}

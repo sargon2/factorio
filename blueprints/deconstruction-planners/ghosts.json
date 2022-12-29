@@ -1,0 +1,12 @@
+{
+  "index": 0,
+  "deconstruction_planner": {
+    "item": "deconstruction-planner",
+    "label": "Ghosts",
+    "version": 281479276527617,
+    "settings": {
+      "tile_selection_mode": 2,
+      "entity_filters": [{"name": "entity-ghost", "index": 0}, {"name": "tile-ghost", "index": 1}]
+    }
+  }
+}

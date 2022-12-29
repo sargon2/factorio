@@ -1,0 +1,17 @@
+{
+  "index": 2,
+  "deconstruction_planner": {
+    "item": "deconstruction-planner",
+    "label": "Power poles",
+    "version": 281479276527617,
+    "settings": {
+      "tile_selection_mode": 2,
+      "entity_filters": [
+        {"name": "small-electric-pole", "index": 0},
+        {"name": "medium-electric-pole", "index": 1},
+        {"name": "big-electric-pole", "index": 2},
+        {"name": "substation", "index": 3}
+      ]
+    }
+  }
+}

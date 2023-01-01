@@ -1,0 +1,44 @@
+{
+  "index": 24,
+  "blueprint": {
+    "item": "blueprint",
+    "label": "Landfill maker",
+    "description": "Full yellow belt of stone",
+    "shift_x": 404,
+    "shift_y": -147,
+    "version": 281479276527617,
+    "entities": [
+      {"name": "assembling-machine-1", "recipe": "landfill", "position": {"x": 3.5, "y": 1.5}},
+      {"name": "fast-inserter", "direction": 4, "position": {"x": 2.5, "y": 3.5}},
+      {"name": "fast-inserter", "direction": 4, "position": {"x": 3.5, "y": 3.5}},
+      {"name": "fast-inserter", "direction": 2, "position": {"x": 5.5, "y": 0.5}},
+      {"name": "fast-inserter", "direction": 2, "position": {"x": 5.5, "y": 1.5}},
+      {"name": "fast-inserter", "direction": 2, "position": {"x": 5.5, "y": 2.5}},
+      {"name": "fast-inserter", "direction": 4, "position": {"x": 4.5, "y": 3.5}},
+      {"name": "inserter", "direction": 2, "position": {"x": 1.5, "y": 1.5}},
+      {"name": "inserter", "direction": 6, "position": {"x": 1.5, "y": 2.5}},
+      {"name": "iron-chest", "position": {"x": 0.5, "y": 1.5}},
+      {"name": "small-electric-pole", "neighbours": ["1,4"], "position": {"x": 4.5, "y": -0.5}},
+      {"name": "small-electric-pole", "neighbours": ["4,0"], "position": {"x": 1.5, "y": 3.5}},
+      {"name": "small-electric-pole", "neighbours": ["-1,-4", "-4,0"], "position": {"x": 5.5, "y": 3.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 6.5, "y": -0.5}},
+      {"name": "transport-belt", "position": {"x": 0.5, "y": 2.5}},
+      {"name": "transport-belt", "position": {"x": 0.5, "y": 3.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 6.5, "y": 0.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 6.5, "y": 1.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 6.5, "y": 2.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 6.5, "y": 3.5}},
+      {"name": "transport-belt", "position": {"x": 0.5, "y": 4.5}},
+      {"name": "transport-belt", "direction": 6, "position": {"x": 1.5, "y": 4.5}},
+      {"name": "transport-belt", "direction": 6, "position": {"x": 2.5, "y": 4.5}},
+      {"name": "transport-belt", "direction": 6, "position": {"x": 3.5, "y": 4.5}},
+      {"name": "transport-belt", "direction": 6, "position": {"x": 4.5, "y": 4.5}},
+      {"name": "transport-belt", "direction": 6, "position": {"x": 5.5, "y": 4.5}},
+      {"name": "transport-belt", "direction": 6, "position": {"x": 6.5, "y": 4.5}}
+    ],
+    "icons": [
+      {"index": 1, "signal": {"name": "transport-belt", "type": "item"}},
+      {"index": 2, "signal": {"name": "landfill", "type": "item"}}
+    ]
+  }
+}

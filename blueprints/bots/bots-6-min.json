@@ -1,0 +1,111 @@
+{
+  "index": 6,
+  "blueprint": {
+    "item": "blueprint",
+    "label": "Bots 6/min",
+    "description": "Smelters are copper, iron, steel left to right",
+    "shift_x": 66,
+    "shift_y": 227,
+    "version": 281479276527617,
+    "entities": [
+      {
+        "name": "assembling-machine-1",
+        "recipe": "flying-robot-frame",
+        "position": {"x": 36.5, "y": -17.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "flying-robot-frame",
+        "position": {"x": 36.5, "y": -14.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "flying-robot-frame",
+        "position": {"x": 36.5, "y": -11.5}
+      },
+      {"name": "assembling-machine-1", "recipe": "flying-robot-frame", "position": {"x": 36.5, "y": -8.5}},
+      {"name": "assembling-machine-1", "recipe": "flying-robot-frame", "position": {"x": 36.5, "y": -5.5}},
+      {"name": "assembling-machine-1", "recipe": "flying-robot-frame", "position": {"x": 36.5, "y": -2.5}},
+      {"name": "assembling-machine-1", "recipe": "advanced-circuit", "position": {"x": 45.5, "y": -2.5}},
+      {"name": "assembling-machine-1", "recipe": "flying-robot-frame", "position": {"x": 36.5, "y": 0.5}},
+      {"name": "assembling-machine-1", "recipe": "flying-robot-frame", "position": {"x": 36.5, "y": 3.5}},
+      {"name": "assembling-machine-1", "recipe": "construction-robot", "position": {"x": 39.5, "y": 3.5}},
+      {"name": "assembling-machine-1", "recipe": "advanced-circuit", "position": {"x": 45.5, "y": 0.5}},
+      {"name": "assembling-machine-1", "recipe": "advanced-circuit", "position": {"x": 45.5, "y": 3.5}},
+      {"name": "assembling-machine-1", "recipe": "logistic-robot", "position": {"x": 48.5, "y": 3.5}},
+      {"name": "assembling-machine-2", "recipe": "copper-cable", "position": {"x": 2.5, "y": -2.5}},
+      {"name": "assembling-machine-2", "recipe": "engine-unit", "position": {"x": 30.5, "y": -5.5}},
+      {"name": "assembling-machine-2", "recipe": "engine-unit", "position": {"x": 30.5, "y": -2.5}},
+      {
+        "name": "assembling-machine-2",
+        "recipe": "electric-engine-unit",
+        "position": {"x": 33.5, "y": -2.5}
+      },
+      {"name": "assembling-machine-2", "recipe": "copper-cable", "position": {"x": 2.5, "y": 0.5}},
+      {"name": "assembling-machine-2", "recipe": "copper-cable", "position": {"x": 2.5, "y": 3.5}},
+      {"name": "assembling-machine-2", "recipe": "electronic-circuit", "position": {"x": 7.5, "y": 0.5}},
+      {"name": "assembling-machine-2", "recipe": "electronic-circuit", "position": {"x": 7.5, "y": 3.5}},
+      {"name": "assembling-machine-2", "recipe": "pipe", "position": {"x": 24.5, "y": 3.5}},
+      {"name": "assembling-machine-2", "recipe": "iron-gear-wheel", "position": {"x": 27.5, "y": 3.5}},
+      {"name": "assembling-machine-2", "recipe": "engine-unit", "position": {"x": 30.5, "y": 0.5}},
+      {"name": "assembling-machine-2", "recipe": "engine-unit", "position": {"x": 30.5, "y": 3.5}},
+      {
+        "name": "assembling-machine-2",
+        "recipe": "electric-engine-unit",
+        "position": {"x": 33.5, "y": 0.5}
+      },
+      {
+        "name": "assembling-machine-2",
+        "recipe": "electric-engine-unit",
+        "position": {"x": 33.5, "y": 3.5}
+      },
+      {"name": "chemical-plant", "recipe": "light-oil-cracking", "position": {"x": -10.5, "y": 3.5}},
+      {"name": "chemical-plant", "recipe": "heavy-oil-cracking", "position": {"x": -7.5, "y": 3.5}},
+      {"name": "chemical-plant", "recipe": "sulfur", "position": {"x": 12.5, "y": 3.5}},
+      {"name": "chemical-plant", "recipe": "sulfuric-acid", "position": {"x": 15.5, "y": 3.5}},
+      {"name": "chemical-plant", "recipe": "battery", "position": {"x": 18.5, "y": 0.5}},
+      {"name": "chemical-plant", "recipe": "battery", "position": {"x": 18.5, "y": 3.5}},
+      {"name": "chemical-plant", "recipe": "lubricant", "position": {"x": 21.5, "y": 3.5}},
+      {"name": "chemical-plant", "recipe": "plastic-bar", "position": {"x": 42.5, "y": 3.5}},
+      {"name": "oil-refinery", "recipe": "advanced-oil-processing", "position": {"x": -3.5, "y": 2.5}},
+      {"name": "stone-furnace", "position": {"x": 5, "y": -26}},
+      {"name": "stone-furnace", "position": {"x": 5, "y": -24}},
+      {"name": "stone-furnace", "position": {"x": 5, "y": -22}},
+      {"name": "stone-furnace", "position": {"x": 5, "y": -20}},
+      {"name": "stone-furnace", "position": {"x": 5, "y": -18}},
+      {"name": "stone-furnace", "position": {"x": 0, "y": -16}},
+      {"name": "stone-furnace", "position": {"x": 0, "y": -14}},
+      {"name": "stone-furnace", "position": {"x": 5, "y": -16}},
+      {"name": "stone-furnace", "position": {"x": 5, "y": -14}},
+      {"name": "stone-furnace", "position": {"x": 0, "y": -12}},
+      {"name": "stone-furnace", "position": {"x": 0, "y": -10}},
+      {"name": "stone-furnace", "position": {"x": 5, "y": -12}},
+      {"name": "stone-furnace", "position": {"x": 5, "y": -10}},
+      {"name": "stone-furnace", "position": {"x": 0, "y": -8}},
+      {"name": "stone-furnace", "position": {"x": 0, "y": -6}},
+      {"name": "stone-furnace", "position": {"x": 5, "y": -8}},
+      {"name": "stone-furnace", "position": {"x": 5, "y": -6}},
+      {"name": "stone-furnace", "position": {"x": 0, "y": -4}},
+      {"name": "stone-furnace", "position": {"x": 0, "y": -2}},
+      {"name": "stone-furnace", "position": {"x": 5, "y": -4}},
+      {"name": "stone-furnace", "position": {"x": 5, "y": -2}},
+      {"name": "stone-furnace", "position": {"x": 10, "y": -8}},
+      {"name": "stone-furnace", "position": {"x": 10, "y": -6}},
+      {"name": "stone-furnace", "position": {"x": 10, "y": -4}},
+      {"name": "stone-furnace", "position": {"x": 10, "y": -2}},
+      {"name": "stone-furnace", "position": {"x": 0, "y": 0}},
+      {"name": "stone-furnace", "position": {"x": 0, "y": 2}},
+      {"name": "stone-furnace", "position": {"x": 5, "y": 0}},
+      {"name": "stone-furnace", "position": {"x": 5, "y": 2}},
+      {"name": "stone-furnace", "position": {"x": 0, "y": 4}},
+      {"name": "stone-furnace", "position": {"x": 5, "y": 4}},
+      {"name": "stone-furnace", "position": {"x": 10, "y": 0}},
+      {"name": "stone-furnace", "position": {"x": 10, "y": 2}},
+      {"name": "stone-furnace", "position": {"x": 10, "y": 4}}
+    ],
+    "icons": [
+      {"index": 1, "signal": {"name": "logistic-robot", "type": "item"}},
+      {"index": 2, "signal": {"name": "construction-robot", "type": "item"}}
+    ]
+  }
+}

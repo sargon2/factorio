@@ -1,0 +1,30 @@
+{
+  "index": 18,
+  "blueprint": {
+    "item": "blueprint",
+    "label": "Bot blocks",
+    "absolute-snapping": true,
+    "shift_x": 1,
+    "shift_y": 2,
+    "version": 281479276527617,
+    "entities": [
+      {"name": "big-electric-pole", "neighbours": ["0,25", "25,0"], "position": {"x": 0, "y": 3}},
+      {"name": "big-electric-pole", "neighbours": ["-25,0", "25,0"], "position": {"x": 25, "y": 3}},
+      {"name": "big-electric-pole", "neighbours": ["0,-25", "0,25"], "position": {"x": 0, "y": 28}},
+      {"name": "big-electric-pole", "neighbours": ["-25,0", "0,25"], "position": {"x": 50, "y": 3}},
+      {"name": "big-electric-pole", "neighbours": ["0,-25", "0,25"], "position": {"x": 50, "y": 28}},
+      {"name": "big-electric-pole", "neighbours": ["0,-25", "25,0"], "position": {"x": 0, "y": 53}},
+      {"name": "big-electric-pole", "neighbours": ["-25,0", "25,0"], "position": {"x": 25, "y": 53}},
+      {"name": "big-electric-pole", "neighbours": ["-25,0", "0,-25"], "position": {"x": 50, "y": 53}},
+      {"name": "roboport", "position": {"x": 1, "y": 0}},
+      {"name": "roboport", "position": {"x": 51, "y": 0}},
+      {"name": "roboport", "position": {"x": 1, "y": 50}},
+      {"name": "roboport", "position": {"x": 51, "y": 50}}
+    ],
+    "icons": [
+      {"index": 1, "signal": {"name": "roboport", "type": "item"}},
+      {"index": 2, "signal": {"name": "big-electric-pole", "type": "item"}}
+    ],
+    "snap-to-grid": {"x": 50, "y": 50}
+  }
+}

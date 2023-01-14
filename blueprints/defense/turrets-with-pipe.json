@@ -1,0 +1,40 @@
+{
+  "index": 8,
+  "blueprint": {
+    "item": "blueprint",
+    "label": "Turrets with pipe",
+    "shift_x": 113,
+    "shift_y": 100,
+    "version": 281479276527617,
+    "entities": [
+      {"name": "gun-turret", "direction": 2, "position": {"x": 2, "y": 2}},
+      {"name": "gun-turret", "direction": 2, "position": {"x": 4, "y": 2}},
+      {"name": "gun-turret", "direction": 2, "position": {"x": 2, "y": 4}},
+      {"name": "gun-turret", "direction": 2, "position": {"x": 4, "y": 4}},
+      {"name": "pipe", "position": {"x": 0.5, "y": 0.5}},
+      {"name": "pipe", "position": {"x": 1.5, "y": 0.5}},
+      {"name": "pipe", "position": {"x": 0.5, "y": 1.5}},
+      {"name": "pipe", "position": {"x": 2.5, "y": 0.5}},
+      {"name": "pipe", "position": {"x": 3.5, "y": 0.5}},
+      {"name": "pipe", "position": {"x": 0.5, "y": 2.5}},
+      {"name": "pipe", "position": {"x": 0.5, "y": 3.5}},
+      {"name": "pipe", "position": {"x": 4.5, "y": 0.5}},
+      {"name": "pipe", "position": {"x": 5.5, "y": 0.5}},
+      {"name": "pipe", "position": {"x": 5.5, "y": 1.5}},
+      {"name": "pipe", "position": {"x": 5.5, "y": 2.5}},
+      {"name": "pipe", "position": {"x": 5.5, "y": 3.5}},
+      {"name": "pipe", "position": {"x": 0.5, "y": 4.5}},
+      {"name": "pipe", "position": {"x": 0.5, "y": 5.5}},
+      {"name": "pipe", "position": {"x": 1.5, "y": 5.5}},
+      {"name": "pipe", "position": {"x": 2.5, "y": 5.5}},
+      {"name": "pipe", "position": {"x": 3.5, "y": 5.5}},
+      {"name": "pipe", "position": {"x": 5.5, "y": 4.5}},
+      {"name": "pipe", "position": {"x": 4.5, "y": 5.5}},
+      {"name": "pipe", "position": {"x": 5.5, "y": 5.5}}
+    ],
+    "icons": [
+      {"index": 1, "signal": {"name": "gun-turret", "type": "item"}},
+      {"index": 2, "signal": {"name": "pipe", "type": "item"}}
+    ]
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "index": 6,
+  "blueprint": {
+    "item": "blueprint",
+    "label": "Bot water provider (1 pump)",
+    "shift_x": 212,
+    "shift_y": 31,
+    "version": 281479276527617,
+    "entities": [
+      {
+        "name": "assembling-machine-2",
+        "direction": 4,
+        "recipe": "fill-water-barrel",
+        "position": {"x": 5.5, "y": -2.5}
+      },
+      {
+        "name": "assembling-machine-2",
+        "direction": 2,
+        "recipe": "fill-water-barrel",
+        "position": {"x": 3.5, "y": 0.5}
+      },
+      {
+        "name": "assembling-machine-2",
+        "direction": 2,
+        "recipe": "fill-water-barrel",
+        "position": {"x": 3.5, "y": 3.5}
+      },
+      {
+        "name": "assembling-machine-2",
+        "direction": 6,
+        "recipe": "fill-water-barrel",
+        "position": {"x": 7.5, "y": 0.5}
+      },
+      {
+        "name": "assembling-machine-2",
+        "direction": 6,
+        "recipe": "fill-water-barrel",
+        "position": {"x": 7.5, "y": 3.5}
+      },
+      {
+        "name": "assembling-machine-2",
+        "direction": 2,
+        "recipe": "fill-water-barrel",
+        "position": {"x": 3.5, "y": 6.5}
+      },
+      {
+        "name": "assembling-machine-2",
+        "direction": 6,
+        "recipe": "fill-water-barrel",
+        "position": {"x": 7.5, "y": 6.5}
+      },
+      {"name": "fast-inserter", "direction": 6, "position": {"x": 7.5, "y": -2.5}},
+      {"name": "fast-inserter", "direction": 2, "position": {"x": 7.5, "y": -1.5}},
+      {"name": "fast-inserter", "direction": 2, "position": {"x": 1.5, "y": 0.5}},
+      {"name": "fast-inserter", "direction": 6, "position": {"x": 1.5, "y": 1.5}},
+      {"name": "fast-inserter", "direction": 6, "position": {"x": 1.5, "y": 2.5}},
+      {"name": "fast-inserter", "direction": 2, "position": {"x": 1.5, "y": 4.5}},
+      {"name": "fast-inserter", "direction": 2, "position": {"x": 1.5, "y": 5.5}},
+      {"name": "fast-inserter", "direction": 6, "position": {"x": 1.5, "y": 6.5}},
+      {"name": "fast-inserter", "direction": 6, "position": {"x": 9.5, "y": 0.5}},
+      {"name": "fast-inserter", "direction": 2, "position": {"x": 9.5, "y": 1.5}},
+      {"name": "fast-inserter", "direction": 2, "position": {"x": 9.5, "y": 2.5}},
+      {"name": "fast-inserter", "direction": 6, "position": {"x": 9.5, "y": 4.5}},
+      {"name": "fast-inserter", "direction": 6, "position": {"x": 9.5, "y": 5.5}},
+      {"name": "fast-inserter", "direction": 2, "position": {"x": 9.5, "y": 6.5}},
+      {"name": "logistic-chest-passive-provider", "bar": 10, "position": {"x": 8.5, "y": -2.5}},
+      {"name": "logistic-chest-passive-provider", "bar": 10, "position": {"x": 0.5, "y": 0.5}},
+      {"name": "logistic-chest-passive-provider", "bar": 10, "position": {"x": 0.5, "y": 4.5}},
+      {"name": "logistic-chest-passive-provider", "bar": 10, "position": {"x": 0.5, "y": 5.5}},
+      {"name": "logistic-chest-passive-provider", "bar": 10, "position": {"x": 10.5, "y": 0.5}},
+      {"name": "logistic-chest-passive-provider", "bar": 10, "position": {"x": 10.5, "y": 4.5}},
+      {"name": "logistic-chest-passive-provider", "bar": 10, "position": {"x": 10.5, "y": 5.5}},
+      {
+        "name": "logistic-chest-requester",
+        "position": {"x": 8.5, "y": -1.5},
+        "request_filters": [{"name": "empty-barrel", "count": 112, "index": 1}]
+      },
+      {
+        "name": "logistic-chest-requester",
+        "position": {"x": 0.5, "y": 1.5},
+        "request_filters": [{"name": "empty-barrel", "count": 112, "index": 1}]
+      },
+      {
+        "name": "logistic-chest-requester",
+        "position": {"x": 0.5, "y": 2.5},
+        "request_filters": [{"name": "empty-barrel", "count": 112, "index": 1}]
+      },
+      {
+        "name": "logistic-chest-requester",
+        "position": {"x": 0.5, "y": 6.5},
+        "request_filters": [{"name": "empty-barrel", "count": 112, "index": 1}]
+      },
+      {
+        "name": "logistic-chest-requester",
+        "position": {"x": 10.5, "y": 1.5},
+        "request_filters": [{"name": "empty-barrel", "count": 112, "index": 1}]
+      },
+      {
+        "name": "logistic-chest-requester",
+        "position": {"x": 10.5, "y": 2.5},
+        "request_filters": [{"name": "empty-barrel", "count": 112, "index": 1}]
+      },
+      {
+        "name": "logistic-chest-requester",
+        "position": {"x": 10.5, "y": 6.5},
+        "request_filters": [{"name": "empty-barrel", "count": 112, "index": 1}]
+      },
+      {"name": "medium-electric-pole", "neighbours": ["2,7"], "position": {"x": 7.5, "y": -3.5}},
+      {"name": "medium-electric-pole", "neighbours": ["8,0"], "position": {"x": 1.5, "y": 3.5}},
+      {"name": "medium-electric-pole", "neighbours": ["-2,-7", "-8,0"], "position": {"x": 9.5, "y": 3.5}},
+      {"name": "offshore-pump", "direction": 4, "position": {"x": 5.5, "y": 18.5}},
+      {"name": "pipe", "position": {"x": 5.5, "y": -0.5}},
+      {"name": "pipe", "position": {"x": 5.5, "y": 0.5}},
+      {"name": "pipe", "position": {"x": 5.5, "y": 1.5}},
+      {"name": "pipe", "position": {"x": 5.5, "y": 2.5}},
+      {"name": "pipe", "position": {"x": 5.5, "y": 3.5}},
+      {"name": "pipe", "position": {"x": 5.5, "y": 4.5}},
+      {"name": "pipe", "position": {"x": 5.5, "y": 5.5}},
+      {"name": "pipe", "position": {"x": 5.5, "y": 6.5}},
+      {"name": "pipe-to-ground", "position": {"x": 5.5, "y": 7.5}},
+      {"name": "pipe-to-ground", "direction": 4, "position": {"x": 5.5, "y": 17.5}}
+    ],
+    "icons": [{"index": 1, "signal": {"name": "water-barrel", "type": "item"}}]
+  }
+}

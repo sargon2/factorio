@@ -1,0 +1,34 @@
+{
+  "index": 7,
+  "blueprint": {
+    "item": "blueprint",
+    "label": "Bot miner",
+    "shift_x": 1,
+    "shift_y": 1,
+    "version": 281479276527617,
+    "entities": [
+      {"name": "electric-mining-drill", "direction": 2, "position": {"x": 0.5, "y": 0.5}},
+      {"name": "electric-mining-drill", "direction": 2, "position": {"x": 0.5, "y": 3.5}},
+      {"name": "electric-mining-drill", "direction": 6, "position": {"x": 4.5, "y": 0.5}},
+      {"name": "electric-mining-drill", "direction": 6, "position": {"x": 4.5, "y": 3.5}},
+      {"name": "electric-mining-drill", "direction": 2, "position": {"x": 0.5, "y": 6.5}},
+      {"name": "electric-mining-drill", "direction": 6, "position": {"x": 4.5, "y": 6.5}},
+      {"name": "electric-mining-drill", "direction": 2, "position": {"x": 0.5, "y": 9.5}},
+      {"name": "electric-mining-drill", "direction": 6, "position": {"x": 4.5, "y": 9.5}},
+      {"name": "electric-mining-drill", "direction": 2, "position": {"x": 0.5, "y": 12.5}},
+      {"name": "electric-mining-drill", "direction": 2, "position": {"x": 0.5, "y": 15.5}},
+      {"name": "electric-mining-drill", "direction": 6, "position": {"x": 4.5, "y": 12.5}},
+      {"name": "electric-mining-drill", "direction": 6, "position": {"x": 4.5, "y": 15.5}},
+      {"name": "logistic-chest-passive-provider", "position": {"x": 2.5, "y": 0.5}},
+      {"name": "logistic-chest-passive-provider", "position": {"x": 2.5, "y": 3.5}},
+      {"name": "logistic-chest-passive-provider", "position": {"x": 2.5, "y": 6.5}},
+      {"name": "logistic-chest-passive-provider", "position": {"x": 2.5, "y": 9.5}},
+      {"name": "logistic-chest-passive-provider", "position": {"x": 2.5, "y": 12.5}},
+      {"name": "logistic-chest-passive-provider", "position": {"x": 2.5, "y": 15.5}},
+      {"name": "medium-electric-pole", "neighbours": ["0,9"], "position": {"x": 2.5, "y": 4.5}},
+      {"name": "medium-electric-pole", "neighbours": ["0,-9"], "position": {"x": 2.5, "y": 13.5}}
+    ],
+    "icons": [{"index": 1, "signal": {"name": "electric-mining-drill", "type": "item"}}],
+    "snap-to-grid": {"x": 7, "y": 18}
+  }
+}

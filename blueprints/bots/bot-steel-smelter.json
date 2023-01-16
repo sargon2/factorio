@@ -1,0 +1,54 @@
+{
+  "index": 14,
+  "blueprint": {
+    "item": "blueprint",
+    "label": "Bot steel smelter",
+    "shift_x": 1,
+    "shift_y": 1,
+    "version": 281479276527617,
+    "entities": [
+      {"name": "electric-furnace", "position": {"x": 0.5, "y": 0.5}},
+      {"name": "electric-furnace", "position": {"x": 3.5, "y": 0.5}},
+      {"name": "electric-furnace", "position": {"x": 6.5, "y": 0.5}},
+      {"name": "electric-furnace", "position": {"x": 0.5, "y": 6.5}},
+      {"name": "electric-furnace", "position": {"x": 3.5, "y": 6.5}},
+      {"name": "electric-furnace", "position": {"x": 6.5, "y": 6.5}},
+      {"name": "inserter", "direction": 4, "position": {"x": 0.5, "y": 2.5}},
+      {"name": "inserter", "position": {"x": 1.5, "y": 2.5}},
+      {"name": "inserter", "direction": 4, "position": {"x": 2.5, "y": 2.5}},
+      {"name": "inserter", "position": {"x": 4.5, "y": 2.5}},
+      {"name": "inserter", "direction": 4, "position": {"x": 5.5, "y": 2.5}},
+      {"name": "inserter", "position": {"x": 6.5, "y": 2.5}},
+      {"name": "inserter", "position": {"x": 0.5, "y": 4.5}},
+      {"name": "inserter", "direction": 4, "position": {"x": 1.5, "y": 4.5}},
+      {"name": "inserter", "position": {"x": 2.5, "y": 4.5}},
+      {"name": "inserter", "direction": 4, "position": {"x": 4.5, "y": 4.5}},
+      {"name": "inserter", "position": {"x": 5.5, "y": 4.5}},
+      {"name": "inserter", "direction": 4, "position": {"x": 6.5, "y": 4.5}},
+      {"name": "logistic-chest-passive-provider", "bar": 2, "position": {"x": 1.5, "y": 3.5}},
+      {"name": "logistic-chest-passive-provider", "bar": 2, "position": {"x": 4.5, "y": 3.5}},
+      {"name": "logistic-chest-passive-provider", "bar": 2, "position": {"x": 6.5, "y": 3.5}},
+      {
+        "name": "logistic-chest-requester",
+        "position": {"x": 0.5, "y": 3.5},
+        "request_filters": [{"name": "iron-plate", "count": 20, "index": 1}]
+      },
+      {
+        "name": "logistic-chest-requester",
+        "position": {"x": 2.5, "y": 3.5},
+        "request_filters": [{"name": "iron-plate", "count": 20, "index": 1}]
+      },
+      {
+        "name": "logistic-chest-requester",
+        "position": {"x": 5.5, "y": 3.5},
+        "request_filters": [{"name": "iron-plate", "count": 20, "index": 1}]
+      },
+      {"name": "medium-electric-pole", "position": {"x": 3.5, "y": 3.5}}
+    ],
+    "icons": [
+      {"index": 1, "signal": {"name": "electric-furnace", "type": "item"}},
+      {"index": 2, "signal": {"name": "steel-plate", "type": "item"}}
+    ],
+    "snap-to-grid": {"x": 9, "y": 9}
+  }
+}

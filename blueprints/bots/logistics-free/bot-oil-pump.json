@@ -1,0 +1,28 @@
+{
+  "index": 26,
+  "blueprint": {
+    "item": "blueprint",
+    "label": "Bot oil pump",
+    "shift_x": 238,
+    "shift_y": -215,
+    "version": 281479276527617,
+    "entities": [
+      {
+        "name": "assembling-machine-2",
+        "recipe": "fill-crude-oil-barrel",
+        "position": {"x": -1.5, "y": -0.5}
+      },
+      {"name": "inserter", "direction": 2, "position": {"x": 0.5, "y": -0.5}},
+      {"name": "inserter", "direction": 6, "position": {"x": 0.5, "y": 0.5}},
+      {"name": "logistic-chest-passive-provider", "bar": 2, "position": {"x": 1.5, "y": 0.5}},
+      {
+        "name": "logistic-chest-requester",
+        "position": {"x": 1.5, "y": -0.5},
+        "request_filters": [{"name": "empty-barrel", "count": 112, "index": 1}]
+      },
+      {"name": "medium-electric-pole", "position": {"x": 0.5, "y": -1.5}},
+      {"name": "pumpjack", "direction": 4, "position": {"x": -0.5, "y": -3.5}}
+    ],
+    "icons": [{"index": 1, "signal": {"name": "pumpjack", "type": "item"}}]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "index": 18,
+  "blueprint": {
+    "item": "blueprint",
+    "label": "Bot red chests",
+    "shift_x": 330,
+    "shift_y": -28,
+    "version": 281479276527617,
+    "entities": [
+      {"name": "assembling-machine-1", "recipe": "advanced-circuit", "position": {"x": 9.5, "y": -33.5}},
+      {"name": "assembling-machine-1", "recipe": "copper-cable", "position": {"x": 0.5, "y": -27.5}},
+      {"name": "assembling-machine-1", "recipe": "copper-cable", "position": {"x": 0.5, "y": -24.5}},
+      {"name": "assembling-machine-1", "recipe": "advanced-circuit", "position": {"x": 9.5, "y": -30.5}},
+      {"name": "assembling-machine-1", "recipe": "advanced-circuit", "position": {"x": 9.5, "y": -27.5}},
+      {"name": "assembling-machine-1", "recipe": "advanced-circuit", "position": {"x": 9.5, "y": -24.5}},
+      {"name": "assembling-machine-1", "recipe": "copper-cable", "position": {"x": 0.5, "y": -21.5}},
+      {"name": "assembling-machine-1", "recipe": "copper-cable", "position": {"x": 0.5, "y": -18.5}},
+      {"name": "assembling-machine-1", "recipe": "advanced-circuit", "position": {"x": 9.5, "y": -21.5}},
+      {"name": "assembling-machine-1", "recipe": "advanced-circuit", "position": {"x": 9.5, "y": -18.5}},
+      {"name": "assembling-machine-1", "recipe": "copper-cable", "position": {"x": 0.5, "y": -15.5}},
+      {"name": "assembling-machine-1", "recipe": "copper-cable", "position": {"x": 0.5, "y": -12.5}},
+      {"name": "assembling-machine-1", "recipe": "electronic-circuit", "position": {"x": 6.5, "y": -12.5}},
+      {"name": "assembling-machine-1", "recipe": "copper-cable", "position": {"x": 0.5, "y": -9.5}},
+      {"name": "assembling-machine-1", "recipe": "electronic-circuit", "position": {"x": 6.5, "y": -9.5}},
+      {"name": "assembling-machine-1", "recipe": "advanced-circuit", "position": {"x": 9.5, "y": -15.5}},
+      {"name": "assembling-machine-1", "recipe": "advanced-circuit", "position": {"x": 9.5, "y": -12.5}},
+      {"name": "assembling-machine-1", "recipe": "advanced-circuit", "position": {"x": 9.5, "y": -9.5}},
+      {"name": "assembling-machine-1", "recipe": "copper-cable", "position": {"x": 0.5, "y": -6.5}},
+      {"name": "assembling-machine-1", "recipe": "electronic-circuit", "position": {"x": 6.5, "y": -6.5}},
+      {"name": "assembling-machine-1", "recipe": "copper-cable", "position": {"x": 0.5, "y": -3.5}},
+      {"name": "assembling-machine-1", "recipe": "copper-cable", "position": {"x": 0.5, "y": -0.5}},
+      {"name": "assembling-machine-1", "recipe": "electronic-circuit", "position": {"x": 6.5, "y": -3.5}},
+      {"name": "assembling-machine-1", "recipe": "electronic-circuit", "position": {"x": 6.5, "y": -0.5}},
+      {"name": "assembling-machine-1", "recipe": "advanced-circuit", "position": {"x": 9.5, "y": -6.5}},
+      {"name": "assembling-machine-1", "recipe": "advanced-circuit", "position": {"x": 9.5, "y": -3.5}},
+      {"name": "assembling-machine-1", "recipe": "advanced-circuit", "position": {"x": 9.5, "y": -0.5}},
+      {"name": "assembling-machine-1", "recipe": "steel-chest", "position": {"x": 12.5, "y": -0.5}},
+      {
+        "name": "assembling-machine-1",
+        "recipe": "logistic-chest-passive-provider",
+        "position": {"x": 15.5, "y": -0.5}
+      },
+      {"name": "chemical-plant", "recipe": "plastic-bar", "position": {"x": 3.5, "y": -0.5}}
+    ],
+    "icons": [{"index": 1, "signal": {"name": "logistic-chest-passive-provider", "type": "item"}}]
+  }
+}

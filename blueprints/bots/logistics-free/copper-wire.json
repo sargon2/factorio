@@ -1,0 +1,50 @@
+{
+  "index": 30,
+  "blueprint": {
+    "item": "blueprint",
+    "label": "Copper wire",
+    "shift_x": 333,
+    "shift_y": -85,
+    "version": 281479276527617,
+    "entities": [
+      {"name": "assembling-machine-1", "recipe": "copper-cable", "position": {"x": 0.5, "y": -0.5}},
+      {"name": "assembling-machine-1", "recipe": "copper-cable", "position": {"x": 3.5, "y": -0.5}},
+      {"name": "assembling-machine-1", "recipe": "copper-cable", "position": {"x": 6.5, "y": -0.5}},
+      {"name": "assembling-machine-1", "recipe": "copper-cable", "position": {"x": 0.5, "y": 5.5}},
+      {"name": "assembling-machine-1", "recipe": "copper-cable", "position": {"x": 3.5, "y": 5.5}},
+      {"name": "assembling-machine-1", "recipe": "copper-cable", "position": {"x": 6.5, "y": 5.5}},
+      {"name": "fast-inserter", "direction": 4, "position": {"x": 0.5, "y": 1.5}},
+      {"name": "fast-inserter", "position": {"x": 1.5, "y": 1.5}},
+      {"name": "fast-inserter", "direction": 4, "position": {"x": 2.5, "y": 1.5}},
+      {"name": "fast-inserter", "position": {"x": 0.5, "y": 3.5}},
+      {"name": "fast-inserter", "direction": 4, "position": {"x": 1.5, "y": 3.5}},
+      {"name": "fast-inserter", "position": {"x": 2.5, "y": 3.5}},
+      {"name": "fast-inserter", "position": {"x": 4.5, "y": 1.5}},
+      {"name": "fast-inserter", "direction": 4, "position": {"x": 5.5, "y": 1.5}},
+      {"name": "fast-inserter", "position": {"x": 6.5, "y": 1.5}},
+      {"name": "fast-inserter", "direction": 4, "position": {"x": 4.5, "y": 3.5}},
+      {"name": "fast-inserter", "position": {"x": 5.5, "y": 3.5}},
+      {"name": "fast-inserter", "direction": 4, "position": {"x": 6.5, "y": 3.5}},
+      {"name": "logistic-chest-passive-provider", "bar": 4, "position": {"x": 1.5, "y": 2.5}},
+      {"name": "logistic-chest-passive-provider", "bar": 4, "position": {"x": 4.5, "y": 2.5}},
+      {"name": "logistic-chest-passive-provider", "bar": 4, "position": {"x": 6.5, "y": 2.5}},
+      {
+        "name": "logistic-chest-requester",
+        "position": {"x": 0.5, "y": 2.5},
+        "request_filters": [{"name": "copper-plate", "count": 60, "index": 1}]
+      },
+      {
+        "name": "logistic-chest-requester",
+        "position": {"x": 2.5, "y": 2.5},
+        "request_filters": [{"name": "copper-plate", "count": 60, "index": 1}]
+      },
+      {
+        "name": "logistic-chest-requester",
+        "position": {"x": 5.5, "y": 2.5},
+        "request_filters": [{"name": "copper-plate", "count": 60, "index": 1}]
+      },
+      {"name": "medium-electric-pole", "position": {"x": 3.5, "y": 2.5}}
+    ],
+    "icons": [{"index": 1, "signal": {"name": "copper-cable", "type": "item"}}]
+  }
+}

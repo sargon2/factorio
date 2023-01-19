@@ -120,6 +120,6 @@
       {"name": "pipe-to-ground", "position": {"x": 5.5, "y": 7.5}},
       {"name": "pipe-to-ground", "direction": 4, "position": {"x": 5.5, "y": 17.5}}
     ],
-    "icons": [{"index": 1, "signal": {"name": "water-barrel", "type": "item"}}]
+    "icons": [{"index": 1, "signal": {"name": "water", "type": "fluid"}}]
   }
 }

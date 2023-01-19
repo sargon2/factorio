@@ -1,0 +1,73 @@
+{
+  "index": 36,
+  "blueprint": {
+    "item": "blueprint",
+    "label": "Big poles",
+    "shift_x": 371,
+    "shift_y": 21,
+    "version": 281479276527617,
+    "entities": [
+      {"name": "assembling-machine-1", "recipe": "iron-stick", "position": {"x": 0.5, "y": 0.5}},
+      {"name": "assembling-machine-1", "recipe": "iron-stick", "position": {"x": 3.5, "y": 0.5}},
+      {"name": "assembling-machine-1", "recipe": "iron-stick", "position": {"x": 6.5, "y": 0.5}},
+      {"name": "assembling-machine-1", "recipe": "iron-stick", "position": {"x": 0.5, "y": 5.5}},
+      {"name": "assembling-machine-1", "recipe": "iron-stick", "position": {"x": 3.5, "y": 5.5}},
+      {"name": "assembling-machine-1", "recipe": "big-electric-pole", "position": {"x": 6.5, "y": 5.5}},
+      {"name": "fast-inserter", "direction": 4, "position": {"x": 0.5, "y": 2.5}},
+      {"name": "fast-inserter", "position": {"x": 1.5, "y": 2.5}},
+      {"name": "fast-inserter", "direction": 4, "position": {"x": 2.5, "y": 2.5}},
+      {"name": "fast-inserter", "position": {"x": 4.5, "y": 2.5}},
+      {"name": "fast-inserter", "direction": 4, "position": {"x": 5.5, "y": 2.5}},
+      {"name": "fast-inserter", "position": {"x": 6.5, "y": 2.5}},
+      {"name": "fast-inserter", "direction": 4, "position": {"x": 0.5, "y": 7.5}},
+      {"name": "fast-inserter", "position": {"x": 1.5, "y": 7.5}},
+      {"name": "fast-inserter", "direction": 4, "position": {"x": 2.5, "y": 7.5}},
+      {"name": "fast-inserter", "position": {"x": 4.5, "y": 7.5}},
+      {"name": "fast-inserter", "position": {"x": 6.5, "y": 7.5}},
+      {"name": "logistic-chest-passive-provider", "bar": 2, "position": {"x": 1.5, "y": 3.5}},
+      {"name": "logistic-chest-passive-provider", "bar": 2, "position": {"x": 4.5, "y": 3.5}},
+      {"name": "logistic-chest-passive-provider", "bar": 2, "position": {"x": 6.5, "y": 3.5}},
+      {"name": "logistic-chest-passive-provider", "bar": 2, "position": {"x": 1.5, "y": 8.5}},
+      {"name": "logistic-chest-passive-provider", "bar": 2, "position": {"x": 4.5, "y": 8.5}},
+      {"name": "logistic-chest-passive-provider", "bar": 2, "position": {"x": 6.5, "y": 8.5}},
+      {
+        "name": "logistic-chest-requester",
+        "position": {"x": 0.5, "y": 3.5},
+        "request_filters": [{"name": "iron-plate", "count": 30, "index": 1}]
+      },
+      {
+        "name": "logistic-chest-requester",
+        "position": {"x": 2.5, "y": 3.5},
+        "request_filters": [{"name": "iron-plate", "count": 30, "index": 1}]
+      },
+      {
+        "name": "logistic-chest-requester",
+        "position": {"x": 5.5, "y": 3.5},
+        "request_filters": [{"name": "iron-plate", "count": 30, "index": 1}]
+      },
+      {
+        "name": "logistic-chest-requester",
+        "position": {"x": 0.5, "y": 8.5},
+        "request_filters": [{"name": "iron-plate", "count": 30, "index": 1}]
+      },
+      {
+        "name": "logistic-chest-requester",
+        "position": {"x": 2.5, "y": 8.5},
+        "request_filters": [{"name": "iron-plate", "count": 30, "index": 1}]
+      },
+      {
+        "name": "logistic-chest-requester",
+        "position": {"x": 5.5, "y": 8.5},
+        "request_filters": [
+          {"name": "copper-plate", "count": 150, "index": 1},
+          {"name": "steel-plate", "count": 150, "index": 2},
+          {"name": "iron-stick", "count": 240, "index": 3}
+        ]
+      },
+      {"name": "medium-electric-pole", "neighbours": ["0,5"], "position": {"x": 3.5, "y": 3.5}},
+      {"name": "medium-electric-pole", "neighbours": ["0,-5"], "position": {"x": 3.5, "y": 8.5}},
+      {"name": "stack-inserter", "direction": 4, "position": {"x": 5.5, "y": 7.5}}
+    ],
+    "icons": [{"index": 1, "signal": {"name": "big-electric-pole", "type": "item"}}]
+  }
+}

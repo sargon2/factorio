@@ -3,40 +3,40 @@
   "blueprint": {
     "item": "blueprint",
     "label": "Plastic",
-    "shift_x": 314,
-    "shift_y": -57,
+    "shift_x": 486,
+    "shift_y": 34,
     "version": 281479276527617,
     "entities": [
       {
         "name": "assembling-machine-2",
         "direction": 4,
         "recipe": "empty-petroleum-gas-barrel",
-        "position": {"x": 2.5, "y": 2.5}
+        "position": {"x": 2.5, "y": 3.5}
       },
       {
         "name": "chemical-plant",
         "direction": 4,
         "recipe": "plastic-bar",
-        "position": {"x": 3.5, "y": -0.5}
+        "position": {"x": 3.5, "y": 0.5}
       },
-      {"name": "fast-inserter", "direction": 6, "position": {"x": 1.5, "y": -0.5}},
-      {"name": "fast-inserter", "direction": 2, "position": {"x": 1.5, "y": 0.5}},
-      {"name": "fast-inserter", "direction": 2, "position": {"x": 4.5, "y": 1.5}},
-      {"name": "fast-inserter", "direction": 6, "position": {"x": 4.5, "y": 2.5}},
-      {"name": "logistic-chest-passive-provider", "bar": 2, "position": {"x": 0.5, "y": 0.5}},
-      {"name": "logistic-chest-passive-provider", "bar": 2, "position": {"x": 5.5, "y": 2.5}},
+      {"name": "fast-inserter", "direction": 6, "position": {"x": 1.5, "y": 0.5}},
+      {"name": "fast-inserter", "direction": 2, "position": {"x": 1.5, "y": 1.5}},
+      {"name": "fast-inserter", "direction": 2, "position": {"x": 4.5, "y": 2.5}},
+      {"name": "fast-inserter", "direction": 6, "position": {"x": 4.5, "y": 3.5}},
+      {"name": "logistic-chest-active-provider", "position": {"x": 5.5, "y": 3.5}},
+      {"name": "logistic-chest-passive-provider", "bar": 2, "position": {"x": 0.5, "y": 1.5}},
       {
         "name": "logistic-chest-requester",
-        "position": {"x": 0.5, "y": -0.5},
+        "position": {"x": 0.5, "y": 0.5},
         "request_filters": [{"name": "coal", "count": 30, "index": 1}]
       },
       {
         "name": "logistic-chest-requester",
-        "position": {"x": 5.5, "y": 1.5},
+        "position": {"x": 5.5, "y": 2.5},
         "request_filters": [{"name": "petroleum-gas-barrel", "count": 112, "index": 1}]
       },
-      {"name": "medium-electric-pole", "neighbours": ["3,5"], "position": {"x": 1.5, "y": -1.5}},
-      {"name": "medium-electric-pole", "neighbours": ["-3,-5"], "position": {"x": 4.5, "y": 3.5}}
+      {"name": "medium-electric-pole", "neighbours": ["3,5"], "position": {"x": 1.5, "y": -0.5}},
+      {"name": "medium-electric-pole", "neighbours": ["-3,-5"], "position": {"x": 4.5, "y": 4.5}}
     ],
     "icons": [{"index": 1, "signal": {"name": "plastic-bar", "type": "item"}}]
   }

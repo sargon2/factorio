@@ -1,0 +1,124 @@
+{
+  "index": 13,
+  "blueprint": {
+    "item": "blueprint",
+    "label": "Blue arms",
+    "shift_x": 418,
+    "shift_y": -76,
+    "version": 281479276527617,
+    "entities": [
+      {"name": "assembling-machine-1", "recipe": "iron-gear-wheel", "position": {"x": 0.5, "y": -2.5}},
+      {"name": "assembling-machine-1", "recipe": "copper-cable", "position": {"x": 3.5, "y": -2.5}},
+      {"name": "assembling-machine-1", "recipe": "copper-cable", "position": {"x": 6.5, "y": -2.5}},
+      {"name": "assembling-machine-1", "recipe": "copper-cable", "position": {"x": 0.5, "y": 2.5}},
+      {"name": "assembling-machine-1", "recipe": "copper-cable", "position": {"x": 3.5, "y": 2.5}},
+      {"name": "assembling-machine-1", "recipe": "copper-cable", "position": {"x": 6.5, "y": 2.5}},
+      {"name": "assembling-machine-1", "recipe": "electronic-circuit", "position": {"x": 0.5, "y": 7.5}},
+      {"name": "assembling-machine-1", "recipe": "electronic-circuit", "position": {"x": 3.5, "y": 7.5}},
+      {"name": "assembling-machine-1", "recipe": "electronic-circuit", "position": {"x": 6.5, "y": 7.5}},
+      {"name": "assembling-machine-1", "recipe": "inserter", "position": {"x": 0.5, "y": 12.5}},
+      {"name": "assembling-machine-1", "recipe": "fast-inserter", "position": {"x": 3.5, "y": 12.5}},
+      {"name": "fast-inserter", "direction": 4, "position": {"x": 0.5, "y": -0.5}},
+      {"name": "fast-inserter", "position": {"x": 1.5, "y": -0.5}},
+      {"name": "fast-inserter", "direction": 4, "position": {"x": 2.5, "y": -0.5}},
+      {"name": "fast-inserter", "position": {"x": 4.5, "y": -0.5}},
+      {"name": "fast-inserter", "direction": 4, "position": {"x": 5.5, "y": -0.5}},
+      {"name": "fast-inserter", "position": {"x": 6.5, "y": -0.5}},
+      {"name": "fast-inserter", "direction": 4, "position": {"x": 0.5, "y": 4.5}},
+      {"name": "fast-inserter", "position": {"x": 1.5, "y": 4.5}},
+      {"name": "fast-inserter", "direction": 4, "position": {"x": 2.5, "y": 4.5}},
+      {"name": "fast-inserter", "position": {"x": 4.5, "y": 4.5}},
+      {"name": "fast-inserter", "direction": 4, "position": {"x": 5.5, "y": 4.5}},
+      {"name": "fast-inserter", "position": {"x": 6.5, "y": 4.5}},
+      {"name": "fast-inserter", "direction": 4, "position": {"x": 0.5, "y": 9.5}},
+      {"name": "fast-inserter", "position": {"x": 1.5, "y": 9.5}},
+      {"name": "fast-inserter", "direction": 4, "position": {"x": 2.5, "y": 9.5}},
+      {"name": "fast-inserter", "position": {"x": 4.5, "y": 9.5}},
+      {"name": "fast-inserter", "direction": 4, "position": {"x": 5.5, "y": 9.5}},
+      {"name": "fast-inserter", "position": {"x": 6.5, "y": 9.5}},
+      {"name": "fast-inserter", "direction": 4, "position": {"x": 0.5, "y": 14.5}},
+      {"name": "fast-inserter", "position": {"x": 1.5, "y": 14.5}},
+      {"name": "fast-inserter", "direction": 4, "position": {"x": 2.5, "y": 14.5}},
+      {"name": "fast-inserter", "position": {"x": 4.5, "y": 14.5}},
+      {"name": "logistic-chest-passive-provider", "bar": 2, "position": {"x": 1.5, "y": 0.5}},
+      {"name": "logistic-chest-passive-provider", "bar": 2, "position": {"x": 4.5, "y": 0.5}},
+      {"name": "logistic-chest-passive-provider", "bar": 2, "position": {"x": 6.5, "y": 0.5}},
+      {"name": "logistic-chest-passive-provider", "bar": 2, "position": {"x": 1.5, "y": 5.5}},
+      {"name": "logistic-chest-passive-provider", "bar": 2, "position": {"x": 4.5, "y": 5.5}},
+      {"name": "logistic-chest-passive-provider", "bar": 2, "position": {"x": 6.5, "y": 5.5}},
+      {"name": "logistic-chest-passive-provider", "bar": 2, "position": {"x": 1.5, "y": 10.5}},
+      {"name": "logistic-chest-passive-provider", "bar": 2, "position": {"x": 4.5, "y": 10.5}},
+      {"name": "logistic-chest-passive-provider", "bar": 2, "position": {"x": 6.5, "y": 10.5}},
+      {"name": "logistic-chest-passive-provider", "bar": 2, "position": {"x": 1.5, "y": 15.5}},
+      {"name": "logistic-chest-passive-provider", "bar": 2, "position": {"x": 4.5, "y": 15.5}},
+      {
+        "name": "logistic-chest-requester",
+        "position": {"x": 0.5, "y": 0.5},
+        "request_filters": [{"name": "iron-plate", "count": 60, "index": 1}]
+      },
+      {
+        "name": "logistic-chest-requester",
+        "position": {"x": 2.5, "y": 0.5},
+        "request_filters": [{"name": "copper-plate", "count": 30, "index": 1}]
+      },
+      {
+        "name": "logistic-chest-requester",
+        "position": {"x": 5.5, "y": 0.5},
+        "request_filters": [{"name": "copper-plate", "count": 30, "index": 1}]
+      },
+      {
+        "name": "logistic-chest-requester",
+        "position": {"x": 0.5, "y": 5.5},
+        "request_filters": [{"name": "copper-plate", "count": 30, "index": 1}]
+      },
+      {
+        "name": "logistic-chest-requester",
+        "position": {"x": 2.5, "y": 5.5},
+        "request_filters": [{"name": "copper-plate", "count": 30, "index": 1}]
+      },
+      {
+        "name": "logistic-chest-requester",
+        "position": {"x": 5.5, "y": 5.5},
+        "request_filters": [{"name": "copper-plate", "count": 30, "index": 1}]
+      },
+      {
+        "name": "logistic-chest-requester",
+        "position": {"x": 0.5, "y": 10.5},
+        "request_filters": [{"name": "iron-plate", "count": 30, "index": 1}, {"name": "copper-cable", "count": 90, "index": 2}]
+      },
+      {
+        "name": "logistic-chest-requester",
+        "position": {"x": 2.5, "y": 10.5},
+        "request_filters": [{"name": "iron-plate", "count": 30, "index": 1}, {"name": "copper-cable", "count": 90, "index": 2}]
+      },
+      {
+        "name": "logistic-chest-requester",
+        "position": {"x": 5.5, "y": 10.5},
+        "request_filters": [{"name": "iron-plate", "count": 30, "index": 1}, {"name": "copper-cable", "count": 90, "index": 2}]
+      },
+      {
+        "name": "logistic-chest-requester",
+        "position": {"x": 0.5, "y": 15.5},
+        "request_filters": [
+          {"name": "iron-plate", "count": 30, "index": 1},
+          {"name": "iron-gear-wheel", "count": 30, "index": 2},
+          {"name": "electronic-circuit", "count": 30, "index": 3}
+        ]
+      },
+      {
+        "name": "logistic-chest-requester",
+        "position": {"x": 2.5, "y": 15.5},
+        "request_filters": [
+          {"name": "iron-plate", "count": 60, "index": 1},
+          {"name": "electronic-circuit", "count": 60, "index": 2},
+          {"name": "inserter", "count": 30, "index": 3}
+        ]
+      },
+      {"name": "medium-electric-pole", "neighbours": ["0,5"], "position": {"x": 3.5, "y": -0.5}},
+      {"name": "medium-electric-pole", "neighbours": ["0,-5", "0,5"], "position": {"x": 3.5, "y": 4.5}},
+      {"name": "medium-electric-pole", "neighbours": ["0,-5", "0,5"], "position": {"x": 3.5, "y": 9.5}},
+      {"name": "medium-electric-pole", "neighbours": ["0,-5"], "position": {"x": 3.5, "y": 14.5}}
+    ],
+    "icons": [{"index": 1, "signal": {"name": "fast-inserter", "type": "item"}}]
+  }
+}

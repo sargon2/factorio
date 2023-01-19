@@ -1,0 +1,35 @@
+{
+  "index": 25,
+  "blueprint": {
+    "item": "blueprint",
+    "label": "Attack extension",
+    "absolute-snapping": true,
+    "version": 281479276527617,
+    "entities": [
+      {"name": "gun-turret", "direction": 4, "position": {"x": 1, "y": 2}},
+      {"name": "gun-turret", "direction": 4, "position": {"x": 3, "y": 2}},
+      {"name": "gun-turret", "direction": 4, "position": {"x": 1, "y": 7}},
+      {"name": "gun-turret", "direction": 4, "position": {"x": 3, "y": 7}},
+      {"name": "inserter", "direction": 4, "position": {"x": 1.5, "y": 3.5}},
+      {"name": "inserter", "direction": 4, "position": {"x": 2.5, "y": 3.5}},
+      {"name": "inserter", "position": {"x": 1.5, "y": 5.5}},
+      {"name": "inserter", "position": {"x": 2.5, "y": 5.5}},
+      {"name": "medium-electric-pole", "position": {"x": 3.5, "y": 3.5}},
+      {"name": "pipe", "position": {"x": 0.5, "y": 0.5}},
+      {"name": "pipe", "position": {"x": 1.5, "y": 0.5}},
+      {"name": "pipe", "position": {"x": 2.5, "y": 0.5}},
+      {"name": "pipe", "position": {"x": 3.5, "y": 0.5}},
+      {"name": "pipe", "position": {"x": 0.5, "y": 8.5}},
+      {"name": "pipe", "position": {"x": 1.5, "y": 8.5}},
+      {"name": "pipe", "position": {"x": 2.5, "y": 8.5}},
+      {"name": "pipe", "position": {"x": 3.5, "y": 8.5}},
+      {"name": "transport-belt", "direction": 2, "position": {"x": 0.5, "y": 4.5}},
+      {"name": "transport-belt", "direction": 2, "position": {"x": 1.5, "y": 4.5}},
+      {"name": "transport-belt", "direction": 2, "position": {"x": 2.5, "y": 4.5}},
+      {"name": "transport-belt", "direction": 2, "position": {"x": 3.5, "y": 4.5}}
+    ],
+    "icons": [{"index": 1, "signal": {"name": "gun-turret", "type": "item"}}],
+    "position-relative-to-grid": {"x": 2, "y": 0},
+    "snap-to-grid": {"x": 4, "y": 9}
+  }
+}

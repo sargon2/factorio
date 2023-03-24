@@ -6,7 +6,7 @@
     "description": "In progress.  The idea is we'll use requester chests to make a logistics bot-run bot maker that makes 60 bots/min of both types.\nIncludes steel smelting.",
     "shift_x": -293,
     "shift_y": 387,
-    "version": 281479276527617,
+    "version": 281479276658688,
     "entities": [
       {"name": "assembling-machine-1", "recipe": "copper-cable", "position": {"x": 22.5, "y": 9.5}},
       {"name": "assembling-machine-1", "recipe": "copper-cable", "position": {"x": 22.5, "y": 12.5}},

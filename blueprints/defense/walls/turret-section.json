@@ -3,7 +3,7 @@
   "blueprint": {
     "item": "blueprint",
     "label": "Turret section",
-    "version": 281479276527617,
+    "version": 281479276658688,
     "entities": [
       {"name": "gun-turret", "position": {"x": 1, "y": 17}},
       {"name": "gun-turret", "position": {"x": 3, "y": 17}},

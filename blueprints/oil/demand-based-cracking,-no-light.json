@@ -6,7 +6,7 @@
     "description": "Skips light oil for builds that only need heavy & petroleum such as bots.",
     "shift_x": 76,
     "shift_y": 0,
-    "version": 281479276527617,
+    "version": 281479276658688,
     "entities": [
       {
         "name": "chemical-plant",

@@ -5,7 +5,7 @@
     "label": "Early game manual load defense",
     "shift_x": -104,
     "shift_y": 214,
-    "version": 281479276527617,
+    "version": 281479276658688,
     "entities": [
       {"name": "assembling-machine-1", "recipe": "firearm-magazine", "position": {"x": -0.5, "y": 0.5}},
       {"name": "assembling-machine-1", "recipe": "pipe", "position": {"x": -3.5, "y": 2.5}},

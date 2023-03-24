@@ -5,7 +5,7 @@
     "label": "4 lane belt pusher",
     "shift_x": 33,
     "shift_y": -112,
-    "version": 281479276527617,
+    "version": 281479276658688,
     "entities": [
       {"name": "splitter", "direction": 2, "output_priority": "left", "position": {"x": 0.5, "y": 0}},
       {"name": "splitter", "direction": 2, "output_priority": "left", "position": {"x": 1.5, "y": 1}},

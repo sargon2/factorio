@@ -5,7 +5,7 @@
     "label": "4-2 balancer",
     "shift_x": 11,
     "shift_y": -74,
-    "version": 281479276527617,
+    "version": 281479276658688,
     "entities": [
       {"name": "splitter", "direction": 2, "position": {"x": 1.5, "y": 0}},
       {"name": "splitter", "direction": 2, "position": {"x": 2.5, "y": 1}},

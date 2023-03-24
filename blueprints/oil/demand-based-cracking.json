@@ -6,7 +6,7 @@
     "description": "Cracks based on demand instead of based on overflow.  Should help prevent oil deadlocks.",
     "shift_x": 113,
     "shift_y": 21,
-    "version": 281479276527617,
+    "version": 281479276658688,
     "entities": [
       {
         "name": "chemical-plant",

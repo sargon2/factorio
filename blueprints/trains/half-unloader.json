@@ -5,7 +5,7 @@
     "label": "Half unloader",
     "shift_x": -7,
     "shift_y": -67,
-    "version": 281479276527617,
+    "version": 281479276658688,
     "entities": [
       {"name": "fast-inserter", "direction": 2, "position": {"x": 1.5, "y": 2.5}},
       {"name": "fast-inserter", "position": {"x": 3.5, "y": 3.5}},

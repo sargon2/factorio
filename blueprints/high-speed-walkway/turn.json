@@ -5,7 +5,7 @@
     "label": "Turn",
     "shift_x": 57,
     "shift_y": 66,
-    "version": 281479276527617,
+    "version": 281479276658688,
     "entities": [
       {"name": "express-transport-belt", "direction": 6, "position": {"x": 0.5, "y": 1.5}},
       {"name": "express-transport-belt", "direction": 6, "position": {"x": 1.5, "y": 1.5}},

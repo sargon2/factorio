@@ -6,7 +6,7 @@
     "absolute-snapping": true,
     "shift_x": -1,
     "shift_y": -1,
-    "version": 281479276527617,
+    "version": 281479276658688,
     "entities": [
       {"name": "beacon", "items": {"speed-module-3": 2}, "position": {"x": 15.5, "y": 19.5}},
       {"name": "beacon", "items": {"speed-module-3": 2}, "position": {"x": 15.5, "y": 28.5}},

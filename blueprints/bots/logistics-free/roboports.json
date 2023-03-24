@@ -5,7 +5,7 @@
     "label": "Roboports",
     "shift_x": 411,
     "shift_y": 12,
-    "version": 281479276527617,
+    "version": 281479276658688,
     "entities": [
       {"name": "assembling-machine-1", "recipe": "advanced-circuit", "position": {"x": 0.5, "y": 0.5}},
       {"name": "assembling-machine-1", "recipe": "advanced-circuit", "position": {"x": 3.5, "y": 0.5}},

@@ -5,7 +5,7 @@
     "label": "Science labs",
     "shift_x": -4,
     "shift_y": -3,
-    "version": 281479276527617,
+    "version": 281479276658688,
     "entities": [
       {"name": "fast-inserter", "direction": 2, "position": {"x": 2.5, "y": -0.5}},
       {"name": "fast-inserter", "direction": 2, "position": {"x": 6.5, "y": -0.5}},

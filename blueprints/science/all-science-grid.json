@@ -5,7 +5,7 @@
     "label": "All science grid",
     "shift_x": -59,
     "shift_y": -165,
-    "version": 281479276527617,
+    "version": 281479276658688,
     "entities": [
       {"name": "inserter", "position": {"x": 4.5, "y": 1.5}},
       {"name": "inserter", "direction": 4, "position": {"x": 4.5, "y": 5.5}},

@@ -5,7 +5,7 @@
     "label": "Red ammo small",
     "shift_x": -98,
     "shift_y": -261,
-    "version": 281479276527617,
+    "version": 281479276658688,
     "entities": [
       {"name": "assembling-machine-1", "recipe": "firearm-magazine", "position": {"x": -6.5, "y": 3.5}},
       {

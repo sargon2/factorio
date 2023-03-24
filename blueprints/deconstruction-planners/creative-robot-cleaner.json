@@ -4,7 +4,7 @@
     "item": "blueprint",
     "label": "Creative robot cleaner",
     "absolute-snapping": true,
-    "version": 281479276527617,
+    "version": 281479276658688,
     "entities": [
       {"name": "creative-mod_passive-energy-source", "position": {"x": 1, "y": 2}},
       {"name": "logistic-chest-storage", "position": {"x": 0.5, "y": 0.5}},

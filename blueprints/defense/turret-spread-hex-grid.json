@@ -6,7 +6,7 @@
     "absolute-snapping": true,
     "shift_x": 1,
     "shift_y": 1,
-    "version": 281479276527617,
+    "version": 281479276658688,
     "entities": [
       {"name": "gun-turret", "direction": 2, "position": {"x": 0, "y": 0}},
       {"name": "gun-turret", "direction": 2, "position": {"x": 8, "y": 13}}

@@ -3,7 +3,7 @@
   "blueprint": {
     "item": "blueprint",
     "label": "Inline buffer",
-    "version": 281479276527617,
+    "version": 281479276658688,
     "entities": [
       {"name": "small-electric-pole", "position": {"x": -0.5, "y": -0.5}},
       {"name": "splitter", "direction": 2, "output_priority": "right", "position": {"x": -2.5, "y": 1}},

@@ -5,7 +5,7 @@
     "label": "Early bootstrap",
     "shift_x": -6,
     "shift_y": -4,
-    "version": 281479276527617,
+    "version": 281479276658688,
     "entities": [
       {"name": "assembling-machine-1", "recipe": "small-electric-pole", "position": {"x": -0.5, "y": 2.5}},
       {"name": "assembling-machine-1", "recipe": "copper-cable", "position": {"x": -0.5, "y": 6.5}},

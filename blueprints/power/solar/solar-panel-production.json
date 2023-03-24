@@ -5,7 +5,7 @@
     "label": "Solar panel production",
     "shift_x": -5,
     "shift_y": 2,
-    "version": 281479276527617,
+    "version": 281479276658688,
     "entities": [
       {"name": "assembling-machine-1", "recipe": "copper-cable", "position": {"x": 7.5, "y": -4.5}},
       {"name": "assembling-machine-1", "recipe": "electronic-circuit", "position": {"x": 3.5, "y": -3.5}},

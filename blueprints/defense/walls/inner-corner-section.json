@@ -5,7 +5,7 @@
     "label": "Inner corner section",
     "shift_x": -3,
     "shift_y": 3,
-    "version": 281479276527617,
+    "version": 281479276658688,
     "entities": [
       {"name": "small-electric-pole", "neighbours": ["3,-3"], "position": {"x": 3.5, "y": -0.5}},
       {"name": "small-electric-pole", "neighbours": ["-3,3"], "position": {"x": 6.5, "y": -3.5}},

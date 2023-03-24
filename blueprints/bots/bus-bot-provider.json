@@ -5,7 +5,7 @@
     "label": "Bus bot provider",
     "shift_x": -89,
     "shift_y": 372,
-    "version": 281479276527617,
+    "version": 281479276658688,
     "entities": [
       {"name": "logistic-chest-passive-provider", "position": {"x": 3.5, "y": 0.5}},
       {"name": "logistic-chest-passive-provider", "position": {"x": 3.5, "y": 1.5}},

@@ -5,7 +5,7 @@
     "label": "Early game defense",
     "shift_x": -83,
     "shift_y": 121,
-    "version": 281479276527617,
+    "version": 281479276658688,
     "entities": [
       {"name": "assembling-machine-1", "recipe": "firearm-magazine", "position": {"x": -8.5, "y": 4.5}},
       {"name": "assembling-machine-1", "recipe": "pipe", "position": {"x": -5.5, "y": 2.5}},

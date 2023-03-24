@@ -5,7 +5,7 @@
     "label": "Kovarex",
     "shift_x": -4,
     "shift_y": -2,
-    "version": 281479276527617,
+    "version": 281479276658688,
     "entities": [
       {"name": "centrifuge", "recipe": "kovarex-enrichment-process", "position": {"x": 4.5, "y": 2.5}},
       {"name": "centrifuge", "recipe": "kovarex-enrichment-process", "position": {"x": 7.5, "y": 2.5}},

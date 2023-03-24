@@ -1,0 +1,30 @@
+{
+  "index": 1,
+  "blueprint": {
+    "item": "blueprint",
+    "label": "1-lane omnibus pull",
+    "shift_x": 63,
+    "shift_y": 220,
+    "version": 281479276658688,
+    "entities": [
+      {"name": "splitter", "direction": 2, "output_priority": "right", "position": {"x": 1.5, "y": 2}},
+      {"name": "splitter", "direction": 4, "position": {"x": 3, "y": 3.5}},
+      {"name": "splitter", "direction": 6, "output_priority": "left", "position": {"x": 4.5, "y": 1}},
+      {"name": "transport-belt", "direction": 6, "position": {"x": 0.5, "y": 0.5}},
+      {"name": "transport-belt", "direction": 6, "position": {"x": 1.5, "y": 0.5}},
+      {"name": "transport-belt", "direction": 2, "position": {"x": 0.5, "y": 1.5}},
+      {"name": "transport-belt", "direction": 6, "position": {"x": 2.5, "y": 0.5}},
+      {"name": "transport-belt", "direction": 6, "position": {"x": 3.5, "y": 0.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 3.5, "y": 1.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 2.5, "y": 2.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 3.5, "y": 2.5}},
+      {"name": "transport-belt", "direction": 6, "position": {"x": 5.5, "y": 0.5}},
+      {"name": "underground-belt", "direction": 2, "type": "input", "position": {"x": 2.5, "y": 1.5}},
+      {"name": "underground-belt", "direction": 2, "type": "output", "position": {"x": 5.5, "y": 1.5}}
+    ],
+    "icons": [
+      {"index": 1, "signal": {"name": "transport-belt", "type": "item"}},
+      {"index": 2, "signal": {"name": "splitter", "type": "item"}}
+    ]
+  }
+}

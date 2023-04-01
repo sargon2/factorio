@@ -3,8 +3,8 @@
   "blueprint": {
     "item": "blueprint",
     "label": "Stone smelt half belt",
-    "shift_x": 102,
-    "shift_y": 50,
+    "shift_x": 116,
+    "shift_y": 107,
     "version": 281479276658688,
     "entities": [
       {"name": "inserter", "direction": 4, "position": {"x": 0.5, "y": 1.5}},
@@ -55,86 +55,50 @@
       {"name": "inserter", "position": {"x": 17.5, "y": 9.5}},
       {"name": "inserter", "position": {"x": 20.5, "y": 9.5}},
       {"name": "inserter", "position": {"x": 21.5, "y": 9.5}},
+      {"name": "small-electric-pole", "neighbours": ["0,3", "5,0"], "position": {"x": 2.5, "y": 1.5}},
       {
         "name": "small-electric-pole",
-        "neighbours": ["0,3", "5,0", "5,5"],
-        "position": {"x": 2.5, "y": 1.5}
-      },
-      {
-        "name": "small-electric-pole",
-        "neighbours": ["-5,0", "-5,5", "0,3", "7,0"],
+        "neighbours": ["-5,0", "0,3", "7,0"],
         "position": {"x": 7.5, "y": 1.5}
       },
       {
         "name": "small-electric-pole",
-        "neighbours": ["0,-3", "0,2", "5,0", "5,5"],
+        "neighbours": ["0,-3", "5,0", "5,5"],
         "position": {"x": 2.5, "y": 4.5}
       },
       {
         "name": "small-electric-pole",
-        "neighbours": ["0,-2", "0,3", "5,-5", "5,0"],
-        "position": {"x": 2.5, "y": 6.5}
-      },
-      {
-        "name": "small-electric-pole",
-        "neighbours": ["-5,0", "-5,5", "0,-3", "0,2", "7,0"],
+        "neighbours": ["-5,0", "-5,5", "0,-3", "7,0"],
         "position": {"x": 7.5, "y": 4.5}
       },
       {
         "name": "small-electric-pole",
-        "neighbours": ["-5,-5", "-5,0", "0,-2", "0,3", "7,0"],
-        "position": {"x": 7.5, "y": 6.5}
-      },
-      {
-        "name": "small-electric-pole",
-        "neighbours": ["-7,0", "0,3", "5,0", "5,5"],
+        "neighbours": ["-7,0", "0,3", "5,0"],
         "position": {"x": 14.5, "y": 1.5}
       },
       {
         "name": "small-electric-pole",
-        "neighbours": ["-7,0", "0,-3", "0,2", "5,0", "5,5"],
+        "neighbours": ["-7,0", "0,-3", "5,0", "5,5"],
         "position": {"x": 14.5, "y": 4.5}
       },
+      {"name": "small-electric-pole", "neighbours": ["5,-5", "5,0"], "position": {"x": 2.5, "y": 9.5}},
       {
         "name": "small-electric-pole",
-        "neighbours": ["-7,0", "0,-2", "0,3", "5,-5", "5,0"],
-        "position": {"x": 14.5, "y": 6.5}
-      },
-      {
-        "name": "small-electric-pole",
-        "neighbours": ["0,-3", "5,-5", "5,0"],
-        "position": {"x": 2.5, "y": 9.5}
-      },
-      {
-        "name": "small-electric-pole",
-        "neighbours": ["-5,-5", "-5,0", "0,-3", "7,0"],
+        "neighbours": ["-5,-5", "-5,0", "7,0"],
         "position": {"x": 7.5, "y": 9.5}
       },
       {
         "name": "small-electric-pole",
-        "neighbours": ["-7,0", "0,-3", "5,-5", "5,0"],
+        "neighbours": ["-7,0", "5,-5", "5,0"],
         "position": {"x": 14.5, "y": 9.5}
       },
+      {"name": "small-electric-pole", "neighbours": ["-5,0", "0,3"], "position": {"x": 19.5, "y": 1.5}},
       {
         "name": "small-electric-pole",
-        "neighbours": ["-5,0", "-5,5", "0,3"],
-        "position": {"x": 19.5, "y": 1.5}
-      },
-      {
-        "name": "small-electric-pole",
-        "neighbours": ["-5,0", "-5,5", "0,-3", "0,2"],
+        "neighbours": ["-5,0", "-5,5", "0,-3"],
         "position": {"x": 19.5, "y": 4.5}
       },
-      {
-        "name": "small-electric-pole",
-        "neighbours": ["-5,-5", "-5,0", "0,-2", "0,3"],
-        "position": {"x": 19.5, "y": 6.5}
-      },
-      {
-        "name": "small-electric-pole",
-        "neighbours": ["-5,-5", "-5,0", "0,-3"],
-        "position": {"x": 19.5, "y": 9.5}
-      },
+      {"name": "small-electric-pole", "neighbours": ["-5,-5", "-5,0"], "position": {"x": 19.5, "y": 9.5}},
       {"name": "stone-furnace", "position": {"x": 0, "y": 3}},
       {"name": "stone-furnace", "position": {"x": 2, "y": 3}},
       {"name": "stone-furnace", "position": {"x": 4, "y": 3}},

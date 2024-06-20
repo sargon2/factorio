@@ -5,7 +5,7 @@
     "label": "Demand-based 2-1-2 oil cracking, no light",
     "shift_x": 334,
     "shift_y": -56,
-    "version": 281479276658688,
+    "version": 281479278690304,
     "entities": [
       {
         "name": "chemical-plant",

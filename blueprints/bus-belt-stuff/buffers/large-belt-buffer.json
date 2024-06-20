@@ -5,7 +5,7 @@
     "label": "Large belt buffer",
     "shift_x": -3,
     "shift_y": -3,
-    "version": 281479276658688,
+    "version": 281479278690304,
     "entities": [
       {"name": "medium-electric-pole", "neighbours": ["-4,2", "4,2"], "position": {"x": 2.5, "y": 2.5}},
       {"name": "small-electric-pole", "neighbours": ["4,-2"], "position": {"x": -1.5, "y": 4.5}},

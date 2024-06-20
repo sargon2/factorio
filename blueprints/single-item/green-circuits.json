@@ -5,7 +5,7 @@
     "label": "Green circuits",
     "shift_x": -10,
     "shift_y": -10,
-    "version": 281479276658688,
+    "version": 281479278690304,
     "entities": [
       {"name": "assembling-machine-1", "recipe": "copper-cable", "position": {"x": 2.5, "y": -1.5}},
       {"name": "assembling-machine-1", "recipe": "electronic-circuit", "position": {"x": 6.5, "y": -0.5}},

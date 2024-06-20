@@ -5,7 +5,7 @@
     "label": "Yellow Science",
     "shift_x": 0,
     "shift_y": -34,
-    "version": 281479276658688,
+    "version": 281479278690304,
     "entities": [
       {"name": "assembling-machine-1", "recipe": "copper-cable", "position": {"x": -6.5, "y": 2.5}},
       {"name": "assembling-machine-1", "recipe": "copper-cable", "position": {"x": -3.5, "y": 2.5}},

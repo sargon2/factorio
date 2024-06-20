@@ -5,7 +5,7 @@
     "label": "Bot bootstrap base phase 4 - bots",
     "shift_x": -182,
     "shift_y": 116,
-    "version": 281479276658688,
+    "version": 281479278690304,
     "entities": [
       {"name": "assembling-machine-1", "recipe": "iron-gear-wheel", "position": {"x": -1.5, "y": 86.5}},
       {"name": "assembling-machine-1", "recipe": "pipe", "position": {"x": -6.5, "y": 91.5}},

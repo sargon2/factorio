@@ -5,7 +5,7 @@
     "label": "Four lane balancer",
     "shift_x": 17,
     "shift_y": -16,
-    "version": 281479276658688,
+    "version": 281479278690304,
     "entities": [
       {"name": "splitter", "direction": 2, "position": {"x": 0.5, "y": 0}},
       {"name": "splitter", "direction": 2, "position": {"x": 3.5, "y": 1}},

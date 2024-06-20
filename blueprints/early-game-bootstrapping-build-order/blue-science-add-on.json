@@ -6,7 +6,7 @@
     "description": "Adds on to the red/green expandable blueprint.",
     "shift_x": -395,
     "shift_y": -299,
-    "version": 281479276658688,
+    "version": 281479278690304,
     "entities": [
       {"name": "assembling-machine-1", "recipe": "iron-gear-wheel", "position": {"x": 74.5, "y": -19.5}},
       {"name": "assembling-machine-1", "recipe": "iron-gear-wheel", "position": {"x": 74.5, "y": -16.5}},

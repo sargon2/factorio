@@ -6,7 +6,7 @@
     "description": "Full smelter is iron, the other two columns are copper and steel, left to right",
     "shift_x": -163,
     "shift_y": 39,
-    "version": 281479276658688,
+    "version": 281479278690304,
     "entities": [
       {"name": "assembling-machine-1", "recipe": "copper-cable", "position": {"x": 122.5, "y": -0.5}},
       {"name": "assembling-machine-1", "recipe": "copper-cable", "position": {"x": 125.5, "y": -0.5}},

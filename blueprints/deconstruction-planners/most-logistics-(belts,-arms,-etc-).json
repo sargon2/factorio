@@ -3,7 +3,7 @@
   "deconstruction_planner": {
     "item": "deconstruction-planner",
     "label": "Most logistics (belts, arms, etc.)",
-    "version": 281479276658688,
+    "version": 281479278690304,
     "settings": {
       "tile_selection_mode": 2,
       "entity_filters": [

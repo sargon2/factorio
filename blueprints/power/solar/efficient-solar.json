@@ -5,7 +5,7 @@
     "label": "Efficient solar",
     "shift_x": 1,
     "shift_y": 1,
-    "version": 281479276658688,
+    "version": 281479278690304,
     "entities": [
       {"name": "accumulator", "position": {"x": 5, "y": 3}},
       {"name": "accumulator", "position": {"x": 7, "y": 6}},

@@ -5,7 +5,7 @@
     "label": "Fluid train unloader",
     "shift_x": -81,
     "shift_y": 1,
-    "version": 281479276658688,
+    "version": 281479278690304,
     "entities": [
       {"name": "pipe", "position": {"x": 10.5, "y": 3.5}},
       {"name": "pipe", "position": {"x": 17.5, "y": 3.5}},

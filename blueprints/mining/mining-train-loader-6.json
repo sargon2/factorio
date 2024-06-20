@@ -5,7 +5,7 @@
     "label": "Mining train loader 6",
     "shift_x": 35,
     "shift_y": -168,
-    "version": 281479276658688,
+    "version": 281479278690304,
     "entities": [
       {"name": "curved-rail", "direction": 3, "position": {"x": 19, "y": 68}},
       {"name": "curved-rail", "direction": 3, "position": {"x": 45, "y": 64}},

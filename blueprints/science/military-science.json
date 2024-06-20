@@ -5,7 +5,7 @@
     "label": "Military science",
     "shift_x": -16,
     "shift_y": 0,
-    "version": 281479276658688,
+    "version": 281479278690304,
     "entities": [
       {"name": "assembling-machine-1", "recipe": "grenade", "position": {"x": 2.5, "y": -5.5}},
       {"name": "assembling-machine-1", "recipe": "grenade", "position": {"x": 2.5, "y": -2.5}},

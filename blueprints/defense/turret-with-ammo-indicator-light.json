@@ -5,7 +5,7 @@
     "label": "Turret with ammo indicator light",
     "shift_x": 109,
     "shift_y": 17,
-    "version": 281479276658688,
+    "version": 281479278690304,
     "entities": [
       {
         "name": "constant-combinator",

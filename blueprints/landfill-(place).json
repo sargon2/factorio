@@ -3,7 +3,7 @@
   "blueprint": {
     "item": "blueprint",
     "label": "Landfill (place)",
-    "version": 281479276658688,
+    "version": 281479278690304,
     "icons": [{"index": 1, "signal": {"name": "landfill", "type": "item"}}],
     "tiles": [
       {"name": "landfill", "position": {"x": 55, "y": 131}},

@@ -5,7 +5,7 @@
     "label": "Copper wire",
     "shift_x": 333,
     "shift_y": -85,
-    "version": 281479276658688,
+    "version": 281479278690304,
     "entities": [
       {"name": "assembling-machine-1", "recipe": "copper-cable", "position": {"x": 0.5, "y": -0.5}},
       {"name": "assembling-machine-1", "recipe": "copper-cable", "position": {"x": 3.5, "y": -0.5}},

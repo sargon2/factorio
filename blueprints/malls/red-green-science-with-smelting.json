@@ -5,7 +5,7 @@
     "label": "Red green science with smelting",
     "shift_x": -7,
     "shift_y": -61,
-    "version": 281479276658688,
+    "version": 281479278690304,
     "entities": [
       {"name": "assembling-machine-1", "recipe": "copper-cable", "position": {"x": 27.5, "y": 13.5}},
       {"name": "assembling-machine-1", "recipe": "electronic-circuit", "position": {"x": 31.5, "y": 13.5}},

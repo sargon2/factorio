@@ -5,7 +5,7 @@
     "label": "1GW Nuclear OBSOLETE",
     "shift_x": -17,
     "shift_y": -33,
-    "version": 281479276658688,
+    "version": 281479278690304,
     "entities": [
       {"name": "assembling-machine-1", "recipe": "uranium-fuel-cell", "position": {"x": 10.5, "y": 17.5}},
       {"name": "centrifuge", "recipe": "nuclear-fuel-reprocessing", "position": {"x": 23.5, "y": 17.5}},

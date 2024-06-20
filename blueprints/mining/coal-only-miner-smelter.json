@@ -1,11 +1,11 @@
 {
-  "index": 4,
+  "index": 5,
   "blueprint": {
     "item": "blueprint",
     "label": "Coal only miner smelter",
     "shift_x": -63,
     "shift_y": 53,
-    "version": 281479276658688,
+    "version": 281479278690304,
     "entities": [
       {"name": "burner-inserter", "direction": 2, "position": {"x": 0.5, "y": 2.5}},
       {"name": "burner-inserter", "direction": 4, "position": {"x": 0.5, "y": 3.5}},

@@ -5,7 +5,7 @@
     "label": "Train loader (4)",
     "shift_x": -156,
     "shift_y": 59,
-    "version": 281479276658688,
+    "version": 281479278690304,
     "entities": [
       {"name": "fast-inserter", "position": {"x": -0.5, "y": 2.5}},
       {"name": "fast-inserter", "direction": 4, "position": {"x": -0.5, "y": 9.5}},

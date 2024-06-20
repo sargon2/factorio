@@ -6,7 +6,7 @@
     "description": "Must be placed on iron.",
     "shift_x": 0,
     "shift_y": 1,
-    "version": 281479276658688,
+    "version": 281479278690304,
     "entities": [
       {"name": "assembling-machine-1", "recipe": "firearm-magazine", "position": {"x": 9.5, "y": 0.5}},
       {"name": "electric-furnace", "position": {"x": 5.5, "y": 0.5}},

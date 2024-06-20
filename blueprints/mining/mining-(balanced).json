@@ -5,7 +5,7 @@
     "label": "Mining (balanced)",
     "shift_x": 1,
     "shift_y": 3,
-    "version": 281479276658688,
+    "version": 281479278690304,
     "entities": [
       {"name": "electric-mining-drill", "direction": 4, "position": {"x": 0.5, "y": -1.5}},
       {"name": "electric-mining-drill", "direction": 4, "position": {"x": 3.5, "y": -1.5}},

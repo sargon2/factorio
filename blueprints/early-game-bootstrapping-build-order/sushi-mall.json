@@ -5,7 +5,7 @@
     "label": "Sushi mall",
     "shift_x": 64,
     "shift_y": 57,
-    "version": 281479276658688,
+    "version": 281479278690304,
     "entities": [
       {"name": "assembling-machine-1", "recipe": "iron-gear-wheel", "position": {"x": 27.5, "y": 7.5}},
       {"name": "assembling-machine-1", "recipe": "iron-gear-wheel", "position": {"x": 30.5, "y": 7.5}},

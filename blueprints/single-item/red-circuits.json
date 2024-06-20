@@ -5,7 +5,7 @@
     "label": "Red circuits",
     "shift_x": -5,
     "shift_y": -8,
-    "version": 281479276658688,
+    "version": 281479278690304,
     "entities": [
       {"name": "assembling-machine-1", "recipe": "advanced-circuit", "position": {"x": 4.5, "y": 2.5}},
       {"name": "assembling-machine-1", "recipe": "advanced-circuit", "position": {"x": 7.5, "y": 2.5}},

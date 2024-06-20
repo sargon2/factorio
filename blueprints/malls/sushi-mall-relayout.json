@@ -5,7 +5,7 @@
     "label": "Sushi mall relayout",
     "shift_x": 225,
     "shift_y": 211,
-    "version": 281479276658688,
+    "version": 281479278690304,
     "entities": [
       {"name": "assembling-machine-1", "recipe": "radar", "position": {"x": 6.5, "y": -2.5}},
       {"name": "assembling-machine-1", "recipe": "transport-belt", "position": {"x": 9.5, "y": -2.5}},

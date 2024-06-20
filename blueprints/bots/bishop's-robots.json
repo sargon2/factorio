@@ -5,7 +5,7 @@
     "label": "Bishop's robots",
     "shift_x": -12,
     "shift_y": -19,
-    "version": 281479276658688,
+    "version": 281479278690304,
     "entities": [
       {"name": "assembling-machine-1", "recipe": "construction-robot", "position": {"x": 6.5, "y": 23.5}},
       {"name": "assembling-machine-1", "recipe": "flying-robot-frame", "position": {"x": 14.5, "y": 24.5}},

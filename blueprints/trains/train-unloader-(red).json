@@ -5,7 +5,7 @@
     "label": "Train unloader (red)",
     "shift_x": -2,
     "shift_y": -3,
-    "version": 281479276658688,
+    "version": 281479278690304,
     "entities": [
       {"name": "fast-splitter", "direction": 4, "position": {"x": 1, "y": 3.5}},
       {"name": "fast-splitter", "direction": 4, "position": {"x": 4, "y": 3.5}},

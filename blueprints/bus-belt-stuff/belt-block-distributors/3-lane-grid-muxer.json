@@ -5,7 +5,7 @@
     "label": "3-lane grid muxer",
     "shift_x": -177,
     "shift_y": -52,
-    "version": 281479276658688,
+    "version": 281479278690304,
     "entities": [
       {"name": "small-electric-pole", "neighbours": ["0,7"], "position": {"x": 6.5, "y": -0.5}},
       {"name": "small-electric-pole", "neighbours": ["7,0"], "position": {"x": -0.5, "y": 6.5}},

@@ -5,24 +5,40 @@
     "label": "Early game belt maker",
     "shift_x": 34,
     "shift_y": 8,
-    "version": 281479278690304,
+    "version": 562949954338818,
     "entities": [
-      {"name": "assembling-machine-1", "recipe": "iron-gear-wheel", "position": {"x": -1.5, "y": 0.5}},
-      {"name": "assembling-machine-1", "recipe": "transport-belt", "position": {"x": 2.5, "y": 0.5}},
-      {"name": "assembling-machine-1", "recipe": "iron-gear-wheel", "position": {"x": 6.5, "y": 0.5}},
-      {"name": "inserter", "direction": 6, "position": {"x": 0.5, "y": -0.5}},
-      {"name": "inserter", "direction": 2, "position": {"x": 4.5, "y": -0.5}},
-      {"name": "inserter", "direction": 6, "position": {"x": 0.5, "y": 0.5}},
+      {
+        "name": "assembling-machine-1",
+        "recipe": "iron-gear-wheel",
+        "recipe_quality": "normal",
+        "position": {"x": -1.5, "y": 0.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "transport-belt",
+        "recipe_quality": "normal",
+        "position": {"x": 2.5, "y": 0.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "iron-gear-wheel",
+        "recipe_quality": "normal",
+        "position": {"x": 6.5, "y": 0.5}
+      },
+      {"name": "inserter", "direction": 12, "position": {"x": 0.5, "y": -0.5}},
+      {"name": "inserter", "direction": 4, "position": {"x": 4.5, "y": -0.5}},
+      {"name": "inserter", "direction": 12, "position": {"x": 0.5, "y": 0.5}},
       {"name": "inserter", "position": {"x": 1.5, "y": 2.5}},
       {"name": "inserter", "position": {"x": 2.5, "y": 2.5}},
       {"name": "inserter", "position": {"x": 3.5, "y": 2.5}},
-      {"name": "inserter", "direction": 2, "position": {"x": 4.5, "y": 0.5}},
+      {"name": "inserter", "direction": 4, "position": {"x": 4.5, "y": 0.5}},
       {"name": "iron-chest", "position": {"x": 1.5, "y": 3.5}},
       {"name": "iron-chest", "position": {"x": 2.5, "y": 3.5}},
       {"name": "iron-chest", "position": {"x": 3.5, "y": 3.5}},
-      {"name": "small-electric-pole", "neighbours": ["4,0"], "position": {"x": 0.5, "y": 1.5}},
-      {"name": "small-electric-pole", "neighbours": ["-4,0"], "position": {"x": 4.5, "y": 1.5}}
+      {"name": "small-electric-pole", "position": {"x": 0.5, "y": 1.5}},
+      {"name": "small-electric-pole", "position": {"x": 4.5, "y": 1.5}}
     ],
-    "icons": [{"index": 1, "signal": {"name": "transport-belt", "type": "item"}}]
+    "icons": [{"index": 1, "signal": {"name": "transport-belt"}}],
+    "wires": [["2,2", 5, "6,2", 5]]
   }
 }

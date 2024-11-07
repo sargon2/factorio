@@ -3,7 +3,7 @@
   "deconstruction_planner": {
     "item": "deconstruction-planner",
     "label": "Trees & rocks & cliffs",
-    "version": 281479278690304,
+    "version": 562949954338818,
     "settings": {
       "tile_selection_mode": 2,
       "entity_filters": [
@@ -28,9 +28,9 @@
         {"name": "dead-tree-desert", "index": 18},
         {"name": "dry-hairy-tree", "index": 19},
         {"name": "dry-tree", "index": 20},
-        {"name": "sand-rock-big", "index": 21},
-        {"name": "rock-huge", "index": 22},
-        {"name": "rock-big", "index": 23}
+        {"name": "big-sand-rock", "index": 21},
+        {"name": "huge-rock", "index": 22},
+        {"name": "big-rock", "index": 23}
       ]
     }
   }

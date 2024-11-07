@@ -6,15 +6,30 @@
     "description": "Make the actual car yourself. It's faster.",
     "shift_x": 107,
     "shift_y": -171,
-    "version": 281479278690304,
+    "version": 562949954338818,
     "entities": [
-      {"name": "assembling-machine-1", "recipe": "iron-gear-wheel", "position": {"x": 0.5, "y": -0.5}},
-      {"name": "assembling-machine-1", "recipe": "pipe", "position": {"x": 3.5, "y": -0.5}},
-      {"name": "assembling-machine-1", "recipe": "engine-unit", "position": {"x": 1.5, "y": 3.5}},
+      {
+        "name": "assembling-machine-1",
+        "recipe": "iron-gear-wheel",
+        "recipe_quality": "normal",
+        "position": {"x": 0.5, "y": -0.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "pipe",
+        "recipe_quality": "normal",
+        "position": {"x": 3.5, "y": -0.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "engine-unit",
+        "recipe_quality": "normal",
+        "position": {"x": 1.5, "y": 3.5}
+      },
       {"name": "inserter", "position": {"x": 1.5, "y": 1.5}},
       {"name": "inserter", "position": {"x": 2.5, "y": 1.5}},
       {"name": "small-electric-pole", "position": {"x": 0.5, "y": 1.5}}
     ],
-    "icons": [{"index": 1, "signal": {"name": "car", "type": "item"}}]
+    "icons": [{"index": 1, "signal": {"name": "car"}}]
   }
 }

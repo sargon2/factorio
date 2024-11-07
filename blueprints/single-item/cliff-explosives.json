@@ -5,34 +5,61 @@
     "label": "Cliff explosives",
     "shift_x": -3,
     "shift_y": 0,
-    "version": 281479278690304,
+    "version": 562949954338818,
     "entities": [
-      {"name": "assembling-machine-1", "recipe": "grenade", "position": {"x": -0.5, "y": -2.5}},
-      {"name": "assembling-machine-1", "recipe": "cliff-explosives", "position": {"x": 3.5, "y": -2.5}},
-      {"name": "assembling-machine-1", "recipe": "empty-barrel", "position": {"x": 7.5, "y": -2.5}},
-      {"name": "chemical-plant", "direction": 2, "recipe": "explosives", "position": {"x": 3.5, "y": 1.5}},
-      {"name": "chemical-plant", "direction": 2, "recipe": "sulfur", "position": {"x": 3.5, "y": 5.5}},
-      {"name": "inserter", "direction": 4, "position": {"x": -0.5, "y": -0.5}},
-      {"name": "inserter", "direction": 4, "position": {"x": 3.5, "y": -4.5}},
-      {"name": "inserter", "direction": 6, "position": {"x": 1.5, "y": -1.5}},
-      {"name": "inserter", "direction": 4, "position": {"x": 0.5, "y": -0.5}},
-      {"name": "inserter", "direction": 4, "position": {"x": 3.5, "y": -0.5}},
-      {"name": "inserter", "direction": 2, "position": {"x": 5.5, "y": -1.5}},
-      {"name": "inserter", "direction": 4, "position": {"x": 7.5, "y": -0.5}},
-      {"name": "inserter", "direction": 6, "position": {"x": 1.5, "y": 1.5}},
-      {"name": "inserter", "direction": 4, "position": {"x": 3.5, "y": 3.5}},
+      {
+        "name": "assembling-machine-1",
+        "recipe": "grenade",
+        "recipe_quality": "normal",
+        "position": {"x": -0.5, "y": -2.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "cliff-explosives",
+        "recipe_quality": "normal",
+        "position": {"x": 3.5, "y": -2.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "barrel",
+        "recipe_quality": "normal",
+        "position": {"x": 7.5, "y": -2.5}
+      },
+      {
+        "name": "chemical-plant",
+        "direction": 4,
+        "recipe": "explosives",
+        "recipe_quality": "normal",
+        "position": {"x": 3.5, "y": 1.5}
+      },
+      {
+        "name": "chemical-plant",
+        "direction": 4,
+        "recipe": "sulfur",
+        "recipe_quality": "normal",
+        "position": {"x": 3.5, "y": 5.5}
+      },
+      {"name": "inserter", "direction": 8, "position": {"x": -0.5, "y": -0.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": 3.5, "y": -4.5}},
+      {"name": "inserter", "direction": 12, "position": {"x": 1.5, "y": -1.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": 0.5, "y": -0.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": 3.5, "y": -0.5}},
+      {"name": "inserter", "direction": 4, "position": {"x": 5.5, "y": -1.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": 7.5, "y": -0.5}},
+      {"name": "inserter", "direction": 12, "position": {"x": 1.5, "y": 1.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": 3.5, "y": 3.5}},
       {"name": "pipe", "position": {"x": 5.5, "y": 0.5}},
       {"name": "pipe", "position": {"x": 5.5, "y": 1.5}},
       {"name": "pipe", "position": {"x": 5.5, "y": 2.5}},
       {"name": "pipe", "position": {"x": 5.5, "y": 3.5}},
       {"name": "pipe", "position": {"x": 5.5, "y": 4.5}},
-      {"name": "pipe-to-ground", "direction": 6, "position": {"x": 6.5, "y": 2.5}},
-      {"name": "pipe-to-ground", "direction": 6, "position": {"x": 5.5, "y": 6.5}},
-      {"name": "pipe-to-ground", "direction": 2, "position": {"x": 8.5, "y": 2.5}},
-      {"name": "pipe-to-ground", "direction": 2, "position": {"x": 8.5, "y": 6.5}},
-      {"name": "small-electric-pole", "neighbours": ["4,-2"], "position": {"x": 1.5, "y": -0.5}},
-      {"name": "small-electric-pole", "neighbours": ["-3,6", "-4,2"], "position": {"x": 5.5, "y": -2.5}},
-      {"name": "small-electric-pole", "neighbours": ["3,-6"], "position": {"x": 2.5, "y": 3.5}},
+      {"name": "pipe-to-ground", "direction": 12, "position": {"x": 6.5, "y": 2.5}},
+      {"name": "pipe-to-ground", "direction": 12, "position": {"x": 5.5, "y": 6.5}},
+      {"name": "pipe-to-ground", "direction": 4, "position": {"x": 8.5, "y": 2.5}},
+      {"name": "pipe-to-ground", "direction": 4, "position": {"x": 8.5, "y": 6.5}},
+      {"name": "small-electric-pole", "position": {"x": 1.5, "y": -0.5}},
+      {"name": "small-electric-pole", "position": {"x": 5.5, "y": -2.5}},
+      {"name": "small-electric-pole", "position": {"x": 2.5, "y": 3.5}},
       {"name": "steel-chest", "position": {"x": 3.5, "y": -5.5}},
       {"name": "transport-belt", "position": {"x": -0.5, "y": 0.5}},
       {"name": "transport-belt", "position": {"x": -0.5, "y": 1.5}},
@@ -56,6 +83,7 @@
       {"name": "transport-belt", "position": {"x": 7.5, "y": 5.5}},
       {"name": "transport-belt", "position": {"x": 7.5, "y": 6.5}}
     ],
-    "icons": [{"index": 1, "signal": {"name": "cliff-explosives", "type": "item"}}]
+    "icons": [{"index": 1, "signal": {"name": "cliff-explosives"}}],
+    "wires": [["6,3", 5, "2,5", 5], ["6,3", 5, "3,9", 5]]
   }
 }

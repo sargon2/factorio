@@ -6,26 +6,40 @@
     "absolute-snapping": true,
     "shift_x": 1,
     "shift_y": 2,
-    "version": 281479278690304,
+    "version": 562949954338818,
     "entities": [
-      {"name": "big-electric-pole", "neighbours": ["0,25", "25,0"], "position": {"x": 0, "y": 3}},
-      {"name": "big-electric-pole", "neighbours": ["-25,0", "25,0"], "position": {"x": 25, "y": 3}},
-      {"name": "big-electric-pole", "neighbours": ["0,-25", "0,25"], "position": {"x": 0, "y": 28}},
-      {"name": "big-electric-pole", "neighbours": ["-25,0", "0,25"], "position": {"x": 50, "y": 3}},
-      {"name": "big-electric-pole", "neighbours": ["0,-25", "0,25"], "position": {"x": 50, "y": 28}},
-      {"name": "big-electric-pole", "neighbours": ["0,-25", "25,0"], "position": {"x": 0, "y": 53}},
-      {"name": "big-electric-pole", "neighbours": ["-25,0", "25,0"], "position": {"x": 25, "y": 53}},
-      {"name": "big-electric-pole", "neighbours": ["-25,0", "0,-25"], "position": {"x": 50, "y": 53}},
+      {"name": "big-electric-pole", "position": {"x": 0, "y": 3}},
+      {"name": "big-electric-pole", "position": {"x": 25, "y": 3}},
+      {"name": "big-electric-pole", "position": {"x": 0, "y": 28}},
+      {"name": "big-electric-pole", "position": {"x": 50, "y": 3}},
+      {"name": "big-electric-pole", "position": {"x": 50, "y": 28}},
+      {"name": "big-electric-pole", "position": {"x": 0, "y": 53}},
+      {"name": "big-electric-pole", "position": {"x": 25, "y": 53}},
+      {"name": "big-electric-pole", "position": {"x": 50, "y": 53}},
       {"name": "radar", "position": {"x": 52.5, "y": 3.5}},
-      {"name": "roboport", "position": {"x": 1, "y": 0}},
-      {"name": "roboport", "position": {"x": 51, "y": 0}},
-      {"name": "roboport", "position": {"x": 1, "y": 50}},
-      {"name": "roboport", "position": {"x": 51, "y": 50}}
+      {"name": "roboport", "position": {"x": 1, "y": 0}, "request_filters": {"sections": [{"index": 1}]}},
+      {"name": "roboport", "position": {"x": 51, "y": 0}, "request_filters": {"sections": [{"index": 1}]}},
+      {"name": "roboport", "position": {"x": 1, "y": 50}, "request_filters": {"sections": [{"index": 1}]}},
+      {
+        "name": "roboport",
+        "position": {"x": 51, "y": 50},
+        "request_filters": {"sections": [{"index": 1}]}
+      }
     ],
     "icons": [
-      {"index": 1, "signal": {"name": "roboport", "type": "item"}},
-      {"index": 2, "signal": {"name": "big-electric-pole", "type": "item"}}
+      {"index": 1, "signal": {"name": "roboport"}},
+      {"index": 2, "signal": {"name": "big-electric-pole"}}
     ],
-    "snap-to-grid": {"x": 50, "y": 50}
+    "snap-to-grid": {"x": 50, "y": 50},
+    "wires": [
+      ["0,3", 5, "25,3", 5],
+      ["0,3", 5, "0,28", 5],
+      ["25,3", 5, "50,3", 5],
+      ["50,3", 5, "50,28", 5],
+      ["0,28", 5, "0,53", 5],
+      ["50,28", 5, "50,53", 5],
+      ["0,53", 5, "25,53", 5],
+      ["25,53", 5, "50,53", 5]
+    ]
   }
 }

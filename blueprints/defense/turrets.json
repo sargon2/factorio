@@ -5,12 +5,12 @@
     "label": "Turrets",
     "shift_x": -3,
     "shift_y": -3,
-    "version": 281479278690304,
+    "version": 562949954338818,
     "entities": [
-      {"name": "gun-turret", "direction": 6, "position": {"x": 2, "y": 2}},
-      {"name": "gun-turret", "direction": 6, "position": {"x": 4, "y": 2}},
-      {"name": "gun-turret", "direction": 6, "position": {"x": 2, "y": 4}},
-      {"name": "gun-turret", "direction": 6, "position": {"x": 4, "y": 4}},
+      {"name": "gun-turret", "position": {"x": 2, "y": 2}},
+      {"name": "gun-turret", "position": {"x": 4, "y": 2}},
+      {"name": "gun-turret", "position": {"x": 2, "y": 4}},
+      {"name": "gun-turret", "position": {"x": 4, "y": 4}},
       {"name": "stone-wall", "position": {"x": -0.5, "y": -0.5}},
       {"name": "stone-wall", "position": {"x": 0.5, "y": -0.5}},
       {"name": "stone-wall", "position": {"x": 1.5, "y": -0.5}},
@@ -41,10 +41,10 @@
       {"name": "stone-wall", "position": {"x": 6.5, "y": 6.5}}
     ],
     "icons": [
-      {"index": 1, "signal": {"name": "gun-turret", "type": "item"}},
-      {"index": 2, "signal": {"name": "gun-turret", "type": "item"}},
-      {"index": 3, "signal": {"name": "gun-turret", "type": "item"}},
-      {"index": 4, "signal": {"name": "gun-turret", "type": "item"}}
+      {"index": 1, "signal": {"name": "gun-turret"}},
+      {"index": 2, "signal": {"name": "gun-turret"}},
+      {"index": 3, "signal": {"name": "gun-turret"}},
+      {"index": 4, "signal": {"name": "gun-turret"}}
     ]
   }
 }

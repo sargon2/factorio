@@ -6,7 +6,7 @@
     "absolute-snapping": true,
     "shift_x": 2,
     "shift_y": 3,
-    "version": 281479278690304,
+    "version": 562949954338818,
     "entities": [
       {"name": "accumulator", "position": {"x": 0, "y": 3}},
       {"name": "accumulator", "position": {"x": 2, "y": 3}},
@@ -156,7 +156,11 @@
       {"name": "accumulator", "position": {"x": 44, "y": 45}},
       {"name": "accumulator", "position": {"x": 46, "y": 45}},
       {"name": "radar", "position": {"x": 24.5, "y": 18.5}},
-      {"name": "roboport", "position": {"x": 23, "y": 22}},
+      {
+        "name": "roboport",
+        "position": {"x": 23, "y": 22},
+        "request_filters": {"sections": [{"index": 1}]}
+      },
       {"name": "solar-panel", "position": {"x": 0.5, "y": 0.5}},
       {"name": "solar-panel", "position": {"x": 3.5, "y": 0.5}},
       {"name": "solar-panel", "position": {"x": 6.5, "y": 0.5}},
@@ -332,24 +336,31 @@
       {"name": "solar-panel", "position": {"x": 36.5, "y": 36.5}},
       {"name": "solar-panel", "position": {"x": 39.5, "y": 36.5}},
       {"name": "solar-panel", "position": {"x": 33.5, "y": 42.5}},
-      {"name": "substation", "neighbours": ["0,18", "18,0"], "position": {"x": 2, "y": 5}},
-      {"name": "substation", "neighbours": ["-18,0", "0,18", "18,0"], "position": {"x": 20, "y": 5}},
-      {"name": "substation", "neighbours": ["0,-18", "0,18", "18,0"], "position": {"x": 2, "y": 23}},
-      {
-        "name": "substation",
-        "neighbours": ["-18,0", "0,-18", "0,18", "18,0"],
-        "position": {"x": 20, "y": 23}
-      },
-      {"name": "substation", "neighbours": ["-18,0", "0,18"], "position": {"x": 38, "y": 5}},
-      {"name": "substation", "neighbours": ["-18,0", "0,-18", "0,18"], "position": {"x": 38, "y": 23}},
-      {"name": "substation", "neighbours": ["0,-18", "18,0"], "position": {"x": 2, "y": 41}},
-      {"name": "substation", "neighbours": ["-18,0", "0,-18", "18,0"], "position": {"x": 20, "y": 41}},
-      {"name": "substation", "neighbours": ["-18,0", "0,-18"], "position": {"x": 38, "y": 41}}
+      {"name": "substation", "position": {"x": 2, "y": 5}},
+      {"name": "substation", "position": {"x": 20, "y": 5}},
+      {"name": "substation", "position": {"x": 2, "y": 23}},
+      {"name": "substation", "position": {"x": 20, "y": 23}},
+      {"name": "substation", "position": {"x": 38, "y": 5}},
+      {"name": "substation", "position": {"x": 38, "y": 23}},
+      {"name": "substation", "position": {"x": 2, "y": 41}},
+      {"name": "substation", "position": {"x": 20, "y": 41}},
+      {"name": "substation", "position": {"x": 38, "y": 41}}
     ],
-    "icons": [
-      {"index": 1, "signal": {"name": "roboport", "type": "item"}},
-      {"index": 2, "signal": {"name": "solar-panel", "type": "item"}}
-    ],
-    "snap-to-grid": {"x": 50, "y": 50}
+    "icons": [{"index": 1, "signal": {"name": "roboport"}}, {"index": 2, "signal": {"name": "solar-panel"}}],
+    "snap-to-grid": {"x": 50, "y": 50},
+    "wires": [
+      ["2,4.5", 5, "20,4.5", 5],
+      ["2,4.5", 5, "2,22.5", 5],
+      ["20,4.5", 5, "38,4.5", 5],
+      ["20,4.5", 5, "20,22.5", 5],
+      ["38,4.5", 5, "38,22.5", 5],
+      ["2,22.5", 5, "20,22.5", 5],
+      ["2,22.5", 5, "2,40.5", 5],
+      ["20,22.5", 5, "38,22.5", 5],
+      ["20,22.5", 5, "20,40.5", 5],
+      ["38,22.5", 5, "38,40.5", 5],
+      ["2,40.5", 5, "20,40.5", 5],
+      ["20,40.5", 5, "38,40.5", 5]
+    ]
   }
 }

@@ -5,10 +5,10 @@
     "label": "Inner corner section",
     "shift_x": -3,
     "shift_y": 3,
-    "version": 281479278690304,
+    "version": 562949954338818,
     "entities": [
-      {"name": "small-electric-pole", "neighbours": ["3,-3"], "position": {"x": 3.5, "y": -0.5}},
-      {"name": "small-electric-pole", "neighbours": ["-3,3"], "position": {"x": 6.5, "y": -3.5}},
+      {"name": "small-electric-pole", "position": {"x": 3.5, "y": -0.5}},
+      {"name": "small-electric-pole", "position": {"x": 6.5, "y": -3.5}},
       {"name": "stone-wall", "position": {"x": -0.5, "y": -5.5}},
       {"name": "stone-wall", "position": {"x": -0.5, "y": -4.5}},
       {"name": "stone-wall", "position": {"x": 1.5, "y": -6.5}},
@@ -26,16 +26,17 @@
       {"name": "transport-belt", "position": {"x": 7.5, "y": -2.5}},
       {"name": "transport-belt", "position": {"x": 7.5, "y": -1.5}},
       {"name": "transport-belt", "position": {"x": 7.5, "y": -0.5}},
-      {"name": "transport-belt", "direction": 2, "position": {"x": -0.5, "y": 0.5}},
-      {"name": "transport-belt", "direction": 2, "position": {"x": 0.5, "y": 0.5}},
-      {"name": "transport-belt", "direction": 2, "position": {"x": 1.5, "y": 0.5}},
-      {"name": "transport-belt", "direction": 2, "position": {"x": 2.5, "y": 0.5}},
-      {"name": "transport-belt", "direction": 2, "position": {"x": 3.5, "y": 0.5}},
-      {"name": "transport-belt", "direction": 2, "position": {"x": 4.5, "y": 0.5}},
-      {"name": "transport-belt", "direction": 2, "position": {"x": 5.5, "y": 0.5}},
-      {"name": "transport-belt", "direction": 2, "position": {"x": 6.5, "y": 0.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": -0.5, "y": 0.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 0.5, "y": 0.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 1.5, "y": 0.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 2.5, "y": 0.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 3.5, "y": 0.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 4.5, "y": 0.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 5.5, "y": 0.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 6.5, "y": 0.5}},
       {"name": "transport-belt", "position": {"x": 7.5, "y": 0.5}}
     ],
-    "icons": [{"index": 1, "signal": {"name": "stone-wall", "type": "item"}}]
+    "icons": [{"index": 1, "signal": {"name": "stone-wall"}}],
+    "wires": [["7,3", 5, "4,6", 5]]
   }
 }

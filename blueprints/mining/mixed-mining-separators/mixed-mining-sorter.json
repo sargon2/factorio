@@ -5,72 +5,72 @@
     "label": "Mixed mining sorter",
     "shift_x": 80,
     "shift_y": -38,
-    "version": 281479278690304,
+    "version": 562949954338818,
     "entities": [
       {
         "name": "splitter",
-        "direction": 4,
-        "filter": "iron-ore",
+        "direction": 8,
         "output_priority": "right",
+        "filter": {"name": "iron-ore", "comparator": "=", "quality": "normal"},
         "position": {"x": 3, "y": 0.5}
       },
       {
         "name": "splitter",
-        "direction": 4,
-        "filter": "iron-ore",
+        "direction": 8,
         "output_priority": "right",
+        "filter": {"name": "iron-ore", "comparator": "=", "quality": "normal"},
         "position": {"x": 2, "y": 1.5}
       },
       {
         "name": "splitter",
-        "direction": 4,
-        "filter": "iron-ore",
+        "direction": 8,
         "output_priority": "right",
+        "filter": {"name": "iron-ore", "comparator": "=", "quality": "normal"},
         "position": {"x": 1, "y": 2.5}
       },
       {
         "name": "splitter",
-        "direction": 4,
-        "filter": "copper-ore",
+        "direction": 8,
         "output_priority": "right",
+        "filter": {"name": "copper-ore", "comparator": "=", "quality": "normal"},
         "position": {"x": 3, "y": 2.5}
       },
       {
         "name": "splitter",
-        "direction": 4,
-        "filter": "copper-ore",
+        "direction": 8,
         "output_priority": "right",
+        "filter": {"name": "copper-ore", "comparator": "=", "quality": "normal"},
         "position": {"x": 2, "y": 3.5}
       },
       {
         "name": "splitter",
-        "direction": 4,
-        "filter": "coal",
+        "direction": 8,
         "output_priority": "right",
+        "filter": {"name": "coal", "comparator": "=", "quality": "normal"},
         "position": {"x": 3, "y": 4.5}
       },
-      {"name": "transport-belt", "direction": 4, "position": {"x": 0.5, "y": -0.5}},
-      {"name": "transport-belt", "direction": 4, "position": {"x": 1.5, "y": -0.5}},
-      {"name": "transport-belt", "direction": 4, "position": {"x": 2.5, "y": -0.5}},
-      {"name": "transport-belt", "direction": 4, "position": {"x": 3.5, "y": -0.5}},
-      {"name": "transport-belt", "direction": 4, "position": {"x": 0.5, "y": 0.5}},
-      {"name": "transport-belt", "direction": 4, "position": {"x": 1.5, "y": 0.5}},
-      {"name": "transport-belt", "direction": 4, "position": {"x": 0.5, "y": 1.5}},
-      {"name": "transport-belt", "direction": 4, "position": {"x": 3.5, "y": 1.5}},
-      {"name": "transport-belt", "direction": 4, "position": {"x": 0.5, "y": 3.5}},
-      {"name": "transport-belt", "direction": 4, "position": {"x": 3.5, "y": 3.5}},
-      {"name": "transport-belt", "direction": 4, "position": {"x": 0.5, "y": 4.5}},
-      {"name": "transport-belt", "direction": 4, "position": {"x": 1.5, "y": 4.5}},
-      {"name": "transport-belt", "direction": 4, "position": {"x": 0.5, "y": 5.5}},
-      {"name": "transport-belt", "direction": 4, "position": {"x": 1.5, "y": 5.5}},
-      {"name": "transport-belt", "direction": 4, "position": {"x": 2.5, "y": 5.5}},
-      {"name": "transport-belt", "direction": 4, "position": {"x": 3.5, "y": 5.5}}
+      {"name": "transport-belt", "direction": 8, "position": {"x": 0.5, "y": -0.5}},
+      {"name": "transport-belt", "direction": 8, "position": {"x": 1.5, "y": -0.5}},
+      {"name": "transport-belt", "direction": 8, "position": {"x": 2.5, "y": -0.5}},
+      {"name": "transport-belt", "direction": 8, "position": {"x": 3.5, "y": -0.5}},
+      {"name": "transport-belt", "direction": 8, "position": {"x": 0.5, "y": 0.5}},
+      {"name": "transport-belt", "direction": 8, "position": {"x": 1.5, "y": 0.5}},
+      {"name": "transport-belt", "direction": 8, "position": {"x": 0.5, "y": 1.5}},
+      {"name": "transport-belt", "direction": 8, "position": {"x": 3.5, "y": 1.5}},
+      {"name": "transport-belt", "direction": 8, "position": {"x": 0.5, "y": 3.5}},
+      {"name": "transport-belt", "direction": 8, "position": {"x": 3.5, "y": 3.5}},
+      {"name": "transport-belt", "direction": 8, "position": {"x": 0.5, "y": 4.5}},
+      {"name": "transport-belt", "direction": 8, "position": {"x": 1.5, "y": 4.5}},
+      {"name": "transport-belt", "direction": 8, "position": {"x": 0.5, "y": 5.5}},
+      {"name": "transport-belt", "direction": 8, "position": {"x": 1.5, "y": 5.5}},
+      {"name": "transport-belt", "direction": 8, "position": {"x": 2.5, "y": 5.5}},
+      {"name": "transport-belt", "direction": 8, "position": {"x": 3.5, "y": 5.5}}
     ],
     "icons": [
-      {"index": 1, "signal": {"name": "iron-ore", "type": "item"}},
-      {"index": 2, "signal": {"name": "copper-ore", "type": "item"}},
-      {"index": 3, "signal": {"name": "coal", "type": "item"}},
-      {"index": 4, "signal": {"name": "stone", "type": "item"}}
+      {"index": 1, "signal": {"name": "iron-ore"}},
+      {"index": 2, "signal": {"name": "copper-ore"}},
+      {"index": 3, "signal": {"name": "coal"}},
+      {"index": 4, "signal": {"name": "stone"}}
     ]
   }
 }

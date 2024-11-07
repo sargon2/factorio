@@ -6,22 +6,28 @@
     "description": "Must be placed on iron.",
     "shift_x": 0,
     "shift_y": 1,
-    "version": 281479278690304,
+    "version": 562949954338818,
     "entities": [
-      {"name": "assembling-machine-1", "recipe": "firearm-magazine", "position": {"x": 9.5, "y": 0.5}},
+      {
+        "name": "assembling-machine-1",
+        "recipe": "firearm-magazine",
+        "recipe_quality": "normal",
+        "position": {"x": 9.5, "y": 0.5}
+      },
       {"name": "electric-furnace", "position": {"x": 5.5, "y": 0.5}},
-      {"name": "electric-mining-drill", "direction": 2, "position": {"x": 2.5, "y": 0.5}},
-      {"name": "gun-turret", "direction": 6, "position": {"x": 13, "y": 1}},
-      {"name": "inserter", "direction": 6, "position": {"x": 7.5, "y": 0.5}},
-      {"name": "inserter", "direction": 6, "position": {"x": 11.5, "y": 0.5}},
-      {"name": "small-electric-pole", "neighbours": ["7,1"], "position": {"x": 0.5, "y": 0.5}},
-      {"name": "small-electric-pole", "neighbours": ["-7,-1", "4,0"], "position": {"x": 7.5, "y": 1.5}},
-      {"name": "small-electric-pole", "neighbours": ["-4,0"], "position": {"x": 11.5, "y": 1.5}}
+      {"name": "electric-mining-drill", "direction": 4, "position": {"x": 2.5, "y": 0.5}},
+      {"name": "gun-turret", "position": {"x": 13, "y": 1}},
+      {"name": "inserter", "direction": 12, "position": {"x": 7.5, "y": 0.5}},
+      {"name": "inserter", "direction": 12, "position": {"x": 11.5, "y": 0.5}},
+      {"name": "small-electric-pole", "position": {"x": 0.5, "y": 0.5}},
+      {"name": "small-electric-pole", "position": {"x": 7.5, "y": 1.5}},
+      {"name": "small-electric-pole", "position": {"x": 11.5, "y": 1.5}}
     ],
     "icons": [
-      {"index": 1, "signal": {"name": "electric-mining-drill", "type": "item"}},
-      {"index": 2, "signal": {"name": "gun-turret", "type": "item"}}
+      {"index": 1, "signal": {"name": "electric-mining-drill"}},
+      {"index": 2, "signal": {"name": "gun-turret"}}
     ],
-    "snap-to-grid": {"x": 13, "y": 3}
+    "snap-to-grid": {"x": 13, "y": 3},
+    "wires": [["0,0", 5, "7,1", 5], ["7,1", 5, "11,1", 5]]
   }
 }

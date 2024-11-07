@@ -5,17 +5,17 @@
     "label": "Alignment boxes",
     "shift_x": 151,
     "shift_y": 104,
-    "version": 281479278690304,
+    "version": 562949954338818,
     "entities": [
-      {"name": "express-transport-belt", "direction": 4, "position": {"x": 1.5, "y": 0.5}},
+      {"name": "express-transport-belt", "direction": 8, "position": {"x": 1.5, "y": 0.5}},
       {"name": "express-transport-belt", "position": {"x": 3.5, "y": 0.5}},
       {"name": "iron-chest", "position": {"x": 0.5, "y": 0.5}},
       {"name": "iron-chest", "position": {"x": 2.5, "y": 0.5}},
       {"name": "iron-chest", "position": {"x": 4.5, "y": 0.5}}
     ],
     "icons": [
-      {"index": 1, "signal": {"name": "express-transport-belt", "type": "item"}},
-      {"index": 2, "signal": {"name": "iron-chest", "type": "item"}}
+      {"index": 1, "signal": {"name": "express-transport-belt"}},
+      {"index": 2, "signal": {"name": "iron-chest"}}
     ],
     "tiles": [
       {"name": "refined-concrete", "position": {"x": 152, "y": 104}},

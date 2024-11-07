@@ -1,8 +1,3 @@
 {
-  "blueprint_book": {
-    "item": "blueprint-book",
-    "label": "2024-06-20T14:27:34-0600",
-    "description": "filename: /mnt/c/Users/dbese/AppData/Roaming/Factorio/blueprint-storage.dat\ntimestamp: 2024-06-20T14:27:34-0600\ngeneration: 795\n",
-    "version": 281479278690304
-  }
+  "blueprint_book": {"item": "blueprint-book", "label": "All blueprints", "active_index": 0, "version": 562949954338818}
 }

@@ -5,10 +5,10 @@
     "label": "Science labs",
     "shift_x": -4,
     "shift_y": -3,
-    "version": 281479278690304,
+    "version": 562949954338818,
     "entities": [
-      {"name": "fast-inserter", "direction": 2, "position": {"x": 2.5, "y": -0.5}},
-      {"name": "fast-inserter", "direction": 2, "position": {"x": 6.5, "y": -0.5}},
+      {"name": "fast-inserter", "direction": 4, "position": {"x": 2.5, "y": -0.5}},
+      {"name": "fast-inserter", "direction": 4, "position": {"x": 6.5, "y": -0.5}},
       {"name": "inserter", "position": {"x": -0.5, "y": 1.5}},
       {"name": "inserter", "position": {"x": -0.5, "y": 5.5}},
       {"name": "inserter", "position": {"x": 3.5, "y": 1.5}},
@@ -28,16 +28,19 @@
       {"name": "lab", "position": {"x": 5.5, "y": 7.5}},
       {"name": "lab", "position": {"x": 8.5, "y": 3.5}},
       {"name": "lab", "position": {"x": 8.5, "y": 7.5}},
-      {"name": "small-electric-pole", "neighbours": ["2,4", "4,0"], "position": {"x": -1.5, "y": 1.5}},
-      {
-        "name": "small-electric-pole",
-        "neighbours": ["-4,0", "4,4", "5,0"],
-        "position": {"x": 2.5, "y": 1.5}
-      },
-      {"name": "small-electric-pole", "neighbours": ["-5,0"], "position": {"x": 7.5, "y": 1.5}},
-      {"name": "small-electric-pole", "neighbours": ["-2,-4", "6,0"], "position": {"x": 0.5, "y": 5.5}},
-      {"name": "small-electric-pole", "neighbours": ["-4,-4", "-6,0"], "position": {"x": 6.5, "y": 5.5}}
+      {"name": "small-electric-pole", "position": {"x": -1.5, "y": 1.5}},
+      {"name": "small-electric-pole", "position": {"x": 2.5, "y": 1.5}},
+      {"name": "small-electric-pole", "position": {"x": 7.5, "y": 1.5}},
+      {"name": "small-electric-pole", "position": {"x": 0.5, "y": 5.5}},
+      {"name": "small-electric-pole", "position": {"x": 6.5, "y": 5.5}}
     ],
-    "icons": [{"index": 1, "signal": {"name": "lab", "type": "item"}}]
+    "icons": [{"index": 1, "signal": {"name": "lab"}}],
+    "wires": [
+      ["0,2", 5, "4,2", 5],
+      ["0,2", 5, "2,6", 5],
+      ["4,2", 5, "9,2", 5],
+      ["4,2", 5, "8,6", 5],
+      ["2,6", 5, "8,6", 5]
+    ]
   }
 }

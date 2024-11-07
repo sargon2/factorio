@@ -5,7 +5,7 @@
     "label": "Radar section",
     "shift_x": -2,
     "shift_y": -9,
-    "version": 281479278690304,
+    "version": 562949954338818,
     "entities": [
       {"name": "radar", "position": {"x": 1.5, "y": 15.5}},
       {"name": "small-electric-pole", "position": {"x": 2.5, "y": 17.5}},
@@ -57,16 +57,13 @@
       {"name": "stone-wall", "position": {"x": 3.5, "y": 13.5}},
       {"name": "stone-wall", "position": {"x": 4.5, "y": 12.5}},
       {"name": "stone-wall", "position": {"x": 4.5, "y": 13.5}},
-      {"name": "transport-belt", "direction": 2, "position": {"x": -0.5, "y": 18.5}},
-      {"name": "transport-belt", "direction": 2, "position": {"x": 0.5, "y": 18.5}},
-      {"name": "transport-belt", "direction": 2, "position": {"x": 1.5, "y": 18.5}},
-      {"name": "transport-belt", "direction": 2, "position": {"x": 2.5, "y": 18.5}},
-      {"name": "transport-belt", "direction": 2, "position": {"x": 3.5, "y": 18.5}},
-      {"name": "transport-belt", "direction": 2, "position": {"x": 4.5, "y": 18.5}}
+      {"name": "transport-belt", "direction": 4, "position": {"x": -0.5, "y": 18.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 0.5, "y": 18.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 1.5, "y": 18.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 2.5, "y": 18.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 3.5, "y": 18.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 4.5, "y": 18.5}}
     ],
-    "icons": [
-      {"index": 1, "signal": {"name": "stone-wall", "type": "item"}},
-      {"index": 2, "signal": {"name": "radar", "type": "item"}}
-    ]
+    "icons": [{"index": 1, "signal": {"name": "stone-wall"}}, {"index": 2, "signal": {"name": "radar"}}]
   }
 }

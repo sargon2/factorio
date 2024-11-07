@@ -5,12 +5,12 @@
     "label": "Turrets with pipe",
     "shift_x": 113,
     "shift_y": 100,
-    "version": 281479278690304,
+    "version": 562949954338818,
     "entities": [
-      {"name": "gun-turret", "direction": 2, "position": {"x": 2, "y": 2}},
-      {"name": "gun-turret", "direction": 2, "position": {"x": 4, "y": 2}},
-      {"name": "gun-turret", "direction": 2, "position": {"x": 2, "y": 4}},
-      {"name": "gun-turret", "direction": 2, "position": {"x": 4, "y": 4}},
+      {"name": "gun-turret", "position": {"x": 2, "y": 2}},
+      {"name": "gun-turret", "position": {"x": 4, "y": 2}},
+      {"name": "gun-turret", "position": {"x": 2, "y": 4}},
+      {"name": "gun-turret", "position": {"x": 4, "y": 4}},
       {"name": "pipe", "position": {"x": 0.5, "y": 0.5}},
       {"name": "pipe", "position": {"x": 1.5, "y": 0.5}},
       {"name": "pipe", "position": {"x": 0.5, "y": 1.5}},
@@ -32,9 +32,6 @@
       {"name": "pipe", "position": {"x": 4.5, "y": 5.5}},
       {"name": "pipe", "position": {"x": 5.5, "y": 5.5}}
     ],
-    "icons": [
-      {"index": 1, "signal": {"name": "gun-turret", "type": "item"}},
-      {"index": 2, "signal": {"name": "pipe", "type": "item"}}
-    ]
+    "icons": [{"index": 1, "signal": {"name": "gun-turret"}}, {"index": 2, "signal": {"name": "pipe"}}]
   }
 }

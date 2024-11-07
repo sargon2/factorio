@@ -1,0 +1,724 @@
+{
+  "index": 39,
+  "blueprint": {
+    "item": "blueprint",
+    "label": "All assem 1 p. 4",
+    "shift_x": -172,
+    "shift_y": -93,
+    "version": 562949954338818,
+    "entities": [
+      {
+        "name": "assembling-machine-1",
+        "recipe": "submachine-gun",
+        "recipe_quality": "normal",
+        "position": {"x": 0.5, "y": -7.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "shotgun",
+        "recipe_quality": "normal",
+        "position": {"x": 3.5, "y": -7.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "combat-shotgun",
+        "recipe_quality": "normal",
+        "position": {"x": 6.5, "y": -7.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "firearm-magazine",
+        "recipe_quality": "normal",
+        "position": {"x": 0.5, "y": -2.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "piercing-rounds-magazine",
+        "recipe_quality": "normal",
+        "position": {"x": 3.5, "y": -2.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "shotgun-shell",
+        "recipe_quality": "normal",
+        "position": {"x": 6.5, "y": -2.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "flamethrower",
+        "recipe_quality": "normal",
+        "position": {"x": 9.5, "y": -7.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "cannon-shell",
+        "recipe_quality": "normal",
+        "position": {"x": 9.5, "y": -2.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "explosive-cannon-shell",
+        "recipe_quality": "normal",
+        "position": {"x": 12.5, "y": -2.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "grenade",
+        "recipe_quality": "normal",
+        "position": {"x": 0.5, "y": 2.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "poison-capsule",
+        "recipe_quality": "normal",
+        "position": {"x": 3.5, "y": 2.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "slowdown-capsule",
+        "recipe_quality": "normal",
+        "position": {"x": 6.5, "y": 2.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "light-armor",
+        "recipe_quality": "normal",
+        "position": {"x": 0.5, "y": 7.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "heavy-armor",
+        "recipe_quality": "normal",
+        "position": {"x": 3.5, "y": 7.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "modular-armor",
+        "recipe_quality": "normal",
+        "position": {"x": 6.5, "y": 7.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "defender-capsule",
+        "recipe_quality": "normal",
+        "position": {"x": 9.5, "y": 2.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "solar-panel-equipment",
+        "recipe_quality": "normal",
+        "position": {"x": 0.5, "y": 12.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "battery-equipment",
+        "recipe_quality": "normal",
+        "position": {"x": 3.5, "y": 12.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "belt-immunity-equipment",
+        "recipe_quality": "normal",
+        "position": {"x": 0.5, "y": 17.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "exoskeleton-equipment",
+        "recipe_quality": "normal",
+        "position": {"x": 3.5, "y": 17.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "personal-roboport-equipment",
+        "recipe_quality": "normal",
+        "position": {"x": 6.5, "y": 17.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "stone-wall",
+        "recipe_quality": "normal",
+        "position": {"x": 0.5, "y": 22.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "gate",
+        "recipe_quality": "normal",
+        "position": {"x": 3.5, "y": 22.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "radar",
+        "recipe_quality": "normal",
+        "position": {"x": 6.5, "y": 22.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "night-vision-equipment",
+        "recipe_quality": "normal",
+        "position": {"x": 9.5, "y": 17.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "land-mine",
+        "recipe_quality": "normal",
+        "position": {"x": 9.5, "y": 22.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "gun-turret",
+        "recipe_quality": "normal",
+        "position": {"x": 0.5, "y": 27.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "laser-turret",
+        "recipe_quality": "normal",
+        "position": {"x": 3.5, "y": 27.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "flamethrower-turret",
+        "recipe_quality": "normal",
+        "position": {"x": 6.5, "y": 27.5}
+      },
+      {"name": "inserter", "direction": 8, "position": {"x": -0.5, "y": -5.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": -0.5, "y": -0.5}},
+      {"name": "inserter", "position": {"x": 0.5, "y": -5.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": 2.5, "y": -5.5}},
+      {"name": "inserter", "position": {"x": 3.5, "y": -5.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": 5.5, "y": -5.5}},
+      {"name": "inserter", "position": {"x": 6.5, "y": -5.5}},
+      {"name": "inserter", "position": {"x": 0.5, "y": -0.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": 2.5, "y": -0.5}},
+      {"name": "inserter", "position": {"x": 3.5, "y": -0.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": 5.5, "y": -0.5}},
+      {"name": "inserter", "position": {"x": 6.5, "y": -0.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": 8.5, "y": -5.5}},
+      {"name": "inserter", "position": {"x": 9.5, "y": -5.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": 8.5, "y": -0.5}},
+      {"name": "inserter", "position": {"x": 9.5, "y": -0.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": 11.5, "y": -0.5}},
+      {"name": "inserter", "position": {"x": 12.5, "y": -0.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": -0.5, "y": 4.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": -0.5, "y": 9.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": -0.5, "y": 14.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": -0.5, "y": 19.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": -0.5, "y": 24.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": -0.5, "y": 29.5}},
+      {"name": "inserter", "position": {"x": 0.5, "y": 4.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": 2.5, "y": 4.5}},
+      {"name": "inserter", "position": {"x": 3.5, "y": 4.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": 5.5, "y": 4.5}},
+      {"name": "inserter", "position": {"x": 6.5, "y": 4.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": 8.5, "y": 4.5}},
+      {"name": "inserter", "position": {"x": 9.5, "y": 4.5}},
+      {"name": "inserter", "position": {"x": 0.5, "y": 9.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": 2.5, "y": 9.5}},
+      {"name": "inserter", "position": {"x": 3.5, "y": 9.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": 5.5, "y": 9.5}},
+      {"name": "inserter", "position": {"x": 6.5, "y": 9.5}},
+      {"name": "inserter", "position": {"x": 0.5, "y": 14.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": 2.5, "y": 14.5}},
+      {"name": "inserter", "position": {"x": 3.5, "y": 14.5}},
+      {"name": "inserter", "position": {"x": 0.5, "y": 19.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": 2.5, "y": 19.5}},
+      {"name": "inserter", "position": {"x": 3.5, "y": 19.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": 5.5, "y": 19.5}},
+      {"name": "inserter", "position": {"x": 6.5, "y": 19.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": 8.5, "y": 19.5}},
+      {"name": "inserter", "position": {"x": 9.5, "y": 19.5}},
+      {"name": "inserter", "position": {"x": 0.5, "y": 24.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": 2.5, "y": 24.5}},
+      {"name": "inserter", "position": {"x": 3.5, "y": 24.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": 5.5, "y": 24.5}},
+      {"name": "inserter", "position": {"x": 6.5, "y": 24.5}},
+      {"name": "inserter", "position": {"x": 0.5, "y": 29.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": 2.5, "y": 29.5}},
+      {"name": "inserter", "position": {"x": 3.5, "y": 29.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": 5.5, "y": 29.5}},
+      {"name": "inserter", "position": {"x": 6.5, "y": 29.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": 8.5, "y": 24.5}},
+      {"name": "inserter", "position": {"x": 9.5, "y": 24.5}},
+      {"name": "passive-provider-chest", "bar": 10, "position": {"x": 0.5, "y": -4.5}},
+      {"name": "passive-provider-chest", "bar": 10, "position": {"x": 3.5, "y": -4.5}},
+      {"name": "passive-provider-chest", "bar": 10, "position": {"x": 6.5, "y": -4.5}},
+      {"name": "passive-provider-chest", "bar": 10, "position": {"x": 9.5, "y": -4.5}},
+      {"name": "passive-provider-chest", "bar": 10, "position": {"x": 0.5, "y": 0.5}},
+      {"name": "passive-provider-chest", "bar": 10, "position": {"x": 3.5, "y": 0.5}},
+      {"name": "passive-provider-chest", "bar": 10, "position": {"x": 6.5, "y": 0.5}},
+      {"name": "passive-provider-chest", "bar": 10, "position": {"x": 0.5, "y": 5.5}},
+      {"name": "passive-provider-chest", "bar": 10, "position": {"x": 3.5, "y": 5.5}},
+      {"name": "passive-provider-chest", "bar": 10, "position": {"x": 6.5, "y": 5.5}},
+      {"name": "passive-provider-chest", "bar": 10, "position": {"x": 9.5, "y": 0.5}},
+      {"name": "passive-provider-chest", "bar": 10, "position": {"x": 12.5, "y": 0.5}},
+      {"name": "passive-provider-chest", "bar": 10, "position": {"x": 9.5, "y": 5.5}},
+      {"name": "passive-provider-chest", "bar": 10, "position": {"x": 0.5, "y": 10.5}},
+      {"name": "passive-provider-chest", "bar": 10, "position": {"x": 3.5, "y": 10.5}},
+      {"name": "passive-provider-chest", "bar": 10, "position": {"x": 6.5, "y": 10.5}},
+      {"name": "passive-provider-chest", "bar": 10, "position": {"x": 0.5, "y": 15.5}},
+      {"name": "passive-provider-chest", "bar": 10, "position": {"x": 3.5, "y": 15.5}},
+      {"name": "passive-provider-chest", "bar": 10, "position": {"x": 0.5, "y": 20.5}},
+      {"name": "passive-provider-chest", "bar": 10, "position": {"x": 3.5, "y": 20.5}},
+      {"name": "passive-provider-chest", "bar": 10, "position": {"x": 6.5, "y": 20.5}},
+      {"name": "passive-provider-chest", "bar": 10, "position": {"x": 9.5, "y": 20.5}},
+      {"name": "passive-provider-chest", "bar": 10, "position": {"x": 0.5, "y": 25.5}},
+      {"name": "passive-provider-chest", "bar": 10, "position": {"x": 3.5, "y": 25.5}},
+      {"name": "passive-provider-chest", "bar": 10, "position": {"x": 6.5, "y": 25.5}},
+      {"name": "passive-provider-chest", "bar": 10, "position": {"x": 0.5, "y": 30.5}},
+      {"name": "passive-provider-chest", "bar": 10, "position": {"x": 3.5, "y": 30.5}},
+      {"name": "passive-provider-chest", "bar": 10, "position": {"x": 6.5, "y": 30.5}},
+      {"name": "passive-provider-chest", "bar": 10, "position": {"x": 9.5, "y": 25.5}},
+      {
+        "name": "requester-chest",
+        "position": {"x": -0.5, "y": -4.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [
+                {"name": "iron-plate", "comparator": "=", "count": 15, "index": 1, "quality": "normal"},
+                {"name": "copper-plate", "comparator": "=", "count": 7, "index": 2, "quality": "normal"},
+                {"name": "iron-gear-wheel", "comparator": "=", "count": 15, "index": 3, "quality": "normal"}
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "requester-chest",
+        "position": {"x": 2.5, "y": -4.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [
+                {"name": "wood", "comparator": "=", "count": 7, "index": 1, "quality": "normal"},
+                {"name": "iron-plate", "comparator": "=", "count": 22, "index": 2, "quality": "normal"},
+                {"name": "copper-plate", "comparator": "=", "count": 15, "index": 3, "quality": "normal"},
+                {"name": "iron-gear-wheel", "comparator": "=", "count": 7, "index": 4, "quality": "normal"}
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "requester-chest",
+        "position": {"x": 5.5, "y": -4.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [
+                {"name": "wood", "comparator": "=", "count": 15, "index": 1, "quality": "normal"},
+                {"name": "copper-plate", "comparator": "=", "count": 15, "index": 2, "quality": "normal"},
+                {"name": "steel-plate", "comparator": "=", "count": 22, "index": 3, "quality": "normal"},
+                {"name": "iron-gear-wheel", "comparator": "=", "count": 7, "index": 4, "quality": "normal"}
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "requester-chest",
+        "position": {"x": 8.5, "y": -4.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [
+                {"name": "steel-plate", "comparator": "=", "count": 7, "index": 1, "quality": "normal"},
+                {"name": "iron-gear-wheel", "comparator": "=", "count": 15, "index": 2, "quality": "normal"}
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "requester-chest",
+        "position": {"x": -0.5, "y": 0.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [{"name": "iron-plate", "comparator": "=", "count": 60, "index": 1, "quality": "normal"}]
+            }
+          ]
+        }
+      },
+      {
+        "name": "requester-chest",
+        "position": {"x": -0.5, "y": 5.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [
+                {"name": "coal", "comparator": "=", "count": 18, "index": 1, "quality": "normal"},
+                {"name": "iron-plate", "comparator": "=", "count": 9, "index": 2, "quality": "normal"}
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "requester-chest",
+        "position": {"x": -0.5, "y": 10.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [{"name": "iron-plate", "comparator": "=", "count": 200, "index": 1, "quality": "normal"}]
+            }
+          ]
+        }
+      },
+      {
+        "name": "requester-chest",
+        "position": {"x": -0.5, "y": 15.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [
+                {"name": "steel-plate", "comparator": "=", "count": 7, "index": 1, "quality": "normal"},
+                {"name": "advanced-circuit", "comparator": "=", "count": 3, "index": 2, "quality": "normal"},
+                {"name": "solar-panel", "comparator": "=", "count": 1, "index": 3, "quality": "normal"}
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "requester-chest",
+        "position": {"x": -0.5, "y": 20.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [
+                {"name": "steel-plate", "comparator": "=", "count": 15, "index": 1, "quality": "normal"},
+                {"name": "advanced-circuit", "comparator": "=", "count": 7, "index": 2, "quality": "normal"}
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "requester-chest",
+        "position": {"x": -0.5, "y": 25.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [{"name": "stone-brick", "comparator": "=", "count": 150, "index": 1, "quality": "normal"}]
+            }
+          ]
+        }
+      },
+      {
+        "name": "requester-chest",
+        "position": {"x": -0.5, "y": 30.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [
+                {"name": "iron-plate", "comparator": "=", "count": 37, "index": 1, "quality": "normal"},
+                {"name": "copper-plate", "comparator": "=", "count": 18, "index": 2, "quality": "normal"},
+                {"name": "iron-gear-wheel", "comparator": "=", "count": 18, "index": 3, "quality": "normal"}
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "requester-chest",
+        "position": {"x": 2.5, "y": 0.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [
+                {"name": "copper-plate", "comparator": "=", "count": 25, "index": 1, "quality": "normal"},
+                {"name": "steel-plate", "comparator": "=", "count": 5, "index": 2, "quality": "normal"},
+                {"name": "firearm-magazine", "comparator": "=", "count": 5, "index": 3, "quality": "normal"}
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "requester-chest",
+        "position": {"x": 5.5, "y": 0.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [
+                {"name": "iron-plate", "comparator": "=", "count": 10, "index": 1, "quality": "normal"},
+                {"name": "copper-plate", "comparator": "=", "count": 10, "index": 2, "quality": "normal"}
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "requester-chest",
+        "position": {"x": 2.5, "y": 5.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [
+                {"name": "coal", "comparator": "=", "count": 18, "index": 1, "quality": "normal"},
+                {"name": "steel-plate", "comparator": "=", "count": 5, "index": 2, "quality": "normal"},
+                {"name": "electronic-circuit", "comparator": "=", "count": 5, "index": 3, "quality": "normal"}
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "requester-chest",
+        "position": {"x": 5.5, "y": 5.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [
+                {"name": "coal", "comparator": "=", "count": 9, "index": 1, "quality": "normal"},
+                {"name": "steel-plate", "comparator": "=", "count": 3, "index": 2, "quality": "normal"},
+                {"name": "electronic-circuit", "comparator": "=", "count": 3, "index": 3, "quality": "normal"}
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "requester-chest",
+        "position": {"x": 8.5, "y": 0.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [
+                {"name": "steel-plate", "comparator": "=", "count": 3, "index": 1, "quality": "normal"},
+                {"name": "plastic-bar", "comparator": "=", "count": 3, "index": 2, "quality": "normal"},
+                {"name": "explosives", "comparator": "=", "count": 1, "index": 3, "quality": "normal"}
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "requester-chest",
+        "position": {"x": 11.5, "y": 0.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [
+                {"name": "steel-plate", "comparator": "=", "count": 3, "index": 1, "quality": "normal"},
+                {"name": "plastic-bar", "comparator": "=", "count": 3, "index": 2, "quality": "normal"},
+                {"name": "explosives", "comparator": "=", "count": 3, "index": 3, "quality": "normal"}
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "requester-chest",
+        "position": {"x": 8.5, "y": 5.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [
+                {"name": "iron-gear-wheel", "comparator": "=", "count": 5, "index": 1, "quality": "normal"},
+                {"name": "electronic-circuit", "comparator": "=", "count": 5, "index": 2, "quality": "normal"},
+                {"name": "piercing-rounds-magazine", "comparator": "=", "count": 5, "index": 3, "quality": "normal"}
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "requester-chest",
+        "position": {"x": 2.5, "y": 10.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [
+                {"name": "copper-plate", "comparator": "=", "count": 187, "index": 1, "quality": "normal"},
+                {"name": "steel-plate", "comparator": "=", "count": 93, "index": 2, "quality": "normal"}
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "requester-chest",
+        "position": {"x": 5.5, "y": 10.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [
+                {"name": "steel-plate", "comparator": "=", "count": 50, "index": 1, "quality": "normal"},
+                {"name": "advanced-circuit", "comparator": "=", "count": 30, "index": 2, "quality": "normal"}
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "requester-chest",
+        "position": {"x": 2.5, "y": 15.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [
+                {"name": "steel-plate", "comparator": "=", "count": 15, "index": 1, "quality": "normal"},
+                {"name": "battery", "comparator": "=", "count": 7, "index": 2, "quality": "normal"}
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "requester-chest",
+        "position": {"x": 2.5, "y": 20.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [
+                {"name": "steel-plate", "comparator": "=", "count": 30, "index": 1, "quality": "normal"},
+                {"name": "processing-unit", "comparator": "=", "count": 15, "index": 2, "quality": "normal"},
+                {"name": "electric-engine-unit", "comparator": "=", "count": 45, "index": 3, "quality": "normal"}
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "requester-chest",
+        "position": {"x": 5.5, "y": 20.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [
+                {"name": "steel-plate", "comparator": "=", "count": 30, "index": 1, "quality": "normal"},
+                {"name": "battery", "comparator": "=", "count": 67, "index": 2, "quality": "normal"},
+                {"name": "iron-gear-wheel", "comparator": "=", "count": 60, "index": 3, "quality": "normal"},
+                {"name": "advanced-circuit", "comparator": "=", "count": 15, "index": 4, "quality": "normal"}
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "requester-chest",
+        "position": {"x": 8.5, "y": 20.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [
+                {"name": "steel-plate", "comparator": "=", "count": 15, "index": 1, "quality": "normal"},
+                {"name": "advanced-circuit", "comparator": "=", "count": 7, "index": 2, "quality": "normal"}
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "requester-chest",
+        "position": {"x": 2.5, "y": 25.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [
+                {"name": "steel-plate", "comparator": "=", "count": 60, "index": 1, "quality": "normal"},
+                {"name": "electronic-circuit", "comparator": "=", "count": 60, "index": 2, "quality": "normal"},
+                {"name": "stone-wall", "comparator": "=", "count": 30, "index": 3, "quality": "normal"}
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "requester-chest",
+        "position": {"x": 5.5, "y": 25.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [
+                {"name": "iron-plate", "comparator": "=", "count": 300, "index": 1, "quality": "normal"},
+                {"name": "iron-gear-wheel", "comparator": "=", "count": 150, "index": 2, "quality": "normal"},
+                {"name": "electronic-circuit", "comparator": "=", "count": 150, "index": 3, "quality": "normal"}
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "requester-chest",
+        "position": {"x": 2.5, "y": 30.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [
+                {"name": "steel-plate", "comparator": "=", "count": 20, "index": 1, "quality": "normal"},
+                {"name": "battery", "comparator": "=", "count": 12, "index": 2, "quality": "normal"},
+                {"name": "electronic-circuit", "comparator": "=", "count": 20, "index": 3, "quality": "normal"}
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "requester-chest",
+        "position": {"x": 5.5, "y": 30.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [
+                {"name": "steel-plate", "comparator": "=", "count": 30, "index": 1, "quality": "normal"},
+                {"name": "iron-gear-wheel", "comparator": "=", "count": 15, "index": 2, "quality": "normal"},
+                {"name": "engine-unit", "comparator": "=", "count": 5, "index": 3, "quality": "normal"},
+                {"name": "pipe", "comparator": "=", "count": 10, "index": 4, "quality": "normal"}
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "requester-chest",
+        "position": {"x": 8.5, "y": 25.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [
+                {"name": "steel-plate", "comparator": "=", "count": 3, "index": 1, "quality": "normal"},
+                {"name": "explosives", "comparator": "=", "count": 6, "index": 2, "quality": "normal"}
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "icons": [
+      {"index": 1, "signal": {"name": "logistic-robot"}},
+      {"index": 2, "signal": {"name": "assembling-machine-1"}}
+    ]
+  }
+}

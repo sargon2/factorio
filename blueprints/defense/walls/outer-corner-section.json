@@ -5,7 +5,7 @@
     "label": "Outer corner section",
     "shift_x": -9,
     "shift_y": 0,
-    "version": 281479278690304,
+    "version": 562949954338818,
     "entities": [
       {"name": "stone-wall", "position": {"x": -0.5, "y": -9.5}},
       {"name": "stone-wall", "position": {"x": -0.5, "y": -7.5}},
@@ -129,12 +129,9 @@
       {"name": "stone-wall", "position": {"x": 16.5, "y": 9.5}},
       {"name": "stone-wall", "position": {"x": 18.5, "y": 9.5}},
       {"name": "stone-wall", "position": {"x": 17.5, "y": 10.5}},
-      {"name": "transport-belt", "direction": 4, "position": {"x": -0.5, "y": 9.5}},
-      {"name": "transport-belt", "direction": 4, "position": {"x": -0.5, "y": 10.5}}
+      {"name": "transport-belt", "direction": 8, "position": {"x": -0.5, "y": 9.5}},
+      {"name": "transport-belt", "direction": 8, "position": {"x": -0.5, "y": 10.5}}
     ],
-    "icons": [
-      {"index": 1, "signal": {"name": "stone-wall", "type": "item"}},
-      {"index": 2, "signal": {"name": "stone-wall", "type": "item"}}
-    ]
+    "icons": [{"index": 1, "signal": {"name": "stone-wall"}}, {"index": 2, "signal": {"name": "stone-wall"}}]
   }
 }

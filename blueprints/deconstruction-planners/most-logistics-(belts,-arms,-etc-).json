@@ -3,7 +3,7 @@
   "deconstruction_planner": {
     "item": "deconstruction-planner",
     "label": "Most logistics (belts, arms, etc.)",
-    "version": 281479278690304,
+    "version": 562949954338818,
     "settings": {
       "tile_selection_mode": 2,
       "entity_filters": [
@@ -23,9 +23,9 @@
         {"name": "inserter", "index": 13},
         {"name": "long-handed-inserter", "index": 14},
         {"name": "fast-inserter", "index": 15},
-        {"name": "filter-inserter", "index": 16},
-        {"name": "stack-inserter", "index": 17},
-        {"name": "stack-filter-inserter", "index": 18},
+        {"name": "fast-inserter", "index": 16},
+        {"name": "bulk-inserter", "index": 17},
+        {"name": "bulk-inserter", "index": 18},
         {"name": "small-electric-pole", "index": 19},
         {"name": "medium-electric-pole", "index": 20},
         {"name": "big-electric-pole", "index": 21},

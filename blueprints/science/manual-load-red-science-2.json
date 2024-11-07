@@ -5,32 +5,40 @@
     "label": "Manual load red science 2",
     "shift_x": 137,
     "shift_y": 76,
-    "version": 281479278690304,
+    "version": 562949954338818,
     "entities": [
-      {"name": "assembling-machine-1", "recipe": "iron-gear-wheel", "position": {"x": 3.5, "y": 0.5}},
       {
         "name": "assembling-machine-1",
-        "direction": 2,
+        "recipe": "iron-gear-wheel",
+        "recipe_quality": "normal",
+        "position": {"x": 3.5, "y": 0.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "direction": 4,
         "recipe": "automation-science-pack",
+        "recipe_quality": "normal",
         "position": {"x": 2.5, "y": 4.5}
       },
       {
         "name": "assembling-machine-1",
         "recipe": "automation-science-pack",
+        "recipe_quality": "normal",
         "position": {"x": 5.5, "y": 4.5}
       },
-      {"name": "inserter", "direction": 4, "position": {"x": 1.5, "y": 2.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": 1.5, "y": 2.5}},
       {"name": "inserter", "position": {"x": 3.5, "y": 2.5}},
       {"name": "inserter", "position": {"x": 4.5, "y": 2.5}},
-      {"name": "inserter", "direction": 4, "position": {"x": 5.5, "y": 2.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": 5.5, "y": 2.5}},
       {"name": "lab", "position": {"x": 0.5, "y": 0.5}},
       {"name": "lab", "position": {"x": 6.5, "y": 0.5}},
-      {"name": "small-electric-pole", "neighbours": ["4,0"], "position": {"x": 2.5, "y": 2.5}},
-      {"name": "small-electric-pole", "neighbours": ["-4,0"], "position": {"x": 6.5, "y": 2.5}}
+      {"name": "small-electric-pole", "position": {"x": 2.5, "y": 2.5}},
+      {"name": "small-electric-pole", "position": {"x": 6.5, "y": 2.5}}
     ],
     "icons": [
-      {"index": 1, "signal": {"name": "iron-gear-wheel", "type": "item"}},
-      {"index": 2, "signal": {"name": "automation-science-pack", "type": "item"}}
-    ]
+      {"index": 1, "signal": {"name": "iron-gear-wheel"}},
+      {"index": 2, "signal": {"name": "automation-science-pack"}}
+    ],
+    "wires": [["2,2", 5, "6,2", 5]]
   }
 }

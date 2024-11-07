@@ -5,7 +5,7 @@
     "label": "Mini solar",
     "shift_x": 1,
     "shift_y": 1,
-    "version": 281479278690304,
+    "version": 562949954338818,
     "entities": [
       {"name": "accumulator", "position": {"x": 0, "y": 3}},
       {"name": "accumulator", "position": {"x": 2, "y": 3}},
@@ -18,7 +18,7 @@
       {"name": "solar-panel", "position": {"x": 0.5, "y": 5.5}},
       {"name": "solar-panel", "position": {"x": 6.5, "y": 5.5}}
     ],
-    "icons": [{"index": 1, "signal": {"name": "solar-panel", "type": "item"}}],
+    "icons": [{"index": 1, "signal": {"name": "solar-panel"}}],
     "snap-to-grid": {"x": 9, "y": 8}
   }
 }

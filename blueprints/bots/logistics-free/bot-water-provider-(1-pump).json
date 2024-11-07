@@ -5,110 +5,82 @@
     "label": "Bot water provider (1 pump)",
     "shift_x": 212,
     "shift_y": 31,
-    "version": 281479278690304,
+    "version": 562949954338818,
     "entities": [
       {
         "name": "assembling-machine-2",
-        "direction": 4,
-        "recipe": "fill-water-barrel",
+        "direction": 8,
+        "recipe": "water-barrel",
+        "recipe_quality": "normal",
         "position": {"x": 5.5, "y": -2.5}
       },
       {
         "name": "assembling-machine-2",
-        "direction": 2,
-        "recipe": "fill-water-barrel",
+        "direction": 4,
+        "recipe": "water-barrel",
+        "recipe_quality": "normal",
         "position": {"x": 3.5, "y": 0.5}
       },
       {
         "name": "assembling-machine-2",
-        "direction": 2,
-        "recipe": "fill-water-barrel",
+        "direction": 4,
+        "recipe": "water-barrel",
+        "recipe_quality": "normal",
         "position": {"x": 3.5, "y": 3.5}
       },
       {
         "name": "assembling-machine-2",
-        "direction": 6,
-        "recipe": "fill-water-barrel",
+        "direction": 12,
+        "recipe": "water-barrel",
+        "recipe_quality": "normal",
         "position": {"x": 7.5, "y": 0.5}
       },
       {
         "name": "assembling-machine-2",
-        "direction": 6,
-        "recipe": "fill-water-barrel",
+        "direction": 12,
+        "recipe": "water-barrel",
+        "recipe_quality": "normal",
         "position": {"x": 7.5, "y": 3.5}
       },
       {
         "name": "assembling-machine-2",
-        "direction": 2,
-        "recipe": "fill-water-barrel",
+        "direction": 4,
+        "recipe": "water-barrel",
+        "recipe_quality": "normal",
         "position": {"x": 3.5, "y": 6.5}
       },
       {
         "name": "assembling-machine-2",
-        "direction": 6,
-        "recipe": "fill-water-barrel",
+        "direction": 12,
+        "recipe": "water-barrel",
+        "recipe_quality": "normal",
         "position": {"x": 7.5, "y": 6.5}
       },
-      {"name": "fast-inserter", "direction": 6, "position": {"x": 7.5, "y": -2.5}},
-      {"name": "fast-inserter", "direction": 2, "position": {"x": 7.5, "y": -1.5}},
-      {"name": "fast-inserter", "direction": 2, "position": {"x": 1.5, "y": 0.5}},
-      {"name": "fast-inserter", "direction": 6, "position": {"x": 1.5, "y": 1.5}},
-      {"name": "fast-inserter", "direction": 6, "position": {"x": 1.5, "y": 2.5}},
-      {"name": "fast-inserter", "direction": 2, "position": {"x": 1.5, "y": 4.5}},
-      {"name": "fast-inserter", "direction": 2, "position": {"x": 1.5, "y": 5.5}},
-      {"name": "fast-inserter", "direction": 6, "position": {"x": 1.5, "y": 6.5}},
-      {"name": "fast-inserter", "direction": 6, "position": {"x": 9.5, "y": 0.5}},
-      {"name": "fast-inserter", "direction": 2, "position": {"x": 9.5, "y": 1.5}},
-      {"name": "fast-inserter", "direction": 2, "position": {"x": 9.5, "y": 2.5}},
-      {"name": "fast-inserter", "direction": 6, "position": {"x": 9.5, "y": 4.5}},
-      {"name": "fast-inserter", "direction": 6, "position": {"x": 9.5, "y": 5.5}},
-      {"name": "fast-inserter", "direction": 2, "position": {"x": 9.5, "y": 6.5}},
-      {"name": "logistic-chest-passive-provider", "bar": 10, "position": {"x": 8.5, "y": -2.5}},
-      {"name": "logistic-chest-passive-provider", "bar": 10, "position": {"x": 0.5, "y": 0.5}},
-      {"name": "logistic-chest-passive-provider", "bar": 10, "position": {"x": 0.5, "y": 4.5}},
-      {"name": "logistic-chest-passive-provider", "bar": 10, "position": {"x": 0.5, "y": 5.5}},
-      {"name": "logistic-chest-passive-provider", "bar": 10, "position": {"x": 10.5, "y": 0.5}},
-      {"name": "logistic-chest-passive-provider", "bar": 10, "position": {"x": 10.5, "y": 4.5}},
-      {"name": "logistic-chest-passive-provider", "bar": 10, "position": {"x": 10.5, "y": 5.5}},
-      {
-        "name": "logistic-chest-requester",
-        "position": {"x": 8.5, "y": -1.5},
-        "request_filters": [{"name": "empty-barrel", "count": 112, "index": 1}]
-      },
-      {
-        "name": "logistic-chest-requester",
-        "position": {"x": 0.5, "y": 1.5},
-        "request_filters": [{"name": "empty-barrel", "count": 112, "index": 1}]
-      },
-      {
-        "name": "logistic-chest-requester",
-        "position": {"x": 0.5, "y": 2.5},
-        "request_filters": [{"name": "empty-barrel", "count": 112, "index": 1}]
-      },
-      {
-        "name": "logistic-chest-requester",
-        "position": {"x": 0.5, "y": 6.5},
-        "request_filters": [{"name": "empty-barrel", "count": 112, "index": 1}]
-      },
-      {
-        "name": "logistic-chest-requester",
-        "position": {"x": 10.5, "y": 1.5},
-        "request_filters": [{"name": "empty-barrel", "count": 112, "index": 1}]
-      },
-      {
-        "name": "logistic-chest-requester",
-        "position": {"x": 10.5, "y": 2.5},
-        "request_filters": [{"name": "empty-barrel", "count": 112, "index": 1}]
-      },
-      {
-        "name": "logistic-chest-requester",
-        "position": {"x": 10.5, "y": 6.5},
-        "request_filters": [{"name": "empty-barrel", "count": 112, "index": 1}]
-      },
-      {"name": "medium-electric-pole", "neighbours": ["2,7"], "position": {"x": 7.5, "y": -3.5}},
-      {"name": "medium-electric-pole", "neighbours": ["8,0"], "position": {"x": 1.5, "y": 3.5}},
-      {"name": "medium-electric-pole", "neighbours": ["-2,-7", "-8,0"], "position": {"x": 9.5, "y": 3.5}},
-      {"name": "offshore-pump", "direction": 4, "position": {"x": 5.5, "y": 18.5}},
+      {"name": "fast-inserter", "direction": 12, "position": {"x": 7.5, "y": -2.5}},
+      {"name": "fast-inserter", "direction": 4, "position": {"x": 7.5, "y": -1.5}},
+      {"name": "fast-inserter", "direction": 4, "position": {"x": 1.5, "y": 0.5}},
+      {"name": "fast-inserter", "direction": 12, "position": {"x": 1.5, "y": 1.5}},
+      {"name": "fast-inserter", "direction": 12, "position": {"x": 1.5, "y": 2.5}},
+      {"name": "fast-inserter", "direction": 4, "position": {"x": 1.5, "y": 4.5}},
+      {"name": "fast-inserter", "direction": 4, "position": {"x": 1.5, "y": 5.5}},
+      {"name": "fast-inserter", "direction": 12, "position": {"x": 1.5, "y": 6.5}},
+      {"name": "fast-inserter", "direction": 12, "position": {"x": 9.5, "y": 0.5}},
+      {"name": "fast-inserter", "direction": 4, "position": {"x": 9.5, "y": 1.5}},
+      {"name": "fast-inserter", "direction": 4, "position": {"x": 9.5, "y": 2.5}},
+      {"name": "fast-inserter", "direction": 12, "position": {"x": 9.5, "y": 4.5}},
+      {"name": "fast-inserter", "direction": 12, "position": {"x": 9.5, "y": 5.5}},
+      {"name": "fast-inserter", "direction": 4, "position": {"x": 9.5, "y": 6.5}},
+      {"name": "medium-electric-pole", "position": {"x": 7.5, "y": -3.5}},
+      {"name": "medium-electric-pole", "position": {"x": 1.5, "y": 3.5}},
+      {"name": "medium-electric-pole", "position": {"x": 9.5, "y": 3.5}},
+      {"name": "offshore-pump", "direction": 8, "position": {"x": 5.5, "y": 18.5}},
+      {"name": "passive-provider-chest", "bar": 10, "position": {"x": 8.5, "y": -2.5}},
+      {"name": "passive-provider-chest", "bar": 10, "position": {"x": 0.5, "y": 0.5}},
+      {"name": "passive-provider-chest", "bar": 10, "position": {"x": 0.5, "y": 4.5}},
+      {"name": "passive-provider-chest", "bar": 10, "position": {"x": 0.5, "y": 5.5}},
+      {"name": "passive-provider-chest", "bar": 10, "position": {"x": 10.5, "y": 0.5}},
+      {"name": "passive-provider-chest", "bar": 10, "position": {"x": 10.5, "y": 4.5}},
+      {"name": "passive-provider-chest", "bar": 10, "position": {"x": 10.5, "y": 5.5}},
       {"name": "pipe", "position": {"x": 5.5, "y": -0.5}},
       {"name": "pipe", "position": {"x": 5.5, "y": 0.5}},
       {"name": "pipe", "position": {"x": 5.5, "y": 1.5}},
@@ -118,8 +90,93 @@
       {"name": "pipe", "position": {"x": 5.5, "y": 5.5}},
       {"name": "pipe", "position": {"x": 5.5, "y": 6.5}},
       {"name": "pipe-to-ground", "position": {"x": 5.5, "y": 7.5}},
-      {"name": "pipe-to-ground", "direction": 4, "position": {"x": 5.5, "y": 17.5}}
+      {"name": "pipe-to-ground", "direction": 8, "position": {"x": 5.5, "y": 17.5}},
+      {
+        "name": "requester-chest",
+        "position": {"x": 8.5, "y": -1.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [{"name": "barrel", "comparator": "=", "count": 112, "index": 1, "quality": "normal"}]
+            }
+          ]
+        }
+      },
+      {
+        "name": "requester-chest",
+        "position": {"x": 0.5, "y": 1.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [{"name": "barrel", "comparator": "=", "count": 112, "index": 1, "quality": "normal"}]
+            }
+          ]
+        }
+      },
+      {
+        "name": "requester-chest",
+        "position": {"x": 0.5, "y": 2.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [{"name": "barrel", "comparator": "=", "count": 112, "index": 1, "quality": "normal"}]
+            }
+          ]
+        }
+      },
+      {
+        "name": "requester-chest",
+        "position": {"x": 0.5, "y": 6.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [{"name": "barrel", "comparator": "=", "count": 112, "index": 1, "quality": "normal"}]
+            }
+          ]
+        }
+      },
+      {
+        "name": "requester-chest",
+        "position": {"x": 10.5, "y": 1.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [{"name": "barrel", "comparator": "=", "count": 112, "index": 1, "quality": "normal"}]
+            }
+          ]
+        }
+      },
+      {
+        "name": "requester-chest",
+        "position": {"x": 10.5, "y": 2.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [{"name": "barrel", "comparator": "=", "count": 112, "index": 1, "quality": "normal"}]
+            }
+          ]
+        }
+      },
+      {
+        "name": "requester-chest",
+        "position": {"x": 10.5, "y": 6.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [{"name": "barrel", "comparator": "=", "count": 112, "index": 1, "quality": "normal"}]
+            }
+          ]
+        }
+      }
     ],
-    "icons": [{"index": 1, "signal": {"name": "water", "type": "fluid"}}]
+    "icons": [{"index": 1, "signal": {"name": "water", "type": "fluid"}}],
+    "wires": [["7,0", 5, "9,7", 5], ["1,7", 5, "9,7", 5]]
   }
 }

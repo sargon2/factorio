@@ -5,15 +5,16 @@
     "label": "Coal liquefaction - small",
     "shift_x": 82,
     "shift_y": 107,
-    "version": 281479278690304,
+    "version": 562949954338818,
     "entities": [
-      {"name": "boiler", "direction": 4, "position": {"x": 2.5, "y": 0}},
-      {"name": "inserter", "direction": 6, "position": {"x": 0.5, "y": 0.5}},
-      {"name": "inserter", "direction": 6, "position": {"x": 0.5, "y": 1.5}},
+      {"name": "boiler", "direction": 8, "position": {"x": 2.5, "y": 0}},
+      {"name": "inserter", "direction": 12, "position": {"x": 0.5, "y": 0.5}},
+      {"name": "inserter", "direction": 12, "position": {"x": 0.5, "y": 1.5}},
       {
         "name": "oil-refinery",
-        "direction": 4,
+        "direction": 8,
         "recipe": "coal-liquefaction",
+        "recipe_quality": "normal",
         "position": {"x": 3.5, "y": 3.5}
       },
       {"name": "pipe", "position": {"x": 4.5, "y": 0.5}},
@@ -27,16 +28,16 @@
       {"name": "pipe", "position": {"x": 6.5, "y": 5.5}},
       {"name": "pipe", "position": {"x": 5.5, "y": 6.5}},
       {"name": "pipe", "position": {"x": 6.5, "y": 6.5}},
-      {"name": "pipe-to-ground", "direction": 2, "position": {"x": 0.5, "y": -0.5}},
+      {"name": "pipe-to-ground", "direction": 4, "position": {"x": 0.5, "y": -0.5}},
       {"name": "small-electric-pole", "position": {"x": 0.5, "y": 2.5}},
-      {"name": "storage-tank", "direction": 2, "position": {"x": 0.5, "y": 7.5}},
+      {"name": "storage-tank", "direction": 4, "position": {"x": 0.5, "y": 7.5}},
       {"name": "storage-tank", "position": {"x": 4.5, "y": 8.5}},
       {"name": "storage-tank", "position": {"x": 7.5, "y": 8.5}},
       {"name": "transport-belt", "position": {"x": -0.5, "y": 0.5}},
       {"name": "transport-belt", "position": {"x": -0.5, "y": 1.5}}
     ],
     "icons": [
-      {"index": 1, "signal": {"name": "coal", "type": "item"}},
+      {"index": 1, "signal": {"name": "coal"}},
       {"index": 2, "signal": {"name": "petroleum-gas", "type": "fluid"}}
     ]
   }

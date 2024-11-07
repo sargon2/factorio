@@ -5,74 +5,72 @@
     "label": "Turret with ammo indicator light",
     "shift_x": 109,
     "shift_y": 17,
-    "version": 281479278690304,
+    "version": 562949954338818,
     "entities": [
       {
         "name": "constant-combinator",
-        "connections": {"1": {"red": [{"entity_rel": "0,-2"}]}},
-        "control_behavior": {"filters": [{"count": 1, "index": 1, "signal": {"name": "signal-yellow", "type": "virtual"}}]},
+        "control_behavior": {
+          "sections": {
+            "sections": [
+              {
+                "index": 1,
+                "filters": [
+                  {
+                    "name": "signal-yellow",
+                    "comparator": "=",
+                    "count": 1,
+                    "index": 1,
+                    "quality": "normal",
+                    "type": "virtual"
+                  }
+                ]
+              }
+            ]
+          }
+        },
         "position": {"x": 0.5, "y": 3.5}
       },
       {
         "name": "decider-combinator",
-        "connections": {"1": {"red": [{"entity_rel": "1,-2.5"}]}, "2": {"red": [{"entity_rel": "0,-3.5"}]}},
         "control_behavior": {
           "decider_conditions": {
-            "comparator": "≥",
-            "constant": 100,
-            "copy_count_from_input": false,
-            "first_signal": {"name": "firearm-magazine", "type": "item"},
-            "output_signal": {"name": "signal-green", "type": "virtual"}
+            "conditions": [{"comparator": "≥", "constant": 100, "first_signal": {"name": "firearm-magazine"}}],
+            "outputs": [{"copy_count_from_input": false, "signal": {"name": "signal-green", "type": "virtual"}}]
           }
         },
         "position": {"x": 0.5, "y": 5}
       },
       {
         "name": "decider-combinator",
-        "connections": {"1": {"red": [{"entity_rel": "0,-2.5"}]}, "2": {"red": [{"entity_rel": "-1,-3.5"}]}},
         "control_behavior": {
           "decider_conditions": {
-            "comparator": "<",
-            "constant": 50,
-            "copy_count_from_input": false,
-            "first_signal": {"name": "firearm-magazine", "type": "item"},
-            "output_signal": {"name": "signal-red", "type": "virtual"}
+            "conditions": [{"constant": 50, "first_signal": {"name": "firearm-magazine"}}],
+            "outputs": [{"copy_count_from_input": false, "signal": {"name": "signal-red", "type": "virtual"}}]
           }
         },
         "position": {"x": 1.5, "y": 5}
       },
       {"name": "gun-turret", "position": {"x": 1, "y": 0}},
-      {"name": "inserter", "direction": 4, "position": {"x": 1.5, "y": 1.5}},
-      {
-        "name": "iron-chest",
-        "bar": 1,
-        "connections": {
-          "1": {"red": [{"circuit_id": 1, "entity_rel": "-1,2.5"}, {"circuit_id": 1, "entity_rel": "0,2.5"}]}
-        },
-        "position": {"x": 1.5, "y": 2.5}
-      },
+      {"name": "inserter", "direction": 8, "position": {"x": 1.5, "y": 1.5}},
+      {"name": "iron-chest", "bar": 1, "position": {"x": 1.5, "y": 2.5}},
       {"name": "small-electric-pole", "position": {"x": 1.5, "y": 3.5}},
       {
         "name": "small-lamp",
-        "connections": {
-          "1": {
-            "red": [
-              {"circuit_id": 2, "entity_rel": "0,3.5"},
-              {"circuit_id": 2, "entity_rel": "1,3.5"},
-              {"entity_rel": "0,2"}
-            ]
-          }
-        },
         "control_behavior": {
+          "circuit_enabled": true,
           "use_colors": true,
           "circuit_condition": {"comparator": "≥", "constant": 0, "first_signal": {"name": "signal-0", "type": "virtual"}}
         },
         "position": {"x": 0.5, "y": 1.5}
       }
     ],
-    "icons": [
-      {"index": 1, "signal": {"name": "gun-turret", "type": "item"}},
-      {"index": 2, "signal": {"name": "small-lamp", "type": "item"}}
+    "icons": [{"index": 1, "signal": {"name": "gun-turret"}}, {"index": 2, "signal": {"name": "small-lamp"}}],
+    "wires": [
+      ["0,1.5", 1, "0,3.5", 1],
+      ["0,1.5", 1, "0,5", 3],
+      ["0,1.5", 1, "1,5", 3],
+      ["1,2.5", 1, "0,5", 1],
+      ["1,2.5", 1, "1,5", 1]
     ]
   }
 }

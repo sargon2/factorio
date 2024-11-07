@@ -5,46 +5,97 @@
     "label": "Copper wire",
     "shift_x": 333,
     "shift_y": -85,
-    "version": 281479278690304,
+    "version": 562949954338818,
     "entities": [
-      {"name": "assembling-machine-1", "recipe": "copper-cable", "position": {"x": 0.5, "y": -0.5}},
-      {"name": "assembling-machine-1", "recipe": "copper-cable", "position": {"x": 3.5, "y": -0.5}},
-      {"name": "assembling-machine-1", "recipe": "copper-cable", "position": {"x": 6.5, "y": -0.5}},
-      {"name": "assembling-machine-1", "recipe": "copper-cable", "position": {"x": 0.5, "y": 5.5}},
-      {"name": "assembling-machine-1", "recipe": "copper-cable", "position": {"x": 3.5, "y": 5.5}},
-      {"name": "assembling-machine-1", "recipe": "copper-cable", "position": {"x": 6.5, "y": 5.5}},
-      {"name": "fast-inserter", "direction": 4, "position": {"x": 0.5, "y": 1.5}},
+      {
+        "name": "assembling-machine-1",
+        "recipe": "copper-cable",
+        "recipe_quality": "normal",
+        "position": {"x": 0.5, "y": -0.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "copper-cable",
+        "recipe_quality": "normal",
+        "position": {"x": 3.5, "y": -0.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "copper-cable",
+        "recipe_quality": "normal",
+        "position": {"x": 6.5, "y": -0.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "copper-cable",
+        "recipe_quality": "normal",
+        "position": {"x": 0.5, "y": 5.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "copper-cable",
+        "recipe_quality": "normal",
+        "position": {"x": 3.5, "y": 5.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "copper-cable",
+        "recipe_quality": "normal",
+        "position": {"x": 6.5, "y": 5.5}
+      },
+      {"name": "fast-inserter", "direction": 8, "position": {"x": 0.5, "y": 1.5}},
       {"name": "fast-inserter", "position": {"x": 1.5, "y": 1.5}},
-      {"name": "fast-inserter", "direction": 4, "position": {"x": 2.5, "y": 1.5}},
+      {"name": "fast-inserter", "direction": 8, "position": {"x": 2.5, "y": 1.5}},
       {"name": "fast-inserter", "position": {"x": 0.5, "y": 3.5}},
-      {"name": "fast-inserter", "direction": 4, "position": {"x": 1.5, "y": 3.5}},
+      {"name": "fast-inserter", "direction": 8, "position": {"x": 1.5, "y": 3.5}},
       {"name": "fast-inserter", "position": {"x": 2.5, "y": 3.5}},
       {"name": "fast-inserter", "position": {"x": 4.5, "y": 1.5}},
-      {"name": "fast-inserter", "direction": 4, "position": {"x": 5.5, "y": 1.5}},
+      {"name": "fast-inserter", "direction": 8, "position": {"x": 5.5, "y": 1.5}},
       {"name": "fast-inserter", "position": {"x": 6.5, "y": 1.5}},
-      {"name": "fast-inserter", "direction": 4, "position": {"x": 4.5, "y": 3.5}},
+      {"name": "fast-inserter", "direction": 8, "position": {"x": 4.5, "y": 3.5}},
       {"name": "fast-inserter", "position": {"x": 5.5, "y": 3.5}},
-      {"name": "fast-inserter", "direction": 4, "position": {"x": 6.5, "y": 3.5}},
-      {"name": "logistic-chest-passive-provider", "bar": 4, "position": {"x": 1.5, "y": 2.5}},
-      {"name": "logistic-chest-passive-provider", "bar": 4, "position": {"x": 4.5, "y": 2.5}},
-      {"name": "logistic-chest-passive-provider", "bar": 4, "position": {"x": 6.5, "y": 2.5}},
+      {"name": "fast-inserter", "direction": 8, "position": {"x": 6.5, "y": 3.5}},
+      {"name": "medium-electric-pole", "position": {"x": 3.5, "y": 2.5}},
+      {"name": "passive-provider-chest", "bar": 4, "position": {"x": 1.5, "y": 2.5}},
+      {"name": "passive-provider-chest", "bar": 4, "position": {"x": 4.5, "y": 2.5}},
+      {"name": "passive-provider-chest", "bar": 4, "position": {"x": 6.5, "y": 2.5}},
       {
-        "name": "logistic-chest-requester",
+        "name": "requester-chest",
         "position": {"x": 0.5, "y": 2.5},
-        "request_filters": [{"name": "copper-plate", "count": 60, "index": 1}]
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [{"name": "copper-plate", "comparator": "=", "count": 60, "index": 1, "quality": "normal"}]
+            }
+          ]
+        }
       },
       {
-        "name": "logistic-chest-requester",
+        "name": "requester-chest",
         "position": {"x": 2.5, "y": 2.5},
-        "request_filters": [{"name": "copper-plate", "count": 60, "index": 1}]
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [{"name": "copper-plate", "comparator": "=", "count": 60, "index": 1, "quality": "normal"}]
+            }
+          ]
+        }
       },
       {
-        "name": "logistic-chest-requester",
+        "name": "requester-chest",
         "position": {"x": 5.5, "y": 2.5},
-        "request_filters": [{"name": "copper-plate", "count": 60, "index": 1}]
-      },
-      {"name": "medium-electric-pole", "position": {"x": 3.5, "y": 2.5}}
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [{"name": "copper-plate", "comparator": "=", "count": 60, "index": 1, "quality": "normal"}]
+            }
+          ]
+        }
+      }
     ],
-    "icons": [{"index": 1, "signal": {"name": "copper-cable", "type": "item"}}]
+    "icons": [{"index": 1, "signal": {"name": "copper-cable"}}]
   }
 }

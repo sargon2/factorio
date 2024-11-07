@@ -1,0 +1,645 @@
+{
+  "index": 32,
+  "blueprint": {
+    "item": "blueprint",
+    "label": "Bot-based bot maker small",
+    "shift_x": -173,
+    "shift_y": -116,
+    "version": 562949954338818,
+    "entities": [
+      {
+        "name": "assembling-machine-1",
+        "recipe": "iron-gear-wheel",
+        "recipe_quality": "normal",
+        "position": {"x": 0.5, "y": -2.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "pipe",
+        "recipe_quality": "normal",
+        "position": {"x": 3.5, "y": -2.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "direction": 4,
+        "recipe": "electronic-circuit",
+        "recipe_quality": "normal",
+        "position": {"x": 6.5, "y": -2.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "direction": 4,
+        "recipe": "electronic-circuit",
+        "recipe_quality": "normal",
+        "position": {"x": 9.5, "y": -2.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "direction": 4,
+        "recipe": "copper-cable",
+        "recipe_quality": "normal",
+        "position": {"x": 12.5, "y": -2.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "direction": 4,
+        "recipe": "copper-cable",
+        "recipe_quality": "normal",
+        "position": {"x": 15.5, "y": -2.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "direction": 4,
+        "recipe": "copper-cable",
+        "recipe_quality": "normal",
+        "position": {"x": 18.5, "y": -2.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "logistic-robot",
+        "recipe_quality": "normal",
+        "position": {"x": 21.5, "y": -2.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "direction": 4,
+        "recipe": "engine-unit",
+        "recipe_quality": "normal",
+        "position": {"x": 0.5, "y": 2.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "direction": 4,
+        "recipe": "engine-unit",
+        "recipe_quality": "normal",
+        "position": {"x": 3.5, "y": 2.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "direction": 4,
+        "recipe": "engine-unit",
+        "recipe_quality": "normal",
+        "position": {"x": 6.5, "y": 2.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "direction": 4,
+        "recipe": "flying-robot-frame",
+        "recipe_quality": "normal",
+        "position": {"x": 0.5, "y": 7.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "direction": 4,
+        "recipe": "flying-robot-frame",
+        "recipe_quality": "normal",
+        "position": {"x": 3.5, "y": 7.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "direction": 4,
+        "recipe": "flying-robot-frame",
+        "recipe_quality": "normal",
+        "position": {"x": 6.5, "y": 7.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "direction": 4,
+        "recipe": "engine-unit",
+        "recipe_quality": "normal",
+        "position": {"x": 9.5, "y": 2.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "advanced-circuit",
+        "recipe_quality": "normal",
+        "position": {"x": 12.5, "y": 2.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "advanced-circuit",
+        "recipe_quality": "normal",
+        "position": {"x": 15.5, "y": 2.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "direction": 4,
+        "recipe": "flying-robot-frame",
+        "recipe_quality": "normal",
+        "position": {"x": 9.5, "y": 7.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "direction": 4,
+        "recipe": "flying-robot-frame",
+        "recipe_quality": "normal",
+        "position": {"x": 12.5, "y": 7.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "direction": 4,
+        "recipe": "flying-robot-frame",
+        "recipe_quality": "normal",
+        "position": {"x": 15.5, "y": 7.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "advanced-circuit",
+        "recipe_quality": "normal",
+        "position": {"x": 18.5, "y": 2.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "construction-robot",
+        "recipe_quality": "normal",
+        "position": {"x": 21.5, "y": 2.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "direction": 4,
+        "recipe": "flying-robot-frame",
+        "recipe_quality": "normal",
+        "position": {"x": 18.5, "y": 7.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "direction": 4,
+        "recipe": "flying-robot-frame",
+        "recipe_quality": "normal",
+        "position": {"x": 21.5, "y": 7.5}
+      },
+      {"name": "inserter", "direction": 8, "position": {"x": -0.5, "y": -0.5}},
+      {"name": "inserter", "position": {"x": 0.5, "y": -0.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": 2.5, "y": -0.5}},
+      {"name": "inserter", "position": {"x": 3.5, "y": -0.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": 5.5, "y": -0.5}},
+      {"name": "inserter", "position": {"x": 6.5, "y": -0.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": 8.5, "y": -0.5}},
+      {"name": "inserter", "position": {"x": 9.5, "y": -0.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": 11.5, "y": -0.5}},
+      {"name": "inserter", "position": {"x": 12.5, "y": -0.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": 14.5, "y": -0.5}},
+      {"name": "inserter", "position": {"x": 15.5, "y": -0.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": 17.5, "y": -0.5}},
+      {"name": "inserter", "position": {"x": 18.5, "y": -0.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": 20.5, "y": -0.5}},
+      {"name": "inserter", "position": {"x": 21.5, "y": -0.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": -0.5, "y": 4.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": -0.5, "y": 9.5}},
+      {"name": "inserter", "position": {"x": 0.5, "y": 4.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": 2.5, "y": 4.5}},
+      {"name": "inserter", "position": {"x": 3.5, "y": 4.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": 5.5, "y": 4.5}},
+      {"name": "inserter", "position": {"x": 6.5, "y": 4.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": 8.5, "y": 4.5}},
+      {"name": "inserter", "position": {"x": 9.5, "y": 4.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": 11.5, "y": 4.5}},
+      {"name": "inserter", "position": {"x": 12.5, "y": 4.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": 14.5, "y": 4.5}},
+      {"name": "inserter", "position": {"x": 15.5, "y": 4.5}},
+      {"name": "inserter", "position": {"x": 0.5, "y": 9.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": 2.5, "y": 9.5}},
+      {"name": "inserter", "position": {"x": 3.5, "y": 9.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": 5.5, "y": 9.5}},
+      {"name": "inserter", "position": {"x": 6.5, "y": 9.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": 8.5, "y": 9.5}},
+      {"name": "inserter", "position": {"x": 9.5, "y": 9.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": 11.5, "y": 9.5}},
+      {"name": "inserter", "position": {"x": 12.5, "y": 9.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": 14.5, "y": 9.5}},
+      {"name": "inserter", "position": {"x": 15.5, "y": 9.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": 17.5, "y": 4.5}},
+      {"name": "inserter", "position": {"x": 18.5, "y": 4.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": 20.5, "y": 4.5}},
+      {"name": "inserter", "position": {"x": 21.5, "y": 4.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": 17.5, "y": 9.5}},
+      {"name": "inserter", "position": {"x": 18.5, "y": 9.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": 20.5, "y": 9.5}},
+      {"name": "inserter", "position": {"x": 21.5, "y": 9.5}},
+      {"name": "medium-electric-pole", "position": {"x": 1.5, "y": -0.5}},
+      {"name": "medium-electric-pole", "position": {"x": 7.5, "y": -0.5}},
+      {"name": "medium-electric-pole", "position": {"x": 13.5, "y": -0.5}},
+      {"name": "medium-electric-pole", "position": {"x": 19.5, "y": -0.5}},
+      {"name": "medium-electric-pole", "position": {"x": 1.5, "y": 4.5}},
+      {"name": "medium-electric-pole", "position": {"x": 7.5, "y": 4.5}},
+      {"name": "medium-electric-pole", "position": {"x": 13.5, "y": 4.5}},
+      {"name": "medium-electric-pole", "position": {"x": 1.5, "y": 9.5}},
+      {"name": "medium-electric-pole", "position": {"x": 7.5, "y": 9.5}},
+      {"name": "medium-electric-pole", "position": {"x": 13.5, "y": 9.5}},
+      {"name": "medium-electric-pole", "position": {"x": 19.5, "y": 4.5}},
+      {"name": "medium-electric-pole", "position": {"x": 19.5, "y": 9.5}},
+      {"name": "passive-provider-chest", "position": {"x": 0.5, "y": 0.5}},
+      {"name": "passive-provider-chest", "position": {"x": 3.5, "y": 0.5}},
+      {"name": "passive-provider-chest", "position": {"x": 6.5, "y": 0.5}},
+      {"name": "passive-provider-chest", "position": {"x": 0.5, "y": 5.5}},
+      {"name": "passive-provider-chest", "position": {"x": 3.5, "y": 5.5}},
+      {"name": "passive-provider-chest", "position": {"x": 6.5, "y": 5.5}},
+      {"name": "passive-provider-chest", "position": {"x": 9.5, "y": 0.5}},
+      {"name": "passive-provider-chest", "position": {"x": 12.5, "y": 0.5}},
+      {"name": "passive-provider-chest", "position": {"x": 15.5, "y": 0.5}},
+      {"name": "passive-provider-chest", "position": {"x": 9.5, "y": 5.5}},
+      {"name": "passive-provider-chest", "position": {"x": 12.5, "y": 5.5}},
+      {"name": "passive-provider-chest", "position": {"x": 15.5, "y": 5.5}},
+      {"name": "passive-provider-chest", "position": {"x": 0.5, "y": 10.5}},
+      {"name": "passive-provider-chest", "position": {"x": 3.5, "y": 10.5}},
+      {"name": "passive-provider-chest", "position": {"x": 6.5, "y": 10.5}},
+      {"name": "passive-provider-chest", "position": {"x": 9.5, "y": 10.5}},
+      {"name": "passive-provider-chest", "position": {"x": 12.5, "y": 10.5}},
+      {"name": "passive-provider-chest", "position": {"x": 15.5, "y": 10.5}},
+      {"name": "passive-provider-chest", "position": {"x": 18.5, "y": 0.5}},
+      {"name": "passive-provider-chest", "position": {"x": 21.5, "y": 0.5}},
+      {"name": "passive-provider-chest", "position": {"x": 18.5, "y": 5.5}},
+      {"name": "passive-provider-chest", "position": {"x": 21.5, "y": 5.5}},
+      {"name": "passive-provider-chest", "position": {"x": 18.5, "y": 10.5}},
+      {"name": "passive-provider-chest", "position": {"x": 21.5, "y": 10.5}},
+      {
+        "name": "requester-chest",
+        "position": {"x": -0.5, "y": 0.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [{"name": "iron-plate", "comparator": "=", "count": 60, "index": 1, "quality": "normal"}]
+            }
+          ]
+        }
+      },
+      {
+        "name": "requester-chest",
+        "position": {"x": -0.5, "y": 5.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [
+                {"name": "steel-plate", "comparator": "=", "count": 1, "index": 1, "quality": "normal"},
+                {"name": "iron-gear-wheel", "comparator": "=", "count": 1, "index": 2, "quality": "normal"},
+                {"name": "pipe", "comparator": "=", "count": 3, "index": 3, "quality": "normal"}
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "requester-chest",
+        "position": {"x": -0.5, "y": 10.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [
+                {"name": "steel-plate", "comparator": "=", "count": 1, "index": 1, "quality": "normal"},
+                {"name": "battery", "comparator": "=", "count": 2, "index": 2, "quality": "normal"},
+                {"name": "electronic-circuit", "comparator": "=", "count": 3, "index": 3, "quality": "normal"},
+                {"name": "electric-engine-unit", "comparator": "=", "count": 1, "index": 4, "quality": "normal"}
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "requester-chest",
+        "position": {"x": 2.5, "y": 0.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [{"name": "iron-plate", "comparator": "=", "count": 30, "index": 1, "quality": "normal"}]
+            }
+          ]
+        }
+      },
+      {
+        "name": "requester-chest",
+        "position": {"x": 5.5, "y": 0.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [
+                {"name": "iron-plate", "comparator": "=", "count": 30, "index": 1, "quality": "normal"},
+                {"name": "copper-cable", "comparator": "=", "count": 90, "index": 2, "quality": "normal"}
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "requester-chest",
+        "position": {"x": 2.5, "y": 5.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [
+                {"name": "steel-plate", "comparator": "=", "count": 1, "index": 1, "quality": "normal"},
+                {"name": "iron-gear-wheel", "comparator": "=", "count": 1, "index": 2, "quality": "normal"},
+                {"name": "pipe", "comparator": "=", "count": 3, "index": 3, "quality": "normal"}
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "requester-chest",
+        "position": {"x": 5.5, "y": 5.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [
+                {"name": "steel-plate", "comparator": "=", "count": 1, "index": 1, "quality": "normal"},
+                {"name": "iron-gear-wheel", "comparator": "=", "count": 1, "index": 2, "quality": "normal"},
+                {"name": "pipe", "comparator": "=", "count": 3, "index": 3, "quality": "normal"}
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "requester-chest",
+        "position": {"x": 8.5, "y": 0.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [
+                {"name": "iron-plate", "comparator": "=", "count": 30, "index": 1, "quality": "normal"},
+                {"name": "copper-cable", "comparator": "=", "count": 90, "index": 2, "quality": "normal"}
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "requester-chest",
+        "position": {"x": 11.5, "y": 0.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [{"name": "copper-plate", "comparator": "=", "count": 30, "index": 1, "quality": "normal"}]
+            }
+          ]
+        }
+      },
+      {
+        "name": "requester-chest",
+        "position": {"x": 14.5, "y": 0.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [{"name": "copper-plate", "comparator": "=", "count": 30, "index": 1, "quality": "normal"}]
+            }
+          ]
+        }
+      },
+      {
+        "name": "requester-chest",
+        "position": {"x": 8.5, "y": 5.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [
+                {"name": "steel-plate", "comparator": "=", "count": 1, "index": 1, "quality": "normal"},
+                {"name": "iron-gear-wheel", "comparator": "=", "count": 1, "index": 2, "quality": "normal"},
+                {"name": "pipe", "comparator": "=", "count": 3, "index": 3, "quality": "normal"}
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "requester-chest",
+        "position": {"x": 11.5, "y": 5.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [
+                {"name": "plastic-bar", "comparator": "=", "count": 5, "index": 1, "quality": "normal"},
+                {"name": "copper-cable", "comparator": "=", "count": 10, "index": 2, "quality": "normal"},
+                {"name": "electronic-circuit", "comparator": "=", "count": 5, "index": 3, "quality": "normal"}
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "requester-chest",
+        "position": {"x": 14.5, "y": 5.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [
+                {"name": "plastic-bar", "comparator": "=", "count": 5, "index": 1, "quality": "normal"},
+                {"name": "copper-cable", "comparator": "=", "count": 10, "index": 2, "quality": "normal"},
+                {"name": "electronic-circuit", "comparator": "=", "count": 5, "index": 3, "quality": "normal"}
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "requester-chest",
+        "position": {"x": 2.5, "y": 10.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [
+                {"name": "steel-plate", "comparator": "=", "count": 1, "index": 1, "quality": "normal"},
+                {"name": "battery", "comparator": "=", "count": 2, "index": 2, "quality": "normal"},
+                {"name": "electronic-circuit", "comparator": "=", "count": 3, "index": 3, "quality": "normal"},
+                {"name": "electric-engine-unit", "comparator": "=", "count": 1, "index": 4, "quality": "normal"}
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "requester-chest",
+        "position": {"x": 5.5, "y": 10.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [
+                {"name": "steel-plate", "comparator": "=", "count": 1, "index": 1, "quality": "normal"},
+                {"name": "battery", "comparator": "=", "count": 2, "index": 2, "quality": "normal"},
+                {"name": "electronic-circuit", "comparator": "=", "count": 3, "index": 3, "quality": "normal"},
+                {"name": "electric-engine-unit", "comparator": "=", "count": 1, "index": 4, "quality": "normal"}
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "requester-chest",
+        "position": {"x": 8.5, "y": 10.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [
+                {"name": "steel-plate", "comparator": "=", "count": 1, "index": 1, "quality": "normal"},
+                {"name": "battery", "comparator": "=", "count": 2, "index": 2, "quality": "normal"},
+                {"name": "electronic-circuit", "comparator": "=", "count": 3, "index": 3, "quality": "normal"},
+                {"name": "electric-engine-unit", "comparator": "=", "count": 1, "index": 4, "quality": "normal"}
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "requester-chest",
+        "position": {"x": 11.5, "y": 10.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [
+                {"name": "steel-plate", "comparator": "=", "count": 1, "index": 1, "quality": "normal"},
+                {"name": "battery", "comparator": "=", "count": 2, "index": 2, "quality": "normal"},
+                {"name": "electronic-circuit", "comparator": "=", "count": 3, "index": 3, "quality": "normal"},
+                {"name": "electric-engine-unit", "comparator": "=", "count": 1, "index": 4, "quality": "normal"}
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "requester-chest",
+        "position": {"x": 14.5, "y": 10.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [
+                {"name": "steel-plate", "comparator": "=", "count": 1, "index": 1, "quality": "normal"},
+                {"name": "battery", "comparator": "=", "count": 2, "index": 2, "quality": "normal"},
+                {"name": "electronic-circuit", "comparator": "=", "count": 3, "index": 3, "quality": "normal"},
+                {"name": "electric-engine-unit", "comparator": "=", "count": 1, "index": 4, "quality": "normal"}
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "requester-chest",
+        "position": {"x": 17.5, "y": 0.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [{"name": "copper-plate", "comparator": "=", "count": 30, "index": 1, "quality": "normal"}]
+            }
+          ]
+        }
+      },
+      {
+        "name": "requester-chest",
+        "position": {"x": 20.5, "y": 0.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [
+                {"name": "advanced-circuit", "comparator": "=", "count": 60, "index": 1, "quality": "normal"},
+                {"name": "flying-robot-frame", "comparator": "=", "count": 30, "index": 2, "quality": "normal"}
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "requester-chest",
+        "position": {"x": 17.5, "y": 5.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [
+                {"name": "plastic-bar", "comparator": "=", "count": 5, "index": 1, "quality": "normal"},
+                {"name": "copper-cable", "comparator": "=", "count": 10, "index": 2, "quality": "normal"},
+                {"name": "electronic-circuit", "comparator": "=", "count": 5, "index": 3, "quality": "normal"}
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "requester-chest",
+        "position": {"x": 20.5, "y": 5.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [
+                {"name": "electronic-circuit", "comparator": "=", "count": 60, "index": 1, "quality": "normal"},
+                {"name": "flying-robot-frame", "comparator": "=", "count": 30, "index": 2, "quality": "normal"}
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "requester-chest",
+        "position": {"x": 17.5, "y": 10.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [
+                {"name": "steel-plate", "comparator": "=", "count": 1, "index": 1, "quality": "normal"},
+                {"name": "battery", "comparator": "=", "count": 2, "index": 2, "quality": "normal"},
+                {"name": "electronic-circuit", "comparator": "=", "count": 3, "index": 3, "quality": "normal"},
+                {"name": "electric-engine-unit", "comparator": "=", "count": 1, "index": 4, "quality": "normal"}
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "requester-chest",
+        "position": {"x": 20.5, "y": 10.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [
+                {"name": "steel-plate", "comparator": "=", "count": 1, "index": 1, "quality": "normal"},
+                {"name": "battery", "comparator": "=", "count": 2, "index": 2, "quality": "normal"},
+                {"name": "electronic-circuit", "comparator": "=", "count": 3, "index": 3, "quality": "normal"},
+                {"name": "electric-engine-unit", "comparator": "=", "count": 1, "index": 4, "quality": "normal"}
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "icons": [{"index": 1, "signal": {"name": "logistic-robot"}}],
+    "wires": [
+      ["2,2", 5, "8,2", 5],
+      ["2,2", 5, "2,7", 5],
+      ["8,2", 5, "14,2", 5],
+      ["8,2", 5, "8,7", 5],
+      ["14,2", 5, "20,2", 5],
+      ["14,2", 5, "14,7", 5],
+      ["20,2", 5, "20,7", 5],
+      ["2,7", 5, "8,7", 5],
+      ["2,7", 5, "2,12", 5],
+      ["8,7", 5, "14,7", 5],
+      ["8,7", 5, "8,12", 5],
+      ["14,7", 5, "20,7", 5],
+      ["14,7", 5, "14,12", 5],
+      ["20,7", 5, "20,12", 5],
+      ["2,12", 5, "8,12", 5],
+      ["8,12", 5, "14,12", 5],
+      ["14,12", 5, "20,12", 5]
+    ]
+  }
+}

@@ -3,7 +3,7 @@
   "blueprint": {
     "item": "blueprint",
     "label": "Tested wall",
-    "version": 281479278690304,
+    "version": 562949954338818,
     "entities": [
       {"name": "stone-wall", "position": {"x": 1.5, "y": 0.5}},
       {"name": "stone-wall", "position": {"x": 2.5, "y": 0.5}},
@@ -58,7 +58,7 @@
       {"name": "stone-wall", "position": {"x": 10.5, "y": 16.5}},
       {"name": "stone-wall", "position": {"x": 11.5, "y": 16.5}}
     ],
-    "icons": [{"index": 1, "signal": {"name": "stone-wall", "type": "item"}}],
+    "icons": [{"index": 1, "signal": {"name": "stone-wall"}}],
     "snap-to-grid": {"x": 12, "y": 17}
   }
 }

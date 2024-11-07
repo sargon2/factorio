@@ -5,7 +5,7 @@
     "label": "Efficient solar",
     "shift_x": 1,
     "shift_y": 1,
-    "version": 281479278690304,
+    "version": 562949954338818,
     "entities": [
       {"name": "accumulator", "position": {"x": 5, "y": 3}},
       {"name": "accumulator", "position": {"x": 7, "y": 6}},
@@ -28,10 +28,10 @@
       {"name": "accumulator", "position": {"x": 13, "y": 10}},
       {"name": "accumulator", "position": {"x": 11, "y": 13}},
       {"name": "accumulator", "position": {"x": 13, "y": 13}},
-      {"name": "medium-electric-pole", "neighbours": ["0,9", "9,0"], "position": {"x": 3.5, "y": 2.5}},
-      {"name": "medium-electric-pole", "neighbours": ["-9,0", "0,9"], "position": {"x": 12.5, "y": 2.5}},
-      {"name": "medium-electric-pole", "neighbours": ["0,-9", "9,0"], "position": {"x": 3.5, "y": 11.5}},
-      {"name": "medium-electric-pole", "neighbours": ["-9,0", "0,-9"], "position": {"x": 12.5, "y": 11.5}},
+      {"name": "medium-electric-pole", "position": {"x": 3.5, "y": 2.5}},
+      {"name": "medium-electric-pole", "position": {"x": 12.5, "y": 2.5}},
+      {"name": "medium-electric-pole", "position": {"x": 3.5, "y": 11.5}},
+      {"name": "medium-electric-pole", "position": {"x": 12.5, "y": 11.5}},
       {"name": "solar-panel", "position": {"x": 0.5, "y": 0.5}},
       {"name": "solar-panel", "position": {"x": 3.5, "y": 0.5}},
       {"name": "solar-panel", "position": {"x": 0.5, "y": 3.5}},
@@ -58,7 +58,8 @@
       {"name": "solar-panel", "position": {"x": 12.5, "y": 15.5}},
       {"name": "solar-panel", "position": {"x": 15.5, "y": 15.5}}
     ],
-    "icons": [{"index": 1, "signal": {"name": "solar-panel", "type": "item"}}],
-    "snap-to-grid": {"x": 18, "y": 18}
+    "icons": [{"index": 1, "signal": {"name": "solar-panel"}}],
+    "snap-to-grid": {"x": 18, "y": 18},
+    "wires": [["3,2", 5, "12,2", 5], ["3,2", 5, "3,11", 5], ["12,2", 5, "12,11", 5], ["3,11", 5, "12,11", 5]]
   }
 }

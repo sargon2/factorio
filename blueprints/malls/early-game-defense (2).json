@@ -5,31 +5,52 @@
     "label": "Early game defense",
     "shift_x": 45,
     "shift_y": 15,
-    "version": 281479278690304,
+    "version": 562949954338818,
     "entities": [
-      {"name": "assembling-machine-1", "recipe": "iron-gear-wheel", "position": {"x": 1.5, "y": -1.5}},
-      {"name": "assembling-machine-1", "recipe": "pipe", "position": {"x": -2.5, "y": 1.5}},
-      {"name": "assembling-machine-1", "recipe": "gun-turret", "position": {"x": 3.5, "y": 2.5}},
-      {"name": "assembling-machine-1", "recipe": "firearm-magazine", "position": {"x": 0.5, "y": 4.5}},
-      {"name": "inserter", "direction": 2, "position": {"x": -0.5, "y": 1.5}},
+      {
+        "name": "assembling-machine-1",
+        "recipe": "iron-gear-wheel",
+        "recipe_quality": "normal",
+        "position": {"x": 1.5, "y": -1.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "pipe",
+        "recipe_quality": "normal",
+        "position": {"x": -2.5, "y": 1.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "gun-turret",
+        "recipe_quality": "normal",
+        "position": {"x": 3.5, "y": 2.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "firearm-magazine",
+        "recipe_quality": "normal",
+        "position": {"x": 0.5, "y": 4.5}
+      },
+      {"name": "inserter", "direction": 4, "position": {"x": -0.5, "y": 1.5}},
       {"name": "inserter", "position": {"x": -1.5, "y": 3.5}},
-      {"name": "inserter", "direction": 4, "position": {"x": 0.5, "y": 0.5}},
-      {"name": "inserter", "direction": 6, "position": {"x": 1.5, "y": 1.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": 0.5, "y": 0.5}},
+      {"name": "inserter", "direction": 12, "position": {"x": 1.5, "y": 1.5}},
       {"name": "inserter", "position": {"x": 2.5, "y": 0.5}},
       {"name": "inserter", "position": {"x": 0.5, "y": 2.5}},
       {"name": "inserter", "position": {"x": 3.5, "y": 4.5}},
-      {"name": "inserter", "direction": 6, "position": {"x": 2.5, "y": 5.5}},
+      {"name": "inserter", "direction": 12, "position": {"x": 2.5, "y": 5.5}},
       {"name": "iron-chest", "bar": 2, "position": {"x": -1.5, "y": 4.5}},
       {"name": "iron-chest", "position": {"x": 0.5, "y": 1.5}},
       {"name": "iron-chest", "position": {"x": 3.5, "y": 5.5}},
-      {"name": "small-electric-pole", "neighbours": ["2,-2"], "position": {"x": -0.5, "y": 2.5}},
-      {"name": "small-electric-pole", "neighbours": ["-2,2", "1,4"], "position": {"x": 1.5, "y": 0.5}},
-      {"name": "small-electric-pole", "neighbours": ["-1,-4"], "position": {"x": 2.5, "y": 4.5}}
+      {"name": "small-electric-pole", "position": {"x": -0.5, "y": 2.5}},
+      {"name": "small-electric-pole", "position": {"x": 1.5, "y": 0.5}},
+      {"name": "small-electric-pole", "position": {"x": 2.5, "y": 4.5}}
     ],
     "icons": [
-      {"index": 1, "signal": {"name": "gun-turret", "type": "item"}},
-      {"index": 2, "signal": {"name": "firearm-magazine", "type": "item"}},
-      {"index": 3, "signal": {"name": "pipe", "type": "item"}}
-    ]
+      {"index": 1, "signal": {"name": "gun-turret"}},
+      {"index": 2, "signal": {"name": "firearm-magazine"}},
+      {"index": 3, "signal": {"name": "pipe"}}
+    ],
+    "wires": [["4,2", 5, "2,4", 5], ["4,2", 5, "5,6", 5]]
   }
 }

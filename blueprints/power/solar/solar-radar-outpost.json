@@ -5,7 +5,7 @@
     "label": "Solar radar outpost",
     "shift_x": -29,
     "shift_y": 84,
-    "version": 281479278690304,
+    "version": 562949954338818,
     "entities": [
       {"name": "accumulator", "position": {"x": 8, "y": 1}},
       {"name": "accumulator", "position": {"x": 10, "y": 1}},
@@ -15,8 +15,8 @@
       {"name": "accumulator", "position": {"x": 10, "y": 6}},
       {"name": "accumulator", "position": {"x": 12, "y": 6}},
       {"name": "radar", "position": {"x": 5.5, "y": 3.5}},
-      {"name": "small-electric-pole", "neighbours": ["7,0"], "position": {"x": 2.5, "y": 3.5}},
-      {"name": "small-electric-pole", "neighbours": ["-7,0"], "position": {"x": 9.5, "y": 3.5}},
+      {"name": "small-electric-pole", "position": {"x": 2.5, "y": 3.5}},
+      {"name": "small-electric-pole", "position": {"x": 9.5, "y": 3.5}},
       {"name": "solar-panel", "position": {"x": -0.5, "y": 0.5}},
       {"name": "solar-panel", "position": {"x": -0.5, "y": 3.5}},
       {"name": "solar-panel", "position": {"x": -0.5, "y": 6.5}},
@@ -26,9 +26,7 @@
       {"name": "solar-panel", "position": {"x": 5.5, "y": 6.5}},
       {"name": "solar-panel", "position": {"x": 11.5, "y": 3.5}}
     ],
-    "icons": [
-      {"index": 1, "signal": {"name": "radar", "type": "item"}},
-      {"index": 2, "signal": {"name": "solar-panel", "type": "item"}}
-    ]
+    "icons": [{"index": 1, "signal": {"name": "radar"}}, {"index": 2, "signal": {"name": "solar-panel"}}],
+    "wires": [["3,3", 5, "10,3", 5]]
   }
 }

@@ -1,0 +1,121 @@
+{
+  "index": 31,
+  "blueprint": {
+    "item": "blueprint",
+    "label": "Bot sulfur provider",
+    "shift_x": -156,
+    "shift_y": -130,
+    "version": 562949954338818,
+    "entities": [
+      {
+        "name": "chemical-plant",
+        "direction": 8,
+        "recipe": "sulfur",
+        "recipe_quality": "normal",
+        "position": {"x": 0.5, "y": -2.5}
+      },
+      {
+        "name": "chemical-plant",
+        "direction": 8,
+        "recipe": "sulfur",
+        "recipe_quality": "normal",
+        "position": {"x": 4.5, "y": -2.5}
+      },
+      {
+        "name": "chemical-plant",
+        "direction": 8,
+        "recipe": "sulfur",
+        "recipe_quality": "normal",
+        "position": {"x": 8.5, "y": -2.5}
+      },
+      {
+        "name": "chemical-plant",
+        "direction": 8,
+        "recipe": "sulfur",
+        "recipe_quality": "normal",
+        "position": {"x": 12.5, "y": -2.5}
+      },
+      {
+        "name": "chemical-plant",
+        "recipe": "sulfur",
+        "recipe_quality": "normal",
+        "position": {"x": -1.5, "y": 2.5}
+      },
+      {
+        "name": "chemical-plant",
+        "recipe": "sulfur",
+        "recipe_quality": "normal",
+        "position": {"x": 2.5, "y": 2.5}
+      },
+      {
+        "name": "chemical-plant",
+        "recipe": "sulfur",
+        "recipe_quality": "normal",
+        "position": {"x": 6.5, "y": 2.5}
+      },
+      {
+        "name": "chemical-plant",
+        "recipe": "sulfur",
+        "recipe_quality": "normal",
+        "position": {"x": 10.5, "y": 2.5}
+      },
+      {"name": "fast-inserter", "direction": 8, "position": {"x": -0.5, "y": -4.5}},
+      {"name": "fast-inserter", "direction": 8, "position": {"x": 3.5, "y": -4.5}},
+      {"name": "fast-inserter", "direction": 8, "position": {"x": 7.5, "y": -4.5}},
+      {"name": "fast-inserter", "direction": 8, "position": {"x": 11.5, "y": -4.5}},
+      {"name": "fast-inserter", "position": {"x": -0.5, "y": 4.5}},
+      {"name": "fast-inserter", "position": {"x": 3.5, "y": 4.5}},
+      {"name": "fast-inserter", "position": {"x": 7.5, "y": 4.5}},
+      {"name": "fast-inserter", "position": {"x": 11.5, "y": 4.5}},
+      {"name": "medium-electric-pole", "position": {"x": 2.5, "y": -2.5}},
+      {"name": "medium-electric-pole", "position": {"x": 10.5, "y": -2.5}},
+      {"name": "medium-electric-pole", "position": {"x": 0.5, "y": 2.5}},
+      {"name": "medium-electric-pole", "position": {"x": 8.5, "y": 2.5}},
+      {"name": "passive-provider-chest", "position": {"x": -0.5, "y": -5.5}},
+      {"name": "passive-provider-chest", "position": {"x": 3.5, "y": -5.5}},
+      {"name": "passive-provider-chest", "position": {"x": 7.5, "y": -5.5}},
+      {"name": "passive-provider-chest", "position": {"x": 11.5, "y": -5.5}},
+      {"name": "passive-provider-chest", "position": {"x": -0.5, "y": 5.5}},
+      {"name": "passive-provider-chest", "position": {"x": 3.5, "y": 5.5}},
+      {"name": "passive-provider-chest", "position": {"x": 7.5, "y": 5.5}},
+      {"name": "passive-provider-chest", "position": {"x": 11.5, "y": 5.5}},
+      {"name": "pipe", "position": {"x": -2.5, "y": -0.5}},
+      {"name": "pipe", "position": {"x": -0.5, "y": -0.5}},
+      {"name": "pipe", "position": {"x": 1.5, "y": -0.5}},
+      {"name": "pipe", "position": {"x": 3.5, "y": -0.5}},
+      {"name": "pipe", "position": {"x": 5.5, "y": -0.5}},
+      {"name": "pipe", "position": {"x": 7.5, "y": -0.5}},
+      {"name": "pipe", "position": {"x": 9.5, "y": -0.5}},
+      {"name": "pipe", "position": {"x": 11.5, "y": -0.5}},
+      {"name": "pipe", "position": {"x": 13.5, "y": -0.5}},
+      {"name": "pipe", "position": {"x": -2.5, "y": 0.5}},
+      {"name": "pipe", "position": {"x": -0.5, "y": 0.5}},
+      {"name": "pipe", "position": {"x": 1.5, "y": 0.5}},
+      {"name": "pipe", "position": {"x": 3.5, "y": 0.5}},
+      {"name": "pipe", "position": {"x": 5.5, "y": 0.5}},
+      {"name": "pipe", "position": {"x": 7.5, "y": 0.5}},
+      {"name": "pipe", "position": {"x": 9.5, "y": 0.5}},
+      {"name": "pipe", "position": {"x": 11.5, "y": 0.5}},
+      {"name": "pipe-to-ground", "direction": 4, "position": {"x": -3.5, "y": -0.5}},
+      {"name": "pipe-to-ground", "direction": 12, "position": {"x": -1.5, "y": -0.5}},
+      {"name": "pipe-to-ground", "direction": 4, "position": {"x": 0.5, "y": -0.5}},
+      {"name": "pipe-to-ground", "direction": 12, "position": {"x": 2.5, "y": -0.5}},
+      {"name": "pipe-to-ground", "direction": 4, "position": {"x": 4.5, "y": -0.5}},
+      {"name": "pipe-to-ground", "direction": 12, "position": {"x": 6.5, "y": -0.5}},
+      {"name": "pipe-to-ground", "direction": 4, "position": {"x": 8.5, "y": -0.5}},
+      {"name": "pipe-to-ground", "direction": 12, "position": {"x": 10.5, "y": -0.5}},
+      {"name": "pipe-to-ground", "direction": 4, "position": {"x": 12.5, "y": -0.5}},
+      {"name": "pipe-to-ground", "direction": 12, "position": {"x": 14.5, "y": -0.5}},
+      {"name": "pipe-to-ground", "direction": 4, "position": {"x": -1.5, "y": 0.5}},
+      {"name": "pipe-to-ground", "direction": 12, "position": {"x": 0.5, "y": 0.5}},
+      {"name": "pipe-to-ground", "direction": 4, "position": {"x": 2.5, "y": 0.5}},
+      {"name": "pipe-to-ground", "direction": 12, "position": {"x": 4.5, "y": 0.5}},
+      {"name": "pipe-to-ground", "direction": 4, "position": {"x": 6.5, "y": 0.5}},
+      {"name": "pipe-to-ground", "direction": 12, "position": {"x": 8.5, "y": 0.5}},
+      {"name": "pipe-to-ground", "direction": 4, "position": {"x": 10.5, "y": 0.5}},
+      {"name": "pipe-to-ground", "direction": 12, "position": {"x": 12.5, "y": 0.5}}
+    ],
+    "icons": [{"index": 1, "signal": {"name": "sulfur"}}, {"index": 2, "signal": {"name": "logistic-robot"}}],
+    "wires": [["6,3", 5, "14,3", 5], ["6,3", 5, "4,8", 5], ["14,3", 5, "12,8", 5], ["4,8", 5, "12,8", 5]]
+  }
+}

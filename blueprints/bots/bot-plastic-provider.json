@@ -1,0 +1,214 @@
+{
+  "index": 30,
+  "blueprint": {
+    "item": "blueprint",
+    "label": "Bot plastic provider",
+    "shift_x": -142,
+    "shift_y": -80,
+    "version": 562949954338818,
+    "entities": [
+      {
+        "name": "chemical-plant",
+        "direction": 8,
+        "recipe": "plastic-bar",
+        "recipe_quality": "normal",
+        "position": {"x": 0.5, "y": 2.5}
+      },
+      {
+        "name": "chemical-plant",
+        "direction": 8,
+        "recipe": "plastic-bar",
+        "recipe_quality": "normal",
+        "position": {"x": 3.5, "y": 2.5}
+      },
+      {
+        "name": "chemical-plant",
+        "direction": 8,
+        "recipe": "plastic-bar",
+        "recipe_quality": "normal",
+        "position": {"x": 6.5, "y": 2.5}
+      },
+      {
+        "name": "chemical-plant",
+        "recipe": "plastic-bar",
+        "recipe_quality": "normal",
+        "position": {"x": 0.5, "y": 6.5}
+      },
+      {
+        "name": "chemical-plant",
+        "recipe": "plastic-bar",
+        "recipe_quality": "normal",
+        "position": {"x": 3.5, "y": 6.5}
+      },
+      {
+        "name": "chemical-plant",
+        "recipe": "plastic-bar",
+        "recipe_quality": "normal",
+        "position": {"x": 6.5, "y": 6.5}
+      },
+      {
+        "name": "chemical-plant",
+        "direction": 8,
+        "recipe": "plastic-bar",
+        "recipe_quality": "normal",
+        "position": {"x": 9.5, "y": 2.5}
+      },
+      {
+        "name": "chemical-plant",
+        "recipe": "plastic-bar",
+        "recipe_quality": "normal",
+        "position": {"x": 9.5, "y": 6.5}
+      },
+      {"name": "inserter", "position": {"x": -0.5, "y": 0.5}},
+      {"name": "inserter", "position": {"x": -0.5, "y": 8.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": 0.5, "y": 0.5}},
+      {"name": "inserter", "position": {"x": 2.5, "y": 0.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": 3.5, "y": 0.5}},
+      {"name": "inserter", "position": {"x": 5.5, "y": 0.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": 6.5, "y": 0.5}},
+      {"name": "inserter", "position": {"x": 8.5, "y": 0.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": 9.5, "y": 0.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": 0.5, "y": 8.5}},
+      {"name": "inserter", "position": {"x": 2.5, "y": 8.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": 3.5, "y": 8.5}},
+      {"name": "inserter", "position": {"x": 5.5, "y": 8.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": 6.5, "y": 8.5}},
+      {"name": "inserter", "position": {"x": 8.5, "y": 8.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": 9.5, "y": 8.5}},
+      {"name": "medium-electric-pole", "position": {"x": 13.5, "y": -3.5}},
+      {"name": "medium-electric-pole", "position": {"x": 1.5, "y": 0.5}},
+      {"name": "medium-electric-pole", "position": {"x": 7.5, "y": 0.5}},
+      {"name": "medium-electric-pole", "position": {"x": 11.5, "y": 4.5}},
+      {"name": "medium-electric-pole", "position": {"x": 1.5, "y": 8.5}},
+      {"name": "medium-electric-pole", "position": {"x": 7.5, "y": 8.5}},
+      {"name": "passive-provider-chest", "position": {"x": 0.5, "y": -0.5}},
+      {"name": "passive-provider-chest", "position": {"x": 3.5, "y": -0.5}},
+      {"name": "passive-provider-chest", "position": {"x": 6.5, "y": -0.5}},
+      {"name": "passive-provider-chest", "position": {"x": 9.5, "y": -0.5}},
+      {"name": "passive-provider-chest", "position": {"x": -0.5, "y": 9.5}},
+      {"name": "passive-provider-chest", "position": {"x": 2.5, "y": 9.5}},
+      {"name": "passive-provider-chest", "position": {"x": 5.5, "y": 9.5}},
+      {"name": "passive-provider-chest", "position": {"x": 8.5, "y": 9.5}},
+      {"name": "pipe", "position": {"x": -0.5, "y": 4.5}},
+      {"name": "pipe", "position": {"x": 0.5, "y": 4.5}},
+      {"name": "pipe", "position": {"x": 1.5, "y": 4.5}},
+      {"name": "pipe", "position": {"x": 2.5, "y": 4.5}},
+      {"name": "pipe", "position": {"x": 3.5, "y": 4.5}},
+      {"name": "pipe", "position": {"x": 4.5, "y": 4.5}},
+      {"name": "pipe", "position": {"x": 5.5, "y": 4.5}},
+      {"name": "pipe", "position": {"x": 6.5, "y": 4.5}},
+      {"name": "pipe", "position": {"x": 7.5, "y": 4.5}},
+      {"name": "pipe", "position": {"x": 8.5, "y": 4.5}},
+      {"name": "pipe", "position": {"x": 9.5, "y": 4.5}},
+      {"name": "pipe", "position": {"x": 10.5, "y": 4.5}},
+      {
+        "name": "requester-chest",
+        "position": {"x": -0.5, "y": -0.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [{"name": "coal", "comparator": "=", "count": 30, "index": 1, "quality": "normal"}]
+            }
+          ]
+        }
+      },
+      {
+        "name": "requester-chest",
+        "position": {"x": 2.5, "y": -0.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [{"name": "coal", "comparator": "=", "count": 30, "index": 1, "quality": "normal"}]
+            }
+          ]
+        }
+      },
+      {
+        "name": "requester-chest",
+        "position": {"x": 5.5, "y": -0.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [{"name": "coal", "comparator": "=", "count": 30, "index": 1, "quality": "normal"}]
+            }
+          ]
+        }
+      },
+      {
+        "name": "requester-chest",
+        "position": {"x": 8.5, "y": -0.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [{"name": "coal", "comparator": "=", "count": 30, "index": 1, "quality": "normal"}]
+            }
+          ]
+        }
+      },
+      {
+        "name": "requester-chest",
+        "position": {"x": 0.5, "y": 9.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [{"name": "coal", "comparator": "=", "count": 30, "index": 1, "quality": "normal"}]
+            }
+          ]
+        }
+      },
+      {
+        "name": "requester-chest",
+        "position": {"x": 3.5, "y": 9.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [{"name": "coal", "comparator": "=", "count": 30, "index": 1, "quality": "normal"}]
+            }
+          ]
+        }
+      },
+      {
+        "name": "requester-chest",
+        "position": {"x": 6.5, "y": 9.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [{"name": "coal", "comparator": "=", "count": 30, "index": 1, "quality": "normal"}]
+            }
+          ]
+        }
+      },
+      {
+        "name": "requester-chest",
+        "position": {"x": 9.5, "y": 9.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [{"name": "coal", "comparator": "=", "count": 30, "index": 1, "quality": "normal"}]
+            }
+          ]
+        }
+      }
+    ],
+    "icons": [
+      {"index": 1, "signal": {"name": "plastic-bar"}},
+      {"index": 2, "signal": {"name": "logistic-robot"}}
+    ],
+    "wires": [
+      ["14,0", 5, "12,8", 5],
+      ["2,4", 5, "8,4", 5],
+      ["2,4", 5, "2,12", 5],
+      ["8,4", 5, "12,8", 5],
+      ["12,8", 5, "8,12", 5],
+      ["2,12", 5, "8,12", 5]
+    ]
+  }
+}

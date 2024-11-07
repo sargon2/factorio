@@ -5,47 +5,126 @@
     "label": "Science w/ beacons",
     "shift_x": 274,
     "shift_y": -196,
-    "version": 281479278690304,
+    "version": 562949954338818,
     "entities": [
-      {"name": "beacon", "items": {"speed-module-3": 2}, "position": {"x": 4.5, "y": 3.5}},
-      {"name": "fast-inserter", "direction": 6, "position": {"x": 2.5, "y": 0.5}},
-      {"name": "fast-inserter", "direction": 6, "position": {"x": 2.5, "y": 1.5}},
-      {"name": "fast-inserter", "direction": 6, "position": {"x": 6.5, "y": 0.5}},
-      {"name": "fast-inserter", "direction": 6, "position": {"x": 6.5, "y": 1.5}},
-      {"name": "fast-inserter", "direction": 6, "position": {"x": 2.5, "y": 6.5}},
-      {"name": "fast-inserter", "direction": 6, "position": {"x": 2.5, "y": 7.5}},
-      {"name": "fast-inserter", "direction": 6, "position": {"x": 6.5, "y": 6.5}},
-      {"name": "fast-inserter", "direction": 6, "position": {"x": 6.5, "y": 7.5}},
-      {"name": "fast-inserter", "direction": 6, "position": {"x": 10.5, "y": 0.5}},
-      {"name": "fast-inserter", "direction": 6, "position": {"x": 10.5, "y": 1.5}},
-      {"name": "fast-inserter", "direction": 6, "position": {"x": 10.5, "y": 6.5}},
-      {"name": "fast-inserter", "direction": 6, "position": {"x": 10.5, "y": 7.5}},
-      {"name": "lab", "items": {"productivity-module-3": 2}, "position": {"x": 0.5, "y": -0.5}},
-      {"name": "lab", "items": {"productivity-module-3": 2}, "position": {"x": 8.5, "y": -0.5}},
-      {"name": "lab", "items": {"productivity-module-3": 2}, "position": {"x": 0.5, "y": 2.5}},
-      {"name": "lab", "items": {"productivity-module-3": 2}, "position": {"x": 4.5, "y": 0.5}},
-      {"name": "lab", "items": {"productivity-module-3": 2}, "position": {"x": 0.5, "y": 5.5}},
-      {"name": "lab", "items": {"productivity-module-3": 2}, "position": {"x": 4.5, "y": 6.5}},
-      {"name": "lab", "items": {"productivity-module-3": 2}, "position": {"x": 8.5, "y": 2.5}},
-      {"name": "lab", "items": {"productivity-module-3": 2}, "position": {"x": 8.5, "y": 5.5}},
-      {"name": "medium-electric-pole", "neighbours": ["0,6", "4,0"], "position": {"x": 2.5, "y": -0.5}},
       {
-        "name": "medium-electric-pole",
-        "neighbours": ["-4,0", "0,6", "4,0"],
-        "position": {"x": 6.5, "y": -0.5}
+        "name": "beacon",
+        "items": [
+          {
+            "id": {"name": "speed-module-3"},
+            "items": {"in_inventory": [{"inventory": 1, "stack": 0}, {"inventory": 1, "stack": 1}]}
+          }
+        ],
+        "position": {"x": 4.5, "y": 3.5}
       },
-      {"name": "medium-electric-pole", "neighbours": ["-4,0", "0,6"], "position": {"x": 10.5, "y": -0.5}},
-      {"name": "medium-electric-pole", "neighbours": ["0,-6", "4,0"], "position": {"x": 2.5, "y": 5.5}},
+      {"name": "fast-inserter", "direction": 12, "position": {"x": 2.5, "y": 0.5}},
+      {"name": "fast-inserter", "direction": 12, "position": {"x": 2.5, "y": 1.5}},
+      {"name": "fast-inserter", "direction": 12, "position": {"x": 6.5, "y": 0.5}},
+      {"name": "fast-inserter", "direction": 12, "position": {"x": 6.5, "y": 1.5}},
+      {"name": "fast-inserter", "direction": 12, "position": {"x": 2.5, "y": 6.5}},
+      {"name": "fast-inserter", "direction": 12, "position": {"x": 2.5, "y": 7.5}},
+      {"name": "fast-inserter", "direction": 12, "position": {"x": 6.5, "y": 6.5}},
+      {"name": "fast-inserter", "direction": 12, "position": {"x": 6.5, "y": 7.5}},
+      {"name": "fast-inserter", "direction": 12, "position": {"x": 10.5, "y": 0.5}},
+      {"name": "fast-inserter", "direction": 12, "position": {"x": 10.5, "y": 1.5}},
+      {"name": "fast-inserter", "direction": 12, "position": {"x": 10.5, "y": 6.5}},
+      {"name": "fast-inserter", "direction": 12, "position": {"x": 10.5, "y": 7.5}},
       {
-        "name": "medium-electric-pole",
-        "neighbours": ["-4,0", "0,-6", "4,0"],
-        "position": {"x": 6.5, "y": 5.5}
+        "name": "lab",
+        "items": [
+          {
+            "id": {"name": "productivity-module-3"},
+            "items": {"in_inventory": [{"inventory": 3, "stack": 0}, {"inventory": 3, "stack": 1}]}
+          }
+        ],
+        "position": {"x": 0.5, "y": -0.5}
       },
-      {"name": "medium-electric-pole", "neighbours": ["-4,0", "0,-6"], "position": {"x": 10.5, "y": 5.5}}
+      {
+        "name": "lab",
+        "items": [
+          {
+            "id": {"name": "productivity-module-3"},
+            "items": {"in_inventory": [{"inventory": 3, "stack": 0}, {"inventory": 3, "stack": 1}]}
+          }
+        ],
+        "position": {"x": 8.5, "y": -0.5}
+      },
+      {
+        "name": "lab",
+        "items": [
+          {
+            "id": {"name": "productivity-module-3"},
+            "items": {"in_inventory": [{"inventory": 3, "stack": 0}, {"inventory": 3, "stack": 1}]}
+          }
+        ],
+        "position": {"x": 0.5, "y": 2.5}
+      },
+      {
+        "name": "lab",
+        "items": [
+          {
+            "id": {"name": "productivity-module-3"},
+            "items": {"in_inventory": [{"inventory": 3, "stack": 0}, {"inventory": 3, "stack": 1}]}
+          }
+        ],
+        "position": {"x": 4.5, "y": 0.5}
+      },
+      {
+        "name": "lab",
+        "items": [
+          {
+            "id": {"name": "productivity-module-3"},
+            "items": {"in_inventory": [{"inventory": 3, "stack": 0}, {"inventory": 3, "stack": 1}]}
+          }
+        ],
+        "position": {"x": 0.5, "y": 5.5}
+      },
+      {
+        "name": "lab",
+        "items": [
+          {
+            "id": {"name": "productivity-module-3"},
+            "items": {"in_inventory": [{"inventory": 3, "stack": 0}, {"inventory": 3, "stack": 1}]}
+          }
+        ],
+        "position": {"x": 4.5, "y": 6.5}
+      },
+      {
+        "name": "lab",
+        "items": [
+          {
+            "id": {"name": "productivity-module-3"},
+            "items": {"in_inventory": [{"inventory": 3, "stack": 0}, {"inventory": 3, "stack": 1}]}
+          }
+        ],
+        "position": {"x": 8.5, "y": 2.5}
+      },
+      {
+        "name": "lab",
+        "items": [
+          {
+            "id": {"name": "productivity-module-3"},
+            "items": {"in_inventory": [{"inventory": 3, "stack": 0}, {"inventory": 3, "stack": 1}]}
+          }
+        ],
+        "position": {"x": 8.5, "y": 5.5}
+      },
+      {"name": "medium-electric-pole", "position": {"x": 2.5, "y": -0.5}},
+      {"name": "medium-electric-pole", "position": {"x": 6.5, "y": -0.5}},
+      {"name": "medium-electric-pole", "position": {"x": 10.5, "y": -0.5}},
+      {"name": "medium-electric-pole", "position": {"x": 2.5, "y": 5.5}},
+      {"name": "medium-electric-pole", "position": {"x": 6.5, "y": 5.5}},
+      {"name": "medium-electric-pole", "position": {"x": 10.5, "y": 5.5}}
     ],
-    "icons": [
-      {"index": 1, "signal": {"name": "lab", "type": "item"}},
-      {"index": 2, "signal": {"name": "beacon", "type": "item"}}
+    "icons": [{"index": 1, "signal": {"name": "lab"}}, {"index": 2, "signal": {"name": "beacon"}}],
+    "wires": [
+      ["2,0", 5, "6,0", 5],
+      ["2,0", 5, "2,6", 5],
+      ["6,0", 5, "10,0", 5],
+      ["6,0", 5, "6,6", 5],
+      ["10,0", 5, "10,6", 5],
+      ["2,6", 5, "6,6", 5],
+      ["6,6", 5, "10,6", 5]
     ]
   }
 }

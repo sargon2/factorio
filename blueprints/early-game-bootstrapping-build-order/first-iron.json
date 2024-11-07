@@ -5,16 +5,16 @@
     "label": "First iron",
     "shift_x": -66,
     "shift_y": -32,
-    "version": 281479278690304,
+    "version": 562949954338818,
     "entities": [
-      {"name": "burner-mining-drill", "direction": 2, "position": {"x": 0, "y": 0}},
-      {"name": "burner-mining-drill", "direction": 2, "position": {"x": 0, "y": 2}},
-      {"name": "burner-mining-drill", "direction": 2, "position": {"x": 4, "y": 0}},
-      {"name": "burner-mining-drill", "direction": 2, "position": {"x": 4, "y": 2}},
-      {"name": "burner-mining-drill", "direction": 2, "position": {"x": 0, "y": 4}},
-      {"name": "burner-mining-drill", "direction": 2, "position": {"x": 0, "y": 6}},
-      {"name": "burner-mining-drill", "direction": 2, "position": {"x": 4, "y": 4}},
-      {"name": "burner-mining-drill", "direction": 2, "position": {"x": 4, "y": 6}},
+      {"name": "burner-mining-drill", "direction": 4, "position": {"x": 0, "y": 0}},
+      {"name": "burner-mining-drill", "direction": 4, "position": {"x": 0, "y": 2}},
+      {"name": "burner-mining-drill", "direction": 4, "position": {"x": 4, "y": 0}},
+      {"name": "burner-mining-drill", "direction": 4, "position": {"x": 4, "y": 2}},
+      {"name": "burner-mining-drill", "direction": 4, "position": {"x": 0, "y": 4}},
+      {"name": "burner-mining-drill", "direction": 4, "position": {"x": 0, "y": 6}},
+      {"name": "burner-mining-drill", "direction": 4, "position": {"x": 4, "y": 4}},
+      {"name": "burner-mining-drill", "direction": 4, "position": {"x": 4, "y": 6}},
       {"name": "stone-furnace", "position": {"x": 2, "y": 0}},
       {"name": "stone-furnace", "position": {"x": 2, "y": 2}},
       {"name": "stone-furnace", "position": {"x": 6, "y": 0}},
@@ -24,6 +24,6 @@
       {"name": "stone-furnace", "position": {"x": 6, "y": 4}},
       {"name": "stone-furnace", "position": {"x": 6, "y": 6}}
     ],
-    "icons": [{"index": 1, "signal": {"name": "iron-ore", "type": "item"}}]
+    "icons": [{"index": 1, "signal": {"name": "iron-ore"}}]
   }
 }

@@ -5,7 +5,7 @@
     "label": "Stone double smelter",
     "shift_x": -12,
     "shift_y": 149,
-    "version": 562949954338818,
+    "version": 562949954404356,
     "entities": [
       {"name": "inserter", "direction": 8, "position": {"x": 0.5, "y": 1.5}},
       {"name": "inserter", "position": {"x": 1.5, "y": 1.5}},

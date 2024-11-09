@@ -5,7 +5,7 @@
     "label": "Coal liquefaction - small",
     "shift_x": 82,
     "shift_y": 107,
-    "version": 562949954338818,
+    "version": 562949954404356,
     "entities": [
       {"name": "boiler", "direction": 8, "position": {"x": 2.5, "y": 0}},
       {"name": "inserter", "direction": 12, "position": {"x": 0.5, "y": 0.5}},

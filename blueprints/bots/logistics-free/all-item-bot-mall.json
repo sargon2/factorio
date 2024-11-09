@@ -5,7 +5,7 @@
     "label": "All item bot mall",
     "shift_x": -180,
     "shift_y": -130,
-    "version": 562949954338818,
+    "version": 562949954404356,
     "entities": [
       {
         "name": "active-provider-chest",

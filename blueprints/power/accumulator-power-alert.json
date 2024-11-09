@@ -5,7 +5,7 @@
     "label": "Accumulator power alert",
     "shift_x": 127,
     "shift_y": 24,
-    "version": 562949954338818,
+    "version": 562949954404356,
     "entities": [
       {
         "name": "accumulator",

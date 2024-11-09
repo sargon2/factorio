@@ -6,7 +6,7 @@
     "description": "Shift+click drag to place",
     "shift_x": -552,
     "shift_y": 124,
-    "version": 562949954338818,
+    "version": 562949954404356,
     "entities": [
       {"name": "pumpjack", "direction": 8, "position": {"x": -0.5, "y": 0.5}},
       {"name": "pumpjack", "direction": 8, "position": {"x": -0.5, "y": 3.5}},

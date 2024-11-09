@@ -5,7 +5,7 @@
     "label": "Stone reversing smelter",
     "shift_x": -16,
     "shift_y": 46,
-    "version": 562949954338818,
+    "version": 562949954404356,
     "entities": [
       {"name": "inserter", "position": {"x": 3.5, "y": 1.5}},
       {"name": "inserter", "position": {"x": 4.5, "y": 1.5}},

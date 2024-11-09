@@ -6,7 +6,7 @@
     "description": "If the light or heavy oil tanks fill, enables cracking to prevent deadlock.\nExpandable by repeating vertically.",
     "shift_x": -59,
     "shift_y": -136,
-    "version": 562949954338818,
+    "version": 562949954404356,
     "entities": [
       {
         "name": "chemical-plant",

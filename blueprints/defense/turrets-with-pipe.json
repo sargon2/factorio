@@ -5,7 +5,7 @@
     "label": "Turrets with pipe",
     "shift_x": 113,
     "shift_y": 100,
-    "version": 562949954338818,
+    "version": 562949954404356,
     "entities": [
       {"name": "gun-turret", "position": {"x": 2, "y": 2}},
       {"name": "gun-turret", "position": {"x": 4, "y": 2}},

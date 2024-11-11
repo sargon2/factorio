@@ -6,10 +6,10 @@
     "absolute-snapping": true,
     "version": 562949954404356,
     "entities": [
-      {"name": "land-mine", "position": {"x": 0.52734375, "y": 0.56640625}},
-      {"name": "land-mine", "position": {"x": 2.52734375, "y": 3.56640625}}
+      {"name": "land-mine", "position": {"x": 0.5, "y": 0.5}},
+      {"name": "land-mine", "position": {"x": 2, "y": 2.5}}
     ],
     "icons": [{"index": 1, "signal": {"name": "land-mine"}}],
-    "snap-to-grid": {"x": 4, "y": 6}
+    "snap-to-grid": {"x": 3, "y": 4}
   }
 }

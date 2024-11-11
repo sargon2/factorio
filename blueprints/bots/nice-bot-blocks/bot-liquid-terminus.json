@@ -1,5 +1,5 @@
 {
-  "index": 9,
+  "index": 20,
   "blueprint": {
     "item": "blueprint",
     "label": "Bot liquid terminus",
@@ -36,6 +36,24 @@
         "recipe": "electric-engine-unit",
         "recipe_quality": "normal",
         "position": {"x": 30.5, "y": 23.5}
+      },
+      {
+        "name": "assembling-machine-2",
+        "recipe": "concrete",
+        "recipe_quality": "normal",
+        "position": {"x": 3.5, "y": 44.5}
+      },
+      {
+        "name": "assembling-machine-2",
+        "recipe": "concrete",
+        "recipe_quality": "normal",
+        "position": {"x": 6.5, "y": 44.5}
+      },
+      {
+        "name": "assembling-machine-2",
+        "recipe": "concrete",
+        "recipe_quality": "normal",
+        "position": {"x": 9.5, "y": 44.5}
       },
       {"name": "big-electric-pole", "position": {"x": -8, "y": 1}},
       {"name": "big-electric-pole", "position": {"x": -8, "y": 26}},
@@ -175,6 +193,12 @@
       {"name": "inserter", "direction": 12, "position": {"x": 32.5, "y": 20.5}},
       {"name": "inserter", "direction": 4, "position": {"x": 32.5, "y": 22.5}},
       {"name": "inserter", "direction": 12, "position": {"x": 32.5, "y": 23.5}},
+      {"name": "inserter", "position": {"x": 3.5, "y": 46.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": 4.5, "y": 46.5}},
+      {"name": "inserter", "position": {"x": 6.5, "y": 46.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": 7.5, "y": 46.5}},
+      {"name": "inserter", "direction": 4, "position": {"x": 11.5, "y": 43.5}},
+      {"name": "inserter", "direction": 12, "position": {"x": 11.5, "y": 44.5}},
       {"name": "inserter", "direction": 4, "position": {"x": 30.5, "y": 36.5}},
       {"name": "inserter", "direction": 12, "position": {"x": 30.5, "y": 37.5}},
       {"name": "inserter", "direction": 4, "position": {"x": 30.5, "y": 39.5}},
@@ -194,6 +218,8 @@
       {"name": "medium-electric-pole", "position": {"x": 32.5, "y": 15.5}},
       {"name": "medium-electric-pole", "position": {"x": 32.5, "y": 21.5}},
       {"name": "medium-electric-pole", "position": {"x": 11.5, "y": 32.5}},
+      {"name": "medium-electric-pole", "position": {"x": 5.5, "y": 46.5}},
+      {"name": "medium-electric-pole", "position": {"x": 9.5, "y": 46.5}},
       {"name": "medium-electric-pole", "position": {"x": 19.5, "y": 32.5}},
       {"name": "medium-electric-pole", "position": {"x": 25.5, "y": 34.5}},
       {"name": "medium-electric-pole", "position": {"x": 30.5, "y": 35.5}},
@@ -236,6 +262,9 @@
       {"name": "passive-provider-chest", "bar": 10, "position": {"x": 33.5, "y": 17.5}},
       {"name": "passive-provider-chest", "bar": 10, "position": {"x": 33.5, "y": 20.5}},
       {"name": "passive-provider-chest", "bar": 10, "position": {"x": 33.5, "y": 23.5}},
+      {"name": "passive-provider-chest", "bar": 10, "position": {"x": 3.5, "y": 47.5}},
+      {"name": "passive-provider-chest", "bar": 10, "position": {"x": 6.5, "y": 47.5}},
+      {"name": "passive-provider-chest", "bar": 10, "position": {"x": 12.5, "y": 44.5}},
       {"name": "passive-provider-chest", "bar": 10, "position": {"x": 31.5, "y": 37.5}},
       {"name": "passive-provider-chest", "bar": 10, "position": {"x": 24.5, "y": 41.5}},
       {"name": "passive-provider-chest", "bar": 10, "position": {"x": 31.5, "y": 40.5}},
@@ -342,6 +371,9 @@
       {"name": "pipe", "position": {"x": 8.5, "y": 32.5}},
       {"name": "pipe", "position": {"x": 9.5, "y": 32.5}},
       {"name": "pipe", "position": {"x": 12.5, "y": 35.5}},
+      {"name": "pipe", "position": {"x": 3.5, "y": 42.5}},
+      {"name": "pipe", "position": {"x": 6.5, "y": 42.5}},
+      {"name": "pipe", "position": {"x": 9.5, "y": 42.5}},
       {"name": "pipe", "position": {"x": 12.5, "y": 42.5}},
       {"name": "pipe", "position": {"x": 16.5, "y": 34.5}},
       {"name": "pipe", "position": {"x": 26.5, "y": 35.5}},
@@ -456,6 +488,13 @@
       {"name": "pipe-to-ground", "position": {"x": 12.5, "y": 36.5}},
       {"name": "pipe-to-ground", "position": {"x": 0.5, "y": 40.5}},
       {"name": "pipe-to-ground", "position": {"x": 1.5, "y": 40.5}},
+      {"name": "pipe-to-ground", "direction": 4, "position": {"x": 2.5, "y": 42.5}},
+      {"name": "pipe-to-ground", "direction": 12, "position": {"x": 4.5, "y": 42.5}},
+      {"name": "pipe-to-ground", "direction": 4, "position": {"x": 5.5, "y": 42.5}},
+      {"name": "pipe-to-ground", "direction": 12, "position": {"x": 7.5, "y": 42.5}},
+      {"name": "pipe-to-ground", "direction": 4, "position": {"x": 8.5, "y": 42.5}},
+      {"name": "pipe-to-ground", "direction": 12, "position": {"x": 10.5, "y": 42.5}},
+      {"name": "pipe-to-ground", "direction": 4, "position": {"x": 11.5, "y": 42.5}},
       {"name": "pipe-to-ground", "direction": 8, "position": {"x": 12.5, "y": 41.5}},
       {"name": "pipe-to-ground", "direction": 12, "position": {"x": 13.5, "y": 42.5}},
       {"name": "pipe-to-ground", "position": {"x": 16.5, "y": 32.5}},
@@ -617,6 +656,51 @@
               "filters": [
                 {"name": "electronic-circuit", "comparator": "=", "count": 4, "index": 1, "quality": "normal"},
                 {"name": "engine-unit", "comparator": "=", "count": 2, "index": 2, "quality": "normal"}
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "requester-chest",
+        "position": {"x": 4.5, "y": 47.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [
+                {"name": "iron-ore", "comparator": "=", "count": 2, "index": 1, "quality": "normal"},
+                {"name": "stone-brick", "comparator": "=", "count": 11, "index": 2, "quality": "normal"}
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "requester-chest",
+        "position": {"x": 7.5, "y": 47.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [
+                {"name": "iron-ore", "comparator": "=", "count": 2, "index": 1, "quality": "normal"},
+                {"name": "stone-brick", "comparator": "=", "count": 11, "index": 2, "quality": "normal"}
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "requester-chest",
+        "position": {"x": 12.5, "y": 43.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [
+                {"name": "iron-ore", "comparator": "=", "count": 2, "index": 1, "quality": "normal"},
+                {"name": "stone-brick", "comparator": "=", "count": 11, "index": 2, "quality": "normal"}
               ]
             }
           ]
@@ -1978,6 +2062,8 @@
       ["34.5,41", 5, "34.5,45", 5],
       ["41.5,42", 5, "34.5,45", 5],
       ["34.5,45", 5, "34.5,49", 5],
+      ["16.5,47", 5, "20.5,47", 5],
+      ["20.5,47", 5, "28,51.5", 5],
       ["34.5,49", 5, "28,51.5", 5],
       ["3,51.5", 5, "28,51.5", 5],
       ["28,51.5", 5, "53,51.5", 5]

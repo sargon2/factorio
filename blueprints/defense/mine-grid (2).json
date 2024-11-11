@@ -1,0 +1,15 @@
+{
+  "index": 31,
+  "blueprint": {
+    "item": "blueprint",
+    "label": "Mine grid",
+    "absolute-snapping": true,
+    "version": 562949954404356,
+    "entities": [
+      {"name": "land-mine", "position": {"x": 0.5390625, "y": 0.55078125}},
+      {"name": "land-mine", "position": {"x": 2.1171875, "y": 2.59765625}}
+    ],
+    "icons": [{"index": 1, "signal": {"name": "land-mine"}}],
+    "snap-to-grid": {"x": 3, "y": 4}
+  }
+}

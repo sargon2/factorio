@@ -3,6 +3,7 @@
   "blueprint": {
     "item": "blueprint",
     "label": "Bot self-replication mall",
+    "description": "Needs:\n- Medium poles\n- Upgrade steel chest inserter to blue (not outputter)\n- couple more steel chest makers\n- Oil refineries and chemical plants?\n- Substations\n- Electric furnaces",
     "absolute-snapping": true,
     "shift_x": 4,
     "shift_y": 6,

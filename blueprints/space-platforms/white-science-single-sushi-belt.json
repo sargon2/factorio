@@ -5,7 +5,7 @@
     "label": "White science single sushi belt",
     "shift_x": -9,
     "shift_y": -9,
-    "version": 562949954404356,
+    "version": 562949954732035,
     "entities": [
       {"name": "accumulator", "position": {"x": 1, "y": 2}},
       {"name": "accumulator", "position": {"x": 1, "y": 16}},

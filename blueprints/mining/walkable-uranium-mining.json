@@ -3,7 +3,7 @@
   "blueprint": {
     "item": "blueprint",
     "label": "Walkable uranium mining",
-    "version": 562949954404356,
+    "version": 562949954732035,
     "entities": [
       {"name": "electric-mining-drill", "direction": 4, "position": {"x": 2.5, "y": 2.5}},
       {"name": "electric-mining-drill", "direction": 12, "position": {"x": 6.5, "y": 2.5}},

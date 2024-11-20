@@ -5,7 +5,7 @@
     "label": "Alignment boxes",
     "shift_x": 151,
     "shift_y": 104,
-    "version": 562949954404356,
+    "version": 562949954732035,
     "entities": [
       {"name": "express-transport-belt", "direction": 8, "position": {"x": 1.5, "y": 0.5}},
       {"name": "express-transport-belt", "position": {"x": 3.5, "y": 0.5}},

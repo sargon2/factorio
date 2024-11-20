@@ -5,7 +5,7 @@
     "label": "4-2 complete miner",
     "shift_x": 61,
     "shift_y": -58,
-    "version": 562949954404356,
+    "version": 562949954732035,
     "entities": [
       {"name": "electric-mining-drill", "direction": 8, "position": {"x": 0.5, "y": -0.5}},
       {"name": "electric-mining-drill", "direction": 8, "position": {"x": 3.5, "y": -0.5}},

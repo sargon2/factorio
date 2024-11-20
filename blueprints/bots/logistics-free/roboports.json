@@ -5,7 +5,7 @@
     "label": "Roboports",
     "shift_x": 411,
     "shift_y": 12,
-    "version": 562949954404356,
+    "version": 562949954732035,
     "entities": [
       {"name": "active-provider-chest", "position": {"x": 40.5, "y": 12.5}},
       {"name": "active-provider-chest", "position": {"x": 45.5, "y": 12.5}},

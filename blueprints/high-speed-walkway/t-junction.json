@@ -5,7 +5,7 @@
     "label": "T-junction",
     "shift_x": 145,
     "shift_y": 0,
-    "version": 562949954404356,
+    "version": 562949954732035,
     "entities": [
       {"name": "express-transport-belt", "direction": 12, "position": {"x": -4.5, "y": -0.5}},
       {"name": "express-transport-belt", "direction": 12, "position": {"x": -3.5, "y": -0.5}},

@@ -5,7 +5,7 @@
     "label": "Miner smelter (yellow belt)",
     "shift_x": 100,
     "shift_y": 170,
-    "version": 562949954404356,
+    "version": 562949954732035,
     "entities": [
       {"name": "electric-mining-drill", "direction": 4, "position": {"x": 5.5, "y": 0.5}},
       {"name": "electric-mining-drill", "direction": 4, "position": {"x": 5.5, "y": 5.5}},

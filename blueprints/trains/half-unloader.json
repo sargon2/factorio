@@ -5,7 +5,7 @@
     "label": "Half unloader",
     "shift_x": -7,
     "shift_y": -67,
-    "version": 562949954404356,
+    "version": 562949954732035,
     "entities": [
       {"name": "bulk-inserter", "position": {"x": 2.5, "y": 1.5}},
       {"name": "bulk-inserter", "position": {"x": 3.5, "y": 1.5}},

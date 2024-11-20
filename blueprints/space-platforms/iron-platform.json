@@ -5,61 +5,61 @@
     "label": "Iron platform",
     "shift_x": 10,
     "shift_y": -10,
-    "version": 562949954404356,
+    "version": 562949954732035,
     "entities": [
       {"name": "accumulator", "position": {"x": -10, "y": 15}},
       {
         "name": "asteroid-collector",
         "result-inventory": null,
-        "chunk-filter": ["metallic-asteroid-chunk"],
+        "chunk-filter": [{"name": "metallic-asteroid-chunk", "index": 1}],
         "position": {"x": -17.5, "y": -3.5}
       },
       {
         "name": "asteroid-collector",
         "result-inventory": null,
-        "chunk-filter": ["metallic-asteroid-chunk"],
+        "chunk-filter": [{"name": "metallic-asteroid-chunk", "index": 1}],
         "position": {"x": -2.5, "y": -3.5}
       },
       {
         "name": "asteroid-collector",
         "direction": 12,
         "result-inventory": null,
-        "chunk-filter": ["metallic-asteroid-chunk"],
+        "chunk-filter": [{"name": "metallic-asteroid-chunk", "index": 1}],
         "position": {"x": -23.5, "y": 2.5}
       },
       {
         "name": "asteroid-collector",
         "direction": 12,
         "result-inventory": null,
-        "chunk-filter": ["metallic-asteroid-chunk"],
+        "chunk-filter": [{"name": "metallic-asteroid-chunk", "index": 1}],
         "position": {"x": -23.5, "y": 17.5}
       },
       {
         "name": "asteroid-collector",
         "direction": 8,
         "result-inventory": null,
-        "chunk-filter": ["metallic-asteroid-chunk"],
+        "chunk-filter": [{"name": "metallic-asteroid-chunk", "index": 1}],
         "position": {"x": -17.5, "y": 23.5}
       },
       {
         "name": "asteroid-collector",
         "direction": 8,
         "result-inventory": null,
-        "chunk-filter": ["metallic-asteroid-chunk"],
+        "chunk-filter": [{"name": "metallic-asteroid-chunk", "index": 1}],
         "position": {"x": -2.5, "y": 23.5}
       },
       {
         "name": "asteroid-collector",
         "direction": 4,
         "result-inventory": null,
-        "chunk-filter": ["metallic-asteroid-chunk"],
+        "chunk-filter": [{"name": "metallic-asteroid-chunk", "index": 1}],
         "position": {"x": 3.5, "y": 2.5}
       },
       {
         "name": "asteroid-collector",
         "direction": 4,
         "result-inventory": null,
-        "chunk-filter": ["metallic-asteroid-chunk"],
+        "chunk-filter": [{"name": "metallic-asteroid-chunk", "index": 1}],
         "position": {"x": 3.5, "y": 17.5}
       },
       {

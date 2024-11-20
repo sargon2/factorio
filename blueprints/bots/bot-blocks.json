@@ -6,7 +6,7 @@
     "absolute-snapping": true,
     "shift_x": 1,
     "shift_y": 2,
-    "version": 562949954404356,
+    "version": 562949954732035,
     "entities": [
       {"name": "big-electric-pole", "position": {"x": 0, "y": 3}},
       {"name": "big-electric-pole", "position": {"x": 25, "y": 3}},

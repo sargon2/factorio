@@ -3,7 +3,7 @@
   "deconstruction_planner": {
     "item": "deconstruction-planner",
     "label": "Mines",
-    "version": 562949954404356,
+    "version": 562949954732035,
     "settings": {
       "tile_selection_mode": 2,
       "entity_filters": [{"name": "land-mine", "comparator": "=", "index": 0, "quality": "normal"}]

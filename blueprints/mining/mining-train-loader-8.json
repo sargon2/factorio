@@ -5,7 +5,7 @@
     "label": "Mining train loader 8",
     "shift_x": 28,
     "shift_y": -173,
-    "version": 562949954404356,
+    "version": 562949954732035,
     "entities": [
       {"name": "bulk-inserter", "position": {"x": 13.5, "y": 64.5}},
       {"name": "bulk-inserter", "position": {"x": 14.5, "y": 64.5}},

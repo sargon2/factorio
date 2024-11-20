@@ -3,7 +3,7 @@
   "blueprint": {
     "item": "blueprint",
     "label": "Attack paste & manual load",
-    "version": 562949954404356,
+    "version": 562949954732035,
     "entities": [
       {"name": "gun-turret", "position": {"x": 1, "y": 3}},
       {"name": "gun-turret", "position": {"x": 1, "y": 6}},

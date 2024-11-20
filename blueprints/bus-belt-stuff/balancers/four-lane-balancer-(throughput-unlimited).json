@@ -5,7 +5,7 @@
     "label": "Four lane balancer (throughput unlimited)",
     "shift_x": 16,
     "shift_y": -16,
-    "version": 562949954404356,
+    "version": 562949954732035,
     "entities": [
       {"name": "splitter", "direction": 4, "position": {"x": 0.5, "y": 0}},
       {"name": "splitter", "direction": 4, "position": {"x": 1.5, "y": 1}},

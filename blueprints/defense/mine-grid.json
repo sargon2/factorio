@@ -4,7 +4,7 @@
     "item": "blueprint",
     "label": "Mine grid",
     "absolute-snapping": true,
-    "version": 562949954404356,
+    "version": 562949954732035,
     "entities": [
       {"name": "land-mine", "position": {"x": 0.5, "y": 0.5}},
       {"name": "land-mine", "position": {"x": 2, "y": 2.5}}

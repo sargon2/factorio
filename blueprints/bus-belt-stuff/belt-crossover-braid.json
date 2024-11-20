@@ -3,7 +3,7 @@
   "blueprint": {
     "item": "blueprint",
     "label": "belt crossover braid",
-    "version": 562949954404356,
+    "version": 562949954732035,
     "entities": [
       {"name": "transport-belt", "position": {"x": 0.5, "y": 1.5}},
       {"name": "transport-belt", "position": {"x": 1.5, "y": 1.5}},

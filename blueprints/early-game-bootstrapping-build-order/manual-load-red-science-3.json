@@ -5,7 +5,7 @@
     "label": "Manual load red science 3",
     "shift_x": 155,
     "shift_y": 75,
-    "version": 562949954732035,
+    "version": 562949956108288,
     "entities": [
       {
         "name": "assembling-machine-1",
@@ -21,14 +21,12 @@
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "automation-science-pack",
         "recipe_quality": "normal",
         "position": {"x": 1.5, "y": 4.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "automation-science-pack",
         "recipe_quality": "normal",
         "position": {"x": 4.5, "y": 4.5}

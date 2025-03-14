@@ -6,7 +6,7 @@
     "description": "Start with the self-bootstrapping shoulder miner.",
     "shift_x": 41,
     "shift_y": 67,
-    "version": 562949954732035,
+    "version": 562949956108288,
     "entities": [
       {"name": "burner-inserter", "direction": 8, "position": {"x": 1.5, "y": 0.5}},
       {"name": "burner-inserter", "direction": 12, "position": {"x": 3.5, "y": 0.5}},

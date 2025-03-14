@@ -5,7 +5,7 @@
     "label": "Bus bot provider",
     "shift_x": -89,
     "shift_y": 372,
-    "version": 562949954732035,
+    "version": 562949956108288,
     "entities": [
       {"name": "bulk-inserter", "direction": 12, "position": {"x": 2.5, "y": 0.5}},
       {"name": "bulk-inserter", "direction": 12, "position": {"x": 2.5, "y": 1.5}},

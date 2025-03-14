@@ -5,7 +5,7 @@
     "label": "Stone smelt half belt",
     "shift_x": 116,
     "shift_y": 107,
-    "version": 562949954732035,
+    "version": 562949956108288,
     "entities": [
       {"name": "inserter", "direction": 8, "position": {"x": 0.5, "y": 1.5}},
       {"name": "inserter", "direction": 8, "position": {"x": 1.5, "y": 1.5}},

@@ -6,7 +6,7 @@
     "absolute-snapping": true,
     "shift_x": 12,
     "shift_y": -5,
-    "version": 562949954732035,
+    "version": 562949956108288,
     "entities": [
       {
         "name": "assembling-machine-1",
@@ -22,35 +22,30 @@
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "electronic-circuit",
         "recipe_quality": "normal",
         "position": {"x": 7.5, "y": 15.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "electronic-circuit",
         "recipe_quality": "normal",
         "position": {"x": 10.5, "y": 15.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "copper-cable",
         "recipe_quality": "normal",
         "position": {"x": 13.5, "y": 15.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "copper-cable",
         "recipe_quality": "normal",
         "position": {"x": 16.5, "y": 15.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "copper-cable",
         "recipe_quality": "normal",
         "position": {"x": 19.5, "y": 15.5}
@@ -63,28 +58,24 @@
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "engine-unit",
         "recipe_quality": "normal",
         "position": {"x": 1.5, "y": 20.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "engine-unit",
         "recipe_quality": "normal",
         "position": {"x": 4.5, "y": 20.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "engine-unit",
         "recipe_quality": "normal",
         "position": {"x": 7.5, "y": 20.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "engine-unit",
         "recipe_quality": "normal",
         "position": {"x": 10.5, "y": 20.5}
@@ -97,70 +88,60 @@
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "flying-robot-frame",
         "recipe_quality": "normal",
         "position": {"x": 1.5, "y": 25.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "flying-robot-frame",
         "recipe_quality": "normal",
         "position": {"x": 4.5, "y": 25.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "flying-robot-frame",
         "recipe_quality": "normal",
         "position": {"x": 7.5, "y": 25.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "flying-robot-frame",
         "recipe_quality": "normal",
         "position": {"x": 1.5, "y": 30.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "flying-robot-frame",
         "recipe_quality": "normal",
         "position": {"x": 4.5, "y": 30.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "flying-robot-frame",
         "recipe_quality": "normal",
         "position": {"x": 7.5, "y": 30.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "flying-robot-frame",
         "recipe_quality": "normal",
         "position": {"x": 10.5, "y": 25.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "flying-robot-frame",
         "recipe_quality": "normal",
         "position": {"x": 13.5, "y": 25.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "flying-robot-frame",
         "recipe_quality": "normal",
         "position": {"x": 10.5, "y": 30.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "flying-robot-frame",
         "recipe_quality": "normal",
         "position": {"x": 13.5, "y": 30.5}
@@ -185,70 +166,60 @@
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "flying-robot-frame",
         "recipe_quality": "normal",
         "position": {"x": 16.5, "y": 25.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "flying-robot-frame",
         "recipe_quality": "normal",
         "position": {"x": 19.5, "y": 25.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "flying-robot-frame",
         "recipe_quality": "normal",
         "position": {"x": 22.5, "y": 25.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "flying-robot-frame",
         "recipe_quality": "normal",
         "position": {"x": 16.5, "y": 30.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "flying-robot-frame",
         "recipe_quality": "normal",
         "position": {"x": 19.5, "y": 30.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "flying-robot-frame",
         "recipe_quality": "normal",
         "position": {"x": 22.5, "y": 30.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "engine-unit",
         "recipe_quality": "normal",
         "position": {"x": 1.5, "y": 35.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "engine-unit",
         "recipe_quality": "normal",
         "position": {"x": 4.5, "y": 35.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "engine-unit",
         "recipe_quality": "normal",
         "position": {"x": 7.5, "y": 35.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "engine-unit",
         "recipe_quality": "normal",
         "position": {"x": 10.5, "y": 35.5}
@@ -261,21 +232,18 @@
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "copper-cable",
         "recipe_quality": "normal",
         "position": {"x": 1.5, "y": 40.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "copper-cable",
         "recipe_quality": "normal",
         "position": {"x": 4.5, "y": 40.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "copper-cable",
         "recipe_quality": "normal",
         "position": {"x": 7.5, "y": 40.5}
@@ -288,14 +256,12 @@
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "electronic-circuit",
         "recipe_quality": "normal",
         "position": {"x": 19.5, "y": 35.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "electronic-circuit",
         "recipe_quality": "normal",
         "position": {"x": 22.5, "y": 35.5}
@@ -1156,14 +1122,42 @@
         "position": {"x": 31, "y": 50},
         "request_filters": {"sections": [{"index": 1}]}
       },
-      {"name": "small-lamp", "position": {"x": -15.5, "y": -0.5}},
-      {"name": "small-lamp", "position": {"x": 34.5, "y": -0.5}},
-      {"name": "small-lamp", "position": {"x": -15.5, "y": 24.5}},
-      {"name": "small-lamp", "position": {"x": -15.5, "y": 49.5}},
-      {"name": "small-lamp", "position": {"x": 10.5, "y": 1.5}},
-      {"name": "small-lamp", "position": {"x": 34.5, "y": 24.5}},
-      {"name": "small-lamp", "position": {"x": 10.5, "y": 51.5}},
-      {"name": "small-lamp", "position": {"x": 34.5, "y": 49.5}},
+      {
+        "name": "small-lamp",
+        "color": {"a": 1, "b": 1, "g": 1, "r": 1},
+        "position": {"x": -15.5, "y": -0.5}
+      },
+      {
+        "name": "small-lamp",
+        "color": {"a": 1, "b": 1, "g": 1, "r": 1},
+        "position": {"x": 34.5, "y": -0.5}
+      },
+      {
+        "name": "small-lamp",
+        "color": {"a": 1, "b": 1, "g": 1, "r": 1},
+        "position": {"x": -15.5, "y": 24.5}
+      },
+      {
+        "name": "small-lamp",
+        "color": {"a": 1, "b": 1, "g": 1, "r": 1},
+        "position": {"x": -15.5, "y": 49.5}
+      },
+      {"name": "small-lamp", "color": {"a": 1, "b": 1, "g": 1, "r": 1}, "position": {"x": 10.5, "y": 1.5}},
+      {
+        "name": "small-lamp",
+        "color": {"a": 1, "b": 1, "g": 1, "r": 1},
+        "position": {"x": 34.5, "y": 24.5}
+      },
+      {
+        "name": "small-lamp",
+        "color": {"a": 1, "b": 1, "g": 1, "r": 1},
+        "position": {"x": 10.5, "y": 51.5}
+      },
+      {
+        "name": "small-lamp",
+        "color": {"a": 1, "b": 1, "g": 1, "r": 1},
+        "position": {"x": 34.5, "y": 49.5}
+      },
       {
         "name": "storage-chest",
         "position": {"x": -16.5, "y": -0.5},

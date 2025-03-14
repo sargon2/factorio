@@ -5,7 +5,7 @@
     "label": "Accumulator power alert",
     "shift_x": 127,
     "shift_y": 24,
-    "version": 562949954732035,
+    "version": 562949956108288,
     "entities": [
       {
         "name": "accumulator",
@@ -22,9 +22,14 @@
         },
         "control_behavior": {
           "circuit_condition": {"comparator": "≤", "constant": 10, "first_signal": {"name": "accumulator"}},
-          "circuit_parameters": {"instrument_id": 0, "note_id": 1, "signal_value_is_pitch": false}
+          "circuit_parameters": {"instrument_id": 0, "note_id": 1, "signal_value_is_pitch": false, "stop_playing_sounds": false}
         },
-        "parameters": {"allow_polyphony": false, "playback_mode": "global", "playback_volume": 1},
+        "parameters": {
+          "allow_polyphony": false,
+          "playback_mode": "global",
+          "playback_volume": 1,
+          "volume_controlled_by_signal": false
+        },
         "position": {"x": 0.5, "y": 1.5}
       },
       {"name": "small-electric-pole", "position": {"x": 0.5, "y": 0.5}}

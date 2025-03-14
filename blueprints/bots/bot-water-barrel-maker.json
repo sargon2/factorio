@@ -5,7 +5,7 @@
     "label": "Bot water barrel maker",
     "shift_x": -340,
     "shift_y": -147,
-    "version": 562949954732035,
+    "version": 562949956108288,
     "entities": [
       {
         "name": "assembling-machine-1",
@@ -15,7 +15,6 @@
       },
       {
         "name": "assembling-machine-1",
-        "direction": 8,
         "recipe": "barrel",
         "recipe_quality": "normal",
         "position": {"x": 2.5, "y": 11.5}

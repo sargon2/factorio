@@ -3,10 +3,11 @@
   "blueprint": {
     "item": "blueprint",
     "label": "Bot charger (thick)",
+    "description": "TODO:\n - add more logistic storage",
     "absolute-snapping": true,
     "shift_x": 5,
     "shift_y": -5,
-    "version": 562949954732035,
+    "version": 562949956108288,
     "entities": [
       {"name": "big-electric-pole", "position": {"x": -9, "y": 1}},
       {"name": "big-electric-pole", "position": {"x": -9, "y": 26}},
@@ -449,14 +450,42 @@
         "position": {"x": 38, "y": 50},
         "request_filters": {"sections": [{"index": 1}]}
       },
-      {"name": "small-lamp", "position": {"x": -8.5, "y": -0.5}},
-      {"name": "small-lamp", "position": {"x": 41.5, "y": -0.5}},
-      {"name": "small-lamp", "position": {"x": -8.5, "y": 24.5}},
-      {"name": "small-lamp", "position": {"x": -8.5, "y": 49.5}},
-      {"name": "small-lamp", "position": {"x": 17.5, "y": 1.5}},
-      {"name": "small-lamp", "position": {"x": 41.5, "y": 24.5}},
-      {"name": "small-lamp", "position": {"x": 17.5, "y": 51.5}},
-      {"name": "small-lamp", "position": {"x": 41.5, "y": 49.5}},
+      {
+        "name": "small-lamp",
+        "color": {"a": 1, "b": 1, "g": 1, "r": 1},
+        "position": {"x": -8.5, "y": -0.5}
+      },
+      {
+        "name": "small-lamp",
+        "color": {"a": 1, "b": 1, "g": 1, "r": 1},
+        "position": {"x": 41.5, "y": -0.5}
+      },
+      {
+        "name": "small-lamp",
+        "color": {"a": 1, "b": 1, "g": 1, "r": 1},
+        "position": {"x": -8.5, "y": 24.5}
+      },
+      {
+        "name": "small-lamp",
+        "color": {"a": 1, "b": 1, "g": 1, "r": 1},
+        "position": {"x": -8.5, "y": 49.5}
+      },
+      {"name": "small-lamp", "color": {"a": 1, "b": 1, "g": 1, "r": 1}, "position": {"x": 17.5, "y": 1.5}},
+      {
+        "name": "small-lamp",
+        "color": {"a": 1, "b": 1, "g": 1, "r": 1},
+        "position": {"x": 41.5, "y": 24.5}
+      },
+      {
+        "name": "small-lamp",
+        "color": {"a": 1, "b": 1, "g": 1, "r": 1},
+        "position": {"x": 17.5, "y": 51.5}
+      },
+      {
+        "name": "small-lamp",
+        "color": {"a": 1, "b": 1, "g": 1, "r": 1},
+        "position": {"x": 41.5, "y": 49.5}
+      },
       {
         "name": "storage-chest",
         "position": {"x": -9.5, "y": -0.5},

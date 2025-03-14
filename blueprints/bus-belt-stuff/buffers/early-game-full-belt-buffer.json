@@ -5,7 +5,7 @@
     "label": "Early game full belt buffer",
     "shift_x": -525,
     "shift_y": 52,
-    "version": 562949954732035,
+    "version": 562949956108288,
     "entities": [
       {"name": "inserter", "direction": 8, "position": {"x": -0.5, "y": 11.5}},
       {"name": "inserter", "direction": 8, "position": {"x": -0.5, "y": 13.5}},

@@ -7,7 +7,7 @@
     "absolute-snapping": true,
     "shift_x": 4,
     "shift_y": -5,
-    "version": 562949954732035,
+    "version": 562949956108288,
     "entities": [
       {
         "name": "assembling-machine-2",
@@ -782,14 +782,42 @@
         "position": {"x": 39, "y": 50},
         "request_filters": {"sections": [{"index": 1}]}
       },
-      {"name": "small-lamp", "position": {"x": -7.5, "y": -0.5}},
-      {"name": "small-lamp", "position": {"x": 42.5, "y": -0.5}},
-      {"name": "small-lamp", "position": {"x": -7.5, "y": 24.5}},
-      {"name": "small-lamp", "position": {"x": -7.5, "y": 49.5}},
-      {"name": "small-lamp", "position": {"x": 18.5, "y": 1.5}},
-      {"name": "small-lamp", "position": {"x": 42.5, "y": 24.5}},
-      {"name": "small-lamp", "position": {"x": 18.5, "y": 51.5}},
-      {"name": "small-lamp", "position": {"x": 42.5, "y": 49.5}},
+      {
+        "name": "small-lamp",
+        "color": {"a": 1, "b": 1, "g": 1, "r": 1},
+        "position": {"x": -7.5, "y": -0.5}
+      },
+      {
+        "name": "small-lamp",
+        "color": {"a": 1, "b": 1, "g": 1, "r": 1},
+        "position": {"x": 42.5, "y": -0.5}
+      },
+      {
+        "name": "small-lamp",
+        "color": {"a": 1, "b": 1, "g": 1, "r": 1},
+        "position": {"x": -7.5, "y": 24.5}
+      },
+      {
+        "name": "small-lamp",
+        "color": {"a": 1, "b": 1, "g": 1, "r": 1},
+        "position": {"x": -7.5, "y": 49.5}
+      },
+      {"name": "small-lamp", "color": {"a": 1, "b": 1, "g": 1, "r": 1}, "position": {"x": 18.5, "y": 1.5}},
+      {
+        "name": "small-lamp",
+        "color": {"a": 1, "b": 1, "g": 1, "r": 1},
+        "position": {"x": 42.5, "y": 24.5}
+      },
+      {
+        "name": "small-lamp",
+        "color": {"a": 1, "b": 1, "g": 1, "r": 1},
+        "position": {"x": 18.5, "y": 51.5}
+      },
+      {
+        "name": "small-lamp",
+        "color": {"a": 1, "b": 1, "g": 1, "r": 1},
+        "position": {"x": 42.5, "y": 49.5}
+      },
       {
         "name": "storage-chest",
         "position": {"x": -8.5, "y": -0.5},

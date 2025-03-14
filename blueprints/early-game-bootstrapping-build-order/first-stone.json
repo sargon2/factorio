@@ -5,7 +5,7 @@
     "label": "First stone",
     "shift_x": -83,
     "shift_y": -33,
-    "version": 562949954732035,
+    "version": 562949956108288,
     "entities": [
       {"name": "burner-mining-drill", "direction": 4, "position": {"x": 0, "y": 0}},
       {"name": "burner-mining-drill", "position": {"x": 2, "y": 1}},

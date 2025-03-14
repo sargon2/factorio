@@ -6,7 +6,7 @@
     "description": "Must be placed on iron.",
     "shift_x": 0,
     "shift_y": 1,
-    "version": 562949954732035,
+    "version": 562949956108288,
     "entities": [
       {
         "name": "assembling-machine-1",

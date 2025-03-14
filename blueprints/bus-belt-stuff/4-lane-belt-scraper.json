@@ -5,7 +5,7 @@
     "label": "4-lane belt scraper",
     "shift_x": 25,
     "shift_y": -113,
-    "version": 562949954732035,
+    "version": 562949956108288,
     "entities": [
       {"name": "splitter", "direction": 4, "output_priority": "left", "position": {"x": 3.5, "y": 0}},
       {"name": "splitter", "direction": 4, "output_priority": "left", "position": {"x": 2.5, "y": 1}},

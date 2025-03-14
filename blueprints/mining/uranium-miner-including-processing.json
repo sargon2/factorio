@@ -5,7 +5,7 @@
     "label": "Uranium miner including processing",
     "shift_x": -278,
     "shift_y": 335,
-    "version": 562949954732035,
+    "version": 562949956108288,
     "entities": [
       {
         "name": "centrifuge",

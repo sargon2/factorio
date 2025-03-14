@@ -5,7 +5,7 @@
     "label": "Turret with ammo indicator light",
     "shift_x": 109,
     "shift_y": 17,
-    "version": 562949954732035,
+    "version": 562949956108288,
     "entities": [
       {
         "name": "constant-combinator",
@@ -56,6 +56,7 @@
       {"name": "small-electric-pole", "position": {"x": 1.5, "y": 3.5}},
       {
         "name": "small-lamp",
+        "color": {"a": 1, "b": 1, "g": 1, "r": 1},
         "control_behavior": {
           "circuit_enabled": true,
           "use_colors": true,

@@ -5,7 +5,7 @@
     "label": "Bot water provider (1 pump)",
     "shift_x": 212,
     "shift_y": 31,
-    "version": 562949954732035,
+    "version": 562949956108288,
     "entities": [
       {
         "name": "assembling-machine-2",

@@ -4,7 +4,7 @@
     "item": "blueprint",
     "label": "Attack extension",
     "absolute-snapping": true,
-    "version": 562949954732035,
+    "version": 562949956108288,
     "entities": [
       {"name": "gun-turret", "position": {"x": 1, "y": 2}},
       {"name": "gun-turret", "position": {"x": 3, "y": 2}},

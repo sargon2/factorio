@@ -5,7 +5,7 @@
     "label": "Red science big",
     "shift_x": -195,
     "shift_y": -126,
-    "version": 562949954732035,
+    "version": 562949956108288,
     "entities": [
       {
         "name": "assembling-machine-1",
@@ -81,7 +81,6 @@
       },
       {
         "name": "assembling-machine-1",
-        "direction": 8,
         "recipe": "automation-science-pack",
         "recipe_quality": "normal",
         "position": {"x": 15.5, "y": 10.5}
@@ -94,7 +93,6 @@
       },
       {
         "name": "assembling-machine-1",
-        "direction": 8,
         "recipe": "automation-science-pack",
         "recipe_quality": "normal",
         "position": {"x": 15.5, "y": 13.5}
@@ -155,14 +153,12 @@
       },
       {
         "name": "assembling-machine-1",
-        "direction": 8,
         "recipe": "automation-science-pack",
         "recipe_quality": "normal",
         "position": {"x": 15.5, "y": 16.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 8,
         "recipe": "automation-science-pack",
         "recipe_quality": "normal",
         "position": {"x": 15.5, "y": 19.5}
@@ -175,7 +171,6 @@
       },
       {
         "name": "assembling-machine-1",
-        "direction": 8,
         "recipe": "automation-science-pack",
         "recipe_quality": "normal",
         "position": {"x": 15.5, "y": 22.5}
@@ -206,7 +201,6 @@
       },
       {
         "name": "assembling-machine-1",
-        "direction": 8,
         "recipe": "automation-science-pack",
         "recipe_quality": "normal",
         "position": {"x": 15.5, "y": 25.5}
@@ -225,14 +219,12 @@
       },
       {
         "name": "assembling-machine-1",
-        "direction": 8,
         "recipe": "automation-science-pack",
         "recipe_quality": "normal",
         "position": {"x": 15.5, "y": 28.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 8,
         "recipe": "automation-science-pack",
         "recipe_quality": "normal",
         "position": {"x": 15.5, "y": 31.5}

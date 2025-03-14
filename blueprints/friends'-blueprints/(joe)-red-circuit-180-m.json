@@ -6,7 +6,7 @@
     "description": "1x copper plate belt\n.4x iron plate belt\nmakes .4x plastic belt with...\n.2x coal belt\n3600 petrolium gas",
     "shift_x": -219,
     "shift_y": -142,
-    "version": 562949954732035,
+    "version": 562949956108288,
     "entities": [
       {
         "name": "assembling-machine-1",
@@ -16,273 +16,234 @@
       },
       {
         "name": "assembling-machine-1",
-        "direction": 8,
         "recipe": "copper-cable",
         "recipe_quality": "normal",
         "position": {"x": -0.5, "y": 42.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "advanced-circuit",
         "recipe_quality": "normal",
         "position": {"x": 2.5, "y": 1.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "advanced-circuit",
         "recipe_quality": "normal",
         "position": {"x": 2.5, "y": 4.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "advanced-circuit",
         "recipe_quality": "normal",
         "position": {"x": 2.5, "y": 7.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "advanced-circuit",
         "recipe_quality": "normal",
         "position": {"x": 9.5, "y": 2.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "advanced-circuit",
         "recipe_quality": "normal",
         "position": {"x": 15.5, "y": 2.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "advanced-circuit",
         "recipe_quality": "normal",
         "position": {"x": 9.5, "y": 5.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "advanced-circuit",
         "recipe_quality": "normal",
         "position": {"x": 15.5, "y": 5.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "advanced-circuit",
         "recipe_quality": "normal",
         "position": {"x": 2.5, "y": 10.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "advanced-circuit",
         "recipe_quality": "normal",
         "position": {"x": 2.5, "y": 13.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "advanced-circuit",
         "recipe_quality": "normal",
         "position": {"x": 9.5, "y": 8.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "advanced-circuit",
         "recipe_quality": "normal",
         "position": {"x": 9.5, "y": 11.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "advanced-circuit",
         "recipe_quality": "normal",
         "position": {"x": 15.5, "y": 8.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "advanced-circuit",
         "recipe_quality": "normal",
         "position": {"x": 15.5, "y": 11.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "advanced-circuit",
         "recipe_quality": "normal",
         "position": {"x": 9.5, "y": 14.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "advanced-circuit",
         "recipe_quality": "normal",
         "position": {"x": 15.5, "y": 14.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "advanced-circuit",
         "recipe_quality": "normal",
         "position": {"x": 22.5, "y": 1.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "advanced-circuit",
         "recipe_quality": "normal",
         "position": {"x": 22.5, "y": 4.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "advanced-circuit",
         "recipe_quality": "normal",
         "position": {"x": 22.5, "y": 7.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "advanced-circuit",
         "recipe_quality": "normal",
         "position": {"x": 22.5, "y": 10.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "advanced-circuit",
         "recipe_quality": "normal",
         "position": {"x": 22.5, "y": 13.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "advanced-circuit",
         "recipe_quality": "normal",
         "position": {"x": 2.5, "y": 16.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "advanced-circuit",
         "recipe_quality": "normal",
         "position": {"x": 2.5, "y": 19.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "advanced-circuit",
         "recipe_quality": "normal",
         "position": {"x": 2.5, "y": 22.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "advanced-circuit",
         "recipe_quality": "normal",
         "position": {"x": 9.5, "y": 17.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "advanced-circuit",
         "recipe_quality": "normal",
         "position": {"x": 15.5, "y": 17.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "advanced-circuit",
         "recipe_quality": "normal",
         "position": {"x": 9.5, "y": 20.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "advanced-circuit",
         "recipe_quality": "normal",
         "position": {"x": 9.5, "y": 23.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "advanced-circuit",
         "recipe_quality": "normal",
         "position": {"x": 15.5, "y": 20.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "advanced-circuit",
         "recipe_quality": "normal",
         "position": {"x": 15.5, "y": 23.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "advanced-circuit",
         "recipe_quality": "normal",
         "position": {"x": 2.5, "y": 25.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "advanced-circuit",
         "recipe_quality": "normal",
         "position": {"x": 9.5, "y": 26.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "advanced-circuit",
         "recipe_quality": "normal",
         "position": {"x": 15.5, "y": 26.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "advanced-circuit",
         "recipe_quality": "normal",
         "position": {"x": 22.5, "y": 16.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "advanced-circuit",
         "recipe_quality": "normal",
         "position": {"x": 22.5, "y": 19.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "advanced-circuit",
         "recipe_quality": "normal",
         "position": {"x": 22.5, "y": 22.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "advanced-circuit",
         "recipe_quality": "normal",
         "position": {"x": 22.5, "y": 25.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 12,
         "recipe": "electronic-circuit",
         "recipe_quality": "normal",
         "position": {"x": 1.5, "y": 32.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 12,
         "recipe": "electronic-circuit",
         "recipe_quality": "normal",
         "position": {"x": 4.5, "y": 32.5}
@@ -301,14 +262,12 @@
       },
       {
         "name": "assembling-machine-1",
-        "direction": 12,
         "recipe": "electronic-circuit",
         "recipe_quality": "normal",
         "position": {"x": 10.5, "y": 32.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 12,
         "recipe": "electronic-circuit",
         "recipe_quality": "normal",
         "position": {"x": 13.5, "y": 32.5}
@@ -333,49 +292,42 @@
       },
       {
         "name": "assembling-machine-1",
-        "direction": 8,
         "recipe": "copper-cable",
         "recipe_quality": "normal",
         "position": {"x": 2.5, "y": 42.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 8,
         "recipe": "copper-cable",
         "recipe_quality": "normal",
         "position": {"x": 5.5, "y": 42.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 8,
         "recipe": "copper-cable",
         "recipe_quality": "normal",
         "position": {"x": 8.5, "y": 42.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 8,
         "recipe": "copper-cable",
         "recipe_quality": "normal",
         "position": {"x": 11.5, "y": 42.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 8,
         "recipe": "copper-cable",
         "recipe_quality": "normal",
         "position": {"x": 14.5, "y": 42.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 12,
         "recipe": "electronic-circuit",
         "recipe_quality": "normal",
         "position": {"x": 19.5, "y": 32.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 12,
         "recipe": "electronic-circuit",
         "recipe_quality": "normal",
         "position": {"x": 22.5, "y": 32.5}

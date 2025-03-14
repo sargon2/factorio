@@ -6,7 +6,7 @@
     "absolute-snapping": true,
     "shift_x": 22,
     "shift_y": -5,
-    "version": 562949954732035,
+    "version": 562949956108288,
     "entities": [
       {"name": "big-electric-pole", "position": {"x": -26, "y": 1}},
       {"name": "big-electric-pole", "position": {"x": -1, "y": 1}},
@@ -101,14 +101,38 @@
         "position": {"x": 21, "y": 50},
         "request_filters": {"sections": [{"index": 1}]}
       },
-      {"name": "small-lamp", "position": {"x": -25.5, "y": -0.5}},
-      {"name": "small-lamp", "position": {"x": 24.5, "y": -0.5}},
-      {"name": "small-lamp", "position": {"x": -25.5, "y": 24.5}},
-      {"name": "small-lamp", "position": {"x": -25.5, "y": 49.5}},
-      {"name": "small-lamp", "position": {"x": 0.5, "y": 1.5}},
-      {"name": "small-lamp", "position": {"x": 24.5, "y": 24.5}},
-      {"name": "small-lamp", "position": {"x": 0.5, "y": 51.5}},
-      {"name": "small-lamp", "position": {"x": 24.5, "y": 49.5}},
+      {
+        "name": "small-lamp",
+        "color": {"a": 1, "b": 1, "g": 1, "r": 1},
+        "position": {"x": -25.5, "y": -0.5}
+      },
+      {
+        "name": "small-lamp",
+        "color": {"a": 1, "b": 1, "g": 1, "r": 1},
+        "position": {"x": 24.5, "y": -0.5}
+      },
+      {
+        "name": "small-lamp",
+        "color": {"a": 1, "b": 1, "g": 1, "r": 1},
+        "position": {"x": -25.5, "y": 24.5}
+      },
+      {
+        "name": "small-lamp",
+        "color": {"a": 1, "b": 1, "g": 1, "r": 1},
+        "position": {"x": -25.5, "y": 49.5}
+      },
+      {"name": "small-lamp", "color": {"a": 1, "b": 1, "g": 1, "r": 1}, "position": {"x": 0.5, "y": 1.5}},
+      {
+        "name": "small-lamp",
+        "color": {"a": 1, "b": 1, "g": 1, "r": 1},
+        "position": {"x": 24.5, "y": 24.5}
+      },
+      {"name": "small-lamp", "color": {"a": 1, "b": 1, "g": 1, "r": 1}, "position": {"x": 0.5, "y": 51.5}},
+      {
+        "name": "small-lamp",
+        "color": {"a": 1, "b": 1, "g": 1, "r": 1},
+        "position": {"x": 24.5, "y": 49.5}
+      },
       {
         "name": "storage-chest",
         "position": {"x": -26.5, "y": -0.5},

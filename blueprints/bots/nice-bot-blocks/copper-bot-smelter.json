@@ -3,10 +3,11 @@
   "blueprint": {
     "item": "blueprint",
     "label": "Copper bot smelter",
+    "description": "TODO fix some chests are requesting iron",
     "absolute-snapping": true,
     "shift_x": 4,
     "shift_y": 6,
-    "version": 562949954732035,
+    "version": 562949956108288,
     "entities": [
       {"name": "big-electric-pole", "position": {"x": -8, "y": -10}},
       {"name": "big-electric-pole", "position": {"x": 17, "y": -10}},
@@ -967,14 +968,46 @@
         "position": {"x": 39, "y": 39},
         "request_filters": {"sections": [{"index": 1}]}
       },
-      {"name": "small-lamp", "position": {"x": -7.5, "y": -11.5}},
-      {"name": "small-lamp", "position": {"x": 18.5, "y": -9.5}},
-      {"name": "small-lamp", "position": {"x": 42.5, "y": -11.5}},
-      {"name": "small-lamp", "position": {"x": -7.5, "y": 13.5}},
-      {"name": "small-lamp", "position": {"x": -7.5, "y": 38.5}},
-      {"name": "small-lamp", "position": {"x": 42.5, "y": 13.5}},
-      {"name": "small-lamp", "position": {"x": 18.5, "y": 40.5}},
-      {"name": "small-lamp", "position": {"x": 42.5, "y": 38.5}},
+      {
+        "name": "small-lamp",
+        "color": {"a": 1, "b": 1, "g": 1, "r": 1},
+        "position": {"x": -7.5, "y": -11.5}
+      },
+      {
+        "name": "small-lamp",
+        "color": {"a": 1, "b": 1, "g": 1, "r": 1},
+        "position": {"x": 18.5, "y": -9.5}
+      },
+      {
+        "name": "small-lamp",
+        "color": {"a": 1, "b": 1, "g": 1, "r": 1},
+        "position": {"x": 42.5, "y": -11.5}
+      },
+      {
+        "name": "small-lamp",
+        "color": {"a": 1, "b": 1, "g": 1, "r": 1},
+        "position": {"x": -7.5, "y": 13.5}
+      },
+      {
+        "name": "small-lamp",
+        "color": {"a": 1, "b": 1, "g": 1, "r": 1},
+        "position": {"x": -7.5, "y": 38.5}
+      },
+      {
+        "name": "small-lamp",
+        "color": {"a": 1, "b": 1, "g": 1, "r": 1},
+        "position": {"x": 42.5, "y": 13.5}
+      },
+      {
+        "name": "small-lamp",
+        "color": {"a": 1, "b": 1, "g": 1, "r": 1},
+        "position": {"x": 18.5, "y": 40.5}
+      },
+      {
+        "name": "small-lamp",
+        "color": {"a": 1, "b": 1, "g": 1, "r": 1},
+        "position": {"x": 42.5, "y": 38.5}
+      },
       {
         "name": "storage-chest",
         "position": {"x": -8.5, "y": -11.5},

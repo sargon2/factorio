@@ -5,7 +5,7 @@
     "label": "1 lane mixed mining separator",
     "shift_x": 169,
     "shift_y": 102,
-    "version": 562949954732035,
+    "version": 562949956108288,
     "entities": [
       {
         "name": "splitter",

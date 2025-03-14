@@ -5,7 +5,7 @@
     "label": "2-lane grid muxer",
     "shift_x": -118,
     "shift_y": 0,
-    "version": 562949954732035,
+    "version": 562949956108288,
     "entities": [
       {"name": "small-electric-pole", "position": {"x": 1.5, "y": 1.5}},
       {"name": "splitter", "direction": 12, "position": {"x": 1.5, "y": -2}},

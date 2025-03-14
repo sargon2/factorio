@@ -3,11 +3,11 @@
   "blueprint": {
     "item": "blueprint",
     "label": "Bot self-replication mall",
-    "description": "Needs:\n- Oil refineries and chemical plants?\n- Substations\n- Electric furnaces",
+    "description": "Needs:\n- Pipes (both kinds)\n- More yellow arms!\n- Repair packs\n- Oil refineries and chemical plants?\n- Substations\n- Electric furnaces",
     "absolute-snapping": true,
     "shift_x": 4,
     "shift_y": 6,
-    "version": 562949954732035,
+    "version": 562949956108288,
     "entities": [
       {
         "name": "assembling-machine-1",
@@ -29,21 +29,18 @@
       },
       {
         "name": "assembling-machine-1",
-        "direction": 8,
         "recipe": "iron-stick",
         "recipe_quality": "normal",
         "position": {"x": 1.5, "y": 5.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 8,
         "recipe": "iron-stick",
         "recipe_quality": "normal",
         "position": {"x": 4.5, "y": 5.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 8,
         "recipe": "iron-stick",
         "recipe_quality": "normal",
         "position": {"x": 7.5, "y": 5.5}
@@ -62,7 +59,6 @@
       },
       {
         "name": "assembling-machine-1",
-        "direction": 8,
         "recipe": "iron-stick",
         "recipe_quality": "normal",
         "position": {"x": 10.5, "y": 5.5}
@@ -117,7 +113,6 @@
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "iron-gear-wheel",
         "recipe_quality": "normal",
         "position": {"x": 13.5, "y": 10.5}
@@ -214,14 +209,12 @@
       },
       {
         "name": "assembling-machine-1",
-        "direction": 4,
         "recipe": "iron-gear-wheel",
         "recipe_quality": "normal",
         "position": {"x": 19.5, "y": 10.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 8,
         "recipe": "iron-gear-wheel",
         "recipe_quality": "normal",
         "position": {"x": 22.5, "y": 10.5}
@@ -246,7 +239,6 @@
       },
       {
         "name": "assembling-machine-1",
-        "direction": 8,
         "recipe": "iron-gear-wheel",
         "recipe_quality": "normal",
         "position": {"x": 25.5, "y": 10.5}
@@ -283,14 +275,12 @@
       },
       {
         "name": "assembling-machine-1",
-        "direction": 8,
         "recipe": "iron-gear-wheel",
         "recipe_quality": "normal",
         "position": {"x": 4.5, "y": 20.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 8,
         "recipe": "iron-gear-wheel",
         "recipe_quality": "normal",
         "position": {"x": 7.5, "y": 20.5}
@@ -321,14 +311,12 @@
       },
       {
         "name": "assembling-machine-1",
-        "direction": 8,
         "recipe": "iron-gear-wheel",
         "recipe_quality": "normal",
         "position": {"x": 22.5, "y": 20.5}
       },
       {
         "name": "assembling-machine-1",
-        "direction": 8,
         "recipe": "iron-gear-wheel",
         "recipe_quality": "normal",
         "position": {"x": 25.5, "y": 20.5}
@@ -1433,14 +1421,46 @@
         "position": {"x": 39, "y": 39},
         "request_filters": {"sections": [{"index": 1}]}
       },
-      {"name": "small-lamp", "position": {"x": -7.5, "y": -11.5}},
-      {"name": "small-lamp", "position": {"x": 18.5, "y": -9.5}},
-      {"name": "small-lamp", "position": {"x": 42.5, "y": -11.5}},
-      {"name": "small-lamp", "position": {"x": -7.5, "y": 13.5}},
-      {"name": "small-lamp", "position": {"x": -7.5, "y": 38.5}},
-      {"name": "small-lamp", "position": {"x": 42.5, "y": 13.5}},
-      {"name": "small-lamp", "position": {"x": 18.5, "y": 40.5}},
-      {"name": "small-lamp", "position": {"x": 42.5, "y": 38.5}},
+      {
+        "name": "small-lamp",
+        "color": {"a": 1, "b": 1, "g": 1, "r": 1},
+        "position": {"x": -7.5, "y": -11.5}
+      },
+      {
+        "name": "small-lamp",
+        "color": {"a": 1, "b": 1, "g": 1, "r": 1},
+        "position": {"x": 18.5, "y": -9.5}
+      },
+      {
+        "name": "small-lamp",
+        "color": {"a": 1, "b": 1, "g": 1, "r": 1},
+        "position": {"x": 42.5, "y": -11.5}
+      },
+      {
+        "name": "small-lamp",
+        "color": {"a": 1, "b": 1, "g": 1, "r": 1},
+        "position": {"x": -7.5, "y": 13.5}
+      },
+      {
+        "name": "small-lamp",
+        "color": {"a": 1, "b": 1, "g": 1, "r": 1},
+        "position": {"x": -7.5, "y": 38.5}
+      },
+      {
+        "name": "small-lamp",
+        "color": {"a": 1, "b": 1, "g": 1, "r": 1},
+        "position": {"x": 42.5, "y": 13.5}
+      },
+      {
+        "name": "small-lamp",
+        "color": {"a": 1, "b": 1, "g": 1, "r": 1},
+        "position": {"x": 18.5, "y": 40.5}
+      },
+      {
+        "name": "small-lamp",
+        "color": {"a": 1, "b": 1, "g": 1, "r": 1},
+        "position": {"x": 42.5, "y": 38.5}
+      },
       {
         "name": "storage-chest",
         "position": {"x": -8.5, "y": -11.5},

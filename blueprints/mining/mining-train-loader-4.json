@@ -5,7 +5,7 @@
     "label": "Mining train loader 4",
     "shift_x": 46,
     "shift_y": -164,
-    "version": 562949954732035,
+    "version": 562949956108288,
     "entities": [
       {"name": "bulk-inserter", "position": {"x": -2.5, "y": 47.5}},
       {"name": "bulk-inserter", "position": {"x": -1.5, "y": 47.5}},

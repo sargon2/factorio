@@ -5,7 +5,7 @@
     "label": "Gate section",
     "shift_x": -2,
     "shift_y": -9,
-    "version": 562949956108288,
+    "version": 562949956173828,
     "entities": [
       {"name": "gate", "direction": 4, "position": {"x": 1.5, "y": -0.5}},
       {"name": "gate", "direction": 4, "position": {"x": 3.5, "y": -0.5}},

@@ -5,7 +5,7 @@
     "label": "Solar",
     "shift_x": -8,
     "shift_y": -8,
-    "version": 562949956108288,
+    "version": 562949956173828,
     "entities": [
       {"name": "accumulator", "position": {"x": 1, "y": 0}},
       {"name": "accumulator", "position": {"x": 7, "y": 0}},

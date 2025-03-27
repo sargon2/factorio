@@ -6,7 +6,7 @@
     "description": "Make the actual car yourself. It's faster.",
     "shift_x": 107,
     "shift_y": -171,
-    "version": 562949956108288,
+    "version": 562949956173828,
     "entities": [
       {
         "name": "assembling-machine-1",

@@ -5,7 +5,7 @@
     "label": "Coal liquefaction - 1 boiler",
     "shift_x": 94,
     "shift_y": 96,
-    "version": 562949956108288,
+    "version": 562949956173828,
     "entities": [
       {"name": "boiler", "direction": 4, "position": {"x": 3, "y": 1.5}},
       {"name": "inserter", "direction": 12, "position": {"x": 1.5, "y": 1.5}},

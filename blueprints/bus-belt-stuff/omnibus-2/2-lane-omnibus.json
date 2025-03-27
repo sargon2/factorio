@@ -5,7 +5,7 @@
     "label": "2-lane omnibus",
     "shift_x": 119,
     "shift_y": -114,
-    "version": 562949956108288,
+    "version": 562949956173828,
     "entities": [
       {"name": "transport-belt", "direction": 12, "position": {"x": 0.5, "y": -0.5}},
       {"name": "transport-belt", "direction": 12, "position": {"x": 0.5, "y": 0.5}},

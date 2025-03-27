@@ -3,7 +3,7 @@
   "blueprint": {
     "item": "blueprint",
     "label": "Tested wall",
-    "version": 562949956108288,
+    "version": 562949956173828,
     "entities": [
       {"name": "stone-wall", "position": {"x": 1.5, "y": 0.5}},
       {"name": "stone-wall", "position": {"x": 2.5, "y": 0.5}},

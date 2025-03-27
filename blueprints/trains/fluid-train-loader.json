@@ -5,7 +5,7 @@
     "label": "Fluid train loader",
     "shift_x": -81,
     "shift_y": 1,
-    "version": 562949956108288,
+    "version": 562949956173828,
     "entities": [
       {"name": "legacy-straight-rail", "direction": 4, "position": {"x": 0, "y": 0}},
       {"name": "legacy-straight-rail", "direction": 4, "position": {"x": 2, "y": 0}},

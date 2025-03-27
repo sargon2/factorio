@@ -5,7 +5,7 @@
     "label": "Kovarex (fast start)",
     "shift_x": -248,
     "shift_y": -42,
-    "version": 562949956108288,
+    "version": 562949956173828,
     "entities": [
       {
         "name": "arithmetic-combinator",

@@ -48,6 +48,6 @@
       {"index": 1, "signal": {"name": "lab"}},
       {"index": 2, "signal": {"name": "automation-science-pack"}}
     ],
-    "wires": [["5,2", 5, "5,4", 5], ["0,4", 5, "5,4", 5]]
+    "wires": [["0,4", 5, "5,4", 5], ["5,2", 5, "5,4", 5]]
   }
 }

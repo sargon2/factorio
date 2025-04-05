@@ -5,7 +5,7 @@
     "label": "Eight lane sushi belt",
     "shift_x": 15,
     "shift_y": 32,
-    "version": 562949956173828,
+    "version": 562949956239363,
     "entities": [
       {"name": "splitter", "position": {"x": 5, "y": -14.5}},
       {"name": "splitter", "direction": 4, "input_priority": "left", "position": {"x": 7.5, "y": -15}},

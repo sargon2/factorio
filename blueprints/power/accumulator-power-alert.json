@@ -38,6 +38,6 @@
       {"index": 1, "signal": {"name": "accumulator"}},
       {"index": 2, "signal": {"name": "programmable-speaker"}}
     ],
-    "wires": [["0,1", 1, "1.5,0.5", 1]]
+    "wires": [["1.5,0.5", 1, "0,1", 1]]
   }
 }

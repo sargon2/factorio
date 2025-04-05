@@ -29,6 +29,6 @@
       {"index": 2, "signal": {"name": "electric-mining-drill"}}
     ],
     "snap-to-grid": {"x": 9, "y": 5},
-    "wires": [["8,2", 5, "3,4", 5]]
+    "wires": [["3,4", 5, "8,2", 5]]
   }
 }

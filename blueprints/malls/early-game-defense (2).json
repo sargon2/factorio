@@ -51,6 +51,6 @@
       {"index": 2, "signal": {"name": "firearm-magazine"}},
       {"index": 3, "signal": {"name": "pipe"}}
     ],
-    "wires": [["4,2", 5, "2,4", 5], ["4,2", 5, "5,6", 5]]
+    "wires": [["2,4", 5, "4,2", 5], ["4,2", 5, "5,6", 5]]
   }
 }

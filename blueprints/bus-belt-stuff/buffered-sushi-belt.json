@@ -6,7 +6,7 @@
     "description": "Prevents deadlock in the case of uneven inputs.  Does its own lane balancing.",
     "shift_x": -3,
     "shift_y": 139,
-    "version": 562949956173828,
+    "version": 562949956239363,
     "entities": [
       {"name": "bulk-inserter", "direction": 12, "position": {"x": 2.5, "y": -12.5}},
       {"name": "bulk-inserter", "direction": 12, "position": {"x": 4.5, "y": -12.5}},

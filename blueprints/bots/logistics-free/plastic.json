@@ -5,7 +5,7 @@
     "label": "Plastic",
     "shift_x": 486,
     "shift_y": 34,
-    "version": 562949956173828,
+    "version": 562949956239363,
     "entities": [
       {"name": "active-provider-chest", "position": {"x": 5.5, "y": 3.5}},
       {

@@ -5,7 +5,7 @@
     "label": "Kovarex",
     "shift_x": -4,
     "shift_y": -2,
-    "version": 562949956173828,
+    "version": 562949956239363,
     "entities": [
       {"name": "bulk-inserter", "direction": 8, "position": {"x": 5.5, "y": 0.5}},
       {"name": "bulk-inserter", "direction": 8, "position": {"x": 6.5, "y": 0.5}},

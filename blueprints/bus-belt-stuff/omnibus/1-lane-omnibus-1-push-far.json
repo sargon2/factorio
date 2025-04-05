@@ -5,7 +5,7 @@
     "label": "1-lane omnibus 1-push far",
     "shift_x": 87,
     "shift_y": 156,
-    "version": 562949956173828,
+    "version": 562949956239363,
     "entities": [
       {"name": "splitter", "direction": 12, "input_priority": "left", "position": {"x": 1.5, "y": 1}},
       {"name": "splitter", "position": {"x": 3, "y": 3.5}},

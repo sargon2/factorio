@@ -6,7 +6,7 @@
     "description": "TODO:\n- Add roboports to cover everything\n- Add cliff explosives\n- Red ammo\n- Yellow science",
     "shift_x": -444,
     "shift_y": 113,
-    "version": 562949956173828,
+    "version": 562949956239363,
     "entities": [
       {
         "name": "assembling-machine-1",

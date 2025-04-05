@@ -5,7 +5,7 @@
     "label": "Intersection",
     "shift_x": 311,
     "shift_y": 114,
-    "version": 562949956173828,
+    "version": 562949956239363,
     "entities": [
       {"name": "express-transport-belt", "direction": 8, "position": {"x": 1.5, "y": -4.5}},
       {"name": "express-transport-belt", "position": {"x": 3.5, "y": -4.5}},

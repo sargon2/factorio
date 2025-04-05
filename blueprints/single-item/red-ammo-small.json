@@ -5,7 +5,7 @@
     "label": "Red ammo small",
     "shift_x": -98,
     "shift_y": -261,
-    "version": 562949956173828,
+    "version": 562949956239363,
     "entities": [
       {
         "name": "assembling-machine-1",

@@ -5,7 +5,7 @@
     "label": "High-speed walkway",
     "shift_x": 97,
     "shift_y": 79,
-    "version": 562949956173828,
+    "version": 562949956239363,
     "entities": [
       {"name": "express-transport-belt", "direction": 12, "position": {"x": 0.5, "y": 0.5}},
       {"name": "express-transport-belt", "direction": 4, "position": {"x": 0.5, "y": 2.5}}

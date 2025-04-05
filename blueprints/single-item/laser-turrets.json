@@ -5,7 +5,7 @@
     "label": "Laser turrets",
     "shift_x": -371,
     "shift_y": 118,
-    "version": 562949956173828,
+    "version": 562949956239363,
     "entities": [
       {
         "name": "assembling-machine-1",

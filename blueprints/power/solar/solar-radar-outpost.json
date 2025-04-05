@@ -5,7 +5,7 @@
     "label": "Solar radar outpost",
     "shift_x": -29,
     "shift_y": 84,
-    "version": 562949956173828,
+    "version": 562949956239363,
     "entities": [
       {"name": "accumulator", "position": {"x": 8, "y": 1}},
       {"name": "accumulator", "position": {"x": 10, "y": 1}},

@@ -6,7 +6,7 @@
     "description": "Adds on to the red/green expandable blueprint.",
     "shift_x": -395,
     "shift_y": -299,
-    "version": 562949956173828,
+    "version": 562949956239363,
     "entities": [
       {
         "name": "assembling-machine-1",

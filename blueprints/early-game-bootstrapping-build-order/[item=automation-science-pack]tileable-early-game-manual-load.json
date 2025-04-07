@@ -1,0 +1,41 @@
+{
+  "index": 7,
+  "blueprint": {
+    "item": "blueprint",
+    "label": "[item=automation-science-pack]Tileable early game manual load",
+    "shift_x": 1,
+    "shift_y": 1,
+    "version": 562949956239363,
+    "entities": [
+      {
+        "name": "assembling-machine-1",
+        "recipe": "automation-science-pack",
+        "recipe_quality": "normal",
+        "position": {"x": 0.5, "y": 4.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "automation-science-pack",
+        "recipe_quality": "normal",
+        "position": {"x": 3.5, "y": 4.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "iron-gear-wheel",
+        "recipe_quality": "normal",
+        "position": {"x": 2.5, "y": 8.5}
+      },
+      {"name": "inserter", "direction": 8, "position": {"x": 0.5, "y": 2.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": 3.5, "y": 2.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": 1.5, "y": 6.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": 2.5, "y": 6.5}},
+      {"name": "lab", "position": {"x": 0.5, "y": 0.5}},
+      {"name": "lab", "position": {"x": 3.5, "y": 0.5}},
+      {"name": "small-electric-pole", "position": {"x": 2.5, "y": 2.5}},
+      {"name": "small-electric-pole", "position": {"x": 3.5, "y": 6.5}}
+    ],
+    "icons": [{"index": 1, "signal": {"name": "assembling-machine-1"}}, {"index": 2, "signal": {"name": "lab"}}],
+    "snap-to-grid": {"x": 6, "y": 11},
+    "wires": [["2,2", 5, "3,6", 5]]
+  }
+}

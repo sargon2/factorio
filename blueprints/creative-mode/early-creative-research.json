@@ -3,12 +3,13 @@
   "blueprint": {
     "item": "blueprint",
     "label": "Early creative research",
-    "shift_x": -14,
-    "shift_y": 63,
+    "shift_x": -31,
+    "shift_y": 89,
     "version": 562949956239363,
     "entities": [
       {"name": "burner-inserter", "position": {"x": -0.5, "y": 1.5}},
       {"name": "burner-inserter", "position": {"x": -0.5, "y": 5.5}},
+      {"name": "burner-inserter", "position": {"x": -0.5, "y": 9.5}},
       {"name": "burner-inserter", "position": {"x": 1.5, "y": 1.5}},
       {"name": "burner-inserter", "position": {"x": 3.5, "y": 1.5}},
       {"name": "burner-inserter", "position": {"x": 5.5, "y": 1.5}},
@@ -25,8 +26,17 @@
       {"name": "burner-inserter", "position": {"x": 11.5, "y": 5.5}},
       {"name": "burner-inserter", "position": {"x": 13.5, "y": 5.5}},
       {"name": "burner-inserter", "position": {"x": 15.5, "y": 5.5}},
+      {"name": "burner-inserter", "position": {"x": 1.5, "y": 9.5}},
+      {"name": "burner-inserter", "position": {"x": 3.5, "y": 9.5}},
+      {"name": "burner-inserter", "position": {"x": 5.5, "y": 9.5}},
+      {"name": "burner-inserter", "position": {"x": 7.5, "y": 9.5}},
+      {"name": "burner-inserter", "position": {"x": 9.5, "y": 9.5}},
+      {"name": "burner-inserter", "position": {"x": 11.5, "y": 9.5}},
+      {"name": "burner-inserter", "position": {"x": 13.5, "y": 9.5}},
+      {"name": "burner-inserter", "position": {"x": 15.5, "y": 9.5}},
       {"name": "burner-inserter", "position": {"x": 17.5, "y": 1.5}},
       {"name": "burner-inserter", "position": {"x": 17.5, "y": 5.5}},
+      {"name": "burner-inserter", "position": {"x": 17.5, "y": 9.5}},
       {
         "name": "creative-mod_inf-provider-chest",
         "infinity_settings": {
@@ -48,6 +58,17 @@
           ]
         },
         "position": {"x": -0.5, "y": 4.5}
+      },
+      {
+        "name": "creative-mod_inf-provider-chest",
+        "infinity_settings": {
+          "remove_unfiltered_items": false,
+          "filters": [
+            {"name": "coal", "count": 50, "index": 1, "mode": "at-least"},
+            {"name": "iron-plate", "count": 100, "index": 2, "mode": "at-least"}
+          ]
+        },
+        "position": {"x": -0.5, "y": 8.5}
       },
       {
         "name": "creative-mod_inf-provider-chest",
@@ -231,6 +252,94 @@
           "remove_unfiltered_items": false,
           "filters": [
             {"name": "coal", "count": 50, "index": 1, "mode": "at-least"},
+            {"name": "iron-plate", "count": 100, "index": 2, "mode": "at-least"}
+          ]
+        },
+        "position": {"x": 1.5, "y": 8.5}
+      },
+      {
+        "name": "creative-mod_inf-provider-chest",
+        "infinity_settings": {
+          "remove_unfiltered_items": false,
+          "filters": [
+            {"name": "coal", "count": 50, "index": 1, "mode": "at-least"},
+            {"name": "iron-plate", "count": 100, "index": 2, "mode": "at-least"}
+          ]
+        },
+        "position": {"x": 3.5, "y": 8.5}
+      },
+      {
+        "name": "creative-mod_inf-provider-chest",
+        "infinity_settings": {
+          "remove_unfiltered_items": false,
+          "filters": [
+            {"name": "coal", "count": 50, "index": 1, "mode": "at-least"},
+            {"name": "iron-plate", "count": 100, "index": 2, "mode": "at-least"}
+          ]
+        },
+        "position": {"x": 5.5, "y": 8.5}
+      },
+      {
+        "name": "creative-mod_inf-provider-chest",
+        "infinity_settings": {
+          "remove_unfiltered_items": false,
+          "filters": [
+            {"name": "coal", "count": 50, "index": 1, "mode": "at-least"},
+            {"name": "iron-plate", "count": 100, "index": 2, "mode": "at-least"}
+          ]
+        },
+        "position": {"x": 7.5, "y": 8.5}
+      },
+      {
+        "name": "creative-mod_inf-provider-chest",
+        "infinity_settings": {
+          "remove_unfiltered_items": false,
+          "filters": [
+            {"name": "coal", "count": 50, "index": 1, "mode": "at-least"},
+            {"name": "iron-plate", "count": 100, "index": 2, "mode": "at-least"}
+          ]
+        },
+        "position": {"x": 9.5, "y": 8.5}
+      },
+      {
+        "name": "creative-mod_inf-provider-chest",
+        "infinity_settings": {
+          "remove_unfiltered_items": false,
+          "filters": [
+            {"name": "coal", "count": 50, "index": 1, "mode": "at-least"},
+            {"name": "iron-plate", "count": 100, "index": 2, "mode": "at-least"}
+          ]
+        },
+        "position": {"x": 11.5, "y": 8.5}
+      },
+      {
+        "name": "creative-mod_inf-provider-chest",
+        "infinity_settings": {
+          "remove_unfiltered_items": false,
+          "filters": [
+            {"name": "coal", "count": 50, "index": 1, "mode": "at-least"},
+            {"name": "iron-plate", "count": 100, "index": 2, "mode": "at-least"}
+          ]
+        },
+        "position": {"x": 13.5, "y": 8.5}
+      },
+      {
+        "name": "creative-mod_inf-provider-chest",
+        "infinity_settings": {
+          "remove_unfiltered_items": false,
+          "filters": [
+            {"name": "coal", "count": 50, "index": 1, "mode": "at-least"},
+            {"name": "iron-plate", "count": 100, "index": 2, "mode": "at-least"}
+          ]
+        },
+        "position": {"x": 15.5, "y": 8.5}
+      },
+      {
+        "name": "creative-mod_inf-provider-chest",
+        "infinity_settings": {
+          "remove_unfiltered_items": false,
+          "filters": [
+            {"name": "coal", "count": 50, "index": 1, "mode": "at-least"},
             {"name": "iron-ore", "count": 50, "index": 2, "mode": "at-least"}
           ]
         },
@@ -246,6 +355,17 @@
           ]
         },
         "position": {"x": 17.5, "y": 4.5}
+      },
+      {
+        "name": "creative-mod_inf-provider-chest",
+        "infinity_settings": {
+          "remove_unfiltered_items": false,
+          "filters": [
+            {"name": "coal", "count": 50, "index": 1, "mode": "at-least"},
+            {"name": "iron-plate", "count": 100, "index": 2, "mode": "at-least"}
+          ]
+        },
+        "position": {"x": 17.5, "y": 8.5}
       },
       {"name": "stone-furnace", "position": {"x": 0, "y": 3}},
       {"name": "stone-furnace", "position": {"x": 2, "y": 3}},
@@ -263,10 +383,20 @@
       {"name": "stone-furnace", "position": {"x": 10, "y": 7}},
       {"name": "stone-furnace", "position": {"x": 12, "y": 7}},
       {"name": "stone-furnace", "position": {"x": 14, "y": 7}},
+      {"name": "stone-furnace", "position": {"x": 0, "y": 11}},
+      {"name": "stone-furnace", "position": {"x": 2, "y": 11}},
+      {"name": "stone-furnace", "position": {"x": 4, "y": 11}},
+      {"name": "stone-furnace", "position": {"x": 6, "y": 11}},
+      {"name": "stone-furnace", "position": {"x": 8, "y": 11}},
+      {"name": "stone-furnace", "position": {"x": 10, "y": 11}},
+      {"name": "stone-furnace", "position": {"x": 12, "y": 11}},
+      {"name": "stone-furnace", "position": {"x": 14, "y": 11}},
       {"name": "stone-furnace", "position": {"x": 16, "y": 3}},
       {"name": "stone-furnace", "position": {"x": 18, "y": 3}},
       {"name": "stone-furnace", "position": {"x": 16, "y": 7}},
-      {"name": "stone-furnace", "position": {"x": 18, "y": 7}}
+      {"name": "stone-furnace", "position": {"x": 18, "y": 7}},
+      {"name": "stone-furnace", "position": {"x": 16, "y": 11}},
+      {"name": "stone-furnace", "position": {"x": 18, "y": 11}}
     ],
     "icons": [{"index": 1, "signal": {"name": "stone-furnace"}}]
   }

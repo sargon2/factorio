@@ -1,0 +1,75 @@
+{
+  "index": 10,
+  "blueprint": {
+    "item": "blueprint",
+    "label": "Manual load intermediaries",
+    "description": "Early game.\n",
+    "shift_x": 44,
+    "shift_y": 210,
+    "version": 562949956239363,
+    "entities": [
+      {
+        "name": "assembling-machine-1",
+        "recipe": "iron-gear-wheel",
+        "recipe_quality": "normal",
+        "position": {"x": -5.5, "y": 3.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "iron-gear-wheel",
+        "recipe_quality": "normal",
+        "position": {"x": -2.5, "y": 3.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "copper-cable",
+        "recipe_quality": "normal",
+        "position": {"x": -1.5, "y": 7.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "electronic-circuit",
+        "recipe_quality": "normal",
+        "position": {"x": 0.5, "y": 3.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "electronic-circuit",
+        "recipe_quality": "normal",
+        "position": {"x": 3.5, "y": 3.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "copper-cable",
+        "recipe_quality": "normal",
+        "position": {"x": 1.5, "y": 7.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "copper-cable",
+        "recipe_quality": "normal",
+        "position": {"x": 4.5, "y": 7.5}
+      },
+      {"name": "inserter", "direction": 8, "position": {"x": -4.5, "y": 1.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": -3.5, "y": 1.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": -0.5, "y": 5.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": 1.5, "y": 1.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": 2.5, "y": 1.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": 0.5, "y": 5.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": 2.5, "y": 5.5}},
+      {"name": "inserter", "direction": 8, "position": {"x": 3.5, "y": 5.5}},
+      {"name": "iron-chest", "position": {"x": -4.5, "y": 0.5}},
+      {"name": "iron-chest", "position": {"x": -3.5, "y": 0.5}},
+      {"name": "iron-chest", "position": {"x": 1.5, "y": 0.5}},
+      {"name": "iron-chest", "position": {"x": 2.5, "y": 0.5}},
+      {"name": "small-electric-pole", "position": {"x": -2.5, "y": 1.5}},
+      {"name": "small-electric-pole", "position": {"x": 0.5, "y": 1.5}},
+      {"name": "small-electric-pole", "position": {"x": 1.5, "y": 5.5}}
+    ],
+    "icons": [
+      {"index": 1, "signal": {"name": "electronic-circuit"}},
+      {"index": 2, "signal": {"name": "iron-gear-wheel"}}
+    ],
+    "wires": [["3,1", 5, "6,1", 5], ["6,1", 5, "7,5", 5]]
+  }
+}

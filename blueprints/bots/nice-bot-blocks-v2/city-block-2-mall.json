@@ -1367,8 +1367,19 @@
       {"name": "small-lamp", "position": {"x": 56.5, "y": 55.5}},
       {"name": "splitter", "direction": 4, "position": {"x": 52.5, "y": 15}},
       {"name": "splitter", "direction": 4, "position": {"x": 36.5, "y": 24}},
-      {"name": "splitter", "direction": 12, "output_priority": "right", "position": {"x": 55.5, "y": 27}},
-      {"name": "splitter", "output_priority": "left", "position": {"x": 58, "y": 30.5}},
+      {
+        "name": "splitter",
+        "direction": 12,
+        "output_priority": "left",
+        "filter": {"name": "raw-fish", "comparator": "=", "quality": "normal"},
+        "position": {"x": 55.5, "y": 27}
+      },
+      {
+        "name": "splitter",
+        "output_priority": "right",
+        "filter": {"name": "raw-fish", "comparator": "=", "quality": "normal"},
+        "position": {"x": 58, "y": 30.5}
+      },
       {"name": "steel-chest", "position": {"x": 41.5, "y": 26.5}},
       {"name": "steel-chest", "position": {"x": 43.5, "y": 26.5}},
       {"name": "steel-chest", "position": {"x": 45.5, "y": 26.5}},

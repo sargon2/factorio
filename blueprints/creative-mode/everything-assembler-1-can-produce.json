@@ -1,0 +1,1069 @@
+{
+  "index": 12,
+  "blueprint": {
+    "item": "blueprint",
+    "label": "Everything assembler 1 can produce",
+    "shift_x": 240,
+    "shift_y": 340,
+    "version": 562949956239363,
+    "entities": [
+      {
+        "name": "assembling-machine-1",
+        "recipe": "wooden-chest",
+        "recipe_quality": "normal",
+        "position": {"x": 0.5, "y": 0.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "iron-chest",
+        "recipe_quality": "normal",
+        "position": {"x": 3.5, "y": 0.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "transport-belt",
+        "recipe_quality": "normal",
+        "position": {"x": 0.5, "y": 3.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "fast-transport-belt",
+        "recipe_quality": "normal",
+        "position": {"x": 3.5, "y": 3.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "steel-chest",
+        "recipe_quality": "normal",
+        "position": {"x": 6.5, "y": 0.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "underground-belt",
+        "recipe_quality": "normal",
+        "position": {"x": 6.5, "y": 3.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "burner-inserter",
+        "recipe_quality": "normal",
+        "position": {"x": 0.5, "y": 6.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "inserter",
+        "recipe_quality": "normal",
+        "position": {"x": 3.5, "y": 6.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "long-handed-inserter",
+        "recipe_quality": "normal",
+        "position": {"x": 6.5, "y": 6.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "storage-tank",
+        "recipe_quality": "normal",
+        "position": {"x": 9.5, "y": 0.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "fast-underground-belt",
+        "recipe_quality": "normal",
+        "position": {"x": 9.5, "y": 3.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "splitter",
+        "recipe_quality": "normal",
+        "position": {"x": 12.5, "y": 3.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "fast-splitter",
+        "recipe_quality": "normal",
+        "position": {"x": 15.5, "y": 3.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "fast-inserter",
+        "recipe_quality": "normal",
+        "position": {"x": 9.5, "y": 6.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "bulk-inserter",
+        "recipe_quality": "normal",
+        "position": {"x": 12.5, "y": 6.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "stack-inserter",
+        "recipe_quality": "normal",
+        "position": {"x": 15.5, "y": 6.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "small-electric-pole",
+        "recipe_quality": "normal",
+        "position": {"x": 0.5, "y": 9.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "medium-electric-pole",
+        "recipe_quality": "normal",
+        "position": {"x": 3.5, "y": 9.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "big-electric-pole",
+        "recipe_quality": "normal",
+        "position": {"x": 6.5, "y": 9.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "rail",
+        "recipe_quality": "normal",
+        "position": {"x": 0.5, "y": 12.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "rail-ramp",
+        "recipe_quality": "normal",
+        "position": {"x": 3.5, "y": 12.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "car",
+        "recipe_quality": "normal",
+        "position": {"x": 0.5, "y": 15.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "tank",
+        "recipe_quality": "normal",
+        "position": {"x": 3.5, "y": 15.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "rail-support",
+        "recipe_quality": "normal",
+        "position": {"x": 6.5, "y": 12.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "spidertron",
+        "recipe_quality": "normal",
+        "position": {"x": 6.5, "y": 15.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "substation",
+        "recipe_quality": "normal",
+        "position": {"x": 9.5, "y": 9.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "pipe",
+        "recipe_quality": "normal",
+        "position": {"x": 12.5, "y": 9.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "pipe-to-ground",
+        "recipe_quality": "normal",
+        "position": {"x": 15.5, "y": 9.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "train-stop",
+        "recipe_quality": "normal",
+        "position": {"x": 9.5, "y": 12.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "rail-signal",
+        "recipe_quality": "normal",
+        "position": {"x": 12.5, "y": 12.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "rail-chain-signal",
+        "recipe_quality": "normal",
+        "position": {"x": 15.5, "y": 12.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "pump",
+        "recipe_quality": "normal",
+        "position": {"x": 18.5, "y": 9.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "locomotive",
+        "recipe_quality": "normal",
+        "position": {"x": 18.5, "y": 12.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "cargo-wagon",
+        "recipe_quality": "normal",
+        "position": {"x": 21.5, "y": 12.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "fluid-wagon",
+        "recipe_quality": "normal",
+        "position": {"x": 24.5, "y": 12.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "artillery-wagon",
+        "recipe_quality": "normal",
+        "position": {"x": 27.5, "y": 12.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "logistic-robot",
+        "recipe_quality": "normal",
+        "position": {"x": 0.5, "y": 18.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "construction-robot",
+        "recipe_quality": "normal",
+        "position": {"x": 3.5, "y": 18.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "active-provider-chest",
+        "recipe_quality": "normal",
+        "position": {"x": 6.5, "y": 18.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "small-lamp",
+        "recipe_quality": "normal",
+        "position": {"x": 0.5, "y": 21.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "arithmetic-combinator",
+        "recipe_quality": "normal",
+        "position": {"x": 3.5, "y": 21.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "decider-combinator",
+        "recipe_quality": "normal",
+        "position": {"x": 6.5, "y": 21.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "passive-provider-chest",
+        "recipe_quality": "normal",
+        "position": {"x": 9.5, "y": 18.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "storage-chest",
+        "recipe_quality": "normal",
+        "position": {"x": 12.5, "y": 18.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "buffer-chest",
+        "recipe_quality": "normal",
+        "position": {"x": 15.5, "y": 18.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "selector-combinator",
+        "recipe_quality": "normal",
+        "position": {"x": 9.5, "y": 21.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "constant-combinator",
+        "recipe_quality": "normal",
+        "position": {"x": 12.5, "y": 21.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "power-switch",
+        "recipe_quality": "normal",
+        "position": {"x": 15.5, "y": 21.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "hazard-concrete",
+        "recipe_quality": "normal",
+        "position": {"x": 0.5, "y": 24.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "refined-hazard-concrete",
+        "recipe_quality": "normal",
+        "position": {"x": 3.5, "y": 24.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "landfill",
+        "recipe_quality": "normal",
+        "position": {"x": 6.5, "y": 24.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "repair-pack",
+        "recipe_quality": "normal",
+        "position": {"x": 0.5, "y": 30.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "cliff-explosives",
+        "recipe_quality": "normal",
+        "position": {"x": 9.5, "y": 24.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "requester-chest",
+        "recipe_quality": "normal",
+        "position": {"x": 18.5, "y": 18.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "roboport",
+        "recipe_quality": "normal",
+        "position": {"x": 21.5, "y": 18.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "programmable-speaker",
+        "recipe_quality": "normal",
+        "position": {"x": 18.5, "y": 21.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "display-panel",
+        "recipe_quality": "normal",
+        "position": {"x": 21.5, "y": 21.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "boiler",
+        "recipe_quality": "normal",
+        "position": {"x": 0.5, "y": 33.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "steam-engine",
+        "recipe_quality": "normal",
+        "position": {"x": 3.5, "y": 33.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "solar-panel",
+        "recipe_quality": "normal",
+        "position": {"x": 6.5, "y": 33.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "burner-mining-drill",
+        "recipe_quality": "normal",
+        "position": {"x": 0.5, "y": 36.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "electric-mining-drill",
+        "recipe_quality": "normal",
+        "position": {"x": 3.5, "y": 36.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "stone-furnace",
+        "recipe_quality": "normal",
+        "position": {"x": 0.5, "y": 39.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "steel-furnace",
+        "recipe_quality": "normal",
+        "position": {"x": 3.5, "y": 39.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "offshore-pump",
+        "recipe_quality": "normal",
+        "position": {"x": 6.5, "y": 36.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "electric-furnace",
+        "recipe_quality": "normal",
+        "position": {"x": 6.5, "y": 39.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "accumulator",
+        "recipe_quality": "normal",
+        "position": {"x": 9.5, "y": 33.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "nuclear-reactor",
+        "recipe_quality": "normal",
+        "position": {"x": 12.5, "y": 33.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "heat-pipe",
+        "recipe_quality": "normal",
+        "position": {"x": 15.5, "y": 33.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "pumpjack",
+        "recipe_quality": "normal",
+        "position": {"x": 9.5, "y": 36.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "agricultural-tower",
+        "recipe_quality": "normal",
+        "position": {"x": 0.5, "y": 42.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "assembling-machine-1",
+        "recipe_quality": "normal",
+        "position": {"x": 0.5, "y": 45.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "assembling-machine-2",
+        "recipe_quality": "normal",
+        "position": {"x": 3.5, "y": 45.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "assembling-machine-3",
+        "recipe_quality": "normal",
+        "position": {"x": 6.5, "y": 45.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "oil-refinery",
+        "recipe_quality": "normal",
+        "position": {"x": 9.5, "y": 45.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "chemical-plant",
+        "recipe_quality": "normal",
+        "position": {"x": 12.5, "y": 45.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "centrifuge",
+        "recipe_quality": "normal",
+        "position": {"x": 15.5, "y": 45.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "heat-exchanger",
+        "recipe_quality": "normal",
+        "position": {"x": 18.5, "y": 33.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "steam-turbine",
+        "recipe_quality": "normal",
+        "position": {"x": 21.5, "y": 33.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "lab",
+        "recipe_quality": "normal",
+        "position": {"x": 18.5, "y": 45.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "biolab",
+        "recipe_quality": "normal",
+        "position": {"x": 21.5, "y": 45.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "beacon",
+        "recipe_quality": "normal",
+        "position": {"x": 0.5, "y": 48.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "speed-module",
+        "recipe_quality": "normal",
+        "position": {"x": 3.5, "y": 48.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "quality-module",
+        "recipe_quality": "normal",
+        "position": {"x": 0.5, "y": 51.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "quality-module-2",
+        "recipe_quality": "normal",
+        "position": {"x": 3.5, "y": 51.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "speed-module-2",
+        "recipe_quality": "normal",
+        "position": {"x": 6.5, "y": 48.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "quality-module-3",
+        "recipe_quality": "normal",
+        "position": {"x": 6.5, "y": 51.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "speed-module-3",
+        "recipe_quality": "normal",
+        "position": {"x": 9.5, "y": 48.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "efficiency-module",
+        "recipe_quality": "normal",
+        "position": {"x": 12.5, "y": 48.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "efficiency-module-2",
+        "recipe_quality": "normal",
+        "position": {"x": 15.5, "y": 48.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "iron-gear-wheel",
+        "recipe_quality": "normal",
+        "position": {"x": 0.5, "y": 57.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "iron-stick",
+        "recipe_quality": "normal",
+        "position": {"x": 3.5, "y": 57.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "copper-cable",
+        "recipe_quality": "normal",
+        "position": {"x": 6.5, "y": 57.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "uranium-fuel-cell",
+        "recipe_quality": "normal",
+        "position": {"x": 0.5, "y": 60.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "automation-science-pack",
+        "recipe_quality": "normal",
+        "position": {"x": 0.5, "y": 63.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "logistic-science-pack",
+        "recipe_quality": "normal",
+        "position": {"x": 3.5, "y": 63.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "military-science-pack",
+        "recipe_quality": "normal",
+        "position": {"x": 6.5, "y": 63.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "barrel",
+        "recipe_quality": "normal",
+        "position": {"x": 9.5, "y": 57.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "electronic-circuit",
+        "recipe_quality": "normal",
+        "position": {"x": 12.5, "y": 57.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "advanced-circuit",
+        "recipe_quality": "normal",
+        "position": {"x": 15.5, "y": 57.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "chemical-science-pack",
+        "recipe_quality": "normal",
+        "position": {"x": 9.5, "y": 63.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "production-science-pack",
+        "recipe_quality": "normal",
+        "position": {"x": 12.5, "y": 63.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "utility-science-pack",
+        "recipe_quality": "normal",
+        "position": {"x": 15.5, "y": 63.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "efficiency-module-3",
+        "recipe_quality": "normal",
+        "position": {"x": 18.5, "y": 48.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "productivity-module",
+        "recipe_quality": "normal",
+        "position": {"x": 21.5, "y": 48.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "productivity-module-2",
+        "recipe_quality": "normal",
+        "position": {"x": 24.5, "y": 48.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "productivity-module-3",
+        "recipe_quality": "normal",
+        "position": {"x": 27.5, "y": 48.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "engine-unit",
+        "recipe_quality": "normal",
+        "position": {"x": 18.5, "y": 57.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "flying-robot-frame",
+        "recipe_quality": "normal",
+        "position": {"x": 21.5, "y": 57.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "low-density-structure",
+        "recipe_quality": "normal",
+        "position": {"x": 24.5, "y": 57.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "rocket-silo",
+        "recipe_quality": "normal",
+        "position": {"x": 0.5, "y": 69.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "cargo-landing-pad",
+        "recipe_quality": "normal",
+        "position": {"x": 3.5, "y": 69.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "space-platform-foundation",
+        "recipe_quality": "normal",
+        "position": {"x": 0.5, "y": 72.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "cargo-bay",
+        "recipe_quality": "normal",
+        "position": {"x": 3.5, "y": 72.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "space-platform-starter-pack",
+        "recipe_quality": "normal",
+        "position": {"x": 0.5, "y": 75.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "asteroid-collector",
+        "recipe_quality": "normal",
+        "position": {"x": 6.5, "y": 72.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "crusher",
+        "recipe_quality": "normal",
+        "position": {"x": 9.5, "y": 72.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "thruster",
+        "recipe_quality": "normal",
+        "position": {"x": 12.5, "y": 72.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "submachine-gun",
+        "recipe_quality": "normal",
+        "position": {"x": 0.5, "y": 81.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "shotgun",
+        "recipe_quality": "normal",
+        "position": {"x": 3.5, "y": 81.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "combat-shotgun",
+        "recipe_quality": "normal",
+        "position": {"x": 6.5, "y": 81.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "firearm-magazine",
+        "recipe_quality": "normal",
+        "position": {"x": 0.5, "y": 84.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "piercing-rounds-magazine",
+        "recipe_quality": "normal",
+        "position": {"x": 3.5, "y": 84.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "rocket",
+        "recipe_quality": "normal",
+        "position": {"x": 0.5, "y": 87.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "explosive-rocket",
+        "recipe_quality": "normal",
+        "position": {"x": 3.5, "y": 87.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "uranium-rounds-magazine",
+        "recipe_quality": "normal",
+        "position": {"x": 6.5, "y": 84.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "atomic-bomb",
+        "recipe_quality": "normal",
+        "position": {"x": 6.5, "y": 87.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "rocket-launcher",
+        "recipe_quality": "normal",
+        "position": {"x": 9.5, "y": 81.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "flamethrower",
+        "recipe_quality": "normal",
+        "position": {"x": 12.5, "y": 81.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "shotgun-shell",
+        "recipe_quality": "normal",
+        "position": {"x": 9.5, "y": 84.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "capture-robot-rocket",
+        "recipe_quality": "normal",
+        "position": {"x": 9.5, "y": 87.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "piercing-shotgun-shell",
+        "recipe_quality": "normal",
+        "position": {"x": 12.5, "y": 84.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "cannon-shell",
+        "recipe_quality": "normal",
+        "position": {"x": 15.5, "y": 84.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "railgun-ammo",
+        "recipe_quality": "normal",
+        "position": {"x": 12.5, "y": 87.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "grenade",
+        "recipe_quality": "normal",
+        "position": {"x": 0.5, "y": 90.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "cluster-grenade",
+        "recipe_quality": "normal",
+        "position": {"x": 3.5, "y": 90.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "poison-capsule",
+        "recipe_quality": "normal",
+        "position": {"x": 6.5, "y": 90.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "light-armor",
+        "recipe_quality": "normal",
+        "position": {"x": 0.5, "y": 93.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "heavy-armor",
+        "recipe_quality": "normal",
+        "position": {"x": 3.5, "y": 93.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "modular-armor",
+        "recipe_quality": "normal",
+        "position": {"x": 6.5, "y": 93.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "slowdown-capsule",
+        "recipe_quality": "normal",
+        "position": {"x": 9.5, "y": 90.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "defender-capsule",
+        "recipe_quality": "normal",
+        "position": {"x": 12.5, "y": 90.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "distractor-capsule",
+        "recipe_quality": "normal",
+        "position": {"x": 15.5, "y": 90.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "power-armor",
+        "recipe_quality": "normal",
+        "position": {"x": 9.5, "y": 93.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "power-armor-mk2",
+        "recipe_quality": "normal",
+        "position": {"x": 12.5, "y": 93.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "mech-armor",
+        "recipe_quality": "normal",
+        "position": {"x": 15.5, "y": 93.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "explosive-cannon-shell",
+        "recipe_quality": "normal",
+        "position": {"x": 18.5, "y": 84.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "uranium-cannon-shell",
+        "recipe_quality": "normal",
+        "position": {"x": 21.5, "y": 84.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "explosive-uranium-cannon-shell",
+        "recipe_quality": "normal",
+        "position": {"x": 24.5, "y": 84.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "artillery-shell",
+        "recipe_quality": "normal",
+        "position": {"x": 27.5, "y": 84.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "destroyer-capsule",
+        "recipe_quality": "normal",
+        "position": {"x": 18.5, "y": 90.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "solar-panel-equipment",
+        "recipe_quality": "normal",
+        "position": {"x": 0.5, "y": 96.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "fission-reactor-equipment",
+        "recipe_quality": "normal",
+        "position": {"x": 3.5, "y": 96.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "belt-immunity-equipment",
+        "recipe_quality": "normal",
+        "position": {"x": 0.5, "y": 99.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "exoskeleton-equipment",
+        "recipe_quality": "normal",
+        "position": {"x": 3.5, "y": 99.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "fusion-reactor-equipment",
+        "recipe_quality": "normal",
+        "position": {"x": 6.5, "y": 96.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "personal-roboport-equipment",
+        "recipe_quality": "normal",
+        "position": {"x": 6.5, "y": 99.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "energy-shield-equipment",
+        "recipe_quality": "normal",
+        "position": {"x": 0.5, "y": 102.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "energy-shield-mk2-equipment",
+        "recipe_quality": "normal",
+        "position": {"x": 3.5, "y": 102.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "personal-laser-defense-equipment",
+        "recipe_quality": "normal",
+        "position": {"x": 6.5, "y": 102.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "battery-equipment",
+        "recipe_quality": "normal",
+        "position": {"x": 9.5, "y": 96.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "personal-roboport-mk2-equipment",
+        "recipe_quality": "normal",
+        "position": {"x": 9.5, "y": 99.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "battery-mk2-equipment",
+        "recipe_quality": "normal",
+        "position": {"x": 12.5, "y": 96.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "battery-mk3-equipment",
+        "recipe_quality": "normal",
+        "position": {"x": 15.5, "y": 96.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "night-vision-equipment",
+        "recipe_quality": "normal",
+        "position": {"x": 12.5, "y": 99.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "toolbelt-equipment",
+        "recipe_quality": "normal",
+        "position": {"x": 15.5, "y": 99.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "discharge-defense-equipment",
+        "recipe_quality": "normal",
+        "position": {"x": 9.5, "y": 102.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "stone-wall",
+        "recipe_quality": "normal",
+        "position": {"x": 0.5, "y": 105.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "gate",
+        "recipe_quality": "normal",
+        "position": {"x": 3.5, "y": 105.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "radar",
+        "recipe_quality": "normal",
+        "position": {"x": 6.5, "y": 105.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "gun-turret",
+        "recipe_quality": "normal",
+        "position": {"x": 0.5, "y": 108.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "laser-turret",
+        "recipe_quality": "normal",
+        "position": {"x": 3.5, "y": 108.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "flamethrower-turret",
+        "recipe_quality": "normal",
+        "position": {"x": 6.5, "y": 108.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "land-mine",
+        "recipe_quality": "normal",
+        "position": {"x": 9.5, "y": 105.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "artillery-turret",
+        "recipe_quality": "normal",
+        "position": {"x": 9.5, "y": 108.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "rocket-turret",
+        "recipe_quality": "normal",
+        "position": {"x": 12.5, "y": 108.5}
+      }
+    ],
+    "icons": [{"index": 1, "signal": {"name": "assembling-machine-1"}}]
+  }
+}

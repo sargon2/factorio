@@ -1,0 +1,505 @@
+{
+  "index": 7,
+  "blueprint": {
+    "item": "blueprint",
+    "label": "Early creative research",
+    "shift_x": 217,
+    "shift_y": 431,
+    "version": 562949956501504,
+    "entities": [
+      {"name": "bulk-inserter", "direction": 4, "position": {"x": 2.5, "y": 1.5}},
+      {"name": "bulk-inserter", "direction": 4, "position": {"x": 2.5, "y": 2.5}},
+      {"name": "bulk-inserter", "direction": 4, "position": {"x": 7.5, "y": 1.5}},
+      {"name": "bulk-inserter", "direction": 4, "position": {"x": 7.5, "y": 2.5}},
+      {"name": "bulk-inserter", "direction": 4, "position": {"x": 2.5, "y": 7.5}},
+      {"name": "bulk-inserter", "direction": 4, "position": {"x": 7.5, "y": 7.5}},
+      {"name": "bulk-inserter", "direction": 4, "position": {"x": 12.5, "y": 1.5}},
+      {"name": "bulk-inserter", "direction": 4, "position": {"x": 12.5, "y": 2.5}},
+      {"name": "bulk-inserter", "direction": 4, "position": {"x": 12.5, "y": 7.5}},
+      {"name": "bulk-inserter", "direction": 4, "position": {"x": 2.5, "y": 8.5}},
+      {"name": "bulk-inserter", "direction": 4, "position": {"x": 7.5, "y": 8.5}},
+      {"name": "bulk-inserter", "direction": 4, "position": {"x": 2.5, "y": 13.5}},
+      {"name": "bulk-inserter", "direction": 4, "position": {"x": 2.5, "y": 14.5}},
+      {"name": "bulk-inserter", "direction": 4, "position": {"x": 7.5, "y": 13.5}},
+      {"name": "bulk-inserter", "direction": 4, "position": {"x": 7.5, "y": 14.5}},
+      {"name": "bulk-inserter", "direction": 4, "position": {"x": 12.5, "y": 8.5}},
+      {"name": "bulk-inserter", "direction": 4, "position": {"x": 12.5, "y": 13.5}},
+      {"name": "bulk-inserter", "direction": 4, "position": {"x": 12.5, "y": 14.5}},
+      {"name": "bulk-inserter", "direction": 4, "position": {"x": 2.5, "y": 19.5}},
+      {"name": "bulk-inserter", "direction": 4, "position": {"x": 7.5, "y": 19.5}},
+      {"name": "bulk-inserter", "direction": 4, "position": {"x": 2.5, "y": 20.5}},
+      {"name": "bulk-inserter", "direction": 4, "position": {"x": 7.5, "y": 20.5}},
+      {"name": "bulk-inserter", "direction": 4, "position": {"x": 12.5, "y": 19.5}},
+      {"name": "bulk-inserter", "direction": 4, "position": {"x": 12.5, "y": 20.5}},
+      {
+        "name": "creative-mod_inf-provider-chest",
+        "infinity_settings": {
+          "remove_unfiltered_items": false,
+          "filters": [{"name": "iron-plate", "count": 100, "index": 1, "mode": "at-least"}]
+        },
+        "position": {"x": 3.5, "y": 1.5}
+      },
+      {
+        "name": "creative-mod_inf-provider-chest",
+        "infinity_settings": {
+          "remove_unfiltered_items": false,
+          "filters": [{"name": "iron-plate", "count": 100, "index": 1, "mode": "at-least"}]
+        },
+        "position": {"x": 3.5, "y": 2.5}
+      },
+      {
+        "name": "creative-mod_inf-provider-chest",
+        "infinity_settings": {
+          "remove_unfiltered_items": false,
+          "filters": [{"name": "iron-plate", "count": 100, "index": 1, "mode": "at-least"}]
+        },
+        "position": {"x": 3.5, "y": 7.5}
+      },
+      {
+        "name": "creative-mod_inf-provider-chest",
+        "infinity_settings": {
+          "remove_unfiltered_items": false,
+          "filters": [{"name": "iron-ore", "count": 50, "index": 1, "mode": "at-least"}]
+        },
+        "position": {"x": 8.5, "y": 1.5}
+      },
+      {
+        "name": "creative-mod_inf-provider-chest",
+        "infinity_settings": {
+          "remove_unfiltered_items": false,
+          "filters": [{"name": "iron-ore", "count": 50, "index": 1, "mode": "at-least"}]
+        },
+        "position": {"x": 8.5, "y": 2.5}
+      },
+      {
+        "name": "creative-mod_inf-provider-chest",
+        "infinity_settings": {
+          "remove_unfiltered_items": false,
+          "filters": [{"name": "copper-ore", "count": 50, "index": 1, "mode": "at-least"}]
+        },
+        "position": {"x": 13.5, "y": 1.5}
+      },
+      {
+        "name": "creative-mod_inf-provider-chest",
+        "infinity_settings": {
+          "remove_unfiltered_items": false,
+          "filters": [{"name": "copper-ore", "count": 50, "index": 1, "mode": "at-least"}]
+        },
+        "position": {"x": 13.5, "y": 2.5}
+      },
+      {
+        "name": "creative-mod_inf-provider-chest",
+        "infinity_settings": {
+          "remove_unfiltered_items": false,
+          "filters": [{"name": "iron-ore", "count": 50, "index": 1, "mode": "at-least"}]
+        },
+        "position": {"x": 8.5, "y": 7.5}
+      },
+      {
+        "name": "creative-mod_inf-provider-chest",
+        "infinity_settings": {
+          "remove_unfiltered_items": false,
+          "filters": [{"name": "copper-ore", "count": 50, "index": 1, "mode": "at-least"}]
+        },
+        "position": {"x": 13.5, "y": 7.5}
+      },
+      {
+        "name": "creative-mod_inf-provider-chest",
+        "infinity_settings": {
+          "remove_unfiltered_items": false,
+          "filters": [{"name": "iron-plate", "count": 100, "index": 1, "mode": "at-least"}]
+        },
+        "position": {"x": 3.5, "y": 8.5}
+      },
+      {
+        "name": "creative-mod_inf-provider-chest",
+        "infinity_settings": {
+          "remove_unfiltered_items": false,
+          "filters": [{"name": "iron-plate", "count": 100, "index": 1, "mode": "at-least"}]
+        },
+        "position": {"x": 3.5, "y": 13.5}
+      },
+      {
+        "name": "creative-mod_inf-provider-chest",
+        "infinity_settings": {
+          "remove_unfiltered_items": false,
+          "filters": [{"name": "iron-plate", "count": 100, "index": 1, "mode": "at-least"}]
+        },
+        "position": {"x": 3.5, "y": 14.5}
+      },
+      {
+        "name": "creative-mod_inf-provider-chest",
+        "infinity_settings": {
+          "remove_unfiltered_items": false,
+          "filters": [{"name": "iron-ore", "count": 50, "index": 1, "mode": "at-least"}]
+        },
+        "position": {"x": 8.5, "y": 8.5}
+      },
+      {
+        "name": "creative-mod_inf-provider-chest",
+        "infinity_settings": {
+          "remove_unfiltered_items": false,
+          "filters": [{"name": "copper-ore", "count": 50, "index": 1, "mode": "at-least"}]
+        },
+        "position": {"x": 13.5, "y": 8.5}
+      },
+      {
+        "name": "creative-mod_inf-provider-chest",
+        "infinity_settings": {
+          "remove_unfiltered_items": false,
+          "filters": [{"name": "iron-ore", "count": 50, "index": 1, "mode": "at-least"}]
+        },
+        "position": {"x": 8.5, "y": 13.5}
+      },
+      {
+        "name": "creative-mod_inf-provider-chest",
+        "infinity_settings": {
+          "remove_unfiltered_items": false,
+          "filters": [{"name": "iron-ore", "count": 50, "index": 1, "mode": "at-least"}]
+        },
+        "position": {"x": 8.5, "y": 14.5}
+      },
+      {
+        "name": "creative-mod_inf-provider-chest",
+        "infinity_settings": {
+          "remove_unfiltered_items": false,
+          "filters": [{"name": "copper-ore", "count": 50, "index": 1, "mode": "at-least"}]
+        },
+        "position": {"x": 13.5, "y": 13.5}
+      },
+      {
+        "name": "creative-mod_inf-provider-chest",
+        "infinity_settings": {
+          "remove_unfiltered_items": false,
+          "filters": [{"name": "copper-ore", "count": 50, "index": 1, "mode": "at-least"}]
+        },
+        "position": {"x": 13.5, "y": 14.5}
+      },
+      {
+        "name": "creative-mod_inf-provider-chest",
+        "infinity_settings": {
+          "remove_unfiltered_items": false,
+          "filters": [{"name": "iron-plate", "count": 100, "index": 1, "mode": "at-least"}]
+        },
+        "position": {"x": 3.5, "y": 19.5}
+      },
+      {
+        "name": "creative-mod_inf-provider-chest",
+        "infinity_settings": {
+          "remove_unfiltered_items": false,
+          "filters": [{"name": "iron-plate", "count": 100, "index": 1, "mode": "at-least"}]
+        },
+        "position": {"x": 3.5, "y": 20.5}
+      },
+      {
+        "name": "creative-mod_inf-provider-chest",
+        "infinity_settings": {
+          "remove_unfiltered_items": false,
+          "filters": [{"name": "iron-ore", "count": 50, "index": 1, "mode": "at-least"}]
+        },
+        "position": {"x": 8.5, "y": 19.5}
+      },
+      {
+        "name": "creative-mod_inf-provider-chest",
+        "infinity_settings": {
+          "remove_unfiltered_items": false,
+          "filters": [{"name": "copper-ore", "count": 50, "index": 1, "mode": "at-least"}]
+        },
+        "position": {"x": 13.5, "y": 19.5}
+      },
+      {
+        "name": "creative-mod_inf-provider-chest",
+        "infinity_settings": {
+          "remove_unfiltered_items": false,
+          "filters": [{"name": "iron-ore", "count": 50, "index": 1, "mode": "at-least"}]
+        },
+        "position": {"x": 8.5, "y": 20.5}
+      },
+      {
+        "name": "creative-mod_inf-provider-chest",
+        "infinity_settings": {
+          "remove_unfiltered_items": false,
+          "filters": [{"name": "copper-ore", "count": 50, "index": 1, "mode": "at-least"}]
+        },
+        "position": {"x": 13.5, "y": 20.5}
+      },
+      {
+        "name": "creative-mod_passive-energy-source",
+        "buffer_size": 90000000000000,
+        "position": {"x": 6, "y": -2}
+      },
+      {
+        "name": "electric-furnace",
+        "items": [
+          {
+            "id": {"name": "creative-mod_super-speed-module"},
+            "items": {"in_inventory": [{"inventory": 4, "stack": 0}, {"inventory": 4, "stack": 1}]}
+          }
+        ],
+        "position": {"x": 0.5, "y": 0.5}
+      },
+      {
+        "name": "electric-furnace",
+        "items": [
+          {
+            "id": {"name": "creative-mod_super-speed-module"},
+            "items": {"in_inventory": [{"inventory": 4, "stack": 0}, {"inventory": 4, "stack": 1}]}
+          }
+        ],
+        "position": {"x": 0.5, "y": 3.5}
+      },
+      {
+        "name": "electric-furnace",
+        "items": [
+          {
+            "id": {"name": "creative-mod_super-speed-module"},
+            "items": {"in_inventory": [{"inventory": 4, "stack": 0}, {"inventory": 4, "stack": 1}]}
+          }
+        ],
+        "position": {"x": 5.5, "y": 0.5}
+      },
+      {
+        "name": "electric-furnace",
+        "items": [
+          {
+            "id": {"name": "creative-mod_super-speed-module"},
+            "items": {"in_inventory": [{"inventory": 4, "stack": 0}, {"inventory": 4, "stack": 1}]}
+          }
+        ],
+        "position": {"x": 5.5, "y": 3.5}
+      },
+      {
+        "name": "electric-furnace",
+        "items": [
+          {
+            "id": {"name": "creative-mod_super-speed-module"},
+            "items": {"in_inventory": [{"inventory": 4, "stack": 0}, {"inventory": 4, "stack": 1}]}
+          }
+        ],
+        "position": {"x": 0.5, "y": 6.5}
+      },
+      {
+        "name": "electric-furnace",
+        "items": [
+          {
+            "id": {"name": "creative-mod_super-speed-module"},
+            "items": {"in_inventory": [{"inventory": 4, "stack": 0}, {"inventory": 4, "stack": 1}]}
+          }
+        ],
+        "position": {"x": 5.5, "y": 6.5}
+      },
+      {
+        "name": "electric-furnace",
+        "items": [
+          {
+            "id": {"name": "creative-mod_super-speed-module"},
+            "items": {"in_inventory": [{"inventory": 4, "stack": 0}, {"inventory": 4, "stack": 1}]}
+          }
+        ],
+        "position": {"x": 10.5, "y": 0.5}
+      },
+      {
+        "name": "electric-furnace",
+        "items": [
+          {
+            "id": {"name": "creative-mod_super-speed-module"},
+            "items": {"in_inventory": [{"inventory": 4, "stack": 0}, {"inventory": 4, "stack": 1}]}
+          }
+        ],
+        "position": {"x": 10.5, "y": 3.5}
+      },
+      {
+        "name": "electric-furnace",
+        "items": [
+          {
+            "id": {"name": "creative-mod_super-speed-module"},
+            "items": {"in_inventory": [{"inventory": 4, "stack": 0}, {"inventory": 4, "stack": 1}]}
+          }
+        ],
+        "position": {"x": 10.5, "y": 6.5}
+      },
+      {
+        "name": "electric-furnace",
+        "items": [
+          {
+            "id": {"name": "creative-mod_super-speed-module"},
+            "items": {"in_inventory": [{"inventory": 4, "stack": 0}, {"inventory": 4, "stack": 1}]}
+          }
+        ],
+        "position": {"x": 0.5, "y": 9.5}
+      },
+      {
+        "name": "electric-furnace",
+        "items": [
+          {
+            "id": {"name": "creative-mod_super-speed-module"},
+            "items": {"in_inventory": [{"inventory": 4, "stack": 0}, {"inventory": 4, "stack": 1}]}
+          }
+        ],
+        "position": {"x": 5.5, "y": 9.5}
+      },
+      {
+        "name": "electric-furnace",
+        "items": [
+          {
+            "id": {"name": "creative-mod_super-speed-module"},
+            "items": {"in_inventory": [{"inventory": 4, "stack": 0}, {"inventory": 4, "stack": 1}]}
+          }
+        ],
+        "position": {"x": 0.5, "y": 12.5}
+      },
+      {
+        "name": "electric-furnace",
+        "items": [
+          {
+            "id": {"name": "creative-mod_super-speed-module"},
+            "items": {"in_inventory": [{"inventory": 4, "stack": 0}, {"inventory": 4, "stack": 1}]}
+          }
+        ],
+        "position": {"x": 0.5, "y": 15.5}
+      },
+      {
+        "name": "electric-furnace",
+        "items": [
+          {
+            "id": {"name": "creative-mod_super-speed-module"},
+            "items": {"in_inventory": [{"inventory": 4, "stack": 0}, {"inventory": 4, "stack": 1}]}
+          }
+        ],
+        "position": {"x": 5.5, "y": 12.5}
+      },
+      {
+        "name": "electric-furnace",
+        "items": [
+          {
+            "id": {"name": "creative-mod_super-speed-module"},
+            "items": {"in_inventory": [{"inventory": 4, "stack": 0}, {"inventory": 4, "stack": 1}]}
+          }
+        ],
+        "position": {"x": 5.5, "y": 15.5}
+      },
+      {
+        "name": "electric-furnace",
+        "items": [
+          {
+            "id": {"name": "creative-mod_super-speed-module"},
+            "items": {"in_inventory": [{"inventory": 4, "stack": 0}, {"inventory": 4, "stack": 1}]}
+          }
+        ],
+        "position": {"x": 10.5, "y": 9.5}
+      },
+      {
+        "name": "electric-furnace",
+        "items": [
+          {
+            "id": {"name": "creative-mod_super-speed-module"},
+            "items": {"in_inventory": [{"inventory": 4, "stack": 0}, {"inventory": 4, "stack": 1}]}
+          }
+        ],
+        "position": {"x": 10.5, "y": 12.5}
+      },
+      {
+        "name": "electric-furnace",
+        "items": [
+          {
+            "id": {"name": "creative-mod_super-speed-module"},
+            "items": {"in_inventory": [{"inventory": 4, "stack": 0}, {"inventory": 4, "stack": 1}]}
+          }
+        ],
+        "position": {"x": 10.5, "y": 15.5}
+      },
+      {
+        "name": "electric-furnace",
+        "items": [
+          {
+            "id": {"name": "creative-mod_super-speed-module"},
+            "items": {"in_inventory": [{"inventory": 4, "stack": 0}, {"inventory": 4, "stack": 1}]}
+          }
+        ],
+        "position": {"x": 0.5, "y": 18.5}
+      },
+      {
+        "name": "electric-furnace",
+        "items": [
+          {
+            "id": {"name": "creative-mod_super-speed-module"},
+            "items": {"in_inventory": [{"inventory": 4, "stack": 0}, {"inventory": 4, "stack": 1}]}
+          }
+        ],
+        "position": {"x": 5.5, "y": 18.5}
+      },
+      {
+        "name": "electric-furnace",
+        "items": [
+          {
+            "id": {"name": "creative-mod_super-speed-module"},
+            "items": {"in_inventory": [{"inventory": 4, "stack": 0}, {"inventory": 4, "stack": 1}]}
+          }
+        ],
+        "position": {"x": 0.5, "y": 21.5}
+      },
+      {
+        "name": "electric-furnace",
+        "items": [
+          {
+            "id": {"name": "creative-mod_super-speed-module"},
+            "items": {"in_inventory": [{"inventory": 4, "stack": 0}, {"inventory": 4, "stack": 1}]}
+          }
+        ],
+        "position": {"x": 5.5, "y": 21.5}
+      },
+      {
+        "name": "electric-furnace",
+        "items": [
+          {
+            "id": {"name": "creative-mod_super-speed-module"},
+            "items": {"in_inventory": [{"inventory": 4, "stack": 0}, {"inventory": 4, "stack": 1}]}
+          }
+        ],
+        "position": {"x": 10.5, "y": 18.5}
+      },
+      {
+        "name": "electric-furnace",
+        "items": [
+          {
+            "id": {"name": "creative-mod_super-speed-module"},
+            "items": {"in_inventory": [{"inventory": 4, "stack": 0}, {"inventory": 4, "stack": 1}]}
+          }
+        ],
+        "position": {"x": 10.5, "y": 21.5}
+      },
+      {"name": "medium-electric-pole", "position": {"x": 2.5, "y": 0.5}},
+      {"name": "medium-electric-pole", "position": {"x": 7.5, "y": 0.5}},
+      {"name": "medium-electric-pole", "position": {"x": 2.5, "y": 6.5}},
+      {"name": "medium-electric-pole", "position": {"x": 7.5, "y": 6.5}},
+      {"name": "medium-electric-pole", "position": {"x": 12.5, "y": 0.5}},
+      {"name": "medium-electric-pole", "position": {"x": 12.5, "y": 6.5}},
+      {"name": "medium-electric-pole", "position": {"x": 2.5, "y": 12.5}},
+      {"name": "medium-electric-pole", "position": {"x": 7.5, "y": 12.5}},
+      {"name": "medium-electric-pole", "position": {"x": 12.5, "y": 12.5}},
+      {"name": "medium-electric-pole", "position": {"x": 2.5, "y": 18.5}},
+      {"name": "medium-electric-pole", "position": {"x": 7.5, "y": 18.5}},
+      {"name": "medium-electric-pole", "position": {"x": 12.5, "y": 18.5}}
+    ],
+    "icons": [{"index": 1, "signal": {"name": "electric-furnace"}}],
+    "wires": [
+      ["2,2.5", 5, "7,2.5", 5],
+      ["2,2.5", 5, "2,8.5", 5],
+      ["7,2.5", 5, "12,2.5", 5],
+      ["7,2.5", 5, "7,8.5", 5],
+      ["12,2.5", 5, "12,8.5", 5],
+      ["2,8.5", 5, "7,8.5", 5],
+      ["2,8.5", 5, "2,14.5", 5],
+      ["7,8.5", 5, "12,8.5", 5],
+      ["7,8.5", 5, "7,14.5", 5],
+      ["12,8.5", 5, "12,14.5", 5],
+      ["2,14.5", 5, "7,14.5", 5],
+      ["2,14.5", 5, "2,20.5", 5],
+      ["7,14.5", 5, "12,14.5", 5],
+      ["7,14.5", 5, "7,20.5", 5],
+      ["12,14.5", 5, "12,20.5", 5],
+      ["2,20.5", 5, "7,20.5", 5],
+      ["7,20.5", 5, "12,20.5", 5]
+    ]
+  }
+}

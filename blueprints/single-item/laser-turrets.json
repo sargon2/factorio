@@ -117,6 +117,12 @@
         "recipe_quality": "normal",
         "position": {"x": 38.5, "y": 12.5}
       },
+      {
+        "name": "creative-mod_item-void",
+        "direction": 12,
+        "use_filters": true,
+        "position": {"x": 37.5, "y": 1.5}
+      },
       {"name": "electric-furnace", "position": {"x": 1.5, "y": -1.5}},
       {"name": "electric-furnace", "position": {"x": 4.5, "y": -1.5}},
       {"name": "electric-furnace", "position": {"x": 7.5, "y": -1.5}},

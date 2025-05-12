@@ -5,7 +5,7 @@
     "label": "6-input buffered sushi belt",
     "shift_x": -214,
     "shift_y": 158,
-    "version": 562949956239363,
+    "version": 562949956501504,
     "entities": [
       {"name": "bulk-inserter", "direction": 12, "position": {"x": 2.5, "y": -17.5}},
       {"name": "bulk-inserter", "direction": 12, "position": {"x": 4.5, "y": -17.5}},

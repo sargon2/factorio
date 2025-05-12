@@ -4,13 +4,8 @@
     "item": "blueprint",
     "label": "Creative robot cleaner",
     "absolute-snapping": true,
-    "version": 562949956239363,
+    "version": 562949956501504,
     "entities": [
-      {
-        "name": "creative-mod_passive-energy-source",
-        "buffer_size": 90000000000000,
-        "position": {"x": 1, "y": 2}
-      },
       {"name": "medium-electric-pole", "position": {"x": 1.5, "y": 3.5}},
       {"name": "roboport", "position": {"x": 4, "y": 2}, "request_filters": {"sections": [{"index": 1}]}},
       {

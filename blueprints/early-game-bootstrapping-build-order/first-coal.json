@@ -5,7 +5,7 @@
     "label": "First coal",
     "shift_x": -73,
     "shift_y": -72,
-    "version": 562949956239363,
+    "version": 562949956501504,
     "entities": [
       {"name": "burner-mining-drill", "direction": 8, "position": {"x": 0, "y": 0}},
       {"name": "burner-mining-drill", "direction": 12, "position": {"x": 2, "y": 0}},

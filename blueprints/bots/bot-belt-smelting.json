@@ -5,7 +5,7 @@
     "label": "Bot belt smelting",
     "shift_x": 0,
     "shift_y": 1,
-    "version": 562949956239363,
+    "version": 562949956501504,
     "entities": [
       {"name": "electric-furnace", "position": {"x": 1.5, "y": 0.5}},
       {"name": "electric-furnace", "position": {"x": 4.5, "y": 0.5}},

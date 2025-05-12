@@ -5,7 +5,7 @@
     "label": "2-lane omnibus pusher",
     "shift_x": 99,
     "shift_y": -140,
-    "version": 562949956239363,
+    "version": 562949956501504,
     "entities": [
       {"name": "splitter", "direction": 12, "input_priority": "left", "position": {"x": 1.5, "y": 1}},
       {"name": "splitter", "direction": 12, "input_priority": "left", "position": {"x": 3.5, "y": 0}},

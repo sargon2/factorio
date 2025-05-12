@@ -6,7 +6,7 @@
     "absolute-snapping": true,
     "shift_x": 11,
     "shift_y": 3,
-    "version": 562949956239363,
+    "version": 562949956501504,
     "entities": [
       {"name": "active-provider-chest", "position": {"x": -7.5, "y": 4.5}},
       {"name": "active-provider-chest", "position": {"x": -7.5, "y": 14.5}},

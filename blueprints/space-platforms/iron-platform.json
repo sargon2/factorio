@@ -5,7 +5,7 @@
     "label": "Iron platform",
     "shift_x": 10,
     "shift_y": -10,
-    "version": 562949956239363,
+    "version": 562949956501504,
     "entities": [
       {"name": "accumulator", "position": {"x": -10, "y": 15}},
       {

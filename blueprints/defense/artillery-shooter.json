@@ -5,7 +5,7 @@
     "label": "Artillery shooter",
     "shift_x": 18,
     "shift_y": 13,
-    "version": 562949956239363,
+    "version": 562949956501504,
     "entities": [
       {
         "name": "artillery-turret",

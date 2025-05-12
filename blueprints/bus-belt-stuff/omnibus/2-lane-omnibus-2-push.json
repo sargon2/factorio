@@ -6,7 +6,7 @@
     "description": "Maybe could be simplified",
     "shift_x": -87,
     "shift_y": 155,
-    "version": 562949956239363,
+    "version": 562949956501504,
     "entities": [
       {"name": "splitter", "direction": 12, "input_priority": "left", "position": {"x": -1.5, "y": 0}},
       {"name": "splitter", "direction": 12, "input_priority": "left", "position": {"x": -1.5, "y": 2}},

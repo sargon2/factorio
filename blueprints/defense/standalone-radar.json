@@ -5,7 +5,7 @@
     "label": "Standalone Radar",
     "shift_x": -23,
     "shift_y": -23,
-    "version": 562949956239363,
+    "version": 562949956501504,
     "entities": [
       {"name": "accumulator", "position": {"x": 11, "y": 11}},
       {"name": "accumulator", "position": {"x": 13, "y": 11}},

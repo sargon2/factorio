@@ -6,7 +6,7 @@
     "description": "1x copper plate belt\n.4x iron plate belt\nmakes .4x plastic belt with...\n.2x coal belt\n3600 petrolium gas",
     "shift_x": -219,
     "shift_y": -142,
-    "version": 562949956239363,
+    "version": 562949956501504,
     "entities": [
       {
         "name": "assembling-machine-1",

@@ -5,7 +5,7 @@
     "label": "Four-lane stone smelter",
     "shift_x": -27,
     "shift_y": -21,
-    "version": 562949956239363,
+    "version": 562949956501504,
     "entities": [
       {"name": "inserter", "position": {"x": 1.5, "y": 0.5}},
       {"name": "inserter", "position": {"x": 2.5, "y": 0.5}},

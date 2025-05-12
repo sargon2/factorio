@@ -4,7 +4,7 @@
     "item": "blueprint",
     "label": "Attack loader",
     "absolute-snapping": true,
-    "version": 562949956239363,
+    "version": 562949956501504,
     "entities": [
       {"name": "fast-inserter", "direction": 8, "position": {"x": 3.5, "y": 2.5}},
       {"name": "fast-inserter", "direction": 4, "position": {"x": 2.5, "y": 3.5}},

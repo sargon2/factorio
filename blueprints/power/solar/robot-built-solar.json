@@ -6,7 +6,7 @@
     "absolute-snapping": true,
     "shift_x": 2,
     "shift_y": 3,
-    "version": 562949956239363,
+    "version": 562949956501504,
     "entities": [
       {"name": "accumulator", "position": {"x": 0, "y": 3}},
       {"name": "accumulator", "position": {"x": 2, "y": 3}},

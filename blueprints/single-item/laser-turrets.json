@@ -5,7 +5,7 @@
     "label": "Laser turrets",
     "shift_x": -371,
     "shift_y": 118,
-    "version": 562949956239363,
+    "version": 562949956501504,
     "entities": [
       {
         "name": "assembling-machine-1",
@@ -116,12 +116,6 @@
         "recipe": "battery",
         "recipe_quality": "normal",
         "position": {"x": 38.5, "y": 12.5}
-      },
-      {
-        "name": "creative-mod_item-void",
-        "direction": 12,
-        "use_filters": true,
-        "position": {"x": 37.5, "y": 1.5}
       },
       {"name": "electric-furnace", "position": {"x": 1.5, "y": -1.5}},
       {"name": "electric-furnace", "position": {"x": 4.5, "y": -1.5}},

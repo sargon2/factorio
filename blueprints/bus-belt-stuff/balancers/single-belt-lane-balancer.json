@@ -5,7 +5,7 @@
     "label": "Single-belt lane balancer",
     "shift_x": 0,
     "shift_y": -1,
-    "version": 562949956239363,
+    "version": 562949956501504,
     "entities": [
       {"name": "splitter", "position": {"x": 1, "y": 1.5}},
       {"name": "transport-belt", "direction": 4, "position": {"x": -0.5, "y": -0.5}},

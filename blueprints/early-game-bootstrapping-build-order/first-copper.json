@@ -5,7 +5,7 @@
     "label": "First copper",
     "shift_x": -30,
     "shift_y": 41,
-    "version": 562949956239363,
+    "version": 562949956501504,
     "entities": [
       {"name": "burner-mining-drill", "direction": 4, "position": {"x": 0, "y": 0}},
       {"name": "burner-mining-drill", "direction": 4, "position": {"x": 0, "y": 2}},

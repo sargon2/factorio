@@ -3,10 +3,11 @@
   "blueprint": {
     "item": "blueprint",
     "label": "City block 2 mall",
+    "description": "TODO:\n- Combine some of the inputs to make it easier to build\n- Separate output chests so each output has one?",
     "absolute-snapping": true,
     "shift_x": 2,
     "shift_y": 5,
-    "version": 562949956239363,
+    "version": 562949956501504,
     "entities": [
       {
         "name": "arithmetic-combinator",

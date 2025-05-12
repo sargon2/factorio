@@ -5,7 +5,7 @@
     "label": "[item=automation-science-pack]Tileable early game manual load",
     "shift_x": 1,
     "shift_y": 1,
-    "version": 562949956239363,
+    "version": 562949956501504,
     "entities": [
       {
         "name": "assembling-machine-1",

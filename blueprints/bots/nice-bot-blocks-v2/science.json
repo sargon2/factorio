@@ -6,7 +6,7 @@
     "absolute-snapping": true,
     "shift_x": -2,
     "shift_y": 11,
-    "version": 562949956239363,
+    "version": 562949956501504,
     "entities": [
       {"name": "inserter", "position": {"x": 13.5, "y": 4.5}},
       {"name": "inserter", "position": {"x": 15.5, "y": 8.5}},

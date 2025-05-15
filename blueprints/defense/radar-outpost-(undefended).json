@@ -3,25 +3,30 @@
   "blueprint": {
     "item": "blueprint",
     "label": "Radar outpost (undefended)",
-    "shift_x": -34,
-    "shift_y": -46,
+    "shift_x": 5,
+    "shift_y": 446,
     "version": 562949956501504,
     "entities": [
-      {"name": "accumulator", "position": {"x": 2, "y": 2}},
-      {"name": "accumulator", "position": {"x": 5, "y": 2}},
-      {"name": "accumulator", "position": {"x": 2, "y": 4}},
-      {"name": "accumulator", "position": {"x": 2, "y": 6}},
-      {"name": "accumulator", "position": {"x": 5, "y": 4}},
-      {"name": "accumulator", "position": {"x": 5, "y": 6}},
-      {"name": "medium-electric-pole", "position": {"x": 3.5, "y": 3.5}},
-      {"name": "radar", "position": {"x": 3.5, "y": -0.5}},
-      {"name": "solar-panel", "position": {"x": 0.5, "y": -0.5}},
-      {"name": "solar-panel", "position": {"x": 6.5, "y": -0.5}},
-      {"name": "solar-panel", "position": {"x": -0.5, "y": 2.5}},
-      {"name": "solar-panel", "position": {"x": -0.5, "y": 5.5}},
-      {"name": "solar-panel", "position": {"x": 7.5, "y": 2.5}},
-      {"name": "solar-panel", "position": {"x": 7.5, "y": 5.5}}
+      {"name": "accumulator", "position": {"x": 0, "y": -2}},
+      {"name": "accumulator", "position": {"x": -6, "y": 0}},
+      {"name": "accumulator", "position": {"x": -4, "y": 0}},
+      {"name": "accumulator", "position": {"x": -3, "y": 3}},
+      {"name": "accumulator", "position": {"x": -1, "y": 3}},
+      {"name": "accumulator", "position": {"x": 1, "y": 1}},
+      {"name": "accumulator", "position": {"x": 1, "y": 3}},
+      {"name": "medium-electric-pole", "position": {"x": 0.5, "y": -0.5}},
+      {"name": "medium-electric-pole", "position": {"x": -3.5, "y": 1.5}},
+      {"name": "radar", "position": {"x": -1.5, "y": 0.5}},
+      {"name": "solar-panel", "position": {"x": -5.5, "y": -2.5}},
+      {"name": "solar-panel", "position": {"x": -2.5, "y": -2.5}},
+      {"name": "solar-panel", "position": {"x": 0.5, "y": -4.5}},
+      {"name": "solar-panel", "position": {"x": 2.5, "y": -1.5}},
+      {"name": "solar-panel", "position": {"x": -5.5, "y": 2.5}},
+      {"name": "solar-panel", "position": {"x": -2.5, "y": 5.5}},
+      {"name": "solar-panel", "position": {"x": 3.5, "y": 1.5}},
+      {"name": "solar-panel", "position": {"x": 0.5, "y": 5.5}}
     ],
-    "icons": [{"index": 1, "signal": {"name": "radar"}}]
+    "icons": [{"index": 1, "signal": {"name": "solar-panel"}}, {"index": 2, "signal": {"name": "radar"}}],
+    "wires": [["6.5,4", 5, "2.5,6", 5]]
   }
 }

@@ -1,0 +1,62 @@
+{
+  "index": 32,
+  "blueprint": {
+    "item": "blueprint",
+    "label": "Manual load tank maker",
+    "description": "Fill once with iron, steel, red circuits; wait; get one tank",
+    "shift_x": 37,
+    "shift_y": 423,
+    "version": 562949956501504,
+    "entities": [
+      {
+        "name": "assembling-machine-1",
+        "recipe": "pipe",
+        "recipe_quality": "normal",
+        "position": {"x": 2.5, "y": -1.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "engine-unit",
+        "recipe_quality": "normal",
+        "position": {"x": -1.5, "y": 0.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "iron-gear-wheel",
+        "recipe_quality": "normal",
+        "position": {"x": -1.5, "y": 5.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "iron-gear-wheel",
+        "recipe_quality": "normal",
+        "position": {"x": 2.5, "y": 1.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "engine-unit",
+        "recipe_quality": "normal",
+        "position": {"x": 6.5, "y": 0.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "tank",
+        "recipe_quality": "normal",
+        "position": {"x": 2.5, "y": 4.5}
+      },
+      {"name": "inserter", "direction": 4, "position": {"x": 0.5, "y": -0.5}},
+      {"name": "inserter", "direction": 12, "position": {"x": 4.5, "y": -0.5}},
+      {"name": "inserter", "position": {"x": -0.5, "y": 2.5}},
+      {"name": "inserter", "direction": 4, "position": {"x": 0.5, "y": 0.5}},
+      {"name": "inserter", "direction": 12, "position": {"x": 0.5, "y": 3.5}},
+      {"name": "inserter", "direction": 12, "position": {"x": 4.5, "y": 0.5}},
+      {"name": "inserter", "position": {"x": 5.5, "y": 2.5}},
+      {"name": "inserter", "direction": 4, "position": {"x": 4.5, "y": 3.5}},
+      {"name": "inserter", "direction": 12, "position": {"x": 0.5, "y": 4.5}},
+      {"name": "medium-electric-pole", "position": {"x": 0.5, "y": 1.5}},
+      {"name": "medium-electric-pole", "position": {"x": 4.5, "y": 1.5}}
+    ],
+    "icons": [{"index": 1, "signal": {"name": "tank"}}],
+    "wires": [["2,3", 5, "6,3", 5]]
+  }
+}

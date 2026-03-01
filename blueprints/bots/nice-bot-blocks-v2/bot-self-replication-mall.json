@@ -6,7 +6,7 @@
     "absolute-snapping": true,
     "shift_x": 13,
     "shift_y": 14,
-    "version": 562949956501504,
+    "version": 562949958205441,
     "entities": [
       {
         "name": "assembling-machine-1",
@@ -1932,7 +1932,7 @@
         "request_filters": {"sections": [{"index": 1}]}
       }
     ],
-    "icons": [{"index": 1, "signal": {"name": "assembling-machine-1"}}],
+    "icons": [{"index": 1, "signal": {"name": "concrete"}}],
     "snap-to-grid": {"x": 64, "y": 64},
     "tiles": [
       {"name": "concrete", "position": {"x": -3, "y": -3}},

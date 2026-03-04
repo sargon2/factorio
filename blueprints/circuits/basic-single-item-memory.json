@@ -1,0 +1,102 @@
+{
+  "index": 1,
+  "blueprint": {
+    "item": "blueprint",
+    "label": "Basic single-item memory",
+    "description": "Outputs a constant 1 for the saved item, doesn't remember item count. It will remember a count of 1 for multiple items of input.",
+    "shift_x": -81,
+    "shift_y": 105,
+    "version": 562949958205441,
+    "entities": [
+      {
+        "name": "constant-combinator",
+        "control_behavior": {
+          "sections": {
+            "sections": [
+              {
+                "index": 1,
+                "filters": [{"name": "long-handed-inserter", "comparator": "=", "count": 1, "index": 1, "quality": "normal"}]
+              }
+            ]
+          }
+        },
+        "position": {"x": -0.5, "y": 0.5}
+      },
+      {
+        "name": "constant-combinator",
+        "control_behavior": {
+          "is_on": false,
+          "sections": {
+            "sections": [
+              {
+                "index": 1,
+                "filters": [
+                  {
+                    "name": "signal-check",
+                    "comparator": "=",
+                    "count": 1,
+                    "index": 1,
+                    "quality": "normal",
+                    "type": "virtual"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "position": {"x": 7.5, "y": 3.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [
+              {
+                "comparator": ">",
+                "compare_type": "and",
+                "first_signal": {"name": "signal-each", "type": "virtual"},
+                "first_signal_networks": {"green": true, "red": false}
+              },
+              {
+                "comparator": "=",
+                "compare_type": "and",
+                "first_signal": {"name": "signal-lock", "type": "virtual"},
+                "first_signal_networks": {"green": false, "red": true}
+              },
+              {
+                "comparator": ">",
+                "first_signal": {"name": "signal-each", "type": "virtual"},
+                "first_signal_networks": {"green": false, "red": true}
+              },
+              {
+                "comparator": "=",
+                "compare_type": "and",
+                "first_signal": {"name": "signal-check", "type": "virtual"}
+              }
+            ],
+            "outputs": [
+              {
+                "constant": -1,
+                "copy_count_from_input": false,
+                "signal": {"name": "signal-lock", "type": "virtual"}
+              },
+              {
+                "copy_count_from_input": false,
+                "networks": {"green": true, "red": false},
+                "signal": {"name": "signal-each", "type": "virtual"}
+              }
+            ]
+          }
+        },
+        "position": {"x": 4, "y": 0.5}
+      },
+      {"name": "small-electric-pole", "position": {"x": 8.5, "y": 0.5}}
+    ],
+    "icons": [
+      {"index": 1, "signal": {"name": "constant-combinator"}},
+      {"index": 2, "signal": {"name": "decider-combinator"}}
+    ],
+    "wires": [["0,0", 2, "4.5,0", 2], ["4.5,0", 1, "4.5,0", 3], ["4.5,0", 2, "8,3", 2], ["4.5,0", 4, "9,0", 2]]
+  }
+}

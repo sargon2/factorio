@@ -1,0 +1,39 @@
+{
+  "index": 14,
+  "blueprint": {
+    "item": "blueprint",
+    "label": "Coal puller left",
+    "absolute-snapping": true,
+    "shift_x": 32,
+    "shift_y": 0,
+    "version": 562949958205441,
+    "entities": [
+      {"name": "splitter", "direction": 8, "output_priority": "right", "position": {"x": 3, "y": -1.5}},
+      {"name": "splitter", "direction": 8, "output_priority": "right", "position": {"x": 2, "y": -0.5}},
+      {"name": "transport-belt", "direction": 12, "position": {"x": -0.5, "y": 0.5}},
+      {"name": "transport-belt", "direction": 12, "position": {"x": 0.5, "y": 0.5}},
+      {"name": "transport-belt", "direction": 12, "position": {"x": 1.5, "y": 0.5}},
+      {"name": "underground-belt", "direction": 8, "type": "input", "position": {"x": 1.5, "y": -1.5}},
+      {"name": "underground-belt", "direction": 8, "type": "input", "position": {"x": 0.5, "y": -0.5}},
+      {"name": "underground-belt", "direction": 12, "type": "output", "position": {"x": -34.5, "y": 0.5}},
+      {"name": "underground-belt", "direction": 12, "type": "input", "position": {"x": -29.5, "y": 0.5}},
+      {"name": "underground-belt", "direction": 12, "type": "output", "position": {"x": -28.5, "y": 0.5}},
+      {"name": "underground-belt", "direction": 12, "type": "input", "position": {"x": -25.5, "y": 0.5}},
+      {"name": "underground-belt", "direction": 12, "type": "output", "position": {"x": -24.5, "y": 0.5}},
+      {"name": "underground-belt", "direction": 12, "type": "input", "position": {"x": -19.5, "y": 0.5}},
+      {"name": "underground-belt", "direction": 12, "type": "output", "position": {"x": -18.5, "y": 0.5}},
+      {"name": "underground-belt", "direction": 12, "type": "input", "position": {"x": -13.5, "y": 0.5}},
+      {"name": "underground-belt", "direction": 12, "type": "output", "position": {"x": -12.5, "y": 0.5}},
+      {"name": "underground-belt", "direction": 12, "type": "input", "position": {"x": -7.5, "y": 0.5}},
+      {"name": "underground-belt", "direction": 12, "type": "output", "position": {"x": -6.5, "y": 0.5}},
+      {"name": "underground-belt", "direction": 12, "type": "input", "position": {"x": -1.5, "y": 0.5}},
+      {"name": "underground-belt", "direction": 8, "type": "output", "position": {"x": 0.5, "y": 1.5}},
+      {"name": "underground-belt", "direction": 8, "type": "output", "position": {"x": 1.5, "y": 1.5}}
+    ],
+    "icons": [
+      {"index": 1, "signal": {"name": "underground-belt"}},
+      {"index": 2, "signal": {"name": "transport-belt"}}
+    ],
+    "snap-to-grid": {"x": 62, "y": 1}
+  }
+}

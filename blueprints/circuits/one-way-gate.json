@@ -1,0 +1,24 @@
+{
+  "index": 8,
+  "blueprint": {
+    "item": "blueprint",
+    "label": "One-way gate",
+    "shift_x": -69,
+    "shift_y": 86,
+    "version": 562949958205441,
+    "entities": [
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [{"comparator": "≠", "first_signal": {"name": "signal-each", "type": "virtual"}}],
+            "outputs": [{"signal": {"name": "signal-each", "type": "virtual"}}]
+          }
+        },
+        "position": {"x": 0, "y": 0.5}
+      }
+    ],
+    "icons": [{"index": 1, "signal": {"name": "decider-combinator"}}]
+  }
+}

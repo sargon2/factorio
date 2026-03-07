@@ -1,0 +1,115 @@
+{
+  "index": 27,
+  "blueprint": {
+    "item": "blueprint",
+    "label": "Check if buildable",
+    "description": "Check if something is buildable\n\nGiven inputs: zero or one items, all storage\nOutput: [virtual-signal=signal-deny]=1 if not buildable, [virtual-signal=signal-check]=1 if buildable\n\nOutputs nothing if no input item\n\nOutputs only a single pulse for \"no\" but a constant signal for \"yes\".\n",
+    "shift_x": -89,
+    "shift_y": 7,
+    "version": 562949958205441,
+    "entities": [
+      {
+        "name": "arithmetic-combinator",
+        "direction": 4,
+        "player_description": "Convert input into a single pulse",
+        "control_behavior": {
+          "arithmetic_conditions": {
+            "operation": "*",
+            "second_constant": -1,
+            "first_signal": {"name": "signal-each", "type": "virtual"},
+            "output_signal": {"name": "signal-each", "type": "virtual"}
+          }
+        },
+        "position": {"x": -6, "y": 0.5}
+      },
+      {
+        "name": "arithmetic-combinator",
+        "direction": 4,
+        "player_description": "Need minus have",
+        "control_behavior": {
+          "arithmetic_conditions": {
+            "operation": "-",
+            "first_signal": {"name": "signal-each", "type": "virtual"},
+            "first_signal_networks": {"green": true, "red": false},
+            "output_signal": {"name": "signal-each", "type": "virtual"},
+            "second_signal": {"name": "signal-each", "type": "virtual"},
+            "second_signal_networks": {"green": false, "red": true}
+          }
+        },
+        "position": {"x": 0, "y": 3.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "control_behavior": {"read_ingredients": true, "set_recipe": true},
+        "position": {"x": -3.5, "y": 3.5}
+      },
+      {
+        "name": "constant-combinator",
+        "control_behavior": {
+          "sections": {
+            "sections": [
+              {
+                "index": 1,
+                "filters": [{"name": "iron-gear-wheel", "comparator": "=", "count": 1, "index": 1, "quality": "normal"}]
+              }
+            ]
+          }
+        },
+        "position": {"x": -8.5, "y": 0.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "player_description": "Output positive result",
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [
+              {
+                "comparator": "≤",
+                "first_signal": {"name": "signal-everything", "type": "virtual"},
+                "first_signal_networks": {"green": false, "red": true}
+              },
+              {
+                "comparator": "≠",
+                "compare_type": "and",
+                "first_signal": {"name": "signal-anything", "type": "virtual"}
+              },
+              {
+                "comparator": ">",
+                "compare_type": "and",
+                "first_signal": {"name": "signal-anything", "type": "virtual"},
+                "first_signal_networks": {"green": true, "red": false}
+              }
+            ],
+            "outputs": [{"copy_count_from_input": false, "signal": {"name": "signal-check", "type": "virtual"}}]
+          }
+        },
+        "position": {"x": 0, "y": 5.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "player_description": "Output result if negative",
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [{"comparator": ">", "first_signal": {"name": "signal-anything", "type": "virtual"}}],
+            "outputs": [{"copy_count_from_input": false, "signal": {"name": "signal-deny", "type": "virtual"}}]
+          }
+        },
+        "position": {"x": 0, "y": 6.5}
+      },
+      {"name": "iron-chest", "position": {"x": -7.5, "y": 5.5}}
+    ],
+    "icons": [{"index": 1, "signal": {"name": "assembling-machine-1"}}],
+    "wires": [
+      ["0,0", 1, "2.5,0", 3],
+      ["0,0", 2, "2.5,0", 2],
+      ["0,0", 2, "8.5,5", 2],
+      ["2.5,0", 3, "5,3", 1],
+      ["5,3", 2, "8.5,3", 2],
+      ["8.5,3", 1, "1,5", 1],
+      ["8.5,3", 3, "8.5,5", 1],
+      ["8.5,3", 3, "8.5,6", 1]
+    ]
+  }
+}

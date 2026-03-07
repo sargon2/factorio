@@ -1,0 +1,219 @@
+{
+  "index": 34,
+  "blueprint": {
+    "item": "blueprint",
+    "label": "Cycle through a given list of items",
+    "description": "Retains quantity.",
+    "shift_x": -72,
+    "shift_y": 21,
+    "version": 562949958205441,
+    "entities": [
+      {
+        "name": "arithmetic-combinator",
+        "direction": 4,
+        "player_description": "Convert input into a single pulse",
+        "control_behavior": {
+          "arithmetic_conditions": {
+            "operation": "*",
+            "second_constant": -1,
+            "first_signal": {"name": "signal-each", "type": "virtual"},
+            "output_signal": {"name": "signal-each", "type": "virtual"}
+          }
+        },
+        "position": {"x": 2, "y": 0.5}
+      },
+      {
+        "name": "arithmetic-combinator",
+        "direction": 4,
+        "player_description": "Count pulses",
+        "control_behavior": {
+          "arithmetic_conditions": {
+            "operation": "+",
+            "second_constant": 0,
+            "first_signal": {"name": "signal-each", "type": "virtual"},
+            "output_signal": {"name": "signal-each", "type": "virtual"}
+          }
+        },
+        "position": {"x": 7, "y": 0.5}
+      },
+      {
+        "name": "arithmetic-combinator",
+        "direction": 4,
+        "player_description": "Convert input into a single pulse",
+        "control_behavior": {
+          "arithmetic_conditions": {
+            "operation": "*",
+            "second_constant": -1,
+            "first_signal": {"name": "signal-each", "type": "virtual"},
+            "output_signal": {"name": "signal-each", "type": "virtual"}
+          }
+        },
+        "position": {"x": 4, "y": 2.5}
+      },
+      {
+        "name": "arithmetic-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "arithmetic_conditions": {
+            "operation": "*",
+            "second_constant": -1,
+            "first_signal": {"name": "signal-each", "type": "virtual"},
+            "output_signal": {"name": "signal-each", "type": "virtual"}
+          }
+        },
+        "position": {"x": 8, "y": 2.5}
+      },
+      {
+        "name": "constant-combinator",
+        "control_behavior": {
+          "is_on": false,
+          "sections": {
+            "sections": [
+              {
+                "index": 1,
+                "filters": [
+                  {
+                    "name": "signal-N",
+                    "comparator": "=",
+                    "count": 1,
+                    "index": 1,
+                    "quality": "normal",
+                    "type": "virtual"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "position": {"x": -0.5, "y": 0.5}
+      },
+      {
+        "name": "constant-combinator",
+        "control_behavior": {
+          "sections": {
+            "sections": [
+              {
+                "index": 1,
+                "filters": [
+                  {"name": "iron-gear-wheel", "comparator": "=", "count": 1, "index": 1, "quality": "normal"},
+                  {"name": "inserter", "comparator": "=", "count": 2, "index": 2, "quality": "normal"},
+                  {"name": "transport-belt", "comparator": "=", "count": 1, "index": 3, "quality": "normal"},
+                  {"name": "long-handed-inserter", "comparator": "=", "count": 1, "index": 4, "quality": "normal"},
+                  {"name": "underground-belt", "comparator": "=", "count": 1, "index": 5, "quality": "normal"}
+                ]
+              }
+            ]
+          }
+        },
+        "position": {"x": -4.5, "y": 4.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [
+              {
+                "comparator": "≥",
+                "first_signal": {"name": "signal-N", "type": "virtual"},
+                "second_signal": {"name": "signal-C", "type": "virtual"}
+              }
+            ],
+            "outputs": [
+              {
+                "copy_count_from_input": false,
+                "signal": {"name": "signal-clockwise-circle-arrow", "type": "virtual"}
+              }
+            ]
+          }
+        },
+        "position": {"x": 0, "y": 2.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [
+              {"comparator": ">", "first_signal": {"name": "signal-clockwise-circle-arrow", "type": "virtual"}},
+              {
+                "comparator": "≠",
+                "compare_type": "and",
+                "first_signal": {"name": "signal-each", "type": "virtual"}
+              }
+            ],
+            "outputs": [{"networks": {"green": false, "red": true}, "signal": {"name": "signal-each", "type": "virtual"}}]
+          }
+        },
+        "position": {"x": 2, "y": 2.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "player_description": "Only let positive pulses through",
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [{"comparator": ">", "first_signal": {"name": "signal-each", "type": "virtual"}}],
+            "outputs": [{"signal": {"name": "signal-each", "type": "virtual"}}]
+          }
+        },
+        "position": {"x": 4, "y": 0.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "player_description": "Only let negative pulses through",
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [{"comparator": ">", "first_signal": {"name": "signal-each", "type": "virtual"}}],
+            "outputs": [{"signal": {"name": "signal-each", "type": "virtual"}}]
+          }
+        },
+        "position": {"x": 6, "y": 2.5}
+      },
+      {
+        "name": "display-panel",
+        "always_show": true,
+        "text": "Increment counter\nN = loop iterator\nC = # items",
+        "position": {"x": -1.5, "y": 0.5}
+      },
+      {
+        "name": "selector-combinator",
+        "direction": 4,
+        "control_behavior": {"operation": "count", "count_signal": {"name": "signal-C", "type": "virtual"}},
+        "position": {"x": -3, "y": 4.5}
+      },
+      {
+        "name": "selector-combinator",
+        "direction": 4,
+        "control_behavior": {"operation": "select", "select_max": true, "index_signal": {"name": "signal-N", "type": "virtual"}},
+        "position": {"x": 0, "y": 4.5}
+      },
+      {"name": "small-electric-pole", "position": {"x": 2.5, "y": 6.5}}
+    ],
+    "icons": [
+      {"index": 1, "signal": {"name": "arithmetic-combinator"}},
+      {"index": 2, "signal": {"name": "decider-combinator"}}
+    ],
+    "wires": [
+      ["4,0", 1, "6.5,0", 3],
+      ["4,0", 2, "6.5,0", 2],
+      ["6.5,0", 3, "8.5,0", 1],
+      ["8.5,0", 3, "11.5,0", 1],
+      ["11.5,0", 1, "12.5,2", 3],
+      ["11.5,0", 2, "11.5,0", 4],
+      ["11.5,0", 3, "6.5,2", 1],
+      ["11.5,0", 3, "4.5,2", 1],
+      ["11.5,0", 3, "4.5,4", 1],
+      ["4.5,2", 2, "1.5,4", 4],
+      ["4.5,2", 4, "6.5,2", 2],
+      ["6.5,2", 3, "8.5,2", 3],
+      ["6.5,2", 4, "8.5,2", 2],
+      ["8.5,2", 3, "10.5,2", 1],
+      ["10.5,2", 3, "12.5,2", 1],
+      ["0,4", 1, "1.5,4", 1],
+      ["0,4", 2, "4.5,4", 2],
+      ["4.5,4", 3, "7,6", 1]
+    ]
+  }
+}

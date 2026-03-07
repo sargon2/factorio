@@ -1,0 +1,99 @@
+{
+  "index": 26,
+  "blueprint": {
+    "item": "blueprint",
+    "label": "Single assembler automall",
+    "description": "WIP. Uses random right now and shouldn't.",
+    "shift_x": -66,
+    "shift_y": 42,
+    "version": 562949958205441,
+    "entities": [
+      {
+        "name": "arithmetic-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "arithmetic_conditions": {
+            "operation": "-",
+            "first_signal": {"name": "signal-each", "type": "virtual"},
+            "first_signal_networks": {"green": true, "red": false},
+            "output_signal": {"name": "signal-each", "type": "virtual"},
+            "second_signal": {"name": "signal-each", "type": "virtual"},
+            "second_signal_networks": {"green": false, "red": true}
+          }
+        },
+        "position": {"x": 0, "y": 0.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "control_behavior": {"set_recipe": true},
+        "position": {"x": 2.5, "y": 4.5}
+      },
+      {
+        "name": "constant-combinator",
+        "control_behavior": {
+          "sections": {
+            "sections": [
+              {
+                "index": 1,
+                "filters": [
+                  {"name": "iron-gear-wheel", "comparator": "=", "count": 10, "index": 1, "quality": "normal"},
+                  {"name": "inserter", "comparator": "=", "count": 1, "index": 2, "quality": "normal"},
+                  {"name": "electronic-circuit", "comparator": "=", "count": 4, "index": 3, "quality": "normal"},
+                  {"name": "copper-cable", "comparator": "=", "count": 10, "index": 4, "quality": "normal"}
+                ]
+              }
+            ]
+          }
+        },
+        "position": {"x": -3.5, "y": 1.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [{"comparator": ">", "first_signal": {"name": "signal-each", "type": "virtual"}}],
+            "outputs": [{"signal": {"name": "signal-each", "type": "virtual"}}]
+          }
+        },
+        "position": {"x": 2, "y": 0.5}
+      },
+      {
+        "name": "inserter",
+        "control_behavior": {"circuit_hand_read_mode": 1, "circuit_read_hand_contents": true},
+        "position": {"x": -0.5, "y": 4.5}
+      },
+      {
+        "name": "inserter",
+        "direction": 4,
+        "control_behavior": {"circuit_hand_read_mode": 1, "circuit_read_hand_contents": true},
+        "position": {"x": 0.5, "y": 3.5}
+      },
+      {"name": "inserter", "direction": 12, "position": {"x": 0.5, "y": 5.5}},
+      {"name": "iron-chest", "position": {"x": -0.5, "y": 5.5}},
+      {
+        "name": "selector-combinator",
+        "direction": 4,
+        "control_behavior": {"operation": "random", "random_update_interval": 200},
+        "position": {"x": 5, "y": 0.5}
+      },
+      {
+        "name": "transport-belt",
+        "direction": 8,
+        "control_behavior": {"circuit_contents_read_mode": 2, "circuit_read_hand_contents": true},
+        "position": {"x": -0.5, "y": 3.5}
+      }
+    ],
+    "icons": [{"index": 1, "signal": {"name": "assembling-machine-1"}}],
+    "wires": [
+      ["0,1", 2, "3.5,0", 2],
+      ["3.5,0", 1, "3,5", 1],
+      ["3.5,0", 4, "5.5,0", 2],
+      ["5.5,0", 4, "8.5,0", 2],
+      ["8.5,0", 4, "6,4", 2],
+      ["3,3", 1, "3,4", 1],
+      ["3,3", 1, "4,3", 1],
+      ["3,5", 1, "3,4", 1]
+    ]
+  }
+}

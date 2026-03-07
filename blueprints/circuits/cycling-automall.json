@@ -1,0 +1,394 @@
+{
+  "index": 36,
+  "blueprint": {
+    "item": "blueprint",
+    "label": "Cycling automall",
+    "description": "WIP - broken\nWhen something is removed from storage, it's recalculating needed items, which is causing a new pulse to go through, which is causing it to recalculate what's buildable, which is resetting the building assembler. So it doesn't build and instead empties and everything loops.\n\nInstead, a new pulse should only go through when assembling is complete.",
+    "shift_x": -112,
+    "shift_y": 6,
+    "version": 562949958205441,
+    "entities": [
+      {
+        "name": "arithmetic-combinator",
+        "direction": 4,
+        "player_description": "Convert input into a single pulse",
+        "control_behavior": {
+          "arithmetic_conditions": {
+            "operation": "*",
+            "second_constant": -1,
+            "first_signal": {"name": "signal-each", "type": "virtual"},
+            "output_signal": {"name": "signal-each", "type": "virtual"}
+          }
+        },
+        "position": {"x": 9, "y": 0.5}
+      },
+      {
+        "name": "arithmetic-combinator",
+        "direction": 4,
+        "player_description": "Convert input into a single pulse",
+        "control_behavior": {
+          "arithmetic_conditions": {
+            "operation": "*",
+            "second_constant": -1,
+            "first_signal": {"name": "signal-each", "type": "virtual"},
+            "output_signal": {"name": "signal-each", "type": "virtual"}
+          }
+        },
+        "position": {"x": 11, "y": 2.5}
+      },
+      {
+        "name": "arithmetic-combinator",
+        "direction": 4,
+        "player_description": "Count pulses",
+        "control_behavior": {
+          "arithmetic_conditions": {
+            "operation": "+",
+            "second_constant": 0,
+            "first_signal": {"name": "signal-each", "type": "virtual"},
+            "output_signal": {"name": "signal-each", "type": "virtual"}
+          }
+        },
+        "position": {"x": 14, "y": 0.5}
+      },
+      {
+        "name": "arithmetic-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "arithmetic_conditions": {
+            "operation": "*",
+            "second_constant": -1,
+            "first_signal": {"name": "signal-each", "type": "virtual"},
+            "output_signal": {"name": "signal-each", "type": "virtual"}
+          }
+        },
+        "position": {"x": 15, "y": 2.5}
+      },
+      {
+        "name": "arithmetic-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "arithmetic_conditions": {
+            "operation": "-",
+            "first_signal": {"name": "signal-each", "type": "virtual"},
+            "first_signal_networks": {"green": true, "red": false},
+            "output_signal": {"name": "signal-each", "type": "virtual"},
+            "second_signal": {"name": "signal-each", "type": "virtual"},
+            "second_signal_networks": {"green": false, "red": true}
+          }
+        },
+        "position": {"x": 8, "y": 12.5}
+      },
+      {
+        "name": "arithmetic-combinator",
+        "direction": 4,
+        "player_description": "Convert input into a single pulse",
+        "control_behavior": {
+          "arithmetic_conditions": {
+            "operation": "*",
+            "second_constant": -1,
+            "first_signal": {"name": "signal-each", "type": "virtual"},
+            "output_signal": {"name": "signal-each", "type": "virtual"}
+          }
+        },
+        "position": {"x": 16, "y": 10.5}
+      },
+      {
+        "name": "arithmetic-combinator",
+        "direction": 4,
+        "player_description": "Need minus have",
+        "control_behavior": {
+          "arithmetic_conditions": {
+            "operation": "-",
+            "first_signal": {"name": "signal-each", "type": "virtual"},
+            "first_signal_networks": {"green": true, "red": false},
+            "output_signal": {"name": "signal-each", "type": "virtual"},
+            "second_signal": {"name": "signal-each", "type": "virtual"},
+            "second_signal_networks": {"green": false, "red": true}
+          }
+        },
+        "position": {"x": 22, "y": 13.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "electronic-circuit",
+        "recipe_quality": "normal",
+        "control_behavior": {
+          "circuit_enabled": true,
+          "set_recipe": true,
+          "circuit_condition": {"comparator": ">", "constant": 0, "first_signal": {"name": "signal-check", "type": "virtual"}}
+        },
+        "position": {"x": 11.5, "y": 14.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "electronic-circuit",
+        "recipe_quality": "normal",
+        "control_behavior": {"read_ingredients": true, "set_recipe": true},
+        "position": {"x": 18.5, "y": 13.5}
+      },
+      {
+        "name": "constant-combinator",
+        "control_behavior": {
+          "is_on": false,
+          "sections": {
+            "sections": [
+              {
+                "index": 1,
+                "filters": [
+                  {
+                    "name": "signal-N",
+                    "comparator": "=",
+                    "count": 1,
+                    "index": 1,
+                    "quality": "normal",
+                    "type": "virtual"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "position": {"x": 6.5, "y": 0.5}
+      },
+      {
+        "name": "constant-combinator",
+        "control_behavior": {
+          "sections": {
+            "sections": [
+              {
+                "index": 1,
+                "filters": [
+                  {"name": "iron-gear-wheel", "comparator": "=", "count": 10, "index": 1, "quality": "normal"},
+                  {"name": "inserter", "comparator": "=", "count": 2, "index": 2, "quality": "normal"},
+                  {"name": "transport-belt", "comparator": "=", "count": 5, "index": 3, "quality": "normal"},
+                  {"name": "long-handed-inserter", "comparator": "=", "count": 1, "index": 4, "quality": "normal"},
+                  {"name": "underground-belt", "comparator": "=", "count": 1, "index": 5, "quality": "normal"},
+                  {"name": "electronic-circuit", "comparator": "=", "count": 5, "index": 6, "quality": "normal"}
+                ]
+              }
+            ]
+          }
+        },
+        "position": {"x": 5.5, "y": 11.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [
+              {
+                "comparator": "≥",
+                "first_signal": {"name": "signal-N", "type": "virtual"},
+                "second_signal": {"name": "signal-C", "type": "virtual"}
+              }
+            ],
+            "outputs": [
+              {
+                "copy_count_from_input": false,
+                "signal": {"name": "signal-clockwise-circle-arrow", "type": "virtual"}
+              }
+            ]
+          }
+        },
+        "position": {"x": 7, "y": 2.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "player_description": "Only let positive pulses through",
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [{"comparator": ">", "first_signal": {"name": "signal-each", "type": "virtual"}}],
+            "outputs": [{"signal": {"name": "signal-each", "type": "virtual"}}]
+          }
+        },
+        "position": {"x": 11, "y": 0.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [
+              {"comparator": ">", "first_signal": {"name": "signal-clockwise-circle-arrow", "type": "virtual"}},
+              {
+                "comparator": "≠",
+                "compare_type": "and",
+                "first_signal": {"name": "signal-each", "type": "virtual"}
+              }
+            ],
+            "outputs": [{"networks": {"green": false, "red": true}, "signal": {"name": "signal-each", "type": "virtual"}}]
+          }
+        },
+        "position": {"x": 9, "y": 2.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "player_description": "Only let negative pulses through",
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [{"comparator": ">", "first_signal": {"name": "signal-each", "type": "virtual"}}],
+            "outputs": [{"signal": {"name": "signal-each", "type": "virtual"}}]
+          }
+        },
+        "position": {"x": 13, "y": 2.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [{"comparator": ">", "first_signal": {"name": "signal-each", "type": "virtual"}}],
+            "outputs": [{"signal": {"name": "signal-each", "type": "virtual"}}]
+          }
+        },
+        "position": {"x": 8, "y": 8.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "player_description": "Duplicate signal onto both red & green",
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [{"comparator": "≠", "first_signal": {"name": "signal-each", "type": "virtual"}}],
+            "outputs": [{"signal": {"name": "signal-each", "type": "virtual"}}]
+          }
+        },
+        "position": {"x": 13, "y": 10.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "player_description": "Output positive result",
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [
+              {
+                "comparator": "≤",
+                "first_signal": {"name": "signal-everything", "type": "virtual"},
+                "first_signal_networks": {"green": false, "red": true}
+              },
+              {
+                "comparator": "≠",
+                "compare_type": "and",
+                "first_signal": {"name": "signal-anything", "type": "virtual"},
+                "first_signal_networks": {"green": false, "red": true}
+              },
+              {
+                "comparator": ">",
+                "compare_type": "and",
+                "first_signal": {"name": "signal-anything", "type": "virtual"},
+                "first_signal_networks": {"green": true, "red": false}
+              }
+            ],
+            "outputs": [{"copy_count_from_input": false, "signal": {"name": "signal-check", "type": "virtual"}}]
+          }
+        },
+        "position": {"x": 22, "y": 15.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "player_description": "Output result if negative",
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [{"comparator": ">", "first_signal": {"name": "signal-anything", "type": "virtual"}}],
+            "outputs": [{"copy_count_from_input": false, "signal": {"name": "signal-N", "type": "virtual"}}]
+          }
+        },
+        "position": {"x": 22, "y": 16.5}
+      },
+      {
+        "name": "display-panel",
+        "always_show": true,
+        "text": "Increment counter\nN = loop iterator\nC = # items",
+        "position": {"x": 5.5, "y": 0.5}
+      },
+      {"name": "inserter", "direction": 12, "position": {"x": 13.5, "y": 13.5}},
+      {"name": "inserter", "direction": 4, "position": {"x": 13.5, "y": 15.5}},
+      {"name": "inserter", "position": {"x": 14.5, "y": 14.5}},
+      {"name": "iron-chest", "position": {"x": 14.5, "y": 15.5}},
+      {
+        "name": "selector-combinator",
+        "direction": 4,
+        "control_behavior": {"operation": "count", "count_signal": {"name": "signal-C", "type": "virtual"}},
+        "position": {"x": 4, "y": 4.5}
+      },
+      {
+        "name": "selector-combinator",
+        "direction": 4,
+        "control_behavior": {"operation": "select", "select_max": true, "index_signal": {"name": "signal-N", "type": "virtual"}},
+        "position": {"x": 7, "y": 4.5}
+      },
+      {"name": "small-electric-pole", "position": {"x": 2.5, "y": -0.5}},
+      {"name": "small-electric-pole", "position": {"x": 8.5, "y": -1.5}},
+      {"name": "small-electric-pole", "position": {"x": -0.5, "y": 4.5}},
+      {"name": "small-electric-pole", "position": {"x": -0.5, "y": 11.5}},
+      {"name": "small-electric-pole", "position": {"x": 9.5, "y": 6.5}},
+      {"name": "small-electric-pole", "position": {"x": 9.5, "y": 10.5}},
+      {"name": "small-electric-pole", "position": {"x": 3.5, "y": 17.5}},
+      {"name": "small-electric-pole", "position": {"x": 10.5, "y": 19.5}},
+      {"name": "small-electric-pole", "position": {"x": 16.5, "y": 19.5}},
+      {"name": "small-electric-pole", "position": {"x": 21.5, "y": 19.5}},
+      {"name": "transport-belt", "direction": 8, "position": {"x": 14.5, "y": 13.5}}
+    ],
+    "icons": [
+      {"index": 1, "signal": {"name": "assembling-machine-1"}},
+      {"index": 2, "signal": {"name": "decider-combinator"}}
+    ],
+    "wires": [
+      ["3,1", 1, "9,0", 1],
+      ["3,1", 1, "0,6", 1],
+      ["3,1", 5, "9,0", 5],
+      ["3,1", 5, "0,6", 5],
+      ["9,0", 1, "14.5,2", 1],
+      ["7,2", 1, "9.5,2", 3],
+      ["7,2", 2, "9.5,2", 2],
+      ["9.5,2", 3, "11.5,2", 1],
+      ["11.5,2", 3, "14.5,2", 1],
+      ["14.5,2", 1, "15.5,4", 3],
+      ["14.5,2", 2, "14.5,2", 4],
+      ["14.5,2", 3, "9.5,4", 1],
+      ["14.5,2", 3, "7.5,4", 1],
+      ["14.5,2", 3, "7.5,6", 1],
+      ["7.5,4", 2, "4.5,6", 4],
+      ["7.5,4", 4, "9.5,4", 2],
+      ["9.5,4", 3, "11.5,4", 3],
+      ["9.5,4", 4, "11.5,4", 2],
+      ["11.5,4", 3, "13.5,4", 1],
+      ["13.5,4", 3, "15.5,4", 1],
+      ["0,6", 1, "0,13", 1],
+      ["0,6", 5, "0,13", 5],
+      ["4.5,6", 1, "8.5,10", 3],
+      ["7.5,6", 2, "8.5,10", 4],
+      ["7.5,6", 3, "10,8", 1],
+      ["10,8", 1, "10,12", 1],
+      ["10,8", 1, "13.5,12", 1],
+      ["10,8", 5, "10,12", 5],
+      ["8.5,10", 1, "8.5,14", 3],
+      ["0,13", 1, "4,19", 1],
+      ["0,13", 5, "4,19", 5],
+      ["6,13", 2, "8.5,14", 2],
+      ["10,12", 1, "12,16", 1],
+      ["13.5,12", 3, "16.5,12", 3],
+      ["13.5,12", 4, "16.5,12", 2],
+      ["13.5,12", 4, "22.5,17", 2],
+      ["16.5,12", 3, "19,15", 1],
+      ["8.5,14", 1, "15,17", 1],
+      ["19,15", 2, "22.5,15", 2],
+      ["22.5,15", 1, "15,17", 1],
+      ["22.5,15", 3, "22.5,17", 1],
+      ["22.5,15", 3, "22.5,18", 1],
+      ["12,16", 2, "22.5,17", 4],
+      ["4,19", 1, "11,21", 1],
+      ["4,19", 5, "11,21", 5],
+      ["22.5,18", 3, "22,21", 1],
+      ["11,21", 1, "17,21", 1],
+      ["11,21", 5, "17,21", 5],
+      ["17,21", 1, "22,21", 1],
+      ["17,21", 5, "22,21", 5]
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "index": 30,
+  "blueprint": {
+    "item": "blueprint",
+    "label": "Manual pulse generator",
+    "shift_x": -59,
+    "shift_y": 16,
+    "version": 562949958205441,
+    "entities": [
+      {
+        "name": "arithmetic-combinator",
+        "direction": 4,
+        "player_description": "Convert input into a single pulse",
+        "control_behavior": {
+          "arithmetic_conditions": {
+            "operation": "*",
+            "second_constant": -1,
+            "first_signal": {"name": "signal-each", "type": "virtual"},
+            "output_signal": {"name": "signal-each", "type": "virtual"}
+          }
+        },
+        "position": {"x": 2, "y": 0.5}
+      },
+      {
+        "name": "constant-combinator",
+        "control_behavior": {
+          "sections": {
+            "sections": [
+              {
+                "index": 1,
+                "filters": [{"name": "iron-gear-wheel", "comparator": "=", "count": 1, "index": 1, "quality": "normal"}]
+              }
+            ]
+          }
+        },
+        "position": {"x": -0.5, "y": 0.5}
+      },
+      {"name": "small-electric-pole", "position": {"x": 0.5, "y": 2.5}}
+    ],
+    "icons": [
+      {"index": 1, "signal": {"name": "arithmetic-combinator"}},
+      {"index": 2, "signal": {"name": "constant-combinator"}}
+    ],
+    "wires": [["0,0", 1, "1,2", 1], ["0,0", 2, "2.5,0", 2], ["2.5,0", 3, "1,2", 1]]
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "index": 31,
+  "blueprint": {
+    "item": "blueprint",
+    "label": "Pulse counter",
+    "description": "Generates & counts the number of times you turn on the [item=constant-combinator].",
+    "shift_x": -66,
+    "shift_y": 22,
+    "version": 562949958205441,
+    "entities": [
+      {
+        "name": "arithmetic-combinator",
+        "direction": 4,
+        "player_description": "Convert input into a single pulse",
+        "control_behavior": {
+          "arithmetic_conditions": {
+            "operation": "*",
+            "second_constant": -1,
+            "first_signal": {"name": "signal-each", "type": "virtual"},
+            "output_signal": {"name": "signal-each", "type": "virtual"}
+          }
+        },
+        "position": {"x": 2, "y": 3.5}
+      },
+      {
+        "name": "arithmetic-combinator",
+        "direction": 4,
+        "player_description": "Count pulses",
+        "control_behavior": {
+          "arithmetic_conditions": {
+            "operation": "+",
+            "second_constant": 0,
+            "first_signal": {"name": "signal-each", "type": "virtual"},
+            "output_signal": {"name": "signal-each", "type": "virtual"}
+          }
+        },
+        "position": {"x": 4, "y": 0.5}
+      },
+      {
+        "name": "constant-combinator",
+        "control_behavior": {
+          "is_on": false,
+          "sections": {
+            "sections": [
+              {
+                "index": 1,
+                "filters": [{"name": "iron-gear-wheel", "comparator": "=", "count": 1, "index": 1, "quality": "normal"}]
+              }
+            ]
+          }
+        },
+        "position": {"x": -0.5, "y": 3.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "player_description": "Only let positive pulses through",
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [{"comparator": ">", "first_signal": {"name": "signal-each", "type": "virtual"}}],
+            "outputs": [{"signal": {"name": "signal-each", "type": "virtual"}}]
+          }
+        },
+        "position": {"x": 4, "y": 3.5}
+      },
+      {"name": "small-electric-pole", "position": {"x": 0.5, "y": 1.5}},
+      {"name": "small-electric-pole", "position": {"x": 7.5, "y": 0.5}}
+    ],
+    "icons": [
+      {"index": 1, "signal": {"name": "arithmetic-combinator"}},
+      {"index": 2, "signal": {"name": "decider-combinator"}}
+    ],
+    "wires": [
+      ["1,1", 1, "4.5,0", 1],
+      ["1,1", 1, "4.5,3", 3],
+      ["1,1", 5, "8,0", 5],
+      ["4.5,0", 2, "4.5,0", 4],
+      ["4.5,0", 3, "8,0", 1],
+      ["0,3", 1, "2.5,3", 3],
+      ["0,3", 2, "2.5,3", 2],
+      ["2.5,3", 3, "4.5,3", 1]
+    ]
+  }
+}

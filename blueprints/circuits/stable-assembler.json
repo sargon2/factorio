@@ -1,0 +1,316 @@
+{
+  "index": 16,
+  "blueprint": {
+    "item": "blueprint",
+    "label": "Stable assembler",
+    "description": "If the input signal changes while it's working, it delays the change until work is complete rather than cancelling the current job.",
+    "shift_x": -236,
+    "shift_y": 5,
+    "version": 562949958205441,
+    "entities": [
+      {
+        "name": "arithmetic-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "arithmetic_conditions": {
+            "operation": "*",
+            "second_constant": -1,
+            "first_signal": {"name": "signal-each", "type": "virtual"},
+            "output_signal": {"name": "signal-each", "type": "virtual"}
+          }
+        },
+        "position": {"x": 2, "y": -8.5}
+      },
+      {
+        "name": "arithmetic-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "arithmetic_conditions": {
+            "operation": "-",
+            "first_signal": {"name": "signal-each", "type": "virtual"},
+            "first_signal_networks": {"green": false, "red": true},
+            "output_signal": {"name": "signal-each", "type": "virtual"},
+            "second_signal": {"name": "signal-each", "type": "virtual"},
+            "second_signal_networks": {"green": true, "red": false}
+          }
+        },
+        "position": {"x": 0, "y": -7.5}
+      },
+      {
+        "name": "arithmetic-combinator",
+        "direction": 8,
+        "control_behavior": {
+          "arithmetic_conditions": {
+            "operation": "-",
+            "first_signal": {"name": "signal-each", "type": "virtual"},
+            "first_signal_networks": {"green": true, "red": false},
+            "output_signal": {"name": "signal-each", "type": "virtual"},
+            "second_signal": {"name": "signal-each", "type": "virtual"},
+            "second_signal_networks": {"green": false, "red": true}
+          }
+        },
+        "position": {"x": 2.5, "y": -5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "control_behavior": {"read_ingredients": true, "set_recipe": true},
+        "position": {"x": 0.5, "y": -5.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "control_behavior": {
+          "read_contents": true,
+          "read_recipe_finished": true,
+          "read_working": true,
+          "set_recipe": true,
+          "recipe_finished_signal": {"name": "signal-check", "type": "virtual"},
+          "working_signal": {"name": "signal-W", "type": "virtual"}
+        },
+        "position": {"x": 0.5, "y": -2.5}
+      },
+      {
+        "name": "constant-combinator",
+        "control_behavior": {
+          "sections": {
+            "sections": [
+              {
+                "index": 1,
+                "filters": [
+                  {"name": "iron-stick", "comparator": "=", "count": 4, "index": 1, "quality": "normal"},
+                  {"name": "iron-gear-wheel", "comparator": "=", "count": 3, "index": 2, "quality": "normal"},
+                  {"name": "copper-cable", "comparator": "=", "count": 6, "index": 3, "quality": "normal"}
+                ]
+              }
+            ]
+          }
+        },
+        "position": {"x": -4.5, "y": -11.5}
+      },
+      {
+        "name": "creative-mod_super-loader",
+        "direction": 4,
+        "type": "output",
+        "position": {"x": -4, "y": 0.5}
+      },
+      {
+        "name": "creative-mod_super-loader",
+        "direction": 4,
+        "type": "output",
+        "position": {"x": -4, "y": 1.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [
+              {
+                "comparator": "≠",
+                "first_signal": {"name": "signal-anything", "type": "virtual"},
+                "first_signal_networks": {"green": false, "red": true}
+              }
+            ],
+            "outputs": [
+              {
+                "networks": {"green": false, "red": true},
+                "signal": {"name": "signal-everything", "type": "virtual"}
+              }
+            ]
+          }
+        },
+        "position": {"x": 0, "y": -11.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [
+              {
+                "comparator": "=",
+                "first_signal": {"name": "signal-everything", "type": "virtual"},
+                "first_signal_networks": {"green": false, "red": true}
+              }
+            ],
+            "outputs": [
+              {
+                "networks": {"green": true, "red": false},
+                "signal": {"name": "signal-everything", "type": "virtual"}
+              }
+            ]
+          }
+        },
+        "position": {"x": 0, "y": -10.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [{"comparator": "≠", "first_signal": {"name": "signal-each", "type": "virtual"}}],
+            "outputs": [{"signal": {"name": "signal-each", "type": "virtual"}}]
+          }
+        },
+        "position": {"x": 2, "y": -10.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [
+              {
+                "comparator": ">",
+                "first_signal": {"name": "signal-each", "type": "virtual"},
+                "first_signal_networks": {"green": false, "red": true}
+              },
+              {
+                "comparator": "=",
+                "compare_type": "and",
+                "first_signal": {"name": "signal-W", "type": "virtual"},
+                "first_signal_networks": {"green": true, "red": false}
+              }
+            ],
+            "outputs": [{"signal": {"name": "signal-each", "type": "virtual"}}]
+          }
+        },
+        "position": {"x": 0, "y": -9.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [{"comparator": "≠", "first_signal": {"name": "signal-each", "type": "virtual"}}],
+            "outputs": [{"signal": {"name": "signal-each", "type": "virtual"}}]
+          }
+        },
+        "position": {"x": 0, "y": -8.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [
+              {
+                "comparator": ">",
+                "first_signal": {"name": "signal-check", "type": "virtual"},
+                "first_signal_networks": {"green": false, "red": true}
+              },
+              {
+                "comparator": "≠",
+                "compare_type": "and",
+                "first_signal": {"name": "signal-each", "type": "virtual"},
+                "first_signal_networks": {"green": true, "red": false}
+              }
+            ],
+            "outputs": [{"networks": {"green": true, "red": false}, "signal": {"name": "signal-each", "type": "virtual"}}]
+          }
+        },
+        "position": {"x": 2, "y": -9.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "player_description": "Add a delay to line up the \"reset memory\" with \"produce nothing\" signals so we stop production",
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [{"comparator": "≠", "first_signal": {"name": "signal-each", "type": "virtual"}}],
+            "outputs": [{"signal": {"name": "signal-each", "type": "virtual"}}]
+          }
+        },
+        "position": {"x": 2, "y": -7.5}
+      },
+      {
+        "name": "ee-infinity-chest",
+        "infinity_settings": {
+          "remove_unfiltered_items": false,
+          "filters": [{"name": "iron-plate", "count": 100, "index": 1, "mode": "at-least"}]
+        },
+        "position": {"x": -5.5, "y": 0.5}
+      },
+      {
+        "name": "ee-infinity-chest",
+        "infinity_settings": {
+          "remove_unfiltered_items": false,
+          "filters": [{"name": "copper-plate", "count": 100, "index": 1, "mode": "at-least"}]
+        },
+        "position": {"x": -5.5, "y": 1.5}
+      },
+      {
+        "name": "inserter",
+        "direction": 4,
+        "control_behavior": {"circuit_hand_read_mode": 1, "circuit_read_hand_contents": true},
+        "position": {"x": -1.5, "y": -2.5}
+      },
+      {
+        "name": "inserter",
+        "direction": 8,
+        "control_behavior": {
+          "circuit_enabled": true,
+          "circuit_hand_read_mode": 1,
+          "circuit_set_stack_size": true,
+          "circuit_condition": {"comparator": ">", "constant": 0, "first_signal": {"name": "iron-plate"}},
+          "stack_control_input_signal": {"name": "iron-plate"}
+        },
+        "position": {"x": -0.5, "y": -0.5}
+      },
+      {"name": "iron-chest", "position": {"x": -2.5, "y": -2.5}},
+      {
+        "name": "long-handed-inserter",
+        "direction": 8,
+        "control_behavior": {
+          "circuit_enabled": true,
+          "circuit_hand_read_mode": 1,
+          "circuit_set_stack_size": true,
+          "circuit_condition": {"comparator": ">", "constant": 0, "first_signal": {"name": "copper-plate"}},
+          "stack_control_input_signal": {"name": "copper-plate"}
+        },
+        "position": {"x": 0.5, "y": -0.5}
+      },
+      {"name": "transport-belt", "direction": 4, "position": {"x": -2.5, "y": 0.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": -2.5, "y": 1.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": -1.5, "y": 0.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": -0.5, "y": 0.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": -1.5, "y": 1.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": -0.5, "y": 1.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 0.5, "y": 0.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 1.5, "y": 0.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 0.5, "y": 1.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 1.5, "y": 1.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 2.5, "y": 0.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 2.5, "y": 1.5}}
+    ],
+    "icons": [
+      {"index": 1, "signal": {"name": "assembling-machine-1"}},
+      {"index": 2, "signal": {"name": "decider-combinator"}}
+    ],
+    "wires": [
+      ["1,0", 1, "5.5,4", 1],
+      ["5.5,0", 1, "5.5,2", 3],
+      ["5.5,0", 1, "5.5,1", 1],
+      ["5.5,0", 2, "5.5,1", 2],
+      ["5.5,0", 3, "5.5,1", 3],
+      ["5.5,0", 3, "7.5,1", 1],
+      ["5.5,0", 4, "5.5,1", 4],
+      ["5.5,1", 2, "5.5,1", 4],
+      ["5.5,1", 4, "7.5,2", 2],
+      ["5.5,2", 1, "5.5,4", 3],
+      ["5.5,2", 2, "6,9", 2],
+      ["7.5,2", 1, "7.5,4", 3],
+      ["7.5,2", 2, "7.5,3", 4],
+      ["7.5,2", 4, "7.5,3", 2],
+      ["7.5,1", 3, "6,9", 1],
+      ["5.5,4", 2, "3,9", 2],
+      ["5.5,3", 2, "6,9", 2],
+      ["5.5,3", 3, "8,6.5", 1],
+      ["7.5,4", 1, "6,9", 1],
+      ["6,6", 1, "6,9", 1],
+      ["6,6", 2, "8,6.5", 2],
+      ["8,6.5", 4, "5,11", 2],
+      ["3,9", 2, "4,9", 2],
+      ["5,11", 2, "6,11", 2]
+    ]
+  }
+}

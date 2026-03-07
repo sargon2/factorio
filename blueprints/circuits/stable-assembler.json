@@ -4,13 +4,14 @@
     "item": "blueprint",
     "label": "Stable assembler",
     "description": "If the input signal changes while it's working, it delays the change until work is complete rather than cancelling the current job.",
-    "shift_x": -236,
-    "shift_y": 5,
+    "shift_x": -245,
+    "shift_y": -16,
     "version": 562949958205441,
     "entities": [
       {
         "name": "arithmetic-combinator",
         "direction": 4,
+        "player_description": "Generate reset signal",
         "control_behavior": {
           "arithmetic_conditions": {
             "operation": "*",
@@ -19,11 +20,12 @@
             "output_signal": {"name": "signal-each", "type": "virtual"}
           }
         },
-        "position": {"x": 2, "y": -8.5}
+        "position": {"x": 11, "y": -0.5}
       },
       {
         "name": "arithmetic-combinator",
         "direction": 4,
+        "player_description": "Calculate wishlist items that aren't built yet.",
         "control_behavior": {
           "arithmetic_conditions": {
             "operation": "-",
@@ -34,11 +36,12 @@
             "second_signal_networks": {"green": true, "red": false}
           }
         },
-        "position": {"x": 0, "y": -7.5}
+        "position": {"x": 2, "y": 6.5}
       },
       {
         "name": "arithmetic-combinator",
         "direction": 8,
+        "player_description": "Calculate what still needs to be loaded to begin work",
         "control_behavior": {
           "arithmetic_conditions": {
             "operation": "-",
@@ -49,12 +52,39 @@
             "second_signal_networks": {"green": false, "red": true}
           }
         },
-        "position": {"x": 2.5, "y": -5}
+        "position": {"x": 8.5, "y": 10}
+      },
+      {
+        "name": "arithmetic-combinator",
+        "direction": 4,
+        "player_description": "Convert input into a single pulse",
+        "control_behavior": {
+          "arithmetic_conditions": {
+            "operation": "*",
+            "second_constant": -1,
+            "first_signal": {"name": "signal-each", "type": "virtual"},
+            "output_signal": {"name": "signal-each", "type": "virtual"}
+          }
+        },
+        "position": {"x": 12, "y": 8.5}
+      },
+      {
+        "name": "arithmetic-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "arithmetic_conditions": {
+            "operation": "+",
+            "second_constant": 0,
+            "first_signal": {"name": "signal-each", "type": "virtual"},
+            "output_signal": {"name": "signal-each", "type": "virtual"}
+          }
+        },
+        "position": {"x": 16, "y": 8.5}
       },
       {
         "name": "assembling-machine-1",
         "control_behavior": {"read_ingredients": true, "set_recipe": true},
-        "position": {"x": 0.5, "y": -5.5}
+        "position": {"x": 5.5, "y": 8.5}
       },
       {
         "name": "assembling-machine-1",
@@ -66,7 +96,7 @@
           "recipe_finished_signal": {"name": "signal-check", "type": "virtual"},
           "working_signal": {"name": "signal-W", "type": "virtual"}
         },
-        "position": {"x": 0.5, "y": -2.5}
+        "position": {"x": 5.5, "y": 11.5}
       },
       {
         "name": "constant-combinator",
@@ -84,112 +114,36 @@
             ]
           }
         },
-        "position": {"x": -4.5, "y": -11.5}
+        "position": {"x": 0.5, "y": 2.5}
       },
       {
         "name": "creative-mod_super-loader",
         "direction": 4,
         "type": "output",
-        "position": {"x": -4, "y": 0.5}
+        "position": {"x": 1, "y": 14.5}
       },
       {
         "name": "creative-mod_super-loader",
         "direction": 4,
         "type": "output",
-        "position": {"x": -4, "y": 1.5}
+        "position": {"x": 1, "y": 15.5}
       },
       {
         "name": "decider-combinator",
         "direction": 4,
-        "control_behavior": {
-          "decider_conditions": {
-            "conditions": [
-              {
-                "comparator": "≠",
-                "first_signal": {"name": "signal-anything", "type": "virtual"},
-                "first_signal_networks": {"green": false, "red": true}
-              }
-            ],
-            "outputs": [
-              {
-                "networks": {"green": false, "red": true},
-                "signal": {"name": "signal-everything", "type": "virtual"}
-              }
-            ]
-          }
-        },
-        "position": {"x": 0, "y": -11.5}
-      },
-      {
-        "name": "decider-combinator",
-        "direction": 4,
-        "control_behavior": {
-          "decider_conditions": {
-            "conditions": [
-              {
-                "comparator": "=",
-                "first_signal": {"name": "signal-everything", "type": "virtual"},
-                "first_signal_networks": {"green": false, "red": true}
-              }
-            ],
-            "outputs": [
-              {
-                "networks": {"green": true, "red": false},
-                "signal": {"name": "signal-everything", "type": "virtual"}
-              }
-            ]
-          }
-        },
-        "position": {"x": 0, "y": -10.5}
-      },
-      {
-        "name": "decider-combinator",
-        "direction": 4,
+        "player_description": "Add a delay to line up the \"reset memory\" with \"produce nothing\" signals so we stop production",
         "control_behavior": {
           "decider_conditions": {
             "conditions": [{"comparator": "≠", "first_signal": {"name": "signal-each", "type": "virtual"}}],
             "outputs": [{"signal": {"name": "signal-each", "type": "virtual"}}]
           }
         },
-        "position": {"x": 2, "y": -10.5}
+        "position": {"x": 7, "y": -0.5}
       },
       {
         "name": "decider-combinator",
         "direction": 4,
-        "control_behavior": {
-          "decider_conditions": {
-            "conditions": [
-              {
-                "comparator": ">",
-                "first_signal": {"name": "signal-each", "type": "virtual"},
-                "first_signal_networks": {"green": false, "red": true}
-              },
-              {
-                "comparator": "=",
-                "compare_type": "and",
-                "first_signal": {"name": "signal-W", "type": "virtual"},
-                "first_signal_networks": {"green": true, "red": false}
-              }
-            ],
-            "outputs": [{"signal": {"name": "signal-each", "type": "virtual"}}]
-          }
-        },
-        "position": {"x": 0, "y": -9.5}
-      },
-      {
-        "name": "decider-combinator",
-        "direction": 4,
-        "control_behavior": {
-          "decider_conditions": {
-            "conditions": [{"comparator": "≠", "first_signal": {"name": "signal-each", "type": "virtual"}}],
-            "outputs": [{"signal": {"name": "signal-each", "type": "virtual"}}]
-          }
-        },
-        "position": {"x": 0, "y": -8.5}
-      },
-      {
-        "name": "decider-combinator",
-        "direction": 4,
+        "player_description": "Detect item complete (for reset)",
         "control_behavior": {
           "decider_conditions": {
             "conditions": [
@@ -208,19 +162,105 @@
             "outputs": [{"networks": {"green": true, "red": false}, "signal": {"name": "signal-each", "type": "virtual"}}]
           }
         },
-        "position": {"x": 2, "y": -9.5}
+        "position": {"x": 9, "y": -0.5}
       },
       {
         "name": "decider-combinator",
         "direction": 4,
-        "player_description": "Add a delay to line up the \"reset memory\" with \"produce nothing\" signals so we stop production",
+        "player_description": "Input stabilizer latch part 1",
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [
+              {
+                "comparator": "≠",
+                "first_signal": {"name": "signal-anything", "type": "virtual"},
+                "first_signal_networks": {"green": false, "red": true}
+              }
+            ],
+            "outputs": [
+              {
+                "networks": {"green": false, "red": true},
+                "signal": {"name": "signal-everything", "type": "virtual"}
+              }
+            ]
+          }
+        },
+        "position": {"x": 5, "y": 1.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "player_description": "Input stabilizer latch part 2",
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [
+              {
+                "comparator": "=",
+                "first_signal": {"name": "signal-everything", "type": "virtual"},
+                "first_signal_networks": {"green": false, "red": true}
+              }
+            ],
+            "outputs": [
+              {
+                "networks": {"green": true, "red": false},
+                "signal": {"name": "signal-everything", "type": "virtual"}
+              }
+            ]
+          }
+        },
+        "position": {"x": 5, "y": 2.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "player_description": "Only allow signals into the input stabilizer latch if (1) they're positive, and (2) we're not currently working.",
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [
+              {
+                "comparator": ">",
+                "first_signal": {"name": "signal-each", "type": "virtual"},
+                "first_signal_networks": {"green": false, "red": true}
+              },
+              {
+                "comparator": "=",
+                "compare_type": "and",
+                "first_signal": {"name": "signal-W", "type": "virtual"},
+                "first_signal_networks": {"green": true, "red": false}
+              }
+            ],
+            "outputs": [{"signal": {"name": "signal-each", "type": "virtual"}}]
+          }
+        },
+        "position": {"x": 4, "y": 4.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [{"comparator": ">", "first_signal": {"name": "signal-each", "type": "virtual"}}],
+            "outputs": [{"signal": {"name": "signal-each", "type": "virtual"}}]
+          }
+        },
+        "position": {"x": 14, "y": 8.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "player_description": "Move green signal to red wire",
         "control_behavior": {
           "decider_conditions": {
             "conditions": [{"comparator": "≠", "first_signal": {"name": "signal-each", "type": "virtual"}}],
             "outputs": [{"signal": {"name": "signal-each", "type": "virtual"}}]
           }
         },
-        "position": {"x": 2, "y": -7.5}
+        "position": {"x": 8, "y": 12.5}
+      },
+      {
+        "name": "display-panel",
+        "text": "Latch to collect up everything output as \"needed\". Currently contains a lot of garbage. Once clean we can delete the latch.",
+        "position": {"x": 13.5, "y": 10.5}
       },
       {
         "name": "ee-infinity-chest",
@@ -228,7 +268,7 @@
           "remove_unfiltered_items": false,
           "filters": [{"name": "iron-plate", "count": 100, "index": 1, "mode": "at-least"}]
         },
-        "position": {"x": -5.5, "y": 0.5}
+        "position": {"x": -0.5, "y": 14.5}
       },
       {
         "name": "ee-infinity-chest",
@@ -236,13 +276,13 @@
           "remove_unfiltered_items": false,
           "filters": [{"name": "copper-plate", "count": 100, "index": 1, "mode": "at-least"}]
         },
-        "position": {"x": -5.5, "y": 1.5}
+        "position": {"x": -0.5, "y": 15.5}
       },
       {
         "name": "inserter",
         "direction": 4,
         "control_behavior": {"circuit_hand_read_mode": 1, "circuit_read_hand_contents": true},
-        "position": {"x": -1.5, "y": -2.5}
+        "position": {"x": 3.5, "y": 11.5}
       },
       {
         "name": "inserter",
@@ -254,9 +294,9 @@
           "circuit_condition": {"comparator": ">", "constant": 0, "first_signal": {"name": "iron-plate"}},
           "stack_control_input_signal": {"name": "iron-plate"}
         },
-        "position": {"x": -0.5, "y": -0.5}
+        "position": {"x": 4.5, "y": 13.5}
       },
-      {"name": "iron-chest", "position": {"x": -2.5, "y": -2.5}},
+      {"name": "iron-chest", "position": {"x": 2.5, "y": 11.5}},
       {
         "name": "long-handed-inserter",
         "direction": 8,
@@ -267,50 +307,56 @@
           "circuit_condition": {"comparator": ">", "constant": 0, "first_signal": {"name": "copper-plate"}},
           "stack_control_input_signal": {"name": "copper-plate"}
         },
-        "position": {"x": 0.5, "y": -0.5}
+        "position": {"x": 5.5, "y": 13.5}
       },
-      {"name": "transport-belt", "direction": 4, "position": {"x": -2.5, "y": 0.5}},
-      {"name": "transport-belt", "direction": 4, "position": {"x": -2.5, "y": 1.5}},
-      {"name": "transport-belt", "direction": 4, "position": {"x": -1.5, "y": 0.5}},
-      {"name": "transport-belt", "direction": 4, "position": {"x": -0.5, "y": 0.5}},
-      {"name": "transport-belt", "direction": 4, "position": {"x": -1.5, "y": 1.5}},
-      {"name": "transport-belt", "direction": 4, "position": {"x": -0.5, "y": 1.5}},
-      {"name": "transport-belt", "direction": 4, "position": {"x": 0.5, "y": 0.5}},
-      {"name": "transport-belt", "direction": 4, "position": {"x": 1.5, "y": 0.5}},
-      {"name": "transport-belt", "direction": 4, "position": {"x": 0.5, "y": 1.5}},
-      {"name": "transport-belt", "direction": 4, "position": {"x": 1.5, "y": 1.5}},
-      {"name": "transport-belt", "direction": 4, "position": {"x": 2.5, "y": 0.5}},
-      {"name": "transport-belt", "direction": 4, "position": {"x": 2.5, "y": 1.5}}
+      {"name": "small-electric-pole", "position": {"x": 6.5, "y": 6.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 2.5, "y": 14.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 3.5, "y": 14.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 2.5, "y": 15.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 3.5, "y": 15.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 4.5, "y": 14.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 5.5, "y": 14.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 4.5, "y": 15.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 5.5, "y": 15.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 6.5, "y": 14.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 7.5, "y": 14.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 6.5, "y": 15.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 7.5, "y": 15.5}}
     ],
     "icons": [
       {"index": 1, "signal": {"name": "assembling-machine-1"}},
       {"index": 2, "signal": {"name": "decider-combinator"}}
     ],
     "wires": [
-      ["1,0", 1, "5.5,4", 1],
-      ["5.5,0", 1, "5.5,2", 3],
-      ["5.5,0", 1, "5.5,1", 1],
-      ["5.5,0", 2, "5.5,1", 2],
-      ["5.5,0", 3, "5.5,1", 3],
-      ["5.5,0", 3, "7.5,1", 1],
-      ["5.5,0", 4, "5.5,1", 4],
-      ["5.5,1", 2, "5.5,1", 4],
-      ["5.5,1", 4, "7.5,2", 2],
-      ["5.5,2", 1, "5.5,4", 3],
-      ["5.5,2", 2, "6,9", 2],
-      ["7.5,2", 1, "7.5,4", 3],
-      ["7.5,2", 2, "7.5,3", 4],
-      ["7.5,2", 4, "7.5,3", 2],
-      ["7.5,1", 3, "6,9", 1],
-      ["5.5,4", 2, "3,9", 2],
-      ["5.5,3", 2, "6,9", 2],
-      ["5.5,3", 3, "8,6.5", 1],
-      ["7.5,4", 1, "6,9", 1],
-      ["6,6", 1, "6,9", 1],
-      ["6,6", 2, "8,6.5", 2],
-      ["8,6.5", 4, "5,11", 2],
-      ["3,9", 2, "4,9", 2],
-      ["5,11", 2, "6,11", 2]
+      ["7.5,0", 1, "5.5,2", 3],
+      ["7.5,0", 3, "9.5,0", 1],
+      ["9.5,0", 2, "5.5,3", 4],
+      ["9.5,0", 4, "11.5,0", 2],
+      ["11.5,0", 4, "5.5,3", 4],
+      ["5.5,2", 1, "4.5,5", 3],
+      ["5.5,2", 1, "5.5,3", 1],
+      ["5.5,2", 2, "5.5,3", 2],
+      ["5.5,2", 3, "5.5,3", 3],
+      ["5.5,2", 3, "7,7", 1],
+      ["5.5,2", 4, "5.5,3", 4],
+      ["1,3", 1, "2.5,7", 1],
+      ["5.5,3", 2, "5.5,3", 4],
+      ["4.5,5", 1, "2.5,7", 3],
+      ["4.5,5", 2, "6,12", 2],
+      ["2.5,7", 2, "3,12", 2],
+      ["7,7", 1, "6,12", 1],
+      ["6,9", 1, "6,12", 1],
+      ["6,9", 2, "9,10.5", 2],
+      ["12.5,9", 2, "9,10.5", 4],
+      ["12.5,9", 3, "14.5,9", 1],
+      ["12.5,9", 3, "9,10.5", 3],
+      ["14.5,9", 3, "16.5,9", 1],
+      ["16.5,9", 2, "16.5,9", 4],
+      ["3,12", 2, "4,12", 2],
+      ["6,12", 2, "8.5,13", 2],
+      ["9,10.5", 1, "8.5,13", 3],
+      ["9,10.5", 4, "5,14", 2],
+      ["5,14", 2, "6,14", 2]
     ]
   }
 }

@@ -3,8 +3,8 @@
   "blueprint": {
     "item": "blueprint",
     "label": "Manual pulse generator",
-    "shift_x": -220,
-    "shift_y": -13,
+    "shift_x": -227,
+    "shift_y": -6,
     "version": 562949958205441,
     "entities": [
       {
@@ -19,12 +19,11 @@
             "output_signal": {"name": "signal-each", "type": "virtual"}
           }
         },
-        "position": {"x": 2, "y": -0.5}
+        "position": {"x": 5, "y": -0.5}
       },
       {
         "name": "constant-combinator",
         "control_behavior": {
-          "is_on": false,
           "sections": {
             "sections": [
               {
@@ -41,17 +40,33 @@
         "direction": 4,
         "control_behavior": {
           "decider_conditions": {
+            "conditions": [{"comparator": "≠", "first_signal": {"name": "signal-each", "type": "virtual"}}],
+            "outputs": [{"signal": {"name": "signal-each", "type": "virtual"}}]
+          }
+        },
+        "position": {"x": 3, "y": -0.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "decider_conditions": {
             "conditions": [{"comparator": ">", "first_signal": {"name": "signal-each", "type": "virtual"}}],
             "outputs": [{"signal": {"name": "signal-each", "type": "virtual"}}]
           }
         },
-        "position": {"x": 4, "y": -0.5}
+        "position": {"x": 7, "y": -0.5}
       }
     ],
     "icons": [
       {"index": 1, "signal": {"name": "arithmetic-combinator"}},
       {"index": 2, "signal": {"name": "constant-combinator"}}
     ],
-    "wires": [["0,0", 1, "2.5,0", 3], ["0,0", 2, "2.5,0", 2], ["2.5,0", 3, "4.5,0", 1]]
+    "wires": [
+      ["0,0", 2, "3.5,0", 2],
+      ["3.5,0", 3, "5.5,0", 3],
+      ["3.5,0", 4, "5.5,0", 2],
+      ["5.5,0", 3, "7.5,0", 1]
+    ]
   }
 }

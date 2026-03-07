@@ -1,0 +1,110 @@
+{
+  "index": 13,
+  "blueprint": {
+    "item": "blueprint",
+    "label": "Blacklist signals",
+    "shift_x": -234,
+    "shift_y": -19,
+    "version": 562949958205441,
+    "entities": [
+      {
+        "name": "constant-combinator",
+        "control_behavior": {
+          "sections": {
+            "sections": [
+              {
+                "index": 1,
+                "filters": [{"name": "iron-gear-wheel", "comparator": "=", "count": 1, "index": 1, "quality": "normal"}]
+              }
+            ]
+          }
+        },
+        "position": {"x": -0.5, "y": -2.5}
+      },
+      {
+        "name": "constant-combinator",
+        "control_behavior": {
+          "sections": {
+            "sections": [
+              {
+                "index": 1,
+                "filters": [
+                  {
+                    "name": "signal-W",
+                    "comparator": "=",
+                    "count": 1,
+                    "index": 1,
+                    "quality": "normal",
+                    "type": "virtual"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "position": {"x": 11.5, "y": -1.5}
+      },
+      {
+        "name": "constant-combinator",
+        "control_behavior": {
+          "sections": {
+            "sections": [
+              {
+                "index": 1,
+                "filters": [
+                  {
+                    "name": "signal-W",
+                    "comparator": "=",
+                    "count": 1,
+                    "index": 1,
+                    "quality": "normal",
+                    "type": "virtual"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "position": {"x": -0.5, "y": 0.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [
+              {
+                "comparator": "≠",
+                "first_signal": {"name": "signal-each", "type": "virtual"},
+                "first_signal_networks": {"green": true, "red": false},
+                "second_signal": {"name": "signal-each", "type": "virtual"},
+                "second_signal_networks": {"green": false, "red": true}
+              },
+              {
+                "comparator": "=",
+                "compare_type": "and",
+                "first_signal": {"name": "signal-each", "type": "virtual"},
+                "first_signal_networks": {"green": false, "red": true}
+              }
+            ],
+            "outputs": [{"networks": {"green": true, "red": false}, "signal": {"name": "signal-each", "type": "virtual"}}]
+          }
+        },
+        "position": {"x": 12, "y": -0.5}
+      },
+      {"name": "small-electric-pole", "position": {"x": 6.5, "y": -0.5}},
+      {"name": "small-electric-pole", "position": {"x": 15.5, "y": -0.5}}
+    ],
+    "icons": [
+      {"index": 1, "signal": {"name": "constant-combinator"}},
+      {"index": 2, "signal": {"name": "decider-combinator"}}
+    ],
+    "wires": [
+      ["0,0", 2, "7,2", 2],
+      ["12,1", 1, "12.5,2", 1],
+      ["0,3", 2, "7,2", 2],
+      ["7,2", 2, "12.5,2", 2],
+      ["12.5,2", 4, "16,2", 2]
+    ]
+  }
+}

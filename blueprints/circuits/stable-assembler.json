@@ -4,8 +4,8 @@
     "item": "blueprint",
     "label": "Stable assembler",
     "description": "If the input signal changes while it's working, it delays the change until work is complete rather than cancelling the current job.",
-    "shift_x": -245,
-    "shift_y": -16,
+    "shift_x": -239,
+    "shift_y": -2,
     "version": 562949958205441,
     "entities": [
       {
@@ -20,7 +20,7 @@
             "output_signal": {"name": "signal-each", "type": "virtual"}
           }
         },
-        "position": {"x": 11, "y": -0.5}
+        "position": {"x": 8, "y": -0.5}
       },
       {
         "name": "arithmetic-combinator",
@@ -36,7 +36,7 @@
             "second_signal_networks": {"green": true, "red": false}
           }
         },
-        "position": {"x": 2, "y": 6.5}
+        "position": {"x": -1, "y": 6.5}
       },
       {
         "name": "arithmetic-combinator",
@@ -52,7 +52,7 @@
             "second_signal_networks": {"green": false, "red": true}
           }
         },
-        "position": {"x": 8.5, "y": 10}
+        "position": {"x": 5.5, "y": 10}
       },
       {
         "name": "arithmetic-combinator",
@@ -66,7 +66,7 @@
             "output_signal": {"name": "signal-each", "type": "virtual"}
           }
         },
-        "position": {"x": 12, "y": 8.5}
+        "position": {"x": 9, "y": 8.5}
       },
       {
         "name": "arithmetic-combinator",
@@ -79,12 +79,12 @@
             "output_signal": {"name": "signal-each", "type": "virtual"}
           }
         },
-        "position": {"x": 16, "y": 8.5}
+        "position": {"x": 13, "y": 8.5}
       },
       {
         "name": "assembling-machine-1",
         "control_behavior": {"read_ingredients": true, "set_recipe": true},
-        "position": {"x": 5.5, "y": 8.5}
+        "position": {"x": 2.5, "y": 8.5}
       },
       {
         "name": "assembling-machine-1",
@@ -96,7 +96,21 @@
           "recipe_finished_signal": {"name": "signal-check", "type": "virtual"},
           "working_signal": {"name": "signal-W", "type": "virtual"}
         },
-        "position": {"x": 5.5, "y": 11.5}
+        "position": {"x": 2.5, "y": 11.5}
+      },
+      {
+        "name": "constant-combinator",
+        "control_behavior": {
+          "sections": {
+            "sections": [
+              {
+                "index": 1,
+                "filters": [{"name": "iron-gear-wheel", "comparator": "=", "count": 1, "index": 1, "quality": "normal"}]
+              }
+            ]
+          }
+        },
+        "position": {"x": -2.5, "y": 2.5}
       },
       {
         "name": "constant-combinator",
@@ -106,27 +120,46 @@
               {
                 "index": 1,
                 "filters": [
-                  {"name": "iron-stick", "comparator": "=", "count": 4, "index": 1, "quality": "normal"},
-                  {"name": "iron-gear-wheel", "comparator": "=", "count": 3, "index": 2, "quality": "normal"},
-                  {"name": "copper-cable", "comparator": "=", "count": 6, "index": 3, "quality": "normal"}
+                  {
+                    "name": "signal-W",
+                    "comparator": "=",
+                    "count": 1,
+                    "index": 1,
+                    "quality": "normal",
+                    "type": "virtual"
+                  }
                 ]
               }
             ]
           }
         },
-        "position": {"x": 0.5, "y": 2.5}
+        "position": {"x": 7.5, "y": 11.5}
+      },
+      {
+        "name": "constant-combinator",
+        "control_behavior": {
+          "sections": {
+            "sections": [
+              {
+                "index": 1,
+                "filters": [{"name": "iron-plate", "comparator": "=", "count": 2, "index": 1, "quality": "normal"}]
+              }
+            ]
+          }
+        },
+        "position": {"x": 12.5, "y": 10.5}
       },
       {
         "name": "creative-mod_super-loader",
         "direction": 4,
         "type": "output",
-        "position": {"x": 1, "y": 14.5}
+        "position": {"x": -2, "y": 14.5}
       },
       {
         "name": "creative-mod_super-loader",
         "direction": 4,
         "type": "output",
-        "position": {"x": 1, "y": 15.5}
+        "position": {"x": -2, "y": 15.5}
       },
       {
         "name": "decider-combinator",
@@ -138,7 +171,7 @@
             "outputs": [{"signal": {"name": "signal-each", "type": "virtual"}}]
           }
         },
-        "position": {"x": 7, "y": -0.5}
+        "position": {"x": 4, "y": -0.5}
       },
       {
         "name": "decider-combinator",
@@ -162,7 +195,7 @@
             "outputs": [{"networks": {"green": true, "red": false}, "signal": {"name": "signal-each", "type": "virtual"}}]
           }
         },
-        "position": {"x": 9, "y": -0.5}
+        "position": {"x": 6, "y": -0.5}
       },
       {
         "name": "decider-combinator",
@@ -185,7 +218,7 @@
             ]
           }
         },
-        "position": {"x": 5, "y": 1.5}
+        "position": {"x": 2, "y": 1.5}
       },
       {
         "name": "decider-combinator",
@@ -208,7 +241,7 @@
             ]
           }
         },
-        "position": {"x": 5, "y": 2.5}
+        "position": {"x": 2, "y": 2.5}
       },
       {
         "name": "decider-combinator",
@@ -232,7 +265,26 @@
             "outputs": [{"signal": {"name": "signal-each", "type": "virtual"}}]
           }
         },
-        "position": {"x": 4, "y": 4.5}
+        "position": {"x": 1, "y": 4.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "player_description": "Move green signal to red wire, and don't output if we're complete.",
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [
+              {"comparator": "≠", "first_signal": {"name": "signal-each", "type": "virtual"}},
+              {
+                "comparator": "=",
+                "compare_type": "and",
+                "first_signal": {"name": "signal-check", "type": "virtual"}
+              }
+            ],
+            "outputs": [{"signal": {"name": "signal-each", "type": "virtual"}}]
+          }
+        },
+        "position": {"x": 5, "y": 12.5}
       },
       {
         "name": "decider-combinator",
@@ -243,24 +295,78 @@
             "outputs": [{"signal": {"name": "signal-each", "type": "virtual"}}]
           }
         },
-        "position": {"x": 14, "y": 8.5}
+        "position": {"x": 11, "y": 8.5}
       },
       {
         "name": "decider-combinator",
         "direction": 4,
-        "player_description": "Move green signal to red wire",
+        "player_description": "Remove unwanted signals from output.\nMay not be needed.",
         "control_behavior": {
           "decider_conditions": {
-            "conditions": [{"comparator": "≠", "first_signal": {"name": "signal-each", "type": "virtual"}}],
-            "outputs": [{"signal": {"name": "signal-each", "type": "virtual"}}]
+            "conditions": [
+              {
+                "comparator": "≠",
+                "first_signal": {"name": "signal-each", "type": "virtual"},
+                "first_signal_networks": {"green": true, "red": false},
+                "second_signal": {"name": "signal-each", "type": "virtual"},
+                "second_signal_networks": {"green": false, "red": true}
+              },
+              {
+                "comparator": "=",
+                "compare_type": "and",
+                "first_signal": {"name": "signal-each", "type": "virtual"},
+                "first_signal_networks": {"green": false, "red": true}
+              }
+            ],
+            "outputs": [{"networks": {"green": true, "red": false}, "signal": {"name": "signal-each", "type": "virtual"}}]
           }
         },
         "position": {"x": 8, "y": 12.5}
       },
       {
+        "name": "decider-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [
+              {
+                "comparator": "=",
+                "first_signal": {"name": "signal-each", "type": "virtual"},
+                "first_signal_networks": {"green": false, "red": true},
+                "second_signal": {"name": "signal-each", "type": "virtual"},
+                "second_signal_networks": {"green": true, "red": false}
+              }
+            ],
+            "outputs": [{"signal": {"name": "signal-heart", "type": "virtual"}}]
+          }
+        },
+        "position": {"x": 16, "y": 9.5}
+      },
+      {
+        "name": "display-panel",
+        "text": "Current problem:\n\nThere are 5 ticks where the upper assembler is outputting what the gear needs, which is 2 plates, but the lower assembler is outputting nothing, because it finished work. This makes us request extra plates we don't need.\n",
+        "position": {"x": -0.5, "y": 9.5}
+      },
+      {
         "name": "display-panel",
         "text": "Latch to collect up everything output as \"needed\". Currently contains a lot of garbage. Once clean we can delete the latch.",
-        "position": {"x": 13.5, "y": 10.5}
+        "position": {"x": 10.5, "y": 10.5}
+      },
+      {
+        "name": "display-panel",
+        "control_behavior": {
+          "parameters": [
+            {
+              "condition": {"comparator": "≠", "constant": 0, "first_signal": {"name": "signal-heart", "type": "virtual"}},
+              "icon": {"name": "signal-check", "type": "virtual"}
+            },
+            {
+              "condition": {"comparator": "=", "constant": 0, "first_signal": {"name": "signal-heart", "type": "virtual"}},
+              "icon": {"name": "signal-deny", "type": "virtual"}
+            }
+          ]
+        },
+        "position": {"x": 17.5, "y": 9.5}
       },
       {
         "name": "ee-infinity-chest",
@@ -268,7 +374,7 @@
           "remove_unfiltered_items": false,
           "filters": [{"name": "iron-plate", "count": 100, "index": 1, "mode": "at-least"}]
         },
-        "position": {"x": -0.5, "y": 14.5}
+        "position": {"x": -3.5, "y": 14.5}
       },
       {
         "name": "ee-infinity-chest",
@@ -276,13 +382,13 @@
           "remove_unfiltered_items": false,
           "filters": [{"name": "copper-plate", "count": 100, "index": 1, "mode": "at-least"}]
         },
-        "position": {"x": -0.5, "y": 15.5}
+        "position": {"x": -3.5, "y": 15.5}
       },
       {
         "name": "inserter",
         "direction": 4,
         "control_behavior": {"circuit_hand_read_mode": 1, "circuit_read_hand_contents": true},
-        "position": {"x": 3.5, "y": 11.5}
+        "position": {"x": 0.5, "y": 11.5}
       },
       {
         "name": "inserter",
@@ -294,9 +400,9 @@
           "circuit_condition": {"comparator": ">", "constant": 0, "first_signal": {"name": "iron-plate"}},
           "stack_control_input_signal": {"name": "iron-plate"}
         },
-        "position": {"x": 4.5, "y": 13.5}
+        "position": {"x": 1.5, "y": 13.5}
       },
-      {"name": "iron-chest", "position": {"x": 2.5, "y": 11.5}},
+      {"name": "iron-chest", "position": {"x": -0.5, "y": 11.5}},
       {
         "name": "long-handed-inserter",
         "direction": 8,
@@ -307,21 +413,21 @@
           "circuit_condition": {"comparator": ">", "constant": 0, "first_signal": {"name": "copper-plate"}},
           "stack_control_input_signal": {"name": "copper-plate"}
         },
-        "position": {"x": 5.5, "y": 13.5}
+        "position": {"x": 2.5, "y": 13.5}
       },
-      {"name": "small-electric-pole", "position": {"x": 6.5, "y": 6.5}},
+      {"name": "small-electric-pole", "position": {"x": 3.5, "y": 6.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": -0.5, "y": 14.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": -0.5, "y": 15.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 0.5, "y": 14.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 1.5, "y": 14.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 0.5, "y": 15.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 1.5, "y": 15.5}},
       {"name": "transport-belt", "direction": 4, "position": {"x": 2.5, "y": 14.5}},
       {"name": "transport-belt", "direction": 4, "position": {"x": 3.5, "y": 14.5}},
       {"name": "transport-belt", "direction": 4, "position": {"x": 2.5, "y": 15.5}},
       {"name": "transport-belt", "direction": 4, "position": {"x": 3.5, "y": 15.5}},
       {"name": "transport-belt", "direction": 4, "position": {"x": 4.5, "y": 14.5}},
-      {"name": "transport-belt", "direction": 4, "position": {"x": 5.5, "y": 14.5}},
-      {"name": "transport-belt", "direction": 4, "position": {"x": 4.5, "y": 15.5}},
-      {"name": "transport-belt", "direction": 4, "position": {"x": 5.5, "y": 15.5}},
-      {"name": "transport-belt", "direction": 4, "position": {"x": 6.5, "y": 14.5}},
-      {"name": "transport-belt", "direction": 4, "position": {"x": 7.5, "y": 14.5}},
-      {"name": "transport-belt", "direction": 4, "position": {"x": 6.5, "y": 15.5}},
-      {"name": "transport-belt", "direction": 4, "position": {"x": 7.5, "y": 15.5}}
+      {"name": "transport-belt", "direction": 4, "position": {"x": 4.5, "y": 15.5}}
     ],
     "icons": [
       {"index": 1, "signal": {"name": "assembling-machine-1"}},
@@ -333,8 +439,8 @@
       ["9.5,0", 2, "5.5,3", 4],
       ["9.5,0", 4, "11.5,0", 2],
       ["11.5,0", 4, "5.5,3", 4],
-      ["5.5,2", 1, "4.5,5", 3],
       ["5.5,2", 1, "5.5,3", 1],
+      ["5.5,2", 1, "4.5,5", 3],
       ["5.5,2", 2, "5.5,3", 2],
       ["5.5,2", 3, "5.5,3", 3],
       ["5.5,2", 3, "7,7", 1],
@@ -344,18 +450,23 @@
       ["4.5,5", 1, "2.5,7", 3],
       ["4.5,5", 2, "6,12", 2],
       ["2.5,7", 2, "3,12", 2],
-      ["7,7", 1, "6,12", 1],
+      ["7,7", 1, "6,9", 1],
       ["6,9", 1, "6,12", 1],
       ["6,9", 2, "9,10.5", 2],
-      ["12.5,9", 2, "9,10.5", 4],
+      ["12.5,9", 2, "11.5,13", 4],
       ["12.5,9", 3, "14.5,9", 1],
-      ["12.5,9", 3, "9,10.5", 3],
+      ["14.5,9", 1, "11.5,13", 3],
       ["14.5,9", 3, "16.5,9", 1],
       ["16.5,9", 2, "16.5,9", 4],
+      ["16.5,9", 3, "19.5,10", 1],
+      ["19.5,10", 2, "16,11", 2],
+      ["19.5,10", 3, "21,10", 1],
       ["3,12", 2, "4,12", 2],
       ["6,12", 2, "8.5,13", 2],
       ["9,10.5", 1, "8.5,13", 3],
+      ["9,10.5", 4, "11.5,13", 2],
       ["9,10.5", 4, "5,14", 2],
+      ["11,12", 1, "11.5,13", 1],
       ["5,14", 2, "6,14", 2]
     ]
   }

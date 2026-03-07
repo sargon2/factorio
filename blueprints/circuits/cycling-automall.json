@@ -3,8 +3,8 @@
   "blueprint": {
     "item": "blueprint",
     "label": "Cycling automall",
-    "description": "WIP - broken\nWhen something is removed from storage, it's recalculating needed items, which is causing a new pulse to go through, which is causing it to recalculate what's buildable, which is resetting the building assembler. So it doesn't build and instead empties and everything loops.\n\nInstead, a new pulse should only go through when assembling is complete.",
-    "shift_x": -112,
+    "description": "WIP - broken\nNeeds a manual reset to start & restart after done\nInserter from chest to assembler should have its hand size set and be disabled when ingredients are in so it doesn't load extra",
+    "shift_x": -115,
     "shift_y": 6,
     "version": 562949958205441,
     "entities": [
@@ -110,19 +110,19 @@
       },
       {
         "name": "assembling-machine-1",
-        "recipe": "electronic-circuit",
+        "recipe": "copper-cable",
         "recipe_quality": "normal",
         "control_behavior": {
           "circuit_enabled": true,
+          "read_recipe_finished": true,
           "set_recipe": true,
-          "circuit_condition": {"comparator": ">", "constant": 0, "first_signal": {"name": "signal-check", "type": "virtual"}}
+          "circuit_condition": {"comparator": ">", "constant": 0, "first_signal": {"name": "signal-check", "type": "virtual"}},
+          "recipe_finished_signal": {"name": "signal-clockwise-circle-arrow", "type": "virtual"}
         },
         "position": {"x": 11.5, "y": 14.5}
       },
       {
         "name": "assembling-machine-1",
-        "recipe": "electronic-circuit",
-        "recipe_quality": "normal",
         "control_behavior": {"read_ingredients": true, "set_recipe": true},
         "position": {"x": 18.5, "y": 13.5}
       },
@@ -153,6 +153,30 @@
       {
         "name": "constant-combinator",
         "control_behavior": {
+          "is_on": false,
+          "sections": {
+            "sections": [
+              {
+                "index": 1,
+                "filters": [
+                  {
+                    "name": "signal-clockwise-circle-arrow",
+                    "comparator": "=",
+                    "count": 1,
+                    "index": 1,
+                    "quality": "normal",
+                    "type": "virtual"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "position": {"x": 3.5, "y": 10.5}
+      },
+      {
+        "name": "constant-combinator",
+        "control_behavior": {
           "sections": {
             "sections": [
               {
@@ -163,7 +187,8 @@
                   {"name": "transport-belt", "comparator": "=", "count": 5, "index": 3, "quality": "normal"},
                   {"name": "long-handed-inserter", "comparator": "=", "count": 1, "index": 4, "quality": "normal"},
                   {"name": "underground-belt", "comparator": "=", "count": 1, "index": 5, "quality": "normal"},
-                  {"name": "electronic-circuit", "comparator": "=", "count": 5, "index": 6, "quality": "normal"}
+                  {"name": "electronic-circuit", "comparator": "=", "count": 5, "index": 6, "quality": "normal"},
+                  {"name": "copper-cable", "comparator": "=", "count": 10, "index": 7, "quality": "normal"}
                 ]
               }
             ]
@@ -237,6 +262,48 @@
       },
       {
         "name": "decider-combinator",
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [
+              {
+                "comparator": ">",
+                "first_signal": {"name": "signal-clockwise-circle-arrow", "type": "virtual"},
+                "first_signal_networks": {"green": true, "red": false}
+              }
+            ],
+            "outputs": [
+              {
+                "networks": {"green": false, "red": true},
+                "signal": {"name": "signal-everything", "type": "virtual"}
+              }
+            ]
+          }
+        },
+        "position": {"x": 4.5, "y": 8}
+      },
+      {
+        "name": "decider-combinator",
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [
+              {
+                "comparator": "=",
+                "first_signal": {"name": "signal-clockwise-circle-arrow", "type": "virtual"},
+                "first_signal_networks": {"green": true, "red": false}
+              }
+            ],
+            "outputs": [
+              {
+                "networks": {"green": false, "red": true},
+                "signal": {"name": "signal-everything", "type": "virtual"}
+              }
+            ]
+          }
+        },
+        "position": {"x": 5.5, "y": 8}
+      },
+      {
+        "name": "decider-combinator",
         "direction": 4,
         "control_behavior": {
           "decider_conditions": {
@@ -306,9 +373,23 @@
         "text": "Increment counter\nN = loop iterator\nC = # items",
         "position": {"x": 5.5, "y": 0.5}
       },
-      {"name": "inserter", "direction": 12, "position": {"x": 13.5, "y": 13.5}},
-      {"name": "inserter", "direction": 4, "position": {"x": 13.5, "y": 15.5}},
-      {"name": "inserter", "position": {"x": 14.5, "y": 14.5}},
+      {
+        "name": "inserter",
+        "direction": 12,
+        "control_behavior": {"circuit_hand_read_mode": 1, "circuit_read_hand_contents": true},
+        "position": {"x": 13.5, "y": 13.5}
+      },
+      {
+        "name": "inserter",
+        "direction": 4,
+        "control_behavior": {"circuit_hand_read_mode": 1, "circuit_read_hand_contents": true},
+        "position": {"x": 13.5, "y": 15.5}
+      },
+      {
+        "name": "inserter",
+        "control_behavior": {"circuit_hand_read_mode": 1, "circuit_read_hand_contents": true},
+        "position": {"x": 14.5, "y": 14.5}
+      },
       {"name": "iron-chest", "position": {"x": 14.5, "y": 15.5}},
       {
         "name": "selector-combinator",
@@ -332,7 +413,12 @@
       {"name": "small-electric-pole", "position": {"x": 10.5, "y": 19.5}},
       {"name": "small-electric-pole", "position": {"x": 16.5, "y": 19.5}},
       {"name": "small-electric-pole", "position": {"x": 21.5, "y": 19.5}},
-      {"name": "transport-belt", "direction": 8, "position": {"x": 14.5, "y": 13.5}}
+      {
+        "name": "transport-belt",
+        "direction": 8,
+        "control_behavior": {"circuit_contents_read_mode": 2, "circuit_read_hand_contents": true},
+        "position": {"x": 14.5, "y": 13.5}
+      }
     ],
     "icons": [
       {"index": 1, "signal": {"name": "assembling-machine-1"}},
@@ -350,8 +436,8 @@
       ["11.5,2", 3, "14.5,2", 1],
       ["14.5,2", 1, "15.5,4", 3],
       ["14.5,2", 2, "14.5,2", 4],
-      ["14.5,2", 3, "9.5,4", 1],
       ["14.5,2", 3, "7.5,4", 1],
+      ["14.5,2", 3, "9.5,4", 1],
       ["14.5,2", 3, "7.5,6", 1],
       ["7.5,4", 2, "4.5,6", 4],
       ["7.5,4", 4, "9.5,4", 2],
@@ -361,12 +447,18 @@
       ["13.5,4", 3, "15.5,4", 1],
       ["0,6", 1, "0,13", 1],
       ["0,6", 5, "0,13", 5],
-      ["4.5,6", 1, "8.5,10", 3],
-      ["7.5,6", 2, "8.5,10", 4],
+      ["4.5,6", 1, "6,9.5", 3],
+      ["7.5,6", 2, "6,9.5", 4],
       ["7.5,6", 3, "10,8", 1],
       ["10,8", 1, "10,12", 1],
       ["10,8", 1, "13.5,12", 1],
       ["10,8", 5, "10,12", 5],
+      ["5,9.5", 1, "8.5,10", 3],
+      ["5,9.5", 2, "4,12", 2],
+      ["5,9.5", 2, "6,9.5", 2],
+      ["5,9.5", 3, "6,9.5", 1],
+      ["6,9.5", 1, "6,9.5", 3],
+      ["6,9.5", 2, "12,16", 2],
       ["8.5,10", 1, "8.5,14", 3],
       ["0,13", 1, "4,19", 1],
       ["0,13", 5, "4,19", 5],
@@ -377,11 +469,15 @@
       ["13.5,12", 4, "22.5,17", 2],
       ["16.5,12", 3, "19,15", 1],
       ["8.5,14", 1, "15,17", 1],
+      ["15,15", 1, "14,15", 1],
+      ["15,15", 1, "15,16", 1],
       ["19,15", 2, "22.5,15", 2],
       ["22.5,15", 1, "15,17", 1],
       ["22.5,15", 3, "22.5,17", 1],
       ["22.5,15", 3, "22.5,18", 1],
       ["12,16", 2, "22.5,17", 4],
+      ["15,16", 1, "15,17", 1],
+      ["15,17", 1, "14,17", 1],
       ["4,19", 1, "11,21", 1],
       ["4,19", 5, "11,21", 5],
       ["22.5,18", 3, "22,21", 1],

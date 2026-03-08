@@ -1,0 +1,174 @@
+{
+  "index": 47,
+  "blueprint": {
+    "item": "blueprint",
+    "label": "Signal stopper with timed unlock",
+    "description": "If no W, output the input.\nIf W, stop all output.\nIf W stops, wait for the hardcoded time, then start output again.",
+    "shift_x": -275,
+    "shift_y": 15,
+    "version": 562949958205441,
+    "entities": [
+      {
+        "name": "arithmetic-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "arithmetic_conditions": {
+            "operation": "-",
+            "second_constant": 1,
+            "first_signal": {"name": "signal-C", "type": "virtual"},
+            "output_signal": {"name": "signal-C", "type": "virtual"}
+          }
+        },
+        "position": {"x": 11, "y": 7.5}
+      },
+      {
+        "name": "constant-combinator",
+        "control_behavior": {
+          "sections": {
+            "sections": [
+              {
+                "index": 1,
+                "filters": [{"name": "iron-gear-wheel", "comparator": "=", "count": 1, "index": 1, "quality": "normal"}]
+              }
+            ]
+          }
+        },
+        "position": {"x": -0.5, "y": 0.5}
+      },
+      {
+        "name": "constant-combinator",
+        "control_behavior": {
+          "is_on": false,
+          "sections": {
+            "sections": [
+              {
+                "index": 1,
+                "filters": [
+                  {
+                    "name": "signal-W",
+                    "comparator": "=",
+                    "count": 1,
+                    "index": 1,
+                    "quality": "normal",
+                    "type": "virtual"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "position": {"x": 5.5, "y": 4.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [
+              {
+                "comparator": "=",
+                "first_signal": {"name": "signal-W", "type": "virtual"},
+                "first_signal_networks": {"green": true, "red": false}
+              },
+              {
+                "comparator": "≠",
+                "compare_type": "and",
+                "first_signal": {"name": "signal-each", "type": "virtual"},
+                "first_signal_networks": {"green": false, "red": true}
+              }
+            ],
+            "outputs": [{"networks": {"green": false, "red": true}, "signal": {"name": "signal-each", "type": "virtual"}}]
+          }
+        },
+        "position": {"x": 7, "y": 0.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "player_description": "Latch to remember we saw a W",
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [{"comparator": ">", "first_signal": {"name": "signal-W", "type": "virtual"}}],
+            "outputs": [{"copy_count_from_input": false, "signal": {"name": "signal-W", "type": "virtual"}}]
+          }
+        },
+        "position": {"x": 11, "y": 4.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [{"comparator": ">", "first_signal": {"name": "signal-W", "type": "virtual"}}],
+            "outputs": [
+              {"constant": 60, "copy_count_from_input": false, "signal": {"name": "signal-C", "type": "virtual"}}
+            ]
+          }
+        },
+        "position": {"x": 9, "y": 7.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [{"comparator": "=", "first_signal": {"name": "signal-C", "type": "virtual"}}],
+            "outputs": [
+              {"constant": -1, "copy_count_from_input": false, "signal": {"name": "signal-W", "type": "virtual"}}
+            ]
+          }
+        },
+        "position": {"x": 13, "y": 6.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [
+              {"comparator": "=", "first_signal": {"name": "signal-W", "type": "virtual"}},
+              {"comparator": ">", "compare_type": "and", "first_signal": {"name": "signal-C", "type": "virtual"}}
+            ],
+            "outputs": [{"constant": -1, "signal": {"name": "signal-C", "type": "virtual"}}]
+          }
+        },
+        "position": {"x": 9, "y": 8.5}
+      },
+      {"name": "display-panel", "always_show": true, "text": "Input", "position": {"x": 2.5, "y": 0.5}},
+      {
+        "name": "display-panel",
+        "always_show": true,
+        "text": "Working signal",
+        "position": {"x": 7.5, "y": 4.5}
+      },
+      {
+        "name": "display-panel",
+        "text": "Goal:\nIf no signal from W&D, input -> output.\nIf W from W&D, no output at all.\nIf D from W&D, wait N ticks, then start output again.",
+        "position": {"x": 5.5, "y": 6.5}
+      },
+      {"name": "display-panel", "always_show": true, "text": "Output", "position": {"x": 10.5, "y": 0.5}},
+      {"name": "small-electric-pole", "position": {"x": 1.5, "y": 0.5}},
+      {"name": "small-electric-pole", "position": {"x": 6.5, "y": 4.5}},
+      {"name": "small-electric-pole", "position": {"x": 11.5, "y": 0.5}}
+    ],
+    "icons": [{"index": 1, "signal": {"name": "decider-combinator"}}],
+    "wires": [
+      ["0,0", 1, "2,0", 1],
+      ["2,0", 1, "7.5,0", 1],
+      ["2,0", 5, "7,4", 5],
+      ["7.5,0", 2, "11.5,4", 4],
+      ["7.5,0", 3, "12,0", 1],
+      ["12,0", 5, "7,4", 5],
+      ["6,4", 1, "9.5,7", 1],
+      ["6,4", 2, "7,4", 2],
+      ["7,4", 2, "11.5,4", 2],
+      ["11.5,4", 1, "13.5,6", 3],
+      ["11.5,4", 2, "11.5,4", 4],
+      ["13.5,6", 2, "11.5,7", 2],
+      ["9.5,7", 1, "9.5,8", 1],
+      ["9.5,7", 4, "11.5,7", 2],
+      ["9.5,8", 2, "11.5,7", 4],
+      ["9.5,8", 4, "11.5,7", 2]
+    ]
+  }
+}

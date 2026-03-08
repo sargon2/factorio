@@ -1,0 +1,1218 @@
+{
+  "index": 49,
+  "blueprint": {
+    "item": "blueprint",
+    "label": "Waiting stable automall",
+    "description": "Waiting time is set to 36. That seems REALLY high -- 36*2 ticks. It shouldn't need to be that high. If I lower it, we get flashing recipes.\n\nUnfortunately it still overbuilds because of misalignments in depedendency counts.",
+    "shift_x": -329,
+    "shift_y": 29,
+    "version": 562949958205441,
+    "entities": [
+      {
+        "name": "arithmetic-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "arithmetic_conditions": {
+            "operation": "-",
+            "second_constant": 1,
+            "first_signal": {"name": "signal-C", "type": "virtual"},
+            "output_signal": {"name": "signal-C", "type": "virtual"}
+          }
+        },
+        "position": {"x": 6, "y": -6.5}
+      },
+      {
+        "name": "arithmetic-combinator",
+        "direction": 4,
+        "player_description": "Calculate wishlist items that aren't built yet.",
+        "control_behavior": {
+          "arithmetic_conditions": {
+            "operation": "-",
+            "first_signal": {"name": "signal-each", "type": "virtual"},
+            "first_signal_networks": {"green": true, "red": false},
+            "output_signal": {"name": "signal-each", "type": "virtual"},
+            "second_signal": {"name": "signal-each", "type": "virtual"},
+            "second_signal_networks": {"green": false, "red": true}
+          }
+        },
+        "position": {"x": 4, "y": -4.5}
+      },
+      {
+        "name": "arithmetic-combinator",
+        "direction": 4,
+        "player_description": "Calculate what still needs to be loaded to begin work",
+        "control_behavior": {
+          "arithmetic_conditions": {
+            "operation": "-",
+            "first_signal": {"name": "signal-each", "type": "virtual"},
+            "first_signal_networks": {"green": true, "red": false},
+            "output_signal": {"name": "signal-each", "type": "virtual"},
+            "second_signal": {"name": "signal-each", "type": "virtual"},
+            "second_signal_networks": {"green": false, "red": true}
+          }
+        },
+        "position": {"x": 7, "y": -1.5}
+      },
+      {
+        "name": "arithmetic-combinator",
+        "direction": 4,
+        "player_description": "Calculate wishlist items that aren't built yet.",
+        "control_behavior": {
+          "arithmetic_conditions": {
+            "operation": "-",
+            "first_signal": {"name": "signal-each", "type": "virtual"},
+            "first_signal_networks": {"green": true, "red": false},
+            "output_signal": {"name": "signal-each", "type": "virtual"},
+            "second_signal": {"name": "signal-each", "type": "virtual"},
+            "second_signal_networks": {"green": false, "red": true}
+          }
+        },
+        "position": {"x": 10, "y": -4.5}
+      },
+      {
+        "name": "arithmetic-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "arithmetic_conditions": {
+            "operation": "-",
+            "second_constant": 1,
+            "first_signal": {"name": "signal-C", "type": "virtual"},
+            "output_signal": {"name": "signal-C", "type": "virtual"}
+          }
+        },
+        "position": {"x": 12, "y": -6.5}
+      },
+      {
+        "name": "arithmetic-combinator",
+        "direction": 4,
+        "player_description": "Calculate what still needs to be loaded to begin work",
+        "control_behavior": {
+          "arithmetic_conditions": {
+            "operation": "-",
+            "first_signal": {"name": "signal-each", "type": "virtual"},
+            "first_signal_networks": {"green": true, "red": false},
+            "output_signal": {"name": "signal-each", "type": "virtual"},
+            "second_signal": {"name": "signal-each", "type": "virtual"},
+            "second_signal_networks": {"green": false, "red": true}
+          }
+        },
+        "position": {"x": 13, "y": -1.5}
+      },
+      {
+        "name": "arithmetic-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "arithmetic_conditions": {
+            "operation": "-",
+            "second_constant": 1,
+            "first_signal": {"name": "signal-C", "type": "virtual"},
+            "output_signal": {"name": "signal-C", "type": "virtual"}
+          }
+        },
+        "position": {"x": 18, "y": -6.5}
+      },
+      {
+        "name": "arithmetic-combinator",
+        "direction": 4,
+        "player_description": "Calculate wishlist items that aren't built yet.",
+        "control_behavior": {
+          "arithmetic_conditions": {
+            "operation": "-",
+            "first_signal": {"name": "signal-each", "type": "virtual"},
+            "first_signal_networks": {"green": true, "red": false},
+            "output_signal": {"name": "signal-each", "type": "virtual"},
+            "second_signal": {"name": "signal-each", "type": "virtual"},
+            "second_signal_networks": {"green": false, "red": true}
+          }
+        },
+        "position": {"x": 16, "y": -4.5}
+      },
+      {
+        "name": "arithmetic-combinator",
+        "direction": 4,
+        "player_description": "Calculate wishlist items that aren't built yet.",
+        "control_behavior": {
+          "arithmetic_conditions": {
+            "operation": "-",
+            "first_signal": {"name": "signal-each", "type": "virtual"},
+            "first_signal_networks": {"green": true, "red": false},
+            "output_signal": {"name": "signal-each", "type": "virtual"},
+            "second_signal": {"name": "signal-each", "type": "virtual"},
+            "second_signal_networks": {"green": false, "red": true}
+          }
+        },
+        "position": {"x": 22, "y": -4.5}
+      },
+      {
+        "name": "arithmetic-combinator",
+        "direction": 4,
+        "player_description": "Calculate what still needs to be loaded to begin work",
+        "control_behavior": {
+          "arithmetic_conditions": {
+            "operation": "-",
+            "first_signal": {"name": "signal-each", "type": "virtual"},
+            "first_signal_networks": {"green": true, "red": false},
+            "output_signal": {"name": "signal-each", "type": "virtual"},
+            "second_signal": {"name": "signal-each", "type": "virtual"},
+            "second_signal_networks": {"green": false, "red": true}
+          }
+        },
+        "position": {"x": 19, "y": -1.5}
+      },
+      {
+        "name": "arithmetic-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "arithmetic_conditions": {
+            "operation": "-",
+            "second_constant": 1,
+            "first_signal": {"name": "signal-C", "type": "virtual"},
+            "output_signal": {"name": "signal-C", "type": "virtual"}
+          }
+        },
+        "position": {"x": 24, "y": -6.5}
+      },
+      {
+        "name": "arithmetic-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "arithmetic_conditions": {
+            "operation": "-",
+            "second_constant": 1,
+            "first_signal": {"name": "signal-C", "type": "virtual"},
+            "output_signal": {"name": "signal-C", "type": "virtual"}
+          }
+        },
+        "position": {"x": 30, "y": -6.5}
+      },
+      {
+        "name": "arithmetic-combinator",
+        "direction": 4,
+        "player_description": "Calculate wishlist items that aren't built yet.",
+        "control_behavior": {
+          "arithmetic_conditions": {
+            "operation": "-",
+            "first_signal": {"name": "signal-each", "type": "virtual"},
+            "first_signal_networks": {"green": true, "red": false},
+            "output_signal": {"name": "signal-each", "type": "virtual"},
+            "second_signal": {"name": "signal-each", "type": "virtual"},
+            "second_signal_networks": {"green": false, "red": true}
+          }
+        },
+        "position": {"x": 28, "y": -4.5}
+      },
+      {
+        "name": "arithmetic-combinator",
+        "direction": 4,
+        "player_description": "Calculate what still needs to be loaded to begin work",
+        "control_behavior": {
+          "arithmetic_conditions": {
+            "operation": "-",
+            "first_signal": {"name": "signal-each", "type": "virtual"},
+            "first_signal_networks": {"green": true, "red": false},
+            "output_signal": {"name": "signal-each", "type": "virtual"},
+            "second_signal": {"name": "signal-each", "type": "virtual"},
+            "second_signal_networks": {"green": false, "red": true}
+          }
+        },
+        "position": {"x": 25, "y": -1.5}
+      },
+      {
+        "name": "arithmetic-combinator",
+        "direction": 4,
+        "player_description": "Calculate what still needs to be loaded to begin work",
+        "control_behavior": {
+          "arithmetic_conditions": {
+            "operation": "-",
+            "first_signal": {"name": "signal-each", "type": "virtual"},
+            "first_signal_networks": {"green": true, "red": false},
+            "output_signal": {"name": "signal-each", "type": "virtual"},
+            "second_signal": {"name": "signal-each", "type": "virtual"},
+            "second_signal_networks": {"green": false, "red": true}
+          }
+        },
+        "position": {"x": 31, "y": -1.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "underground-belt",
+        "recipe_quality": "normal",
+        "control_behavior": {"read_ingredients": true, "set_recipe": true},
+        "position": {"x": 4.5, "y": -2.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "control_behavior": {"read_ingredients": true, "set_recipe": true},
+        "position": {"x": 10.5, "y": -2.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "control_behavior": {"read_ingredients": true, "set_recipe": true},
+        "position": {"x": 16.5, "y": -2.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "control_behavior": {"read_ingredients": true, "set_recipe": true},
+        "position": {"x": 22.5, "y": -2.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "control_behavior": {"read_ingredients": true, "set_recipe": true},
+        "position": {"x": 28.5, "y": -2.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "recipe": "underground-belt",
+        "recipe_quality": "normal",
+        "control_behavior": {
+          "read_contents": true,
+          "read_working": true,
+          "set_recipe": true,
+          "recipe_finished_signal": {"name": "signal-check", "type": "virtual"},
+          "working_signal": {"name": "signal-W", "type": "virtual"}
+        },
+        "position": {"x": 4.5, "y": 0.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "control_behavior": {
+          "read_contents": true,
+          "read_working": true,
+          "set_recipe": true,
+          "recipe_finished_signal": {"name": "signal-check", "type": "virtual"},
+          "working_signal": {"name": "signal-W", "type": "virtual"}
+        },
+        "position": {"x": 10.5, "y": 0.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "control_behavior": {
+          "read_contents": true,
+          "read_working": true,
+          "set_recipe": true,
+          "recipe_finished_signal": {"name": "signal-check", "type": "virtual"},
+          "working_signal": {"name": "signal-W", "type": "virtual"}
+        },
+        "position": {"x": 16.5, "y": 0.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "control_behavior": {
+          "read_contents": true,
+          "read_working": true,
+          "set_recipe": true,
+          "recipe_finished_signal": {"name": "signal-check", "type": "virtual"},
+          "working_signal": {"name": "signal-W", "type": "virtual"}
+        },
+        "position": {"x": 22.5, "y": 0.5}
+      },
+      {
+        "name": "assembling-machine-1",
+        "control_behavior": {
+          "read_contents": true,
+          "read_working": true,
+          "set_recipe": true,
+          "recipe_finished_signal": {"name": "signal-check", "type": "virtual"},
+          "working_signal": {"name": "signal-W", "type": "virtual"}
+        },
+        "position": {"x": 28.5, "y": 0.5}
+      },
+      {
+        "name": "constant-combinator",
+        "control_behavior": {
+          "sections": {
+            "sections": [
+              {
+                "index": 1,
+                "filters": [
+                  {"name": "inserter", "comparator": "=", "count": 2, "index": 1, "quality": "normal"},
+                  {"name": "long-handed-inserter", "comparator": "=", "count": 2, "index": 2, "quality": "normal"},
+                  {"name": "underground-belt", "comparator": "=", "count": 2, "index": 3, "quality": "normal"},
+                  {"name": "transport-belt", "comparator": "=", "count": 4, "index": 4, "quality": "normal"}
+                ]
+              }
+            ]
+          }
+        },
+        "position": {"x": -0.5, "y": -3.5}
+      },
+      {
+        "name": "creative-mod_super-loader",
+        "direction": 4,
+        "type": "output",
+        "position": {"x": 1, "y": 3.5}
+      },
+      {
+        "name": "creative-mod_super-loader",
+        "direction": 4,
+        "type": "output",
+        "position": {"x": 1, "y": 4.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [
+              {
+                "comparator": "=",
+                "first_signal": {"name": "signal-W", "type": "virtual"},
+                "first_signal_networks": {"green": true, "red": false}
+              },
+              {
+                "comparator": "≠",
+                "compare_type": "and",
+                "first_signal": {"name": "signal-each", "type": "virtual"},
+                "first_signal_networks": {"green": false, "red": true}
+              }
+            ],
+            "outputs": [{"networks": {"green": false, "red": true}, "signal": {"name": "signal-each", "type": "virtual"}}]
+          }
+        },
+        "position": {"x": 4, "y": -8.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [
+              {
+                "comparator": "=",
+                "first_signal": {"name": "signal-W", "type": "virtual"},
+                "first_signal_networks": {"green": true, "red": false}
+              },
+              {
+                "comparator": "≠",
+                "compare_type": "and",
+                "first_signal": {"name": "signal-each", "type": "virtual"},
+                "first_signal_networks": {"green": false, "red": true}
+              }
+            ],
+            "outputs": [{"networks": {"green": false, "red": true}, "signal": {"name": "signal-each", "type": "virtual"}}]
+          }
+        },
+        "position": {"x": 10, "y": -8.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "player_description": "Set how long to wait on the right -- the outputed C value.\nIt will wait that value * 2 ticks.",
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [{"comparator": ">", "first_signal": {"name": "signal-W", "type": "virtual"}}],
+            "outputs": [
+              {"constant": 36, "copy_count_from_input": false, "signal": {"name": "signal-C", "type": "virtual"}}
+            ]
+          }
+        },
+        "position": {"x": 4, "y": -7.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [
+              {"comparator": "=", "first_signal": {"name": "signal-W", "type": "virtual"}},
+              {"comparator": ">", "compare_type": "and", "first_signal": {"name": "signal-C", "type": "virtual"}}
+            ],
+            "outputs": [{"constant": -1, "signal": {"name": "signal-C", "type": "virtual"}}]
+          }
+        },
+        "position": {"x": 4, "y": -6.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "player_description": "Latch to remember we saw a W",
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [{"comparator": ">", "first_signal": {"name": "signal-W", "type": "virtual"}}],
+            "outputs": [{"copy_count_from_input": false, "signal": {"name": "signal-W", "type": "virtual"}}]
+          }
+        },
+        "position": {"x": 6, "y": -7.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [{"comparator": "≠", "first_signal": {"name": "signal-each", "type": "virtual"}}],
+            "outputs": [{"signal": {"name": "signal-each", "type": "virtual"}}]
+          }
+        },
+        "position": {"x": 4, "y": -5.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [{"comparator": "=", "first_signal": {"name": "signal-C", "type": "virtual"}}],
+            "outputs": [
+              {"constant": -1, "copy_count_from_input": false, "signal": {"name": "signal-W", "type": "virtual"}}
+            ]
+          }
+        },
+        "position": {"x": 6, "y": -5.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [{"comparator": "≠", "first_signal": {"name": "signal-each", "type": "virtual"}}],
+            "outputs": [{"signal": {"name": "signal-each", "type": "virtual"}}]
+          }
+        },
+        "position": {"x": 6, "y": -4.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "player_description": "Set how long to wait on the right -- the outputed C value.\nIt will wait that value * 2 ticks.",
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [{"comparator": ">", "first_signal": {"name": "signal-W", "type": "virtual"}}],
+            "outputs": [
+              {"constant": 36, "copy_count_from_input": false, "signal": {"name": "signal-C", "type": "virtual"}}
+            ]
+          }
+        },
+        "position": {"x": 10, "y": -7.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [
+              {"comparator": "=", "first_signal": {"name": "signal-W", "type": "virtual"}},
+              {"comparator": ">", "compare_type": "and", "first_signal": {"name": "signal-C", "type": "virtual"}}
+            ],
+            "outputs": [{"constant": -1, "signal": {"name": "signal-C", "type": "virtual"}}]
+          }
+        },
+        "position": {"x": 10, "y": -6.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [{"comparator": "≠", "first_signal": {"name": "signal-each", "type": "virtual"}}],
+            "outputs": [{"signal": {"name": "signal-each", "type": "virtual"}}]
+          }
+        },
+        "position": {"x": 10, "y": -5.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "player_description": "Latch to remember we saw a W",
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [{"comparator": ">", "first_signal": {"name": "signal-W", "type": "virtual"}}],
+            "outputs": [{"copy_count_from_input": false, "signal": {"name": "signal-W", "type": "virtual"}}]
+          }
+        },
+        "position": {"x": 12, "y": -7.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [{"comparator": "=", "first_signal": {"name": "signal-C", "type": "virtual"}}],
+            "outputs": [
+              {"constant": -1, "copy_count_from_input": false, "signal": {"name": "signal-W", "type": "virtual"}}
+            ]
+          }
+        },
+        "position": {"x": 12, "y": -5.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [{"comparator": "≠", "first_signal": {"name": "signal-each", "type": "virtual"}}],
+            "outputs": [{"signal": {"name": "signal-each", "type": "virtual"}}]
+          }
+        },
+        "position": {"x": 12, "y": -4.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [
+              {
+                "comparator": "=",
+                "first_signal": {"name": "signal-W", "type": "virtual"},
+                "first_signal_networks": {"green": true, "red": false}
+              },
+              {
+                "comparator": "≠",
+                "compare_type": "and",
+                "first_signal": {"name": "signal-each", "type": "virtual"},
+                "first_signal_networks": {"green": false, "red": true}
+              }
+            ],
+            "outputs": [{"networks": {"green": false, "red": true}, "signal": {"name": "signal-each", "type": "virtual"}}]
+          }
+        },
+        "position": {"x": 16, "y": -8.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [
+              {
+                "comparator": "=",
+                "first_signal": {"name": "signal-W", "type": "virtual"},
+                "first_signal_networks": {"green": true, "red": false}
+              },
+              {
+                "comparator": "≠",
+                "compare_type": "and",
+                "first_signal": {"name": "signal-each", "type": "virtual"},
+                "first_signal_networks": {"green": false, "red": true}
+              }
+            ],
+            "outputs": [{"networks": {"green": false, "red": true}, "signal": {"name": "signal-each", "type": "virtual"}}]
+          }
+        },
+        "position": {"x": 22, "y": -8.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [
+              {
+                "comparator": "=",
+                "first_signal": {"name": "signal-W", "type": "virtual"},
+                "first_signal_networks": {"green": true, "red": false}
+              },
+              {
+                "comparator": "≠",
+                "compare_type": "and",
+                "first_signal": {"name": "signal-each", "type": "virtual"},
+                "first_signal_networks": {"green": false, "red": true}
+              }
+            ],
+            "outputs": [{"networks": {"green": false, "red": true}, "signal": {"name": "signal-each", "type": "virtual"}}]
+          }
+        },
+        "position": {"x": 28, "y": -8.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "player_description": "Set how long to wait on the right -- the outputed C value.\nIt will wait that value * 2 ticks.",
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [{"comparator": ">", "first_signal": {"name": "signal-W", "type": "virtual"}}],
+            "outputs": [
+              {"constant": 36, "copy_count_from_input": false, "signal": {"name": "signal-C", "type": "virtual"}}
+            ]
+          }
+        },
+        "position": {"x": 16, "y": -7.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [
+              {"comparator": "=", "first_signal": {"name": "signal-W", "type": "virtual"}},
+              {"comparator": ">", "compare_type": "and", "first_signal": {"name": "signal-C", "type": "virtual"}}
+            ],
+            "outputs": [{"constant": -1, "signal": {"name": "signal-C", "type": "virtual"}}]
+          }
+        },
+        "position": {"x": 16, "y": -6.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "player_description": "Latch to remember we saw a W",
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [{"comparator": ">", "first_signal": {"name": "signal-W", "type": "virtual"}}],
+            "outputs": [{"copy_count_from_input": false, "signal": {"name": "signal-W", "type": "virtual"}}]
+          }
+        },
+        "position": {"x": 18, "y": -7.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [{"comparator": "≠", "first_signal": {"name": "signal-each", "type": "virtual"}}],
+            "outputs": [{"signal": {"name": "signal-each", "type": "virtual"}}]
+          }
+        },
+        "position": {"x": 16, "y": -5.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [{"comparator": "=", "first_signal": {"name": "signal-C", "type": "virtual"}}],
+            "outputs": [
+              {"constant": -1, "copy_count_from_input": false, "signal": {"name": "signal-W", "type": "virtual"}}
+            ]
+          }
+        },
+        "position": {"x": 18, "y": -5.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [{"comparator": "≠", "first_signal": {"name": "signal-each", "type": "virtual"}}],
+            "outputs": [{"signal": {"name": "signal-each", "type": "virtual"}}]
+          }
+        },
+        "position": {"x": 18, "y": -4.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "player_description": "Set how long to wait on the right -- the outputed C value.\nIt will wait that value * 2 ticks.",
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [{"comparator": ">", "first_signal": {"name": "signal-W", "type": "virtual"}}],
+            "outputs": [
+              {"constant": 36, "copy_count_from_input": false, "signal": {"name": "signal-C", "type": "virtual"}}
+            ]
+          }
+        },
+        "position": {"x": 22, "y": -7.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [
+              {"comparator": "=", "first_signal": {"name": "signal-W", "type": "virtual"}},
+              {"comparator": ">", "compare_type": "and", "first_signal": {"name": "signal-C", "type": "virtual"}}
+            ],
+            "outputs": [{"constant": -1, "signal": {"name": "signal-C", "type": "virtual"}}]
+          }
+        },
+        "position": {"x": 22, "y": -6.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [{"comparator": "≠", "first_signal": {"name": "signal-each", "type": "virtual"}}],
+            "outputs": [{"signal": {"name": "signal-each", "type": "virtual"}}]
+          }
+        },
+        "position": {"x": 22, "y": -5.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "player_description": "Latch to remember we saw a W",
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [{"comparator": ">", "first_signal": {"name": "signal-W", "type": "virtual"}}],
+            "outputs": [{"copy_count_from_input": false, "signal": {"name": "signal-W", "type": "virtual"}}]
+          }
+        },
+        "position": {"x": 24, "y": -7.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [{"comparator": "=", "first_signal": {"name": "signal-C", "type": "virtual"}}],
+            "outputs": [
+              {"constant": -1, "copy_count_from_input": false, "signal": {"name": "signal-W", "type": "virtual"}}
+            ]
+          }
+        },
+        "position": {"x": 24, "y": -5.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [{"comparator": "≠", "first_signal": {"name": "signal-each", "type": "virtual"}}],
+            "outputs": [{"signal": {"name": "signal-each", "type": "virtual"}}]
+          }
+        },
+        "position": {"x": 24, "y": -4.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "player_description": "Set how long to wait on the right -- the outputed C value.\nIt will wait that value * 2 ticks.",
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [{"comparator": ">", "first_signal": {"name": "signal-W", "type": "virtual"}}],
+            "outputs": [
+              {"constant": 36, "copy_count_from_input": false, "signal": {"name": "signal-C", "type": "virtual"}}
+            ]
+          }
+        },
+        "position": {"x": 28, "y": -7.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [
+              {"comparator": "=", "first_signal": {"name": "signal-W", "type": "virtual"}},
+              {"comparator": ">", "compare_type": "and", "first_signal": {"name": "signal-C", "type": "virtual"}}
+            ],
+            "outputs": [{"constant": -1, "signal": {"name": "signal-C", "type": "virtual"}}]
+          }
+        },
+        "position": {"x": 28, "y": -6.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "player_description": "Latch to remember we saw a W",
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [{"comparator": ">", "first_signal": {"name": "signal-W", "type": "virtual"}}],
+            "outputs": [{"copy_count_from_input": false, "signal": {"name": "signal-W", "type": "virtual"}}]
+          }
+        },
+        "position": {"x": 30, "y": -7.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [{"comparator": "≠", "first_signal": {"name": "signal-each", "type": "virtual"}}],
+            "outputs": [{"signal": {"name": "signal-each", "type": "virtual"}}]
+          }
+        },
+        "position": {"x": 28, "y": -5.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [{"comparator": "=", "first_signal": {"name": "signal-C", "type": "virtual"}}],
+            "outputs": [
+              {"constant": -1, "copy_count_from_input": false, "signal": {"name": "signal-W", "type": "virtual"}}
+            ]
+          }
+        },
+        "position": {"x": 30, "y": -5.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [{"comparator": "≠", "first_signal": {"name": "signal-each", "type": "virtual"}}],
+            "outputs": [{"signal": {"name": "signal-each", "type": "virtual"}}]
+          }
+        },
+        "position": {"x": 30, "y": -4.5}
+      },
+      {
+        "name": "ee-infinity-chest",
+        "infinity_settings": {
+          "remove_unfiltered_items": false,
+          "filters": [{"name": "iron-plate", "count": 100, "index": 1, "mode": "at-least"}]
+        },
+        "position": {"x": -0.5, "y": 3.5}
+      },
+      {
+        "name": "ee-infinity-chest",
+        "infinity_settings": {
+          "remove_unfiltered_items": false,
+          "filters": [{"name": "copper-plate", "count": 100, "index": 1, "mode": "at-least"}]
+        },
+        "position": {"x": -0.5, "y": 4.5}
+      },
+      {
+        "name": "inserter",
+        "direction": 4,
+        "control_behavior": {"circuit_hand_read_mode": 1, "circuit_read_hand_contents": true},
+        "position": {"x": 2.5, "y": 0.5}
+      },
+      {
+        "name": "inserter",
+        "direction": 4,
+        "control_behavior": {"circuit_hand_read_mode": 1, "circuit_read_hand_contents": true},
+        "position": {"x": 6.5, "y": 0.5}
+      },
+      {
+        "name": "inserter",
+        "direction": 8,
+        "control_behavior": {
+          "circuit_enabled": true,
+          "circuit_hand_read_mode": 1,
+          "circuit_set_stack_size": true,
+          "circuit_condition": {"comparator": ">", "constant": 0, "first_signal": {"name": "iron-plate"}},
+          "stack_control_input_signal": {"name": "iron-plate"}
+        },
+        "position": {"x": 4.5, "y": 2.5}
+      },
+      {
+        "name": "inserter",
+        "direction": 4,
+        "control_behavior": {"circuit_hand_read_mode": 1, "circuit_read_hand_contents": true},
+        "position": {"x": 8.5, "y": 0.5}
+      },
+      {
+        "name": "inserter",
+        "direction": 8,
+        "control_behavior": {
+          "circuit_enabled": true,
+          "circuit_hand_read_mode": 1,
+          "circuit_set_stack_size": true,
+          "circuit_condition": {"comparator": ">", "constant": 0, "first_signal": {"name": "iron-plate"}},
+          "stack_control_input_signal": {"name": "iron-plate"}
+        },
+        "position": {"x": 10.5, "y": 2.5}
+      },
+      {
+        "name": "inserter",
+        "direction": 4,
+        "control_behavior": {"circuit_hand_read_mode": 1, "circuit_read_hand_contents": true},
+        "position": {"x": 12.5, "y": 0.5}
+      },
+      {
+        "name": "inserter",
+        "direction": 4,
+        "control_behavior": {"circuit_hand_read_mode": 1, "circuit_read_hand_contents": true},
+        "position": {"x": 14.5, "y": 0.5}
+      },
+      {
+        "name": "inserter",
+        "direction": 4,
+        "control_behavior": {"circuit_hand_read_mode": 1, "circuit_read_hand_contents": true},
+        "position": {"x": 18.5, "y": 0.5}
+      },
+      {
+        "name": "inserter",
+        "direction": 8,
+        "control_behavior": {
+          "circuit_enabled": true,
+          "circuit_hand_read_mode": 1,
+          "circuit_set_stack_size": true,
+          "circuit_condition": {"comparator": ">", "constant": 0, "first_signal": {"name": "iron-plate"}},
+          "stack_control_input_signal": {"name": "iron-plate"}
+        },
+        "position": {"x": 16.5, "y": 2.5}
+      },
+      {
+        "name": "inserter",
+        "direction": 4,
+        "control_behavior": {"circuit_hand_read_mode": 1, "circuit_read_hand_contents": true},
+        "position": {"x": 20.5, "y": 0.5}
+      },
+      {
+        "name": "inserter",
+        "direction": 8,
+        "control_behavior": {
+          "circuit_enabled": true,
+          "circuit_hand_read_mode": 1,
+          "circuit_set_stack_size": true,
+          "circuit_condition": {"comparator": ">", "constant": 0, "first_signal": {"name": "iron-plate"}},
+          "stack_control_input_signal": {"name": "iron-plate"}
+        },
+        "position": {"x": 22.5, "y": 2.5}
+      },
+      {
+        "name": "inserter",
+        "direction": 4,
+        "control_behavior": {"circuit_hand_read_mode": 1, "circuit_read_hand_contents": true},
+        "position": {"x": 24.5, "y": 0.5}
+      },
+      {
+        "name": "inserter",
+        "direction": 4,
+        "control_behavior": {"circuit_hand_read_mode": 1, "circuit_read_hand_contents": true},
+        "position": {"x": 26.5, "y": 0.5}
+      },
+      {
+        "name": "inserter",
+        "direction": 8,
+        "control_behavior": {
+          "circuit_enabled": true,
+          "circuit_hand_read_mode": 1,
+          "circuit_set_stack_size": true,
+          "circuit_condition": {"comparator": ">", "constant": 0, "first_signal": {"name": "iron-plate"}},
+          "stack_control_input_signal": {"name": "iron-plate"}
+        },
+        "position": {"x": 28.5, "y": 2.5}
+      },
+      {"name": "iron-chest", "position": {"x": 1.5, "y": 0.5}},
+      {"name": "iron-chest", "position": {"x": 7.5, "y": 0.5}},
+      {"name": "iron-chest", "position": {"x": 13.5, "y": 0.5}},
+      {"name": "iron-chest", "position": {"x": 19.5, "y": 0.5}},
+      {"name": "iron-chest", "position": {"x": 25.5, "y": 0.5}},
+      {
+        "name": "long-handed-inserter",
+        "direction": 8,
+        "control_behavior": {
+          "circuit_enabled": true,
+          "circuit_hand_read_mode": 1,
+          "circuit_set_stack_size": true,
+          "circuit_condition": {"comparator": ">", "constant": 0, "first_signal": {"name": "copper-plate"}},
+          "stack_control_input_signal": {"name": "copper-plate"}
+        },
+        "position": {"x": 5.5, "y": 2.5}
+      },
+      {
+        "name": "long-handed-inserter",
+        "direction": 8,
+        "control_behavior": {
+          "circuit_enabled": true,
+          "circuit_hand_read_mode": 1,
+          "circuit_set_stack_size": true,
+          "circuit_condition": {"comparator": ">", "constant": 0, "first_signal": {"name": "copper-plate"}},
+          "stack_control_input_signal": {"name": "copper-plate"}
+        },
+        "position": {"x": 11.5, "y": 2.5}
+      },
+      {
+        "name": "long-handed-inserter",
+        "direction": 8,
+        "control_behavior": {
+          "circuit_enabled": true,
+          "circuit_hand_read_mode": 1,
+          "circuit_set_stack_size": true,
+          "circuit_condition": {"comparator": ">", "constant": 0, "first_signal": {"name": "copper-plate"}},
+          "stack_control_input_signal": {"name": "copper-plate"}
+        },
+        "position": {"x": 17.5, "y": 2.5}
+      },
+      {
+        "name": "long-handed-inserter",
+        "direction": 8,
+        "control_behavior": {
+          "circuit_enabled": true,
+          "circuit_hand_read_mode": 1,
+          "circuit_set_stack_size": true,
+          "circuit_condition": {"comparator": ">", "constant": 0, "first_signal": {"name": "copper-plate"}},
+          "stack_control_input_signal": {"name": "copper-plate"}
+        },
+        "position": {"x": 23.5, "y": 2.5}
+      },
+      {
+        "name": "long-handed-inserter",
+        "direction": 8,
+        "control_behavior": {
+          "circuit_enabled": true,
+          "circuit_hand_read_mode": 1,
+          "circuit_set_stack_size": true,
+          "circuit_condition": {"comparator": ">", "constant": 0, "first_signal": {"name": "copper-plate"}},
+          "stack_control_input_signal": {"name": "copper-plate"}
+        },
+        "position": {"x": 29.5, "y": 2.5}
+      },
+      {"name": "transport-belt", "direction": 4, "position": {"x": 2.5, "y": 3.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 3.5, "y": 3.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 4.5, "y": 3.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 5.5, "y": 3.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 6.5, "y": 3.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 7.5, "y": 3.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 2.5, "y": 4.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 3.5, "y": 4.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 4.5, "y": 4.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 5.5, "y": 4.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 6.5, "y": 4.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 7.5, "y": 4.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 8.5, "y": 3.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 9.5, "y": 3.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 10.5, "y": 3.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 11.5, "y": 3.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 12.5, "y": 3.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 13.5, "y": 3.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 14.5, "y": 3.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 15.5, "y": 3.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 8.5, "y": 4.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 9.5, "y": 4.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 10.5, "y": 4.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 11.5, "y": 4.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 12.5, "y": 4.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 13.5, "y": 4.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 14.5, "y": 4.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 15.5, "y": 4.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 16.5, "y": 3.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 17.5, "y": 3.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 18.5, "y": 3.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 19.5, "y": 3.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 20.5, "y": 3.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 21.5, "y": 3.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 22.5, "y": 3.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 23.5, "y": 3.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 16.5, "y": 4.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 17.5, "y": 4.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 18.5, "y": 4.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 19.5, "y": 4.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 20.5, "y": 4.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 21.5, "y": 4.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 22.5, "y": 4.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 23.5, "y": 4.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 24.5, "y": 3.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 25.5, "y": 3.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 26.5, "y": 3.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 27.5, "y": 3.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 28.5, "y": 3.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 29.5, "y": 3.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 30.5, "y": 3.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 31.5, "y": 3.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 24.5, "y": 4.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 25.5, "y": 4.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 26.5, "y": 4.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 27.5, "y": 4.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 28.5, "y": 4.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 29.5, "y": 4.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 30.5, "y": 4.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 31.5, "y": 4.5}}
+    ],
+    "icons": [
+      {"index": 1, "signal": {"name": "assembling-machine-1"}},
+      {"index": 2, "signal": {"name": "transport-belt"}}
+    ],
+    "wires": [
+      ["4.5,1", 1, "4.5,2", 1],
+      ["4.5,1", 1, "4.5,3", 3],
+      ["4.5,1", 4, "6.5,2", 2],
+      ["4.5,0", 1, "4.5,4", 3],
+      ["4.5,0", 2, "6.5,1", 4],
+      ["4.5,0", 3, "6.5,4", 1],
+      ["6.5,1", 1, "6.5,3", 3],
+      ["6.5,1", 2, "6.5,1", 4],
+      ["6.5,1", 2, "4.5,3", 4],
+      ["10.5,1", 1, "10.5,2", 1],
+      ["10.5,1", 1, "10.5,3", 3],
+      ["10.5,1", 4, "12.5,2", 2],
+      ["10.5,0", 1, "10.5,4", 3],
+      ["10.5,0", 2, "12.5,1", 4],
+      ["10.5,0", 3, "12.5,4", 1],
+      ["12.5,1", 1, "12.5,3", 3],
+      ["12.5,1", 2, "12.5,1", 4],
+      ["12.5,1", 2, "10.5,3", 4],
+      ["16.5,1", 1, "16.5,2", 1],
+      ["16.5,1", 1, "16.5,3", 3],
+      ["16.5,1", 4, "18.5,2", 2],
+      ["16.5,0", 1, "16.5,4", 3],
+      ["16.5,0", 2, "18.5,1", 4],
+      ["16.5,0", 3, "18.5,4", 1],
+      ["18.5,1", 1, "18.5,3", 3],
+      ["18.5,1", 2, "18.5,1", 4],
+      ["18.5,1", 2, "16.5,3", 4],
+      ["22.5,1", 1, "22.5,2", 1],
+      ["22.5,1", 1, "22.5,3", 3],
+      ["22.5,1", 4, "24.5,2", 2],
+      ["22.5,0", 1, "22.5,4", 3],
+      ["22.5,0", 2, "24.5,1", 4],
+      ["22.5,0", 3, "24.5,4", 1],
+      ["24.5,1", 1, "24.5,3", 3],
+      ["24.5,1", 2, "24.5,1", 4],
+      ["24.5,1", 2, "22.5,3", 4],
+      ["28.5,1", 1, "28.5,2", 1],
+      ["28.5,1", 1, "28.5,3", 3],
+      ["28.5,1", 4, "30.5,2", 2],
+      ["28.5,0", 1, "28.5,4", 3],
+      ["28.5,0", 2, "30.5,1", 4],
+      ["28.5,0", 3, "30.5,4", 1],
+      ["30.5,1", 1, "30.5,3", 3],
+      ["30.5,1", 2, "30.5,1", 4],
+      ["30.5,1", 2, "28.5,3", 4],
+      ["4.5,3", 2, "5,9", 2],
+      ["4.5,2", 2, "6.5,2", 4],
+      ["4.5,2", 4, "6.5,2", 2],
+      ["6.5,3", 2, "6.5,2", 2],
+      ["10.5,3", 2, "11,9", 2],
+      ["10.5,2", 2, "12.5,2", 4],
+      ["10.5,2", 4, "12.5,2", 2],
+      ["12.5,3", 2, "12.5,2", 2],
+      ["16.5,3", 2, "17,9", 2],
+      ["16.5,2", 2, "18.5,2", 4],
+      ["16.5,2", 4, "18.5,2", 2],
+      ["18.5,3", 2, "18.5,2", 2],
+      ["22.5,3", 2, "23,9", 2],
+      ["22.5,2", 2, "24.5,2", 4],
+      ["22.5,2", 4, "24.5,2", 2],
+      ["24.5,3", 2, "24.5,2", 2],
+      ["28.5,3", 2, "29,9", 2],
+      ["28.5,2", 2, "30.5,2", 4],
+      ["28.5,2", 4, "30.5,2", 2],
+      ["30.5,3", 2, "30.5,2", 2],
+      ["0,5", 2, "4.5,4", 2],
+      ["4.5,4", 1, "2,9", 1],
+      ["6.5,4", 3, "5,6", 1],
+      ["6.5,4", 4, "5,9", 2],
+      ["10.5,4", 1, "9,9", 1],
+      ["10.5,4", 2, "7.5,7", 4],
+      ["12.5,4", 3, "11,6", 1],
+      ["12.5,4", 4, "11,9", 2],
+      ["16.5,4", 1, "15,9", 1],
+      ["16.5,4", 2, "13.5,7", 4],
+      ["18.5,4", 3, "17,6", 1],
+      ["18.5,4", 4, "17,9", 2],
+      ["22.5,4", 1, "21,9", 1],
+      ["22.5,4", 2, "19.5,7", 4],
+      ["24.5,4", 3, "23,6", 1],
+      ["24.5,4", 4, "23,9", 2],
+      ["28.5,4", 1, "27,9", 1],
+      ["28.5,4", 2, "25.5,7", 4],
+      ["30.5,4", 3, "29,6", 1],
+      ["30.5,4", 4, "29,9", 2],
+      ["5,6", 2, "7.5,7", 2],
+      ["7.5,7", 1, "5,9", 1],
+      ["7.5,7", 4, "6,11", 2],
+      ["11,6", 2, "13.5,7", 2],
+      ["13.5,7", 1, "11,9", 1],
+      ["13.5,7", 4, "12,11", 2],
+      ["17,6", 2, "19.5,7", 2],
+      ["19.5,7", 1, "17,9", 1],
+      ["19.5,7", 4, "18,11", 2],
+      ["23,6", 2, "25.5,7", 2],
+      ["25.5,7", 1, "23,9", 1],
+      ["25.5,7", 4, "24,11", 2],
+      ["29,6", 2, "31.5,7", 2],
+      ["31.5,7", 1, "29,9", 1],
+      ["31.5,7", 4, "30,11", 2],
+      ["3,9", 1, "2,9", 1],
+      ["7,9", 1, "8,9", 1],
+      ["9,9", 1, "8,9", 1],
+      ["13,9", 1, "14,9", 1],
+      ["15,9", 1, "14,9", 1],
+      ["19,9", 1, "20,9", 1],
+      ["21,9", 1, "20,9", 1],
+      ["25,9", 1, "26,9", 1],
+      ["27,9", 1, "26,9", 1],
+      ["5,11", 2, "6,11", 2],
+      ["11,11", 2, "12,11", 2],
+      ["17,11", 2, "18,11", 2],
+      ["23,11", 2, "24,11", 2],
+      ["29,11", 2, "30,11", 2]
+    ]
+  }
+}

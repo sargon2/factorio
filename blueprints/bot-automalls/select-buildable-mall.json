@@ -1,0 +1,239 @@
+{
+  "index": 6,
+  "blueprint": {
+    "item": "blueprint",
+    "label": "Select buildable mall",
+    "description": "Open problems --\nIf the selector selects a non-buildable item such as copper plate, the whole thing deadlocks.\nCan't build dependencies for things. If you request the dependencies, they go to the requester chest instead of the input, so that doesn't solve it.",
+    "shift_x": -177,
+    "shift_y": 11,
+    "version": 562949958205441,
+    "entities": [
+      {
+        "name": "arithmetic-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "arithmetic_conditions": {
+            "operation": "-",
+            "first_signal": {"name": "signal-each", "type": "virtual"},
+            "first_signal_networks": {"green": true, "red": false},
+            "output_signal": {"name": "signal-each", "type": "virtual"},
+            "second_signal": {"name": "signal-each", "type": "virtual"},
+            "second_signal_networks": {"green": false, "red": true}
+          }
+        },
+        "position": {"x": -4, "y": -0.5}
+      },
+      {
+        "name": "assembling-machine-2",
+        "recipe": "electronic-circuit",
+        "recipe_quality": "normal",
+        "control_behavior": {
+          "read_ingredients": true,
+          "read_recipe_finished": true,
+          "set_recipe": true,
+          "recipe_finished_signal": {"name": "signal-check", "type": "virtual"}
+        },
+        "position": {"x": -8.5, "y": -1.5}
+      },
+      {
+        "name": "constant-combinator",
+        "control_behavior": {
+          "is_on": false,
+          "sections": {
+            "sections": [
+              {
+                "index": 1,
+                "filters": [
+                  {
+                    "name": "signal-check",
+                    "comparator": "=",
+                    "count": 1,
+                    "index": 1,
+                    "quality": "normal",
+                    "type": "virtual"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "position": {"x": -14.5, "y": -2.5}
+      },
+      {
+        "name": "creative-mod_inf-provider-chest",
+        "infinity_settings": {
+          "remove_unfiltered_items": false,
+          "filters": [
+            {"name": "iron-plate", "count": 100, "index": 1, "mode": "at-least"},
+            {"name": "copper-plate", "count": 100, "index": 2, "mode": "at-least"}
+          ]
+        },
+        "position": {"x": -16.5, "y": 4.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [
+              {"comparator": "=", "first_signal": {"name": "signal-lock", "type": "virtual"}},
+              {
+                "comparator": ">",
+                "compare_type": "and",
+                "first_signal": {"name": "signal-each", "type": "virtual"},
+                "first_signal_networks": {"green": true, "red": false}
+              },
+              {
+                "comparator": "=",
+                "compare_type": "and",
+                "first_signal": {"name": "signal-check", "type": "virtual"}
+              },
+              {"comparator": "=", "first_signal": {"name": "signal-check", "type": "virtual"}},
+              {
+                "comparator": ">",
+                "compare_type": "and",
+                "first_signal": {"name": "signal-each", "type": "virtual"},
+                "first_signal_networks": {"green": false, "red": true}
+              }
+            ],
+            "outputs": [
+              {"copy_count_from_input": false, "signal": {"name": "signal-each", "type": "virtual"}},
+              {
+                "constant": -1,
+                "copy_count_from_input": false,
+                "signal": {"name": "signal-lock", "type": "virtual"}
+              }
+            ]
+          }
+        },
+        "position": {"x": -13, "y": -4.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 12,
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [{"comparator": ">", "first_signal": {"name": "signal-check", "type": "virtual"}}],
+            "outputs": [{"copy_count_from_input": false, "signal": {"name": "signal-check", "type": "virtual"}}]
+          }
+        },
+        "position": {"x": -12, "y": -1.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 12,
+        "player_description": "Filter to only things we have",
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [{"comparator": ">", "first_signal": {"name": "signal-each", "type": "virtual"}}],
+            "outputs": [{"signal": {"name": "signal-each", "type": "virtual"}}]
+          }
+        },
+        "position": {"x": -2, "y": -2.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [{"first_signal": {"name": "signal-each", "type": "virtual"}}],
+            "outputs": [{"copy_count_from_input": false, "signal": {"name": "signal-check", "type": "virtual"}}]
+          }
+        },
+        "position": {"x": 0, "y": -0.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [{"comparator": "≠", "first_signal": {"name": "signal-each", "type": "virtual"}}],
+            "outputs": [{"signal": {"name": "signal-each", "type": "virtual"}}]
+          }
+        },
+        "position": {"x": -6, "y": 1.5}
+      },
+      {
+        "name": "fast-inserter",
+        "direction": 8,
+        "control_behavior": {"circuit_hand_read_mode": 1, "circuit_read_hand_contents": true},
+        "position": {"x": -9.5, "y": 0.5}
+      },
+      {"name": "fast-inserter", "position": {"x": -8.5, "y": 0.5}},
+      {
+        "name": "passive-provider-chest",
+        "control_behavior": {"circuit_condition_enabled": false},
+        "position": {"x": -8.5, "y": 1.5}
+      },
+      {
+        "name": "requester-chest",
+        "position": {"x": -17.5, "y": 0.5},
+        "request_filters": {
+          "sections": [
+            {
+              "index": 1,
+              "filters": [
+                {"name": "copper-plate", "comparator": "=", "count": 100, "index": 1, "quality": "normal"},
+                {"name": "inserter", "comparator": "=", "count": 50, "index": 2, "quality": "normal"},
+                {"name": "electronic-circuit", "comparator": "=", "count": 200, "index": 3, "quality": "normal"},
+                {"name": "copper-cable", "comparator": "=", "count": 100, "index": 4, "quality": "normal"}
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "requester-chest",
+        "control_behavior": {"circuit_condition_enabled": false, "circuit_mode_of_operation": 1},
+        "position": {"x": -9.5, "y": 1.5},
+        "request_filters": {"sections": [{"index": 1}]}
+      },
+      {
+        "name": "roboport",
+        "control_behavior": {"read_items_mode": 2},
+        "position": {"x": -19, "y": -4},
+        "request_filters": {"sections": [{"index": 1}]}
+      },
+      {"name": "roboport", "position": {"x": 0, "y": -6}, "request_filters": {"sections": [{"index": 1}]}},
+      {
+        "name": "selector-combinator",
+        "direction": 4,
+        "control_behavior": {"operation": "random"},
+        "position": {"x": -15, "y": -6.5}
+      },
+      {"name": "small-electric-pole", "position": {"x": -14.5, "y": 2.5}},
+      {"name": "small-electric-pole", "position": {"x": -7.5, "y": 2.5}},
+      {"name": "small-electric-pole", "position": {"x": -0.5, "y": 2.5}},
+      {
+        "name": "storage-chest",
+        "position": {"x": -16.5, "y": 0.5},
+        "request_filters": {"sections": [{"index": 1}]}
+      }
+    ],
+    "icons": [{"index": 1, "signal": {"name": "roboport"}}],
+    "wires": [
+      ["4,0", 2, "0,2.5", 2],
+      ["4,0", 4, "6,2", 2],
+      ["19,0.5", 2, "17,4", 2],
+      ["6,2", 1, "6,2", 3],
+      ["6,2", 2, "7,5", 4],
+      ["6,2", 2, "4.5,4", 2],
+      ["6,2", 2, "4.5,9", 2],
+      ["6,2", 4, "10.5,5", 2],
+      ["7,5", 2, "10.5,5", 2],
+      ["10.5,5", 1, "15,6", 1],
+      ["10.5,5", 1, "9.5,8", 1],
+      ["17,4", 4, "15,6", 2],
+      ["9.5,7", 2, "9.5,8", 2],
+      ["9.5,7", 2, "13,8", 2],
+      ["15,6", 2, "13,8", 4],
+      ["15,6", 4, "19,6", 2],
+      ["19,6", 4, "18.5,9", 2],
+      ["4.5,9", 2, "11.5,9", 2],
+      ["4.5,9", 5, "11.5,9", 5],
+      ["9.5,8", 2, "10.5,8", 2],
+      ["11.5,9", 2, "18.5,9", 2],
+      ["11.5,9", 5, "18.5,9", 5]
+    ]
+  }
+}

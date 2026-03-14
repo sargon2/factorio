@@ -1,0 +1,51 @@
+{
+  "index": 2,
+  "blueprint": {
+    "item": "blueprint",
+    "label": "1/8 limiter (circuit)",
+    "shift_x": -378,
+    "shift_y": 240,
+    "version": 562949958205441,
+    "entities": [
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [{"comparator": "=", "first_signal": {"name": "signal-everything", "type": "virtual"}}],
+            "outputs": [{"copy_count_from_input": false, "signal": {"name": "signal-check", "type": "virtual"}}]
+          }
+        },
+        "position": {"x": 1, "y": -0.5}
+      },
+      {
+        "name": "transport-belt",
+        "direction": 4,
+        "control_behavior": {
+          "circuit_contents_read_mode": 0,
+          "circuit_enabled": true,
+          "circuit_read_hand_contents": false,
+          "circuit_condition": {"comparator": ">", "constant": 0, "first_signal": {"name": "signal-check", "type": "virtual"}}
+        },
+        "position": {"x": -0.5, "y": 0.5}
+      },
+      {
+        "name": "transport-belt",
+        "direction": 4,
+        "control_behavior": {"circuit_contents_read_mode": 1, "circuit_read_hand_contents": true},
+        "position": {"x": 0.5, "y": 0.5}
+      },
+      {
+        "name": "transport-belt",
+        "direction": 4,
+        "control_behavior": {"circuit_contents_read_mode": 1, "circuit_read_hand_contents": true},
+        "position": {"x": 1.5, "y": 0.5}
+      }
+    ],
+    "icons": [
+      {"index": 1, "signal": {"name": "transport-belt"}},
+      {"index": 2, "signal": {"name": "decider-combinator"}}
+    ],
+    "wires": [["1.5,0", 1, "1,1", 1], ["1.5,0", 1, "2,1", 1], ["1.5,0", 3, "0,1", 1]]
+  }
+}

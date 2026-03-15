@@ -1,5 +1,5 @@
 {
-  "index": 42,
+  "index": 30,
   "blueprint": {
     "item": "blueprint",
     "label": "Wait for [virtual-signal=signal-I] ticks",

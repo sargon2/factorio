@@ -1,0 +1,263 @@
+{
+  "index": 42,
+  "blueprint": {
+    "item": "blueprint",
+    "label": "Prioritized build lists",
+    "shift_x": -389,
+    "shift_y": 201,
+    "version": 562949958205441,
+    "entities": [
+      {
+        "name": "constant-combinator",
+        "direction": 8,
+        "player_description": "Production tier of each item",
+        "control_behavior": {
+          "sections": {
+            "sections": [
+              {
+                "active": false,
+                "index": 1,
+                "filters": [
+                  {"name": "iron-plate", "comparator": "=", "count": 60, "index": 1, "quality": "normal"},
+                  {"name": "copper-plate", "comparator": "=", "count": 60, "index": 2, "quality": "normal"},
+                  {"name": "steel-plate", "comparator": "=", "count": 60, "index": 3, "quality": "normal"},
+                  {"name": "coal", "comparator": "=", "count": 60, "index": 4, "quality": "normal"},
+                  {"name": "plastic-bar", "comparator": "=", "count": 60, "index": 5, "quality": "normal"},
+                  {"name": "stone", "comparator": "=", "count": 60, "index": 6, "quality": "normal"},
+                  {"name": "battery", "comparator": "=", "count": 60, "index": 7, "quality": "normal"}
+                ]
+              },
+              {
+                "index": 2,
+                "filters": [
+                  {"name": "iron-gear-wheel", "comparator": "=", "count": 50, "index": 1, "quality": "normal"},
+                  {"name": "iron-stick", "comparator": "=", "count": 50, "index": 2, "quality": "normal"},
+                  {"name": "copper-cable", "comparator": "=", "count": 50, "index": 3, "quality": "normal"},
+                  {"name": "barrel", "comparator": "=", "count": 50, "index": 4, "quality": "normal"},
+                  {"name": "pipe", "comparator": "=", "count": 50, "index": 5, "quality": "normal"},
+                  {"name": "steel-chest", "comparator": "=", "count": 50, "index": 6, "quality": "normal"},
+                  {"name": "iron-chest", "comparator": "=", "count": 50, "index": 7, "quality": "normal"},
+                  {"name": "storage-tank", "comparator": "=", "count": 50, "index": 8, "quality": "normal"},
+                  {"name": "stone-furnace", "comparator": "=", "count": 50, "index": 9, "quality": "normal"},
+                  {"name": "firearm-magazine", "comparator": "=", "count": 50, "index": 10, "quality": "normal"},
+                  {"name": "shotgun-shell", "comparator": "=", "count": 50, "index": 11, "quality": "normal"},
+                  {"name": "grenade", "comparator": "=", "count": 50, "index": 12, "quality": "normal"},
+                  {"name": "accumulator", "comparator": "=", "count": 50, "index": 13, "quality": "normal"}
+                ]
+              },
+              {
+                "index": 3,
+                "filters": [
+                  {"name": "electronic-circuit", "comparator": "=", "count": 40, "index": 1, "quality": "normal"},
+                  {"name": "transport-belt", "comparator": "=", "count": 40, "index": 2, "quality": "normal"},
+                  {"name": "pipe-to-ground", "comparator": "=", "count": 40, "index": 3, "quality": "normal"},
+                  {"name": "medium-electric-pole", "comparator": "=", "count": 40, "index": 4, "quality": "normal"},
+                  {"name": "big-electric-pole", "comparator": "=", "count": 40, "index": 5, "quality": "normal"},
+                  {"name": "cargo-wagon", "comparator": "=", "count": 40, "index": 6, "quality": "normal"},
+                  {"name": "fluid-wagon", "comparator": "=", "count": 40, "index": 7, "quality": "normal"},
+                  {"name": "rail", "comparator": "=", "count": 40, "index": 8, "quality": "normal"},
+                  {"name": "engine-unit", "comparator": "=", "count": 40, "index": 9, "quality": "normal"},
+                  {"name": "boiler", "comparator": "=", "count": 40, "index": 10, "quality": "normal"},
+                  {"name": "steam-engine", "comparator": "=", "count": 40, "index": 11, "quality": "normal"},
+                  {"name": "offshore-pump", "comparator": "=", "count": 40, "index": 12, "quality": "normal"},
+                  {"name": "submachine-gun", "comparator": "=", "count": 40, "index": 13, "quality": "normal"},
+                  {"name": "flamethrower", "comparator": "=", "count": 40, "index": 14, "quality": "normal"},
+                  {
+                    "name": "piercing-rounds-magazine",
+                    "comparator": "=",
+                    "count": 40,
+                    "index": 15,
+                    "quality": "normal"
+                  },
+                  {"name": "gun-turret", "comparator": "=", "count": 40, "index": 16, "quality": "normal"}
+                ]
+              },
+              {
+                "index": 4,
+                "filters": [
+                  {"name": "advanced-circuit", "comparator": "=", "count": 30, "index": 1, "quality": "normal"},
+                  {"name": "fast-transport-belt", "comparator": "=", "count": 30, "index": 2, "quality": "normal"},
+                  {"name": "inserter", "comparator": "=", "count": 30, "index": 3, "quality": "normal"},
+                  {"name": "underground-belt", "comparator": "=", "count": 30, "index": 4, "quality": "normal"},
+                  {"name": "splitter", "comparator": "=", "count": 30, "index": 5, "quality": "normal"},
+                  {"name": "train-stop", "comparator": "=", "count": 30, "index": 6, "quality": "normal"},
+                  {"name": "rail-signal", "comparator": "=", "count": 30, "index": 7, "quality": "normal"},
+                  {"name": "rail-chain-signal", "comparator": "=", "count": 30, "index": 8, "quality": "normal"},
+                  {"name": "car", "comparator": "=", "count": 30, "index": 9, "quality": "normal"},
+                  {"name": "locomotive", "comparator": "=", "count": 30, "index": 10, "quality": "normal"},
+                  {"name": "small-lamp", "comparator": "=", "count": 30, "index": 11, "quality": "normal"},
+                  {"name": "arithmetic-combinator", "comparator": "=", "count": 30, "index": 12, "quality": "normal"},
+                  {"name": "decider-combinator", "comparator": "=", "count": 30, "index": 13, "quality": "normal"},
+                  {"name": "constant-combinator", "comparator": "=", "count": 30, "index": 14, "quality": "normal"},
+                  {"name": "power-switch", "comparator": "=", "count": 30, "index": 15, "quality": "normal"},
+                  {"name": "programmable-speaker", "comparator": "=", "count": 30, "index": 16, "quality": "normal"},
+                  {"name": "display-panel", "comparator": "=", "count": 30, "index": 17, "quality": "normal"},
+                  {"name": "solar-panel", "comparator": "=", "count": 30, "index": 18, "quality": "normal"},
+                  {"name": "electric-mining-drill", "comparator": "=", "count": 30, "index": 19, "quality": "normal"},
+                  {"name": "pumpjack", "comparator": "=", "count": 30, "index": 20, "quality": "normal"},
+                  {"name": "assembling-machine-1", "comparator": "=", "count": 30, "index": 21, "quality": "normal"},
+                  {"name": "chemical-plant", "comparator": "=", "count": 30, "index": 22, "quality": "normal"},
+                  {"name": "lab", "comparator": "=", "count": 30, "index": 23, "quality": "normal"},
+                  {"name": "defender-capsule", "comparator": "=", "count": 30, "index": 24, "quality": "normal"},
+                  {"name": "flamethrower-turret", "comparator": "=", "count": 30, "index": 25, "quality": "normal"},
+                  {"name": "radar", "comparator": "=", "count": 30, "index": 26, "quality": "normal"}
+                ]
+              },
+              {
+                "index": 5,
+                "filters": [
+                  {"name": "fast-inserter", "comparator": "=", "count": 20, "index": 1, "quality": "normal"},
+                  {"name": "long-handed-inserter", "comparator": "=", "count": 20, "index": 2, "quality": "normal"},
+                  {"name": "fast-underground-belt", "comparator": "=", "count": 20, "index": 3, "quality": "normal"},
+                  {"name": "fast-splitter", "comparator": "=", "count": 20, "index": 4, "quality": "normal"},
+                  {"name": "substation", "comparator": "=", "count": 20, "index": 5, "quality": "normal"},
+                  {"name": "passive-provider-chest", "comparator": "=", "count": 20, "index": 6, "quality": "normal"},
+                  {"name": "storage-chest", "comparator": "=", "count": 20, "index": 7, "quality": "normal"},
+                  {"name": "roboport", "comparator": "=", "count": 20, "index": 8, "quality": "normal"},
+                  {"name": "selector-combinator", "comparator": "=", "count": 20, "index": 9, "quality": "normal"},
+                  {"name": "assembling-machine-2", "comparator": "=", "count": 20, "index": 10, "quality": "normal"},
+                  {"name": "speed-module", "comparator": "=", "count": 20, "index": 11, "quality": "normal"},
+                  {"name": "efficiency-module", "comparator": "=", "count": 20, "index": 12, "quality": "normal"},
+                  {"name": "productivity-module", "comparator": "=", "count": 20, "index": 13, "quality": "normal"},
+                  {"name": "quality-module", "comparator": "=", "count": 20, "index": 14, "quality": "normal"},
+                  {"name": "solar-panel-equipment", "comparator": "=", "count": 20, "index": 15, "quality": "normal"}
+                ]
+              },
+              {
+                "index": 6,
+                "filters": [{"name": "bulk-inserter", "comparator": "=", "count": 10, "index": 1, "quality": "normal"}]
+              }
+            ]
+          }
+        },
+        "position": {"x": -0.5, "y": 0.5}
+      },
+      {
+        "name": "constant-combinator",
+        "direction": 8,
+        "player_description": "Production tier of each item",
+        "control_behavior": {
+          "sections": {
+            "sections": [
+              {
+                "active": false,
+                "index": 1,
+                "filters": [
+                  {"name": "iron-plate", "comparator": "=", "count": 1, "index": 1, "quality": "normal"},
+                  {"name": "copper-plate", "comparator": "=", "count": 1, "index": 2, "quality": "normal"},
+                  {"name": "steel-plate", "comparator": "=", "count": 1, "index": 3, "quality": "normal"},
+                  {"name": "coal", "comparator": "=", "count": 1, "index": 4, "quality": "normal"},
+                  {"name": "plastic-bar", "comparator": "=", "count": 1, "index": 5, "quality": "normal"},
+                  {"name": "stone", "comparator": "=", "count": 1, "index": 6, "quality": "normal"},
+                  {"name": "battery", "comparator": "=", "count": 1, "index": 7, "quality": "normal"}
+                ]
+              },
+              {
+                "index": 2,
+                "filters": [
+                  {"name": "iron-gear-wheel", "comparator": "=", "count": 2, "index": 1, "quality": "normal"},
+                  {"name": "iron-stick", "comparator": "=", "count": 2, "index": 2, "quality": "normal"},
+                  {"name": "copper-cable", "comparator": "=", "count": 2, "index": 3, "quality": "normal"},
+                  {"name": "barrel", "comparator": "=", "count": 2, "index": 4, "quality": "normal"},
+                  {"name": "pipe", "comparator": "=", "count": 2, "index": 5, "quality": "normal"},
+                  {"name": "steel-chest", "comparator": "=", "count": 2, "index": 6, "quality": "normal"},
+                  {"name": "iron-chest", "comparator": "=", "count": 2, "index": 7, "quality": "normal"},
+                  {"name": "storage-tank", "comparator": "=", "count": 2, "index": 8, "quality": "normal"},
+                  {"name": "stone-furnace", "comparator": "=", "count": 2, "index": 9, "quality": "normal"},
+                  {"name": "firearm-magazine", "comparator": "=", "count": 2, "index": 10, "quality": "normal"},
+                  {"name": "shotgun-shell", "comparator": "=", "count": 2, "index": 11, "quality": "normal"},
+                  {"name": "grenade", "comparator": "=", "count": 2, "index": 12, "quality": "normal"},
+                  {"name": "accumulator", "comparator": "=", "count": 2, "index": 13, "quality": "normal"}
+                ]
+              },
+              {
+                "index": 3,
+                "filters": [
+                  {"name": "electronic-circuit", "comparator": "=", "count": 3, "index": 1, "quality": "normal"},
+                  {"name": "transport-belt", "comparator": "=", "count": 3, "index": 2, "quality": "normal"},
+                  {"name": "pipe-to-ground", "comparator": "=", "count": 3, "index": 3, "quality": "normal"},
+                  {"name": "medium-electric-pole", "comparator": "=", "count": 3, "index": 4, "quality": "normal"},
+                  {"name": "big-electric-pole", "comparator": "=", "count": 3, "index": 5, "quality": "normal"},
+                  {"name": "cargo-wagon", "comparator": "=", "count": 3, "index": 6, "quality": "normal"},
+                  {"name": "fluid-wagon", "comparator": "=", "count": 3, "index": 7, "quality": "normal"},
+                  {"name": "rail", "comparator": "=", "count": 3, "index": 8, "quality": "normal"},
+                  {"name": "engine-unit", "comparator": "=", "count": 3, "index": 9, "quality": "normal"},
+                  {"name": "boiler", "comparator": "=", "count": 3, "index": 10, "quality": "normal"},
+                  {"name": "steam-engine", "comparator": "=", "count": 3, "index": 11, "quality": "normal"},
+                  {"name": "offshore-pump", "comparator": "=", "count": 3, "index": 12, "quality": "normal"},
+                  {"name": "submachine-gun", "comparator": "=", "count": 3, "index": 13, "quality": "normal"},
+                  {"name": "flamethrower", "comparator": "=", "count": 3, "index": 14, "quality": "normal"},
+                  {
+                    "name": "piercing-rounds-magazine",
+                    "comparator": "=",
+                    "count": 3,
+                    "index": 15,
+                    "quality": "normal"
+                  },
+                  {"name": "gun-turret", "comparator": "=", "count": 3, "index": 16, "quality": "normal"}
+                ]
+              },
+              {
+                "index": 4,
+                "filters": [
+                  {"name": "advanced-circuit", "comparator": "=", "count": 4, "index": 1, "quality": "normal"},
+                  {"name": "fast-transport-belt", "comparator": "=", "count": 4, "index": 2, "quality": "normal"},
+                  {"name": "inserter", "comparator": "=", "count": 4, "index": 3, "quality": "normal"},
+                  {"name": "underground-belt", "comparator": "=", "count": 4, "index": 4, "quality": "normal"},
+                  {"name": "splitter", "comparator": "=", "count": 4, "index": 5, "quality": "normal"},
+                  {"name": "train-stop", "comparator": "=", "count": 4, "index": 6, "quality": "normal"},
+                  {"name": "rail-signal", "comparator": "=", "count": 4, "index": 7, "quality": "normal"},
+                  {"name": "rail-chain-signal", "comparator": "=", "count": 4, "index": 8, "quality": "normal"},
+                  {"name": "car", "comparator": "=", "count": 4, "index": 9, "quality": "normal"},
+                  {"name": "locomotive", "comparator": "=", "count": 4, "index": 10, "quality": "normal"},
+                  {"name": "small-lamp", "comparator": "=", "count": 4, "index": 11, "quality": "normal"},
+                  {"name": "arithmetic-combinator", "comparator": "=", "count": 4, "index": 12, "quality": "normal"},
+                  {"name": "decider-combinator", "comparator": "=", "count": 4, "index": 13, "quality": "normal"},
+                  {"name": "constant-combinator", "comparator": "=", "count": 4, "index": 14, "quality": "normal"},
+                  {"name": "power-switch", "comparator": "=", "count": 4, "index": 15, "quality": "normal"},
+                  {"name": "programmable-speaker", "comparator": "=", "count": 4, "index": 16, "quality": "normal"},
+                  {"name": "display-panel", "comparator": "=", "count": 4, "index": 17, "quality": "normal"},
+                  {"name": "solar-panel", "comparator": "=", "count": 4, "index": 18, "quality": "normal"},
+                  {"name": "electric-mining-drill", "comparator": "=", "count": 4, "index": 19, "quality": "normal"},
+                  {"name": "pumpjack", "comparator": "=", "count": 4, "index": 20, "quality": "normal"},
+                  {"name": "assembling-machine-1", "comparator": "=", "count": 4, "index": 21, "quality": "normal"},
+                  {"name": "chemical-plant", "comparator": "=", "count": 4, "index": 22, "quality": "normal"},
+                  {"name": "lab", "comparator": "=", "count": 4, "index": 23, "quality": "normal"},
+                  {"name": "defender-capsule", "comparator": "=", "count": 4, "index": 24, "quality": "normal"},
+                  {"name": "flamethrower-turret", "comparator": "=", "count": 4, "index": 25, "quality": "normal"},
+                  {"name": "radar", "comparator": "=", "count": 4, "index": 26, "quality": "normal"}
+                ]
+              },
+              {
+                "index": 5,
+                "filters": [
+                  {"name": "fast-inserter", "comparator": "=", "count": 5, "index": 1, "quality": "normal"},
+                  {"name": "long-handed-inserter", "comparator": "=", "count": 5, "index": 2, "quality": "normal"},
+                  {"name": "fast-underground-belt", "comparator": "=", "count": 5, "index": 3, "quality": "normal"},
+                  {"name": "fast-splitter", "comparator": "=", "count": 5, "index": 4, "quality": "normal"},
+                  {"name": "substation", "comparator": "=", "count": 5, "index": 5, "quality": "normal"},
+                  {"name": "passive-provider-chest", "comparator": "=", "count": 5, "index": 6, "quality": "normal"},
+                  {"name": "storage-chest", "comparator": "=", "count": 5, "index": 7, "quality": "normal"},
+                  {"name": "roboport", "comparator": "=", "count": 5, "index": 8, "quality": "normal"},
+                  {"name": "selector-combinator", "comparator": "=", "count": 5, "index": 9, "quality": "normal"},
+                  {"name": "assembling-machine-2", "comparator": "=", "count": 5, "index": 10, "quality": "normal"},
+                  {"name": "speed-module", "comparator": "=", "count": 5, "index": 11, "quality": "normal"},
+                  {"name": "efficiency-module", "comparator": "=", "count": 5, "index": 12, "quality": "normal"},
+                  {"name": "productivity-module", "comparator": "=", "count": 5, "index": 13, "quality": "normal"},
+                  {"name": "quality-module", "comparator": "=", "count": 5, "index": 14, "quality": "normal"},
+                  {"name": "solar-panel-equipment", "comparator": "=", "count": 5, "index": 15, "quality": "normal"}
+                ]
+              },
+              {
+                "index": 6,
+                "filters": [{"name": "bulk-inserter", "comparator": "=", "count": 6, "index": 1, "quality": "normal"}]
+              }
+            ]
+          }
+        },
+        "position": {"x": 1.5, "y": 0.5}
+      }
+    ],
+    "icons": [{"index": 1, "signal": {"name": "constant-combinator"}}]
+  }
+}

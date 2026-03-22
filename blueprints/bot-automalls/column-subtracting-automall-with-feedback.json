@@ -6,7 +6,7 @@
     "description": "Not sure why so many waits are needed between each layer. It's 4 -- probably shouldn't be that many, I dunno.",
     "shift_x": -518,
     "shift_y": -3,
-    "version": 562949958205441,
+    "version": 562949958402048,
     "entities": [
       {
         "name": "arithmetic-combinator",

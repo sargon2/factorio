@@ -6,7 +6,7 @@
     "description": "Maybe try x10'ing all requests? to help prevent assembler downtime.\n\nNeed to tune number of roboports to minimize them while still not getting charging congestion\n\nNeed to add solar power.\n\nNeed an \"in progress\" circuit line to help prevent overbuilding.\n\nProbably needs a reset button because it keeps deadlocking.",
     "shift_x": -203,
     "shift_y": -34,
-    "version": 562949958205441,
+    "version": 562949958402048,
     "entities": [
       {
         "name": "arithmetic-combinator",

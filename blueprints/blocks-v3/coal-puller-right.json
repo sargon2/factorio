@@ -6,7 +6,7 @@
     "absolute-snapping": true,
     "shift_x": 35,
     "shift_y": 0,
-    "version": 562949958205441,
+    "version": 562949958402048,
     "entities": [
       {"name": "splitter", "direction": 8, "output_priority": "left", "position": {"x": 0, "y": -1.5}},
       {"name": "splitter", "direction": 8, "output_priority": "left", "position": {"x": 1, "y": -0.5}},

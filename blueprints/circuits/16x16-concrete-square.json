@@ -5,7 +5,7 @@
     "label": "16x16 concrete square",
     "description": "16x16 inner, 18x18 outer.",
     "absolute-snapping": true,
-    "version": 562949958205441,
+    "version": 562949958402048,
     "icons": [{"index": 1, "signal": {"name": "refined-concrete"}}],
     "snap-to-grid": {"x": 17, "y": 17},
     "tiles": [

@@ -6,7 +6,7 @@
     "description": "Waiting time is set to 36. That seems REALLY high -- 36*2 ticks. It shouldn't need to be that high. If I lower it, we get flashing recipes.\n\nUnfortunately it still overbuilds because of misalignments in depedendency counts.",
     "shift_x": -329,
     "shift_y": 29,
-    "version": 562949958205441,
+    "version": 562949958402048,
     "entities": [
       {
         "name": "arithmetic-combinator",

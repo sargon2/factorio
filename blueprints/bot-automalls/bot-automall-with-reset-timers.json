@@ -6,7 +6,7 @@
     "description": "If the assemblers aren't working for a while, reset & choose a new thing to make.",
     "shift_x": -198,
     "shift_y": -14,
-    "version": 562949958205441,
+    "version": 562949958402048,
     "entities": [
       {
         "name": "arithmetic-combinator",

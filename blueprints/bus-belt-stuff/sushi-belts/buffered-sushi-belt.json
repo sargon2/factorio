@@ -6,7 +6,7 @@
     "description": "Prevents deadlock in the case of uneven inputs.  Does its own lane balancing.\nBuffers won't clear if items aren't used fast enough. In rare situations they may fill completely.",
     "shift_x": -378,
     "shift_y": 203,
-    "version": 562949958205441,
+    "version": 562949958402048,
     "entities": [
       {"name": "inserter", "direction": 12, "position": {"x": 3.5, "y": -12.5}},
       {"name": "inserter", "direction": 12, "position": {"x": 5.5, "y": -12.5}},

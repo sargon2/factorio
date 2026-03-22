@@ -6,7 +6,7 @@
     "description": "WIP - known bugs:\n- More 1-tick timing problems\n- Tiling\n- Buffer chests shouldn't be needed... but they may not be hurting anything. I don't think they fill over time\n- It's too slow\n- It needs more input materials\n ",
     "shift_x": -62,
     "shift_y": 105,
-    "version": 562949958205441,
+    "version": 562949958402048,
     "entities": [
       {
         "name": "arithmetic-combinator",

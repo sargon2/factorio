@@ -6,7 +6,7 @@
     "absolute-snapping": true,
     "shift_x": 8,
     "shift_y": -2,
-    "version": 562949958205441,
+    "version": 562949958402048,
     "entities": [
       {"name": "display-panel", "icon": {"name": "iron-plate"}, "position": {"x": 0.5, "y": 9.5}},
       {"name": "display-panel", "icon": {"name": "iron-plate"}, "position": {"x": 1.5, "y": 9.5}},

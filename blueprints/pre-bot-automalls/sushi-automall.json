@@ -6,7 +6,7 @@
     "description": "Simple, overproduces",
     "shift_x": -380,
     "shift_y": 180,
-    "version": 562949958205441,
+    "version": 562949958402048,
     "entities": [
       {
         "name": "arithmetic-combinator",

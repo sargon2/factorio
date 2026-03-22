@@ -6,7 +6,7 @@
     "description": "WIP - broken\nNeeds a manual reset to start & restart after done\nInserter from chest to assembler should have its hand size set and be disabled when ingredients are in so it doesn't load extra",
     "shift_x": -115,
     "shift_y": 6,
-    "version": 562949958205441,
+    "version": 562949958402048,
     "entities": [
       {
         "name": "arithmetic-combinator",

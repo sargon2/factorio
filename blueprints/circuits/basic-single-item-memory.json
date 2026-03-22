@@ -6,7 +6,7 @@
     "description": "Outputs a constant 1 for the saved item, doesn't remember item count. It will remember a count of 1 for multiple items of input.",
     "shift_x": -81,
     "shift_y": 105,
-    "version": 562949958205441,
+    "version": 562949958402048,
     "entities": [
       {
         "name": "constant-combinator",

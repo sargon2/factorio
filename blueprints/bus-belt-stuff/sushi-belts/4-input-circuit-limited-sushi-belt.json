@@ -5,7 +5,7 @@
     "label": "4-input circuit-limited sushi belt",
     "shift_x": -368,
     "shift_y": 189,
-    "version": 562949958205441,
+    "version": 562949958402048,
     "entities": [
       {
         "name": "decider-combinator",

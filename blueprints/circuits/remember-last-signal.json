@@ -5,7 +5,7 @@
     "label": "Remember last signal",
     "shift_x": -239,
     "shift_y": -6,
-    "version": 562949958205441,
+    "version": 562949958402048,
     "entities": [
       {
         "name": "constant-combinator",

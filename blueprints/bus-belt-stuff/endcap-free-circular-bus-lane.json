@@ -6,7 +6,7 @@
     "description": "Allows design of omnidirectional bus blocks with no special endcaps, so the bus can be extended without removing the endcap.",
     "shift_x": 319,
     "shift_y": 495,
-    "version": 562949958205441,
+    "version": 562949958402048,
     "entities": [
       {"name": "creative-mod_item-void", "direction": 8, "position": {"x": 13.5, "y": -7.5}},
       {

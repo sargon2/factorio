@@ -5,7 +5,7 @@
     "label": "Train unloader",
     "shift_x": -103,
     "shift_y": -42,
-    "version": 562949958205441,
+    "version": 562949958402048,
     "entities": [
       {"name": "bulk-inserter", "direction": 8, "position": {"x": 0.5, "y": 3.5}},
       {"name": "bulk-inserter", "direction": 8, "position": {"x": 1.5, "y": 3.5}},

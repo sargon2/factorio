@@ -6,7 +6,7 @@
     "description": "Might take a while to clear deadlock if the belt is really full.\nCan still deadlock if the buffer fills.\nBuffer doesn't always empty itself.",
     "shift_x": -376,
     "shift_y": 202,
-    "version": 562949958205441,
+    "version": 562949958402048,
     "entities": [
       {"name": "inserter", "direction": 4, "position": {"x": 4.5, "y": 9.5}},
       {"name": "inserter", "direction": 4, "position": {"x": 6.5, "y": 9.5}},

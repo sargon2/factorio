@@ -6,7 +6,7 @@
     "description": "Check if something is buildable\n\nGiven inputs: zero or one items, all storage\nOutput: [virtual-signal=signal-deny]=1 if not buildable, [virtual-signal=signal-check]=1 if buildable\n\nOutputs nothing if no input item\n\nOutputs only a single pulse for \"no\" but a constant signal for \"yes\".\n",
     "shift_x": -89,
     "shift_y": 7,
-    "version": 562949958205441,
+    "version": 562949958402048,
     "entities": [
       {
         "name": "arithmetic-combinator",

@@ -6,7 +6,7 @@
     "absolute-snapping": true,
     "shift_x": -2,
     "shift_y": -2,
-    "version": 562949958205441,
+    "version": 562949958402048,
     "entities": [
       {"name": "pipe", "position": {"x": 11.5, "y": 11.5}},
       {"name": "pipe", "position": {"x": 12.5, "y": 12.5}},

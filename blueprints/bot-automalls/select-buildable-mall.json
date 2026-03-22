@@ -6,7 +6,7 @@
     "description": "Open problems --\nIf the selector selects a non-buildable item such as copper plate, the whole thing deadlocks.\nCan't build dependencies for things. If you request the dependencies, they go to the requester chest instead of the input, so that doesn't solve it.",
     "shift_x": -177,
     "shift_y": 11,
-    "version": 562949958205441,
+    "version": 562949958402048,
     "entities": [
       {
         "name": "arithmetic-combinator",

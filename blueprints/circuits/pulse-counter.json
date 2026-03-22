@@ -6,7 +6,7 @@
     "description": "Generates & counts the number of times you turn on the [item=constant-combinator].",
     "shift_x": -66,
     "shift_y": 22,
-    "version": 562949958205441,
+    "version": 562949958402048,
     "entities": [
       {
         "name": "arithmetic-combinator",

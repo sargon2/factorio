@@ -6,7 +6,7 @@
     "description": "If red has any signal, output red. Otherwise output green.",
     "shift_x": -101,
     "shift_y": 101,
-    "version": 562949958205441,
+    "version": 562949958402048,
     "entities": [
       {
         "name": "constant-combinator",

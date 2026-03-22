@@ -6,7 +6,7 @@
     "description": "WIP - should build in as the game progresses\n",
     "shift_x": -28,
     "shift_y": 61,
-    "version": 562949958205441,
+    "version": 562949958402048,
     "entities": [
       {
         "name": "assembling-machine-1",

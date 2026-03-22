@@ -6,7 +6,7 @@
     "description": "Counts up to a given max value, then resets to zero",
     "shift_x": -76,
     "shift_y": 23,
-    "version": 562949958205441,
+    "version": 562949958402048,
     "entities": [
       {
         "name": "arithmetic-combinator",

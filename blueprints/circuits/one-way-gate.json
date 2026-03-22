@@ -5,7 +5,7 @@
     "label": "One-way gate",
     "shift_x": -69,
     "shift_y": 86,
-    "version": 562949958205441,
+    "version": 562949958402048,
     "entities": [
       {
         "name": "decider-combinator",

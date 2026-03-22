@@ -6,7 +6,7 @@
     "description": "Retains quantity.",
     "shift_x": -72,
     "shift_y": 21,
-    "version": 562949958205441,
+    "version": 562949958402048,
     "entities": [
       {
         "name": "arithmetic-combinator",

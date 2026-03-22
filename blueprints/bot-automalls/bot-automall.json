@@ -6,7 +6,7 @@
     "description": "Currently deadlocks frequently.",
     "shift_x": -124,
     "shift_y": 29,
-    "version": 562949958205441,
+    "version": 562949958402048,
     "entities": [
       {
         "name": "assembling-machine-2",

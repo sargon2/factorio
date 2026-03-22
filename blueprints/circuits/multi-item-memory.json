@@ -6,7 +6,7 @@
     "description": "Clockwise circle = reset. The red wire in the top is the signal to remember, and the red wire out the right is the output.",
     "shift_x": -86,
     "shift_y": 79,
-    "version": 562949958205441,
+    "version": 562949958402048,
     "entities": [
       {
         "name": "constant-combinator",

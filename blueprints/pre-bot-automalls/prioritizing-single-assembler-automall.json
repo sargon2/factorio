@@ -3,10 +3,10 @@
   "blueprint": {
     "item": "blueprint",
     "label": "Prioritizing single-assembler automall",
-    "description": "WIP\n- Needs input belts that only input if there isn't enough in the chest\n\nScales to multiple cells with combined outputs. Builds input request * (num_cells + 1) total because it duplicates all items to buffer chests and output. Maybe that's okay?",
-    "shift_x": -396,
-    "shift_y": 214,
-    "version": 562949958205441,
+    "description": "WIP\n\nIs it possible to auto-calculate intermediaries using a set of assemblers?\n\nNeeds a manual reset button in case inputs are set wrong.\n\nScales to multiple cells with combined outputs. Builds input request * (num_cells + 1) total because it duplicates all items to buffer chests and output. Maybe that's okay?",
+    "shift_x": -255,
+    "shift_y": 248,
+    "version": 562949958402048,
     "entities": [
       {
         "name": "arithmetic-combinator",
@@ -21,7 +21,7 @@
             "second_signal_networks": {"green": false, "red": true}
           }
         },
-        "position": {"x": -2, "y": -2.5}
+        "position": {"x": -2, "y": 1.5}
       },
       {
         "name": "arithmetic-combinator",
@@ -36,7 +36,21 @@
             "second_signal_networks": {"green": false, "red": true}
           }
         },
-        "position": {"x": 7, "y": -1.5}
+        "position": {"x": 7, "y": 2.5}
+      },
+      {
+        "name": "arithmetic-combinator",
+        "control_behavior": {
+          "arithmetic_conditions": {
+            "operation": "-",
+            "first_signal": {"name": "signal-each", "type": "virtual"},
+            "first_signal_networks": {"green": false, "red": true},
+            "output_signal": {"name": "signal-each", "type": "virtual"},
+            "second_signal": {"name": "signal-each", "type": "virtual"},
+            "second_signal_networks": {"green": true, "red": false}
+          }
+        },
+        "position": {"x": 0.5, "y": 6}
       },
       {
         "name": "arithmetic-combinator",
@@ -51,37 +65,21 @@
             "second_signal_networks": {"green": false, "red": true}
           }
         },
-        "position": {"x": 7, "y": 1.5}
+        "position": {"x": 7, "y": 8.5}
       },
       {
         "name": "arithmetic-combinator",
-        "direction": 4,
         "control_behavior": {
           "arithmetic_conditions": {
             "operation": "-",
             "first_signal": {"name": "signal-each", "type": "virtual"},
-            "first_signal_networks": {"green": true, "red": false},
+            "first_signal_networks": {"green": false, "red": true},
             "output_signal": {"name": "signal-each", "type": "virtual"},
             "second_signal": {"name": "signal-each", "type": "virtual"},
-            "second_signal_networks": {"green": false, "red": true}
+            "second_signal_networks": {"green": true, "red": false}
           }
         },
-        "position": {"x": 7, "y": 4.5}
-      },
-      {
-        "name": "arithmetic-combinator",
-        "direction": 4,
-        "control_behavior": {
-          "arithmetic_conditions": {
-            "operation": "-",
-            "first_signal": {"name": "signal-each", "type": "virtual"},
-            "first_signal_networks": {"green": true, "red": false},
-            "output_signal": {"name": "signal-each", "type": "virtual"},
-            "second_signal": {"name": "signal-each", "type": "virtual"},
-            "second_signal_networks": {"green": false, "red": true}
-          }
-        },
-        "position": {"x": 7, "y": 7.5}
+        "position": {"x": 0.5, "y": 12}
       },
       {
         "name": "assembling-machine-1",
@@ -91,40 +89,41 @@
           "set_recipe": true,
           "recipe_finished_signal": {"name": "signal-check", "type": "virtual"}
         },
-        "position": {"x": 4.5, "y": -0.5}
+        "position": {"x": 4.5, "y": 3.5}
       },
       {
         "name": "assembling-machine-1",
+        "recipe": "copper-cable",
+        "recipe_quality": "normal",
         "control_behavior": {
           "read_ingredients": true,
           "read_recipe_finished": true,
           "set_recipe": true,
           "recipe_finished_signal": {"name": "signal-check", "type": "virtual"}
         },
-        "position": {"x": 4.5, "y": 2.5}
-      },
-      {
-        "name": "assembling-machine-1",
-        "control_behavior": {
-          "read_ingredients": true,
-          "read_recipe_finished": true,
-          "set_recipe": true,
-          "recipe_finished_signal": {"name": "signal-check", "type": "virtual"}
-        },
-        "position": {"x": 4.5, "y": 5.5}
-      },
-      {
-        "name": "assembling-machine-1",
-        "control_behavior": {
-          "read_ingredients": true,
-          "read_recipe_finished": true,
-          "set_recipe": true,
-          "recipe_finished_signal": {"name": "signal-check", "type": "virtual"}
-        },
-        "position": {"x": 4.5, "y": 8.5}
+        "position": {"x": 4.5, "y": 9.5}
       },
       {
         "name": "constant-combinator",
+        "player_description": "Wishlist\nThis is what we want to output, not including intermediaries",
+        "control_behavior": {
+          "sections": {
+            "sections": [
+              {
+                "index": 1,
+                "filters": [
+                  {"name": "modular-armor", "comparator": "=", "count": 1, "index": 1, "quality": "normal"},
+                  {"name": "inserter", "comparator": "=", "count": 20, "index": 2, "quality": "normal"}
+                ]
+              }
+            ]
+          }
+        },
+        "position": {"x": -3.5, "y": 1.5}
+      },
+      {
+        "name": "constant-combinator",
+        "player_description": "Intermediaries\nEverything that needs to be built to achieve the output and how many to cache. If this is set too low we will deadlock.",
         "control_behavior": {
           "sections": {
             "sections": [
@@ -132,20 +131,41 @@
                 "index": 1,
                 "filters": [
                   {"name": "iron-gear-wheel", "comparator": "=", "count": 10, "index": 1, "quality": "normal"},
-                  {"name": "inserter", "comparator": "=", "count": 1, "index": 2, "quality": "normal"},
                   {"name": "electronic-circuit", "comparator": "=", "count": 4, "index": 3, "quality": "normal"},
-                  {"name": "copper-cable", "comparator": "=", "count": 10, "index": 4, "quality": "normal"}
+                  {"name": "copper-cable", "comparator": "=", "count": 10, "index": 4, "quality": "normal"},
+                  {"name": "advanced-circuit", "comparator": "=", "count": 40, "index": 5, "quality": "normal"}
                 ]
               }
             ]
           }
         },
-        "position": {"x": -3.5, "y": -2.5}
+        "position": {"x": -3.5, "y": 2.5}
       },
       {
         "name": "constant-combinator",
         "direction": 8,
-        "player_description": "Production tier of each item",
+        "player_description": "Inputs\nThis is how many of each input item to pull off the input belt per chest.",
+        "control_behavior": {
+          "sections": {
+            "sections": [
+              {
+                "index": 1,
+                "filters": [
+                  {"name": "iron-plate", "comparator": "=", "count": 100, "index": 1, "quality": "normal"},
+                  {"name": "copper-plate", "comparator": "=", "count": 100, "index": 2, "quality": "normal"},
+                  {"name": "steel-plate", "comparator": "=", "count": 100, "index": 3, "quality": "normal"},
+                  {"name": "plastic-bar", "comparator": "=", "count": 100, "index": 4, "quality": "normal"}
+                ]
+              }
+            ]
+          }
+        },
+        "position": {"x": -1.5, "y": 12.5}
+      },
+      {
+        "name": "constant-combinator",
+        "direction": 8,
+        "player_description": "Production Tiers\nThis is the order to build things in.",
         "control_behavior": {
           "sections": {
             "sections": [
@@ -255,7 +275,8 @@
                   {"name": "efficiency-module", "comparator": "=", "count": 5, "index": 12, "quality": "normal"},
                   {"name": "productivity-module", "comparator": "=", "count": 5, "index": 13, "quality": "normal"},
                   {"name": "quality-module", "comparator": "=", "count": 5, "index": 14, "quality": "normal"},
-                  {"name": "solar-panel-equipment", "comparator": "=", "count": 5, "index": 15, "quality": "normal"}
+                  {"name": "solar-panel-equipment", "comparator": "=", "count": 5, "index": 15, "quality": "normal"},
+                  {"name": "modular-armor", "comparator": "=", "count": 5, "index": 16, "quality": "normal"}
                 ]
               },
               {
@@ -265,7 +286,32 @@
             ]
           }
         },
-        "position": {"x": 10.5, "y": -0.5}
+        "position": {"x": 10.5, "y": 3.5}
+      },
+      {"name": "creative-mod_super-loader", "type": "output", "position": {"x": -0.5, "y": 26}},
+      {"name": "creative-mod_super-loader", "type": "output", "position": {"x": 1.5, "y": 26}},
+      {"name": "creative-mod_super-loader", "type": "output", "position": {"x": 3.5, "y": 26}},
+      {"name": "creative-mod_super-loader", "type": "output", "position": {"x": 5.5, "y": 26}},
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [{"comparator": ">", "first_signal": {"name": "signal-each", "type": "virtual"}}],
+            "outputs": [{"copy_count_from_input": false, "signal": {"name": "signal-each", "type": "virtual"}}]
+          }
+        },
+        "position": {"x": -2, "y": 0.5}
+      },
+      {
+        "name": "decider-combinator",
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [{"comparator": "=", "first_signal": {"name": "signal-everything", "type": "virtual"}}],
+            "outputs": [{"copy_count_from_input": false, "signal": {"name": "signal-check", "type": "virtual"}}]
+          }
+        },
+        "position": {"x": -1.5, "y": 18}
       },
       {
         "name": "decider-combinator",
@@ -276,7 +322,7 @@
             "outputs": [{"signal": {"name": "signal-each", "type": "virtual"}}]
           }
         },
-        "position": {"x": 0, "y": -2.5}
+        "position": {"x": 0, "y": 1.5}
       },
       {
         "name": "decider-combinator",
@@ -288,134 +334,6 @@
               {"comparator": ">", "first_signal": {"name": "signal-clockwise-circle-arrow", "type": "virtual"}}
             ],
             "outputs": [{"copy_count_from_input": false, "signal": {"name": "signal-check", "type": "virtual"}}]
-          }
-        },
-        "position": {"x": 7, "y": -0.5}
-      },
-      {
-        "name": "decider-combinator",
-        "direction": 4,
-        "control_behavior": {
-          "decider_conditions": {
-            "conditions": [{"comparator": ">", "first_signal": {"name": "signal-each", "type": "virtual"}}],
-            "outputs": [{"signal": {"name": "signal-each", "type": "virtual"}}]
-          }
-        },
-        "position": {"x": 9, "y": -1.5}
-      },
-      {
-        "name": "decider-combinator",
-        "direction": 4,
-        "control_behavior": {
-          "decider_conditions": {
-            "conditions": [
-              {
-                "comparator": ">",
-                "first_signal": {"name": "signal-each", "type": "virtual"},
-                "first_signal_networks": {"green": false, "red": true}
-              },
-              {
-                "comparator": ">",
-                "compare_type": "and",
-                "first_signal": {"name": "signal-each", "type": "virtual"},
-                "first_signal_networks": {"green": true, "red": false}
-              }
-            ],
-            "outputs": [{"networks": {"green": false, "red": true}, "signal": {"name": "signal-each", "type": "virtual"}}]
-          }
-        },
-        "position": {"x": 9, "y": -0.5}
-      },
-      {
-        "name": "decider-combinator",
-        "direction": 4,
-        "control_behavior": {
-          "decider_conditions": {
-            "conditions": [
-              {
-                "comparator": "≠",
-                "first_signal": {"name": "signal-each", "type": "virtual"},
-                "first_signal_networks": {"green": false, "red": true}
-              },
-              {
-                "comparator": "=",
-                "compare_type": "and",
-                "first_signal": {"name": "signal-lock", "type": "virtual"},
-                "first_signal_networks": {"green": true, "red": false}
-              },
-              {
-                "comparator": "≠",
-                "first_signal": {"name": "signal-each", "type": "virtual"},
-                "first_signal_networks": {"green": true, "red": false}
-              },
-              {
-                "comparator": "=",
-                "compare_type": "and",
-                "first_signal": {"name": "signal-check", "type": "virtual"}
-              }
-            ],
-            "outputs": [
-              {"copy_count_from_input": false, "signal": {"name": "signal-each", "type": "virtual"}},
-              {
-                "constant": -1,
-                "copy_count_from_input": false,
-                "signal": {"name": "signal-lock", "type": "virtual"}
-              }
-            ]
-          }
-        },
-        "position": {"x": 7, "y": 0.5}
-      },
-      {
-        "name": "decider-combinator",
-        "direction": 4,
-        "control_behavior": {
-          "decider_conditions": {
-            "conditions": [
-              {"comparator": ">", "first_signal": {"name": "signal-check", "type": "virtual"}},
-              {"comparator": ">", "first_signal": {"name": "signal-clockwise-circle-arrow", "type": "virtual"}}
-            ],
-            "outputs": [{"copy_count_from_input": false, "signal": {"name": "signal-check", "type": "virtual"}}]
-          }
-        },
-        "position": {"x": 7, "y": 2.5}
-      },
-      {
-        "name": "decider-combinator",
-        "direction": 4,
-        "control_behavior": {
-          "decider_conditions": {
-            "conditions": [
-              {
-                "comparator": "≠",
-                "first_signal": {"name": "signal-each", "type": "virtual"},
-                "first_signal_networks": {"green": false, "red": true}
-              },
-              {
-                "comparator": "=",
-                "compare_type": "and",
-                "first_signal": {"name": "signal-lock", "type": "virtual"},
-                "first_signal_networks": {"green": true, "red": false}
-              },
-              {
-                "comparator": "≠",
-                "first_signal": {"name": "signal-each", "type": "virtual"},
-                "first_signal_networks": {"green": true, "red": false}
-              },
-              {
-                "comparator": "=",
-                "compare_type": "and",
-                "first_signal": {"name": "signal-check", "type": "virtual"}
-              }
-            ],
-            "outputs": [
-              {"copy_count_from_input": false, "signal": {"name": "signal-each", "type": "virtual"}},
-              {
-                "constant": -1,
-                "copy_count_from_input": false,
-                "signal": {"name": "signal-lock", "type": "virtual"}
-              }
-            ]
           }
         },
         "position": {"x": 7, "y": 3.5}
@@ -426,20 +344,6 @@
         "control_behavior": {
           "decider_conditions": {
             "conditions": [
-              {"comparator": ">", "first_signal": {"name": "signal-check", "type": "virtual"}},
-              {"comparator": ">", "first_signal": {"name": "signal-clockwise-circle-arrow", "type": "virtual"}}
-            ],
-            "outputs": [{"copy_count_from_input": false, "signal": {"name": "signal-check", "type": "virtual"}}]
-          }
-        },
-        "position": {"x": 7, "y": 5.5}
-      },
-      {
-        "name": "decider-combinator",
-        "direction": 4,
-        "control_behavior": {
-          "decider_conditions": {
-            "conditions": [
               {
                 "comparator": "≠",
                 "first_signal": {"name": "signal-each", "type": "virtual"},
@@ -472,7 +376,7 @@
             ]
           }
         },
-        "position": {"x": 7, "y": 6.5}
+        "position": {"x": 7, "y": 4.5}
       },
       {
         "name": "decider-combinator",
@@ -481,29 +385,6 @@
           "decider_conditions": {
             "conditions": [{"comparator": ">", "first_signal": {"name": "signal-each", "type": "virtual"}}],
             "outputs": [{"signal": {"name": "signal-each", "type": "virtual"}}]
-          }
-        },
-        "position": {"x": 9, "y": 1.5}
-      },
-      {
-        "name": "decider-combinator",
-        "direction": 4,
-        "control_behavior": {
-          "decider_conditions": {
-            "conditions": [
-              {
-                "comparator": ">",
-                "first_signal": {"name": "signal-each", "type": "virtual"},
-                "first_signal_networks": {"green": false, "red": true}
-              },
-              {
-                "comparator": ">",
-                "compare_type": "and",
-                "first_signal": {"name": "signal-each", "type": "virtual"},
-                "first_signal_networks": {"green": true, "red": false}
-              }
-            ],
-            "outputs": [{"networks": {"green": false, "red": true}, "signal": {"name": "signal-each", "type": "virtual"}}]
           }
         },
         "position": {"x": 9, "y": 2.5}
@@ -513,17 +394,6 @@
         "direction": 4,
         "control_behavior": {
           "decider_conditions": {
-            "conditions": [{"comparator": ">", "first_signal": {"name": "signal-each", "type": "virtual"}}],
-            "outputs": [{"signal": {"name": "signal-each", "type": "virtual"}}]
-          }
-        },
-        "position": {"x": 9, "y": 4.5}
-      },
-      {
-        "name": "decider-combinator",
-        "direction": 4,
-        "control_behavior": {
-          "decider_conditions": {
             "conditions": [
               {
                 "comparator": ">",
@@ -540,18 +410,7 @@
             "outputs": [{"networks": {"green": false, "red": true}, "signal": {"name": "signal-each", "type": "virtual"}}]
           }
         },
-        "position": {"x": 9, "y": 5.5}
-      },
-      {
-        "name": "decider-combinator",
-        "direction": 4,
-        "control_behavior": {
-          "decider_conditions": {
-            "conditions": [{"comparator": ">", "first_signal": {"name": "signal-each", "type": "virtual"}}],
-            "outputs": [{"signal": {"name": "signal-each", "type": "virtual"}}]
-          }
-        },
-        "position": {"x": 9, "y": 7.5}
+        "position": {"x": 9, "y": 3.5}
       },
       {
         "name": "decider-combinator",
@@ -563,46 +422,6 @@
               {"comparator": ">", "first_signal": {"name": "signal-clockwise-circle-arrow", "type": "virtual"}}
             ],
             "outputs": [{"copy_count_from_input": false, "signal": {"name": "signal-check", "type": "virtual"}}]
-          }
-        },
-        "position": {"x": 7, "y": 8.5}
-      },
-      {
-        "name": "decider-combinator",
-        "direction": 4,
-        "control_behavior": {
-          "decider_conditions": {
-            "conditions": [
-              {
-                "comparator": "≠",
-                "first_signal": {"name": "signal-each", "type": "virtual"},
-                "first_signal_networks": {"green": false, "red": true}
-              },
-              {
-                "comparator": "=",
-                "compare_type": "and",
-                "first_signal": {"name": "signal-lock", "type": "virtual"},
-                "first_signal_networks": {"green": true, "red": false}
-              },
-              {
-                "comparator": "≠",
-                "first_signal": {"name": "signal-each", "type": "virtual"},
-                "first_signal_networks": {"green": true, "red": false}
-              },
-              {
-                "comparator": "=",
-                "compare_type": "and",
-                "first_signal": {"name": "signal-check", "type": "virtual"}
-              }
-            ],
-            "outputs": [
-              {"copy_count_from_input": false, "signal": {"name": "signal-each", "type": "virtual"}},
-              {
-                "constant": -1,
-                "copy_count_from_input": false,
-                "signal": {"name": "signal-lock", "type": "virtual"}
-              }
-            ]
           }
         },
         "position": {"x": 7, "y": 9.5}
@@ -614,6 +433,57 @@
           "decider_conditions": {
             "conditions": [
               {
+                "comparator": "≠",
+                "first_signal": {"name": "signal-each", "type": "virtual"},
+                "first_signal_networks": {"green": false, "red": true}
+              },
+              {
+                "comparator": "=",
+                "compare_type": "and",
+                "first_signal": {"name": "signal-lock", "type": "virtual"},
+                "first_signal_networks": {"green": true, "red": false}
+              },
+              {
+                "comparator": "≠",
+                "first_signal": {"name": "signal-each", "type": "virtual"},
+                "first_signal_networks": {"green": true, "red": false}
+              },
+              {
+                "comparator": "=",
+                "compare_type": "and",
+                "first_signal": {"name": "signal-check", "type": "virtual"}
+              }
+            ],
+            "outputs": [
+              {"copy_count_from_input": false, "signal": {"name": "signal-each", "type": "virtual"}},
+              {
+                "constant": -1,
+                "copy_count_from_input": false,
+                "signal": {"name": "signal-lock", "type": "virtual"}
+              }
+            ]
+          }
+        },
+        "position": {"x": 7, "y": 10.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [{"comparator": ">", "first_signal": {"name": "signal-each", "type": "virtual"}}],
+            "outputs": [{"signal": {"name": "signal-each", "type": "virtual"}}]
+          }
+        },
+        "position": {"x": 9, "y": 8.5}
+      },
+      {
+        "name": "decider-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [
+              {
                 "comparator": ">",
                 "first_signal": {"name": "signal-each", "type": "virtual"},
                 "first_signal_networks": {"green": false, "red": true}
@@ -628,251 +498,408 @@
             "outputs": [{"networks": {"green": false, "red": true}, "signal": {"name": "signal-each", "type": "virtual"}}]
           }
         },
-        "position": {"x": 9, "y": 8.5}
+        "position": {"x": 9, "y": 9.5}
       },
       {
-        "name": "inserter",
-        "control_behavior": {"circuit_hand_read_mode": 1, "circuit_read_hand_contents": true},
-        "position": {"x": 1.5, "y": -0.5}
+        "name": "decider-combinator",
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [{"comparator": "=", "first_signal": {"name": "signal-everything", "type": "virtual"}}],
+            "outputs": [{"copy_count_from_input": false, "signal": {"name": "signal-check", "type": "virtual"}}]
+          }
+        },
+        "position": {"x": 0.5, "y": 18}
+      },
+      {
+        "name": "decider-combinator",
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [{"comparator": "=", "first_signal": {"name": "signal-everything", "type": "virtual"}}],
+            "outputs": [{"copy_count_from_input": false, "signal": {"name": "signal-check", "type": "virtual"}}]
+          }
+        },
+        "position": {"x": 2.5, "y": 18}
+      },
+      {
+        "name": "decider-combinator",
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [{"comparator": "=", "first_signal": {"name": "signal-everything", "type": "virtual"}}],
+            "outputs": [{"copy_count_from_input": false, "signal": {"name": "signal-check", "type": "virtual"}}]
+          }
+        },
+        "position": {"x": 4.5, "y": 18}
+      },
+      {
+        "name": "ee-infinity-chest",
+        "infinity_settings": {
+          "remove_unfiltered_items": false,
+          "filters": [{"name": "plastic-bar", "count": 100, "index": 1, "mode": "at-least"}]
+        },
+        "position": {"x": -0.5, "y": 27.5}
+      },
+      {
+        "name": "ee-infinity-chest",
+        "infinity_settings": {
+          "remove_unfiltered_items": false,
+          "filters": [{"name": "steel-plate", "count": 100, "index": 1, "mode": "at-least"}]
+        },
+        "position": {"x": 1.5, "y": 27.5}
+      },
+      {
+        "name": "ee-infinity-chest",
+        "infinity_settings": {
+          "remove_unfiltered_items": false,
+          "filters": [{"name": "copper-plate", "count": 100, "index": 1, "mode": "at-least"}]
+        },
+        "position": {"x": 3.5, "y": 27.5}
+      },
+      {
+        "name": "ee-infinity-chest",
+        "infinity_settings": {
+          "remove_unfiltered_items": false,
+          "filters": [{"name": "iron-plate", "count": 100, "index": 1, "mode": "at-least"}]
+        },
+        "position": {"x": 5.5, "y": 27.5}
       },
       {
         "name": "inserter",
         "direction": 4,
         "control_behavior": {"circuit_hand_read_mode": 1, "circuit_read_hand_contents": true},
-        "position": {"x": 2.5, "y": -1.5}
+        "position": {"x": -6.5, "y": 4.5}
+      },
+      {
+        "name": "inserter",
+        "control_behavior": {"circuit_hand_read_mode": 1, "circuit_read_hand_contents": true},
+        "position": {"x": 1.5, "y": 3.5}
       },
       {
         "name": "inserter",
         "direction": 4,
         "control_behavior": {"circuit_hand_read_mode": 1, "circuit_read_hand_contents": true},
-        "position": {"x": -6.5, "y": 0.5}
+        "position": {"x": 2.5, "y": 2.5}
       },
       {
         "name": "inserter",
         "direction": 4,
         "use_filters": true,
         "control_behavior": {"circuit_set_filters": true},
-        "position": {"x": 0.5, "y": 0.5}
+        "position": {"x": 0.5, "y": 4.5}
       },
       {
         "name": "inserter",
-        "direction": 12,
-        "control_behavior": {"circuit_hand_read_mode": 1, "circuit_read_hand_contents": true},
-        "position": {"x": 2.5, "y": 0.5}
-      },
-      {
-        "name": "inserter",
-        "direction": 4,
-        "control_behavior": {"circuit_hand_read_mode": 1, "circuit_read_hand_contents": true},
-        "position": {"x": 2.5, "y": 1.5}
-      },
-      {
-        "name": "inserter",
-        "control_behavior": {"circuit_hand_read_mode": 1, "circuit_read_hand_contents": true},
-        "position": {"x": 1.5, "y": 2.5}
-      },
-      {
-        "name": "inserter",
-        "direction": 4,
+        "direction": 8,
         "use_filters": true,
         "control_behavior": {"circuit_set_filters": true},
-        "position": {"x": 0.5, "y": 3.5}
-      },
-      {
-        "name": "inserter",
-        "direction": 12,
-        "control_behavior": {"circuit_hand_read_mode": 1, "circuit_read_hand_contents": true},
-        "position": {"x": 2.5, "y": 3.5}
-      },
-      {
-        "name": "inserter",
-        "control_behavior": {"circuit_hand_read_mode": 1, "circuit_read_hand_contents": true},
         "position": {"x": 1.5, "y": 5.5}
       },
       {
         "name": "inserter",
-        "direction": 4,
+        "direction": 12,
         "control_behavior": {"circuit_hand_read_mode": 1, "circuit_read_hand_contents": true},
         "position": {"x": 2.5, "y": 4.5}
       },
       {
         "name": "inserter",
-        "direction": 4,
-        "use_filters": true,
-        "control_behavior": {"circuit_set_filters": true},
-        "position": {"x": 0.5, "y": 6.5}
-      },
-      {
-        "name": "inserter",
-        "direction": 12,
         "control_behavior": {"circuit_hand_read_mode": 1, "circuit_read_hand_contents": true},
-        "position": {"x": 2.5, "y": 6.5}
+        "position": {"x": 1.5, "y": 9.5}
       },
       {
         "name": "inserter",
         "direction": 4,
         "control_behavior": {"circuit_hand_read_mode": 1, "circuit_read_hand_contents": true},
-        "position": {"x": 2.5, "y": 7.5}
-      },
-      {
-        "name": "inserter",
-        "control_behavior": {"circuit_hand_read_mode": 1, "circuit_read_hand_contents": true},
-        "position": {"x": 1.5, "y": 8.5}
+        "position": {"x": 2.5, "y": 8.5}
       },
       {
         "name": "inserter",
         "direction": 4,
         "use_filters": true,
         "control_behavior": {"circuit_set_filters": true},
-        "position": {"x": 0.5, "y": 9.5}
+        "position": {"x": 0.5, "y": 10.5}
       },
       {
         "name": "inserter",
-        "direction": 12,
-        "control_behavior": {"circuit_hand_read_mode": 1, "circuit_read_hand_contents": true},
-        "position": {"x": 2.5, "y": 9.5}
-      },
-      {"name": "iron-chest", "position": {"x": -7.5, "y": 0.5}},
-      {"name": "iron-chest", "position": {"x": 1.5, "y": 0.5}},
-      {"name": "iron-chest", "position": {"x": 1.5, "y": 3.5}},
-      {"name": "iron-chest", "position": {"x": 1.5, "y": 6.5}},
-      {"name": "iron-chest", "position": {"x": 1.5, "y": 9.5}},
-      {
-        "name": "selector-combinator",
-        "direction": 4,
-        "control_behavior": {"index_constant": 0, "operation": "select", "select_max": false},
-        "position": {"x": 9, "y": 0.5}
-      },
-      {
-        "name": "selector-combinator",
-        "direction": 4,
-        "control_behavior": {"index_constant": 0, "operation": "select", "select_max": false},
-        "position": {"x": 9, "y": 3.5}
-      },
-      {
-        "name": "selector-combinator",
-        "direction": 4,
-        "control_behavior": {"index_constant": 0, "operation": "select", "select_max": false},
-        "position": {"x": 9, "y": 6.5}
-      },
-      {
-        "name": "selector-combinator",
-        "direction": 4,
-        "control_behavior": {"index_constant": 0, "operation": "select", "select_max": false},
-        "position": {"x": 9, "y": 9.5}
-      },
-      {
-        "name": "transport-belt",
         "direction": 8,
-        "control_behavior": {"circuit_contents_read_mode": 2, "circuit_read_hand_contents": true},
-        "position": {"x": 1.5, "y": -1.5}
+        "use_filters": true,
+        "control_behavior": {"circuit_set_filters": true},
+        "filters": [{"name": "copper-plate", "comparator": "=", "index": 1, "quality": "normal"}],
+        "position": {"x": 1.5, "y": 11.5}
       },
-      {"name": "transport-belt", "direction": 12, "position": {"x": -5.5, "y": 0.5}},
-      {"name": "transport-belt", "direction": 12, "position": {"x": -4.5, "y": 0.5}},
-      {"name": "transport-belt", "direction": 12, "position": {"x": -3.5, "y": 0.5}},
-      {"name": "transport-belt", "direction": 12, "position": {"x": -2.5, "y": 0.5}},
-      {"name": "transport-belt", "direction": 12, "position": {"x": -1.5, "y": 0.5}},
+      {
+        "name": "inserter",
+        "direction": 12,
+        "control_behavior": {"circuit_hand_read_mode": 1, "circuit_read_hand_contents": true},
+        "position": {"x": 2.5, "y": 10.5}
+      },
+      {"name": "iron-chest", "position": {"x": -7.5, "y": 4.5}},
+      {"name": "iron-chest", "position": {"x": 1.5, "y": 4.5}},
+      {"name": "iron-chest", "position": {"x": 1.5, "y": 10.5}},
+      {
+        "name": "selector-combinator",
+        "direction": 4,
+        "control_behavior": {"index_constant": 0, "operation": "select", "select_max": false},
+        "position": {"x": 9, "y": 4.5}
+      },
+      {
+        "name": "selector-combinator",
+        "direction": 4,
+        "control_behavior": {"index_constant": 0, "operation": "select", "select_max": false},
+        "position": {"x": 9, "y": 10.5}
+      },
+      {"name": "small-electric-pole", "position": {"x": -1.5, "y": 16.5}},
+      {"name": "small-electric-pole", "position": {"x": 5.5, "y": 15.5}},
+      {"name": "small-electric-pole", "position": {"x": 2.5, "y": 16.5}},
+      {"name": "splitter", "input_priority": "left", "position": {"x": -1, "y": 19.5}},
+      {
+        "name": "splitter",
+        "direction": 12,
+        "output_priority": "right",
+        "filter": {"name": "plastic-bar", "comparator": "=", "quality": "normal"},
+        "position": {"x": -0.5, "y": 22}
+      },
+      {
+        "name": "splitter",
+        "output_priority": "right",
+        "filter": {"name": "raw-fish", "comparator": "=", "quality": "normal"},
+        "position": {"x": 2, "y": 13.5}
+      },
+      {
+        "name": "splitter",
+        "output_priority": "left",
+        "filter": {"name": "raw-fish", "comparator": "=", "quality": "normal"},
+        "position": {"x": 0, "y": 15.5}
+      },
+      {
+        "name": "splitter",
+        "output_priority": "right",
+        "filter": {"name": "raw-fish", "comparator": "=", "quality": "normal"},
+        "position": {"x": 4, "y": 15.5}
+      },
+      {"name": "splitter", "input_priority": "left", "position": {"x": 1, "y": 19.5}},
+      {"name": "splitter", "input_priority": "left", "position": {"x": 3, "y": 19.5}},
+      {"name": "splitter", "input_priority": "left", "position": {"x": 5, "y": 19.5}},
+      {
+        "name": "splitter",
+        "direction": 12,
+        "output_priority": "right",
+        "filter": {"name": "steel-plate", "comparator": "=", "quality": "normal"},
+        "position": {"x": 1.5, "y": 22}
+      },
+      {
+        "name": "splitter",
+        "direction": 12,
+        "output_priority": "right",
+        "filter": {"name": "copper-plate", "comparator": "=", "quality": "normal"},
+        "position": {"x": 3.5, "y": 22}
+      },
+      {
+        "name": "splitter",
+        "direction": 12,
+        "output_priority": "right",
+        "filter": {"name": "iron-plate", "comparator": "=", "quality": "normal"},
+        "position": {"x": 5.5, "y": 22}
+      },
+      {"name": "transport-belt", "direction": 12, "position": {"x": -5.5, "y": 4.5}},
+      {"name": "transport-belt", "direction": 12, "position": {"x": -4.5, "y": 4.5}},
+      {"name": "transport-belt", "direction": 12, "position": {"x": -3.5, "y": 4.5}},
+      {"name": "transport-belt", "direction": 12, "position": {"x": -2.5, "y": 4.5}},
+      {"name": "transport-belt", "direction": 12, "position": {"x": -1.5, "y": 4.5}},
       {
         "name": "transport-belt",
         "direction": 12,
         "control_behavior": {"circuit_contents_read_mode": 2, "circuit_read_hand_contents": true},
-        "position": {"x": -0.5, "y": 0.5}
+        "position": {"x": -0.5, "y": 4.5}
       },
-      {"name": "transport-belt", "position": {"x": -0.5, "y": 1.5}},
-      {"name": "transport-belt", "position": {"x": -0.5, "y": 2.5}},
-      {"name": "transport-belt", "position": {"x": -0.5, "y": 3.5}},
-      {"name": "transport-belt", "position": {"x": -0.5, "y": 4.5}},
       {"name": "transport-belt", "position": {"x": -0.5, "y": 5.5}},
       {"name": "transport-belt", "position": {"x": -0.5, "y": 6.5}},
       {"name": "transport-belt", "position": {"x": -0.5, "y": 7.5}},
       {"name": "transport-belt", "position": {"x": -0.5, "y": 8.5}},
       {"name": "transport-belt", "position": {"x": -0.5, "y": 9.5}},
+      {"name": "transport-belt", "position": {"x": -0.5, "y": 10.5}},
+      {"name": "transport-belt", "position": {"x": -0.5, "y": 16.5}},
       {
         "name": "transport-belt",
-        "direction": 8,
-        "control_behavior": {"circuit_contents_read_mode": 2, "circuit_read_hand_contents": true},
-        "position": {"x": 1.5, "y": 1.5}
+        "control_behavior": {"circuit_contents_read_mode": 1, "circuit_read_hand_contents": true},
+        "position": {"x": -0.5, "y": 17.5}
       },
       {
         "name": "transport-belt",
-        "direction": 8,
-        "control_behavior": {"circuit_contents_read_mode": 2, "circuit_read_hand_contents": true},
-        "position": {"x": 1.5, "y": 4.5}
+        "control_behavior": {
+          "circuit_contents_read_mode": 0,
+          "circuit_enabled": true,
+          "circuit_read_hand_contents": false,
+          "circuit_condition": {"comparator": ">", "constant": 0, "first_signal": {"name": "signal-check", "type": "virtual"}}
+        },
+        "position": {"x": -0.5, "y": 18.5}
       },
+      {"name": "transport-belt", "position": {"x": -1.5, "y": 20.5}},
+      {"name": "transport-belt", "position": {"x": -1.5, "y": 21.5}},
+      {"name": "transport-belt", "position": {"x": -0.5, "y": 24.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 1.5, "y": 0.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 2.5, "y": 0.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 3.5, "y": 0.5}},
       {
         "name": "transport-belt",
         "direction": 8,
         "control_behavior": {"circuit_contents_read_mode": 2, "circuit_read_hand_contents": true},
-        "position": {"x": 1.5, "y": 7.5}
-      }
+        "position": {"x": 1.5, "y": 2.5}
+      },
+      {"name": "transport-belt", "direction": 4, "position": {"x": 4.5, "y": 0.5}},
+      {"name": "transport-belt", "direction": 4, "position": {"x": 5.5, "y": 0.5}},
+      {"name": "transport-belt", "direction": 8, "position": {"x": 6.5, "y": 0.5}},
+      {
+        "name": "transport-belt",
+        "direction": 8,
+        "control_behavior": {"circuit_contents_read_mode": 2, "circuit_read_hand_contents": true},
+        "position": {"x": 1.5, "y": 8.5}
+      },
+      {"name": "transport-belt", "direction": 4, "position": {"x": 0.5, "y": 14.5}},
+      {"name": "transport-belt", "position": {"x": 1.5, "y": 14.5}},
+      {"name": "transport-belt", "position": {"x": 2.5, "y": 14.5}},
+      {"name": "transport-belt", "direction": 12, "position": {"x": 3.5, "y": 14.5}},
+      {"name": "transport-belt", "direction": 8, "position": {"x": 6.5, "y": 13.5}},
+      {"name": "transport-belt", "direction": 8, "position": {"x": 6.5, "y": 14.5}},
+      {"name": "transport-belt", "direction": 8, "position": {"x": 6.5, "y": 15.5}},
+      {"name": "transport-belt", "position": {"x": 0.5, "y": 16.5}},
+      {"name": "transport-belt", "direction": 12, "position": {"x": 1.5, "y": 16.5}},
+      {
+        "name": "transport-belt",
+        "control_behavior": {"circuit_contents_read_mode": 1, "circuit_read_hand_contents": true},
+        "position": {"x": 1.5, "y": 17.5}
+      },
+      {"name": "transport-belt", "position": {"x": 3.5, "y": 16.5}},
+      {
+        "name": "transport-belt",
+        "control_behavior": {"circuit_contents_read_mode": 1, "circuit_read_hand_contents": true},
+        "position": {"x": 3.5, "y": 17.5}
+      },
+      {
+        "name": "transport-belt",
+        "control_behavior": {
+          "circuit_contents_read_mode": 0,
+          "circuit_enabled": true,
+          "circuit_read_hand_contents": false,
+          "circuit_condition": {"comparator": ">", "constant": 0, "first_signal": {"name": "signal-check", "type": "virtual"}}
+        },
+        "position": {"x": 1.5, "y": 18.5}
+      },
+      {
+        "name": "transport-belt",
+        "control_behavior": {
+          "circuit_contents_read_mode": 0,
+          "circuit_enabled": true,
+          "circuit_read_hand_contents": false,
+          "circuit_condition": {"comparator": ">", "constant": 0, "first_signal": {"name": "signal-check", "type": "virtual"}}
+        },
+        "position": {"x": 3.5, "y": 18.5}
+      },
+      {"name": "transport-belt", "position": {"x": 4.5, "y": 16.5}},
+      {"name": "transport-belt", "direction": 12, "position": {"x": 5.5, "y": 16.5}},
+      {
+        "name": "transport-belt",
+        "control_behavior": {"circuit_contents_read_mode": 1, "circuit_read_hand_contents": true},
+        "position": {"x": 5.5, "y": 17.5}
+      },
+      {"name": "transport-belt", "direction": 8, "position": {"x": 6.5, "y": 16.5}},
+      {"name": "transport-belt", "direction": 8, "position": {"x": 6.5, "y": 17.5}},
+      {
+        "name": "transport-belt",
+        "control_behavior": {
+          "circuit_contents_read_mode": 0,
+          "circuit_enabled": true,
+          "circuit_read_hand_contents": false,
+          "circuit_condition": {"comparator": ">", "constant": 0, "first_signal": {"name": "signal-check", "type": "virtual"}}
+        },
+        "position": {"x": 5.5, "y": 18.5}
+      },
+      {"name": "transport-belt", "direction": 8, "position": {"x": 6.5, "y": 18.5}},
+      {"name": "transport-belt", "direction": 8, "position": {"x": 6.5, "y": 19.5}},
+      {"name": "transport-belt", "position": {"x": 0.5, "y": 20.5}},
+      {"name": "transport-belt", "position": {"x": 0.5, "y": 21.5}},
+      {"name": "transport-belt", "position": {"x": 2.5, "y": 20.5}},
+      {"name": "transport-belt", "position": {"x": 2.5, "y": 21.5}},
+      {"name": "transport-belt", "direction": 12, "position": {"x": 0.5, "y": 22.5}},
+      {"name": "transport-belt", "direction": 12, "position": {"x": 2.5, "y": 22.5}},
+      {"name": "transport-belt", "position": {"x": 4.5, "y": 20.5}},
+      {"name": "transport-belt", "position": {"x": 4.5, "y": 21.5}},
+      {"name": "transport-belt", "direction": 8, "position": {"x": 6.5, "y": 20.5}},
+      {"name": "transport-belt", "direction": 12, "position": {"x": 6.5, "y": 21.5}},
+      {"name": "transport-belt", "direction": 12, "position": {"x": 4.5, "y": 22.5}},
+      {"name": "transport-belt", "position": {"x": 1.5, "y": 24.5}},
+      {"name": "transport-belt", "position": {"x": 3.5, "y": 24.5}},
+      {"name": "transport-belt", "position": {"x": 5.5, "y": 24.5}},
+      {"name": "underground-belt", "type": "output", "position": {"x": -0.5, "y": 20.5}},
+      {"name": "underground-belt", "type": "input", "position": {"x": -0.5, "y": 23.5}},
+      {"name": "underground-belt", "type": "output", "position": {"x": 1.5, "y": 1.5}},
+      {"name": "underground-belt", "direction": 8, "type": "input", "position": {"x": 6.5, "y": 1.5}},
+      {"name": "underground-belt", "type": "input", "position": {"x": 1.5, "y": 6.5}},
+      {"name": "underground-belt", "type": "output", "position": {"x": 1.5, "y": 7.5}},
+      {"name": "underground-belt", "direction": 8, "type": "output", "position": {"x": 6.5, "y": 6.5}},
+      {"name": "underground-belt", "direction": 8, "type": "input", "position": {"x": 6.5, "y": 7.5}},
+      {"name": "underground-belt", "type": "input", "position": {"x": 1.5, "y": 12.5}},
+      {"name": "underground-belt", "direction": 8, "type": "output", "position": {"x": 6.5, "y": 12.5}},
+      {"name": "underground-belt", "type": "output", "position": {"x": 1.5, "y": 20.5}},
+      {"name": "underground-belt", "type": "output", "position": {"x": 3.5, "y": 20.5}},
+      {"name": "underground-belt", "type": "input", "position": {"x": 1.5, "y": 23.5}},
+      {"name": "underground-belt", "type": "input", "position": {"x": 3.5, "y": 23.5}},
+      {"name": "underground-belt", "type": "output", "position": {"x": 5.5, "y": 20.5}},
+      {"name": "underground-belt", "type": "input", "position": {"x": 5.5, "y": 23.5}}
     ],
     "icons": [{"index": 1, "signal": {"name": "assembling-machine-1"}}],
     "wires": [
-      ["4,0", 2, "5.5,0", 2],
-      ["4,0", 2, "14.5,1", 2],
-      ["5.5,0", 1, "7,3", 1],
-      ["5.5,0", 4, "7.5,0", 2],
-      ["7.5,0", 3, "8,3", 1],
-      ["9,2", 1, "9,1", 1],
+      ["4,1", 2, "5.5,0", 2],
+      ["4,1", 2, "5.5,1", 2],
+      ["5.5,1", 1, "7,4", 1],
+      ["5.5,1", 4, "7.5,1", 2],
+      ["5.5,0", 4, "4,2", 2],
+      ["7.5,1", 3, "8,4", 1],
+      ["4,2", 2, "14.5,2", 2],
+      ["10,2", 1, "9,2", 1],
       ["9,2", 1, "9,3", 1],
-      ["9,1", 1, "10,1", 1],
-      ["12,2", 1, "14.5,2", 1],
-      ["12,2", 1, "14.5,3", 3],
-      ["14.5,2", 4, "14.5,3", 2],
-      ["14.5,1", 1, "9,3", 1],
-      ["14.5,1", 2, "14.5,4", 2],
-      ["14.5,1", 2, "14.5,7", 2],
-      ["14.5,1", 4, "16.5,1", 2],
-      ["16.5,2", 1, "16.5,5", 1],
-      ["16.5,2", 1, "18,2", 1],
-      ["16.5,2", 1, "16.5,8", 1],
-      ["16.5,2", 2, "16.5,1", 4],
-      ["16.5,2", 3, "16.5,3", 1],
-      ["0,3", 1, "1,3", 1],
-      ["1,3", 1, "7,3", 1],
-      ["9,4", 1, "9,5", 1],
-      ["9,4", 1, "10,4", 1],
-      ["8,3", 1, "8,6", 1],
-      ["8,3", 1, "8,9", 1],
-      ["14.5,4", 1, "9,6", 1],
-      ["14.5,4", 4, "16.5,4", 2],
-      ["14.5,3", 1, "16.5,3", 3],
-      ["14.5,3", 2, "14.5,3", 4],
-      ["16.5,4", 4, "16.5,5", 2],
-      ["9,6", 1, "9,5", 1],
-      ["12,5", 1, "14.5,5", 1],
-      ["12,5", 1, "14.5,6", 3],
-      ["14.5,6", 1, "16.5,6", 3],
-      ["14.5,6", 2, "14.5,5", 4],
-      ["14.5,6", 2, "14.5,6", 4],
-      ["16.5,6", 1, "16.5,5", 3],
-      ["9,8", 1, "9,7", 1],
-      ["9,8", 1, "9,9", 1],
-      ["9,7", 1, "10,7", 1],
-      ["12,8", 1, "14.5,8", 1],
-      ["12,8", 1, "14.5,9", 3],
-      ["14.5,8", 4, "14.5,9", 2],
-      ["14.5,7", 1, "9,9", 1],
-      ["14.5,7", 2, "14.5,10", 2],
-      ["14.5,7", 4, "16.5,7", 2],
-      ["16.5,8", 1, "16.5,11", 1],
-      ["16.5,8", 2, "16.5,7", 4],
-      ["16.5,8", 3, "16.5,9", 1],
-      ["9,10", 1, "9,11", 1],
-      ["9,10", 1, "10,10", 1],
-      ["8,9", 1, "8,12", 1],
-      ["14.5,10", 1, "9,12", 1],
-      ["14.5,10", 4, "16.5,10", 2],
-      ["14.5,9", 1, "16.5,9", 3],
-      ["14.5,9", 2, "14.5,9", 4],
-      ["16.5,10", 4, "16.5,11", 2],
-      ["9,12", 1, "9,11", 1],
-      ["12,11", 1, "14.5,11", 1],
-      ["12,11", 1, "14.5,12", 3],
-      ["14.5,12", 1, "16.5,12", 3],
-      ["14.5,12", 2, "14.5,11", 4],
-      ["14.5,12", 2, "14.5,12", 4],
-      ["16.5,12", 1, "16.5,11", 3]
+      ["9,3", 1, "9,4", 1],
+      ["12,3", 1, "14.5,3", 1],
+      ["12,3", 1, "14.5,4", 3],
+      ["14.5,2", 1, "9,4", 1],
+      ["14.5,2", 2, "14.5,8", 2],
+      ["14.5,2", 4, "16.5,2", 2],
+      ["14.5,3", 4, "14.5,4", 2],
+      ["18,3", 1, "16.5,3", 1],
+      ["16.5,2", 4, "16.5,3", 2],
+      ["16.5,3", 1, "16.5,9", 1],
+      ["16.5,3", 3, "16.5,4", 1],
+      ["0,4", 1, "1,4", 1],
+      ["1,4", 1, "7,4", 1],
+      ["8,4", 1, "8,10", 1],
+      ["9,5", 1, "8,5.5", 3],
+      ["9,4", 2, "8,5.5", 2],
+      ["14.5,4", 1, "16.5,4", 3],
+      ["14.5,4", 2, "14.5,4", 4],
+      ["8,5.5", 1, "8,11.5", 1],
+      ["10,8", 1, "9,8", 1],
+      ["9,9", 1, "9,8", 1],
+      ["9,9", 1, "9,10", 1],
+      ["12,9", 1, "14.5,9", 1],
+      ["12,9", 1, "14.5,10", 3],
+      ["14.5,9", 4, "14.5,10", 2],
+      ["14.5,8", 1, "9,10", 1],
+      ["14.5,8", 4, "16.5,8", 2],
+      ["16.5,9", 2, "16.5,8", 4],
+      ["16.5,9", 3, "16.5,10", 1],
+      ["9,11", 1, "8,11.5", 3],
+      ["9,10", 2, "8,11.5", 2],
+      ["14.5,10", 1, "16.5,10", 3],
+      ["14.5,10", 2, "14.5,10", 4],
+      ["6,12", 1, "8,11.5", 1],
+      ["13,15", 5, "10,16", 5],
+      ["6,16", 5, "10,16", 5],
+      ["7,17", 1, "6,17.5", 1],
+      ["9,17", 1, "8,17.5", 1],
+      ["11,17", 1, "10,17.5", 1],
+      ["13,17", 1, "12,17.5", 1],
+      ["6,17.5", 3, "7,18", 1],
+      ["8,17.5", 3, "9,18", 1],
+      ["10,17.5", 3, "11,18", 1],
+      ["12,17.5", 3, "13,18", 1]
     ]
   }
 }

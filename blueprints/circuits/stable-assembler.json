@@ -6,7 +6,7 @@
     "description": "If the input signal changes while it's working, it delays the change until work is complete rather than cancelling the current job.",
     "shift_x": -239,
     "shift_y": -2,
-    "version": 562949958205441,
+    "version": 562949958402048,
     "entities": [
       {
         "name": "arithmetic-combinator",

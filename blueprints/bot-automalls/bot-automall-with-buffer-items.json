@@ -6,7 +6,7 @@
     "description": "Deadlocks sometimes. Maybe it could have timeouts attached to the assemblers where if they aren't making anything for a long time they get a reset signal?",
     "shift_x": -197,
     "shift_y": -5,
-    "version": 562949958205441,
+    "version": 562949958402048,
     "entities": [
       {
         "name": "arithmetic-combinator",

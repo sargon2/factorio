@@ -5,7 +5,7 @@
     "label": "Radar outpost (undefended)",
     "shift_x": 5,
     "shift_y": 446,
-    "version": 562949958205441,
+    "version": 562949958402048,
     "entities": [
       {"name": "accumulator", "position": {"x": 0, "y": -2}},
       {"name": "accumulator", "position": {"x": -6, "y": 0}},

@@ -3,18 +3,58 @@
   "blueprint": {
     "item": "blueprint",
     "label": "Bus assignments",
-    "shift_x": -147,
-    "shift_y": 88,
+    "shift_x": -277,
+    "shift_y": 216,
     "version": 562949958402048,
     "entities": [
-      {"name": "display-panel", "icon": {"name": "iron-plate"}, "position": {"x": -0.5, "y": 0.5}},
-      {"name": "display-panel", "icon": {"name": "iron-plate"}, "position": {"x": 0.5, "y": 0.5}},
-      {"name": "display-panel", "icon": {"name": "iron-plate"}, "position": {"x": 1.5, "y": 0.5}},
-      {"name": "display-panel", "icon": {"name": "iron-plate"}, "position": {"x": 2.5, "y": 0.5}},
-      {"name": "display-panel", "icon": {"name": "iron-plate"}, "position": {"x": 5.5, "y": 0.5}},
-      {"name": "display-panel", "icon": {"name": "iron-plate"}, "position": {"x": 6.5, "y": 0.5}},
-      {"name": "display-panel", "icon": {"name": "steel-plate"}, "position": {"x": 7.5, "y": 0.5}},
-      {"name": "display-panel", "icon": {"name": "steel-plate"}, "position": {"x": 8.5, "y": 0.5}},
+      {
+        "name": "display-panel",
+        "direction": 8,
+        "icon": {"name": "iron-plate"},
+        "position": {"x": -0.5, "y": 0.5}
+      },
+      {
+        "name": "display-panel",
+        "direction": 8,
+        "icon": {"name": "iron-plate"},
+        "position": {"x": 0.5, "y": 0.5}
+      },
+      {
+        "name": "display-panel",
+        "direction": 8,
+        "icon": {"name": "iron-plate"},
+        "position": {"x": 1.5, "y": 0.5}
+      },
+      {
+        "name": "display-panel",
+        "direction": 8,
+        "icon": {"name": "iron-plate"},
+        "position": {"x": 2.5, "y": 0.5}
+      },
+      {
+        "name": "display-panel",
+        "direction": 8,
+        "icon": {"name": "iron-plate"},
+        "position": {"x": 5.5, "y": 0.5}
+      },
+      {
+        "name": "display-panel",
+        "direction": 8,
+        "icon": {"name": "iron-plate"},
+        "position": {"x": 6.5, "y": 0.5}
+      },
+      {
+        "name": "display-panel",
+        "direction": 8,
+        "icon": {"name": "coal"},
+        "position": {"x": 7.5, "y": 0.5}
+      },
+      {
+        "name": "display-panel",
+        "direction": 8,
+        "icon": {"name": "coal"},
+        "position": {"x": 8.5, "y": 0.5}
+      },
       {"name": "display-panel", "icon": {"name": "copper-plate"}, "position": {"x": 11.5, "y": 0.5}},
       {"name": "display-panel", "icon": {"name": "copper-plate"}, "position": {"x": 12.5, "y": 0.5}},
       {"name": "display-panel", "icon": {"name": "copper-plate"}, "position": {"x": 13.5, "y": 0.5}},
@@ -23,25 +63,25 @@
       {"name": "display-panel", "icon": {"name": "electronic-circuit"}, "position": {"x": 18.5, "y": 0.5}},
       {"name": "display-panel", "icon": {"name": "electronic-circuit"}, "position": {"x": 19.5, "y": 0.5}},
       {"name": "display-panel", "icon": {"name": "electronic-circuit"}, "position": {"x": 20.5, "y": 0.5}},
-      {"name": "display-panel", "icon": {"name": "plastic-bar"}, "position": {"x": 23.5, "y": 0.5}},
-      {"name": "display-panel", "icon": {"name": "plastic-bar"}, "position": {"x": 24.5, "y": 0.5}},
-      {"name": "display-panel", "icon": {"name": "coal"}, "position": {"x": 25.5, "y": 0.5}},
-      {"name": "display-panel", "icon": {"name": "coal"}, "position": {"x": 26.5, "y": 0.5}},
-      {"name": "display-panel", "icon": {"name": "sulfur"}, "position": {"x": 29.5, "y": 0.5}},
-      {"name": "display-panel", "icon": {"name": "explosives"}, "position": {"x": 30.5, "y": 0.5}},
-      {"name": "display-panel", "icon": {"name": "battery"}, "position": {"x": 31.5, "y": 0.5}},
+      {"name": "display-panel", "icon": {"name": "advanced-circuit"}, "position": {"x": 23.5, "y": 0.5}},
+      {"name": "display-panel", "icon": {"name": "advanced-circuit"}, "position": {"x": 24.5, "y": 0.5}},
+      {"name": "display-panel", "icon": {"name": "processing-unit"}, "position": {"x": 25.5, "y": 0.5}},
+      {"name": "display-panel", "icon": {"name": "processing-unit"}, "position": {"x": 26.5, "y": 0.5}},
+      {"name": "display-panel", "icon": {"name": "stone"}, "position": {"x": 29.5, "y": 0.5}},
+      {"name": "display-panel", "icon": {"name": "stone-brick"}, "position": {"x": 30.5, "y": 0.5}},
+      {"name": "display-panel", "icon": {"name": "iron-ore"}, "position": {"x": 31.5, "y": 0.5}},
+      {"name": "display-panel", "icon": {"name": "steel-plate"}, "position": {"x": 32.5, "y": 0.5}},
+      {"name": "display-panel", "icon": {"name": "sulfur"}, "position": {"x": 35.5, "y": 0.5}},
+      {"name": "display-panel", "icon": {"name": "explosives"}, "position": {"x": 36.5, "y": 0.5}},
+      {"name": "display-panel", "icon": {"name": "battery"}, "position": {"x": 37.5, "y": 0.5}},
       {
         "name": "display-panel",
         "icon": {"name": "electric-engine-unit"},
-        "position": {"x": 32.5, "y": 0.5}
+        "position": {"x": 38.5, "y": 0.5}
       },
-      {"name": "display-panel", "icon": {"name": "advanced-circuit"}, "position": {"x": 35.5, "y": 0.5}},
-      {"name": "display-panel", "icon": {"name": "advanced-circuit"}, "position": {"x": 36.5, "y": 0.5}},
-      {"name": "display-panel", "icon": {"name": "processing-unit"}, "position": {"x": 37.5, "y": 0.5}},
-      {"name": "display-panel", "icon": {"name": "processing-unit"}, "position": {"x": 38.5, "y": 0.5}},
-      {"name": "display-panel", "icon": {"name": "stone"}, "position": {"x": 41.5, "y": 0.5}},
-      {"name": "display-panel", "icon": {"name": "stone-brick"}, "position": {"x": 42.5, "y": 0.5}},
-      {"name": "display-panel", "icon": {"name": "iron-ore"}, "position": {"x": 43.5, "y": 0.5}},
+      {"name": "display-panel", "icon": {"name": "plastic-bar"}, "position": {"x": 41.5, "y": 0.5}},
+      {"name": "display-panel", "icon": {"name": "plastic-bar"}, "position": {"x": 42.5, "y": 0.5}},
+      {"name": "display-panel", "position": {"x": 43.5, "y": 0.5}},
       {"name": "display-panel", "position": {"x": 44.5, "y": 0.5}}
     ],
     "icons": [{"index": 1, "signal": {"name": "display-panel"}}]

@@ -1,0 +1,47 @@
+{
+  "index": 0,
+  "blueprint": {
+    "item": "blueprint",
+    "label": "Roadless block",
+    "absolute-snapping": true,
+    "version": 562949958402048,
+    "entities": [
+      {"name": "big-electric-pole", "position": {"x": 0, "y": 3}},
+      {"name": "big-electric-pole", "position": {"x": 25, "y": 1}},
+      {"name": "big-electric-pole", "position": {"x": 0, "y": 28}},
+      {"name": "big-electric-pole", "position": {"x": 50, "y": 3}},
+      {"name": "big-electric-pole", "position": {"x": 50, "y": 28}},
+      {"name": "big-electric-pole", "position": {"x": 0, "y": 53}},
+      {"name": "big-electric-pole", "position": {"x": 25, "y": 51}},
+      {"name": "big-electric-pole", "position": {"x": 50, "y": 53}},
+      {"name": "roboport", "position": {"x": 0, "y": 0}, "request_filters": {"sections": [{"index": 1}]}},
+      {"name": "roboport", "position": {"x": 50, "y": 0}, "request_filters": {"sections": [{"index": 1}]}},
+      {"name": "roboport", "position": {"x": 0, "y": 50}, "request_filters": {"sections": [{"index": 1}]}},
+      {
+        "name": "roboport",
+        "position": {"x": 50, "y": 50},
+        "request_filters": {"sections": [{"index": 1}]}
+      },
+      {"name": "small-lamp", "position": {"x": 24.5, "y": -0.5}},
+      {"name": "small-lamp", "position": {"x": -1.5, "y": 2.5}},
+      {"name": "small-lamp", "position": {"x": -0.5, "y": 26.5}},
+      {"name": "small-lamp", "position": {"x": -1.5, "y": 52.5}},
+      {"name": "small-lamp", "position": {"x": 48.5, "y": 2.5}},
+      {"name": "small-lamp", "position": {"x": 49.5, "y": 26.5}},
+      {"name": "small-lamp", "position": {"x": 24.5, "y": 49.5}},
+      {"name": "small-lamp", "position": {"x": 48.5, "y": 52.5}}
+    ],
+    "icons": [{"index": 1, "signal": {"name": "roboport"}}],
+    "snap-to-grid": {"x": 50, "y": 50},
+    "wires": [
+      ["26.5,1.5", 5, "51.5,3.5", 5],
+      ["26.5,1.5", 5, "1.5,3.5", 5],
+      ["1.5,3.5", 5, "1.5,28.5", 5],
+      ["51.5,3.5", 5, "51.5,28.5", 5],
+      ["1.5,28.5", 5, "1.5,53.5", 5],
+      ["51.5,28.5", 5, "51.5,53.5", 5],
+      ["26.5,51.5", 5, "51.5,53.5", 5],
+      ["26.5,51.5", 5, "1.5,53.5", 5]
+    ]
+  }
+}

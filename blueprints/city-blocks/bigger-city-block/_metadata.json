@@ -1,8 +1,8 @@
 {
-  "index": 21,
+  "index": 14,
   "blueprint_book": {
     "item": "blueprint-book",
-    "label": "Nice bot blocks",
+    "label": "Bigger city block",
     "active_index": 0,
     "version": 562949958402048
   }

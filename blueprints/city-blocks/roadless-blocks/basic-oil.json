@@ -1,0 +1,225 @@
+{
+  "index": 24,
+  "blueprint": {
+    "item": "blueprint",
+    "label": "Basic oil",
+    "shift_x": -332,
+    "shift_y": 160,
+    "version": 562949958402048,
+    "entities": [
+      {
+        "name": "chemical-plant",
+        "recipe": "plastic-bar",
+        "recipe_quality": "normal",
+        "position": {"x": -12.5, "y": 13.5}
+      },
+      {
+        "name": "chemical-plant",
+        "recipe": "plastic-bar",
+        "recipe_quality": "normal",
+        "position": {"x": -9.5, "y": 13.5}
+      },
+      {
+        "name": "chemical-plant",
+        "recipe": "sulfur",
+        "recipe_quality": "normal",
+        "position": {"x": -6.5, "y": 13.5}
+      },
+      {
+        "name": "chemical-plant",
+        "recipe": "explosives",
+        "recipe_quality": "normal",
+        "position": {"x": -3.5, "y": 13.5}
+      },
+      {
+        "name": "chemical-plant",
+        "recipe": "explosives",
+        "recipe_quality": "normal",
+        "position": {"x": -0.5, "y": 13.5}
+      },
+      {
+        "name": "chemical-plant",
+        "recipe": "sulfur",
+        "recipe_quality": "normal",
+        "position": {"x": -2.5, "y": 19.5}
+      },
+      {
+        "name": "chemical-plant",
+        "recipe": "battery",
+        "recipe_quality": "normal",
+        "position": {"x": -0.5, "y": 27.5}
+      },
+      {
+        "name": "chemical-plant",
+        "recipe": "explosives",
+        "recipe_quality": "normal",
+        "position": {"x": 2.5, "y": 13.5}
+      },
+      {
+        "name": "chemical-plant",
+        "recipe": "explosives",
+        "recipe_quality": "normal",
+        "position": {"x": 5.5, "y": 13.5}
+      },
+      {
+        "name": "chemical-plant",
+        "recipe": "sulfur",
+        "recipe_quality": "normal",
+        "position": {"x": 0.5, "y": 19.5}
+      },
+      {
+        "name": "chemical-plant",
+        "recipe": "sulfur",
+        "recipe_quality": "normal",
+        "position": {"x": 3.5, "y": 19.5}
+      },
+      {
+        "name": "chemical-plant",
+        "recipe": "battery",
+        "recipe_quality": "normal",
+        "position": {"x": 2.5, "y": 27.5}
+      },
+      {
+        "name": "chemical-plant",
+        "recipe": "battery",
+        "recipe_quality": "normal",
+        "position": {"x": 5.5, "y": 27.5}
+      },
+      {
+        "name": "chemical-plant",
+        "recipe": "battery",
+        "recipe_quality": "normal",
+        "position": {"x": 8.5, "y": 27.5}
+      },
+      {
+        "name": "chemical-plant",
+        "recipe": "battery",
+        "recipe_quality": "normal",
+        "position": {"x": 11.5, "y": 27.5}
+      },
+      {
+        "name": "chemical-plant",
+        "recipe": "battery",
+        "recipe_quality": "normal",
+        "position": {"x": 14.5, "y": 27.5}
+      },
+      {
+        "name": "chemical-plant",
+        "recipe": "battery",
+        "recipe_quality": "normal",
+        "position": {"x": 17.5, "y": 27.5}
+      },
+      {
+        "name": "chemical-plant",
+        "recipe": "battery",
+        "recipe_quality": "normal",
+        "position": {"x": 20.5, "y": 27.5}
+      },
+      {
+        "name": "oil-refinery",
+        "direction": 8,
+        "recipe": "basic-oil-processing",
+        "recipe_quality": "normal",
+        "position": {"x": -10.5, "y": 0.5}
+      },
+      {
+        "name": "oil-refinery",
+        "recipe": "basic-oil-processing",
+        "recipe_quality": "normal",
+        "position": {"x": -10.5, "y": 6.5}
+      },
+      {
+        "name": "oil-refinery",
+        "direction": 8,
+        "recipe": "basic-oil-processing",
+        "recipe_quality": "normal",
+        "position": {"x": -5.5, "y": 0.5}
+      },
+      {
+        "name": "oil-refinery",
+        "direction": 8,
+        "recipe": "basic-oil-processing",
+        "recipe_quality": "normal",
+        "position": {"x": -0.5, "y": 0.5}
+      },
+      {
+        "name": "oil-refinery",
+        "recipe": "basic-oil-processing",
+        "recipe_quality": "normal",
+        "position": {"x": -5.5, "y": 6.5}
+      },
+      {
+        "name": "oil-refinery",
+        "recipe": "basic-oil-processing",
+        "recipe_quality": "normal",
+        "position": {"x": -0.5, "y": 6.5}
+      },
+      {
+        "name": "oil-refinery",
+        "direction": 8,
+        "recipe": "basic-oil-processing",
+        "recipe_quality": "normal",
+        "position": {"x": 4.5, "y": 0.5}
+      },
+      {
+        "name": "oil-refinery",
+        "recipe": "basic-oil-processing",
+        "recipe_quality": "normal",
+        "position": {"x": 4.5, "y": 6.5}
+      },
+      {
+        "name": "oil-refinery",
+        "direction": 8,
+        "recipe": "basic-oil-processing",
+        "recipe_quality": "normal",
+        "position": {"x": 9.5, "y": 0.5}
+      },
+      {
+        "name": "oil-refinery",
+        "direction": 8,
+        "recipe": "basic-oil-processing",
+        "recipe_quality": "normal",
+        "position": {"x": 14.5, "y": 0.5}
+      },
+      {
+        "name": "oil-refinery",
+        "recipe": "basic-oil-processing",
+        "recipe_quality": "normal",
+        "position": {"x": 9.5, "y": 6.5}
+      },
+      {
+        "name": "oil-refinery",
+        "recipe": "basic-oil-processing",
+        "recipe_quality": "normal",
+        "position": {"x": 14.5, "y": 6.5}
+      },
+      {
+        "name": "oil-refinery",
+        "direction": 8,
+        "recipe": "basic-oil-processing",
+        "recipe_quality": "normal",
+        "position": {"x": 19.5, "y": 0.5}
+      },
+      {
+        "name": "oil-refinery",
+        "recipe": "basic-oil-processing",
+        "recipe_quality": "normal",
+        "position": {"x": 19.5, "y": 6.5}
+      },
+      {
+        "name": "oil-refinery",
+        "direction": 8,
+        "recipe": "basic-oil-processing",
+        "recipe_quality": "normal",
+        "position": {"x": 24.5, "y": 0.5}
+      },
+      {
+        "name": "oil-refinery",
+        "recipe": "basic-oil-processing",
+        "recipe_quality": "normal",
+        "position": {"x": 24.5, "y": 6.5}
+      }
+    ],
+    "icons": [{"index": 1, "signal": {"name": "oil-refinery"}}]
+  }
+}
